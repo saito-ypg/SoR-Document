@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['基本的なの_0',['基本的なの',['../md__so_r_2todo.html#autotoc_md120',1,'']]]
+  ['実現したかった事_0',['実現したかった事',['../md__so_r_2_r_e_a_d_m_e.html#autotoc_md116',1,'']]],
+  ['実装すること_1',['実装すること',['../md__so_r_2todo.html',1,'']]]
 ];

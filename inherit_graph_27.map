@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="Node000000" href="$structdetail_1_1external__constructor_3_01value__t_1_1boolean_01_4.html" title=" " alt="" coords="5,5,184,48"/>
+<area shape="rect" id="Node000000" href="$class_registration_factory.html" title="ファクトリレジストリの登録関数を一括で全て呼ぶだけのクラス mediatorのしゅるいが増えたら、このクラス内の関数に追記＋include" alt="" coords="5,5,140,32"/>
 </map>

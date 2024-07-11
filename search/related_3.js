@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['detail_3a_3aexternal_5fconstructor_0',['external_constructor',['../classbasic__json.html#a6275ed57bae6866cdf5db5370a7ad47c',1,'basic_json']]]
+  ['spherecollider_0',['SphereCollider',['../class_collider.html#a15793375868d0302266e8d1ca58e3cf2',1,'Collider']]]
 ];

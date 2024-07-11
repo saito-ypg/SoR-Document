@@ -1,17 +1,5 @@
 <map id="Image::Load" name="Image::Load">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,98,133"/>
-<area shape="rect" id="Node000002" href="$class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="163,81,254,108"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,110,147,102,148,107,99,115"/>
-<area shape="rect" id="Node000008" href="$namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="146,132,271,159"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="99,125,131,130,130,135,98,130"/>
-<area shape="rect" id="Node000003" href="$class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="319,5,484,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,78,318,42,336,35,338,40,320,46,238,83"/>
-<area shape="rect" id="Node000004" href="$class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="346,56,457,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="254,86,330,76,331,81,255,91"/>
-<area shape="rect" id="Node000005" href="$class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="343,107,461,133"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="255,98,328,108,327,113,254,103"/>
-<area shape="rect" id="Node000006" href="$class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="352,157,452,184"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="246,106,272,118,320,143,338,150,336,155,318,148,270,122,244,111"/>
-<area shape="rect" id="Node000007" href="$_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="532,157,653,184"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="452,168,516,168,516,173,452,173"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,98,32"/>
+<area shape="rect" id="Node000002" href="$namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="146,5,271,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,16,130,16,130,21,98,21"/>
 </map>

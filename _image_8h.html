@@ -107,6 +107,7 @@ $(function(){initNavTree('_image_8h.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &quot;<a class="el" href="_sprite_8h_source.html">Sprite.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_transform_8h_source.html">Transform.h</a>&quot;</code><br />
@@ -115,34 +116,37 @@ Image.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="_image_8h__incl.png" border="0" usemap="#a_so_r_2_engine_2_image_8h" alt=""/></div>
 <map name="a_so_r_2_engine_2_image_8h" id="a_so_r_2_engine_2_image_8h">
-<area shape="rect" title=" " alt="" coords="204,5,345,32"/>
+<area shape="rect" title=" " alt="" coords="174,5,314,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,61,107"/>
-<area shape="poly" title=" " alt="" coords="233,35,76,82,75,77,232,30"/>
-<area shape="rect" title=" " alt="" coords="28,229,81,256"/>
-<area shape="poly" title=" " alt="" coords="263,34,140,157,79,220,75,216,136,153,260,31"/>
-<area shape="rect" title=" " alt="" coords="383,80,435,107"/>
-<area shape="poly" title=" " alt="" coords="299,30,373,70,371,75,297,35"/>
-<area shape="rect" href="_sprite_8h.html" title=" " alt="" coords="241,80,308,107"/>
-<area shape="poly" title=" " alt="" coords="277,33,277,64,272,64,272,33"/>
-<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="438,155,527,181"/>
-<area shape="poly" title=" " alt="" coords="288,30,324,65,372,104,442,145,440,150,369,109,320,69,284,34"/>
-<area shape="poly" title=" " alt="" coords="257,109,87,223,84,218,254,105"/>
-<area shape="rect" title=" " alt="" coords="342,229,409,256"/>
-<area shape="poly" title=" " alt="" coords="288,105,326,153,364,215,360,217,321,156,283,109"/>
-<area shape="rect" title=" " alt="" coords="434,229,536,256"/>
-<area shape="poly" title=" " alt="" coords="294,105,456,218,453,222,291,109"/>
-<area shape="rect" title=" " alt="" coords="105,229,207,256"/>
-<area shape="poly" title=" " alt="" coords="266,109,227,156,177,219,173,215,223,153,262,105"/>
-<area shape="rect" href="_texture_8h.html" title=" " alt="" coords="237,155,312,181"/>
-<area shape="poly" title=" " alt="" coords="277,107,277,139,272,139,272,107"/>
-<area shape="poly" title=" " alt="" coords="309,104,433,147,431,152,307,109"/>
-<area shape="poly" title=" " alt="" coords="237,184,96,230,95,225,235,179"/>
-<area shape="poly" title=" " alt="" coords="294,180,347,218,344,222,290,184"/>
-<area shape="poly" title=" " alt="" coords="312,179,435,221,433,226,310,184"/>
-<area shape="poly" title=" " alt="" coords="255,184,191,223,188,219,252,180"/>
-<area shape="rect" title=" " alt="" coords="231,229,318,256"/>
-<area shape="poly" title=" " alt="" coords="277,182,277,214,272,214,272,182"/>
-<area shape="poly" title=" " alt="" coords="485,182,487,214,481,214,480,182"/>
+<area shape="poly" title=" " alt="" coords="208,35,76,80,75,75,206,30"/>
+<area shape="rect" title=" " alt="" coords="118,229,172,256"/>
+<area shape="poly" title=" " alt="" coords="228,34,174,83,147,117,126,156,123,170,124,185,133,214,128,216,119,186,118,170,121,154,142,114,170,79,225,31"/>
+<area shape="rect" title=" " alt="" coords="136,155,205,181"/>
+<area shape="poly" title=" " alt="" coords="240,34,186,142,181,140,235,31"/>
+<area shape="rect" title=" " alt="" coords="402,80,454,107"/>
+<area shape="poly" title=" " alt="" coords="277,30,388,74,386,79,275,35"/>
+<area shape="rect" href="_sprite_8h.html" title=" " alt="" coords="260,80,326,107"/>
+<area shape="poly" title=" " alt="" coords="254,31,278,66,274,69,250,34"/>
+<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="531,155,620,181"/>
+<area shape="poly" title=" " alt="" coords="265,30,330,71,390,104,455,129,517,149,515,154,453,134,388,109,328,75,262,35"/>
+<area shape="poly" title=" " alt="" coords="285,109,219,183,175,221,172,217,215,179,281,105"/>
+<area shape="poly" title=" " alt="" coords="273,110,206,149,204,144,270,105"/>
+<area shape="rect" title=" " alt="" coords="433,229,500,256"/>
+<area shape="poly" title=" " alt="" coords="328,102,374,122,397,136,419,153,443,183,459,214,454,216,438,186,415,157,394,140,371,127,326,107"/>
+<area shape="rect" title=" " alt="" coords="525,229,627,256"/>
+<area shape="poly" title=" " alt="" coords="327,103,384,124,446,152,502,185,549,218,546,222,499,190,444,157,382,129,326,108"/>
+<area shape="rect" title=" " alt="" coords="195,229,298,256"/>
+<area shape="poly" title=" " alt="" coords="292,108,257,215,252,213,286,106"/>
+<area shape="rect" href="_texture_8h.html" title=" " alt="" coords="330,155,405,181"/>
+<area shape="poly" title=" " alt="" coords="308,105,346,142,342,146,304,109"/>
+<area shape="poly" title=" " alt="" coords="327,101,516,149,515,154,326,106"/>
+<area shape="poly" title=" " alt="" coords="330,184,188,230,186,225,329,179"/>
+<area shape="poly" title=" " alt="" coords="386,180,439,218,436,222,383,184"/>
+<area shape="poly" title=" " alt="" coords="405,179,526,221,524,226,403,184"/>
+<area shape="poly" title=" " alt="" coords="348,184,282,223,279,219,345,180"/>
+<area shape="rect" title=" " alt="" coords="322,229,408,256"/>
+<area shape="poly" title=" " alt="" coords="370,182,369,214,363,214,365,182"/>
+<area shape="poly" title=" " alt="" coords="578,182,578,214,573,214,573,182"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -222,8 +226,6 @@ Image.h の依存先関係図:</div>
 <tr class="separator:ab374976a45fdfc0ffa188ee9b9dac6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a729b7937615099872420357877a354" id="r_a5a729b7937615099872420357877a354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_image.html#a5a729b7937615099872420357877a354">Image::Draw</a> (int handle)</td></tr>
 <tr class="separator:a5a729b7937615099872420357877a354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7303142b129a3b064c782462e97802" id="r_acf7303142b129a3b064c782462e97802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_image.html#acf7303142b129a3b064c782462e97802">Image::Release</a> (int handle)</td></tr>
-<tr class="separator:acf7303142b129a3b064c782462e97802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39909f3a2a5a8437ee7b55ffb56e814" id="r_ab39909f3a2a5a8437ee7b55ffb56e814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_image.html#ab39909f3a2a5a8437ee7b55ffb56e814">Image::AllRelease</a> ()</td></tr>
 <tr class="separator:ab39909f3a2a5a8437ee7b55ffb56e814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a33e59dfef6e7950f840f819f9759a" id="r_a27a33e59dfef6e7950f840f819f9759a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_image.html#a27a33e59dfef6e7950f840f819f9759a">Image::SetRect</a> (int handle, int x, int y, int width, int height)</td></tr>
@@ -280,7 +282,7 @@ Image.h の依存先関係図:</div>
 <tr><td class="fieldname"><a id="ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84" name="ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84"></a>Y&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00010">10</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00011">11</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -302,7 +304,7 @@ Image.h の依存先関係図:</div>
 <tr><td class="fieldname"><a id="a1af9dc7a8eb6e8e3d5cfe3b1fef8dfaca9b0b4a95b99523966e0e34ffdadac9da" name="a1af9dc7a8eb6e8e3d5cfe3b1fef8dfaca9b0b4a95b99523966e0e34ffdadac9da"></a>DOWN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00009">9</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00010">10</a> 行目に定義があります。</p>
 
 </div>
 </div>

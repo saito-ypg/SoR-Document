@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['camera_0',['Camera',['../namespace_camera.html',1,'']]],
-  ['collisionmanager_1',['CollisionManager',['../namespace_collision_manager.html',1,'']]]
+  ['debug_0',['Debug',['../namespace_debug.html',1,'']]],
+  ['direct3d_1',['Direct3D',['../namespace_direct3_d.html',1,'']]]
 ];

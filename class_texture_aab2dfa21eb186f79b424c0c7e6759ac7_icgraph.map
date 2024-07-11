@@ -1,11 +1,9 @@
 <map id="Texture::GetSampler" name="Texture::GetSampler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="393,56,534,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="393,31,534,57"/>
 <area shape="rect" id="Node000002" href="$class_bill_board.html#a66e4ad9a277195b905aa117917fb62ce" title=" " alt="" coords="234,5,345,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="400,54,337,35,339,30,401,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,34,345,29,346,24,378,29"/>
 <area shape="rect" id="Node000003" href="$class_fbx_parts.html#a6f4a56d494ea33ba40d50c4ebfcb2469" title=" " alt="" coords="234,56,345,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="377,72,345,72,345,67,377,67"/>
-<area shape="rect" id="Node000006" href="$class_sprite.html#a22f701e43e5562dd1eabd32416109709" title=" " alt="" coords="243,107,336,133"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="401,90,337,109,335,104,400,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="378,59,346,64,345,59,377,54"/>
 <area shape="rect" id="Node000004" href="$class_fbx_parts.html#a72ccd90d28fcc8025b5a324490c18c43" title=" " alt="" coords="5,31,186,57"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="218,63,186,58,187,53,219,57"/>
 <area shape="rect" id="Node000005" href="$class_fbx_parts.html#ab79c7b8ace640a5fedc46697b214e433" title=" " alt="" coords="8,81,183,108"/>

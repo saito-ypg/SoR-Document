@@ -12,6 +12,6 @@ var class_sprite =
     [ "Load", "class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01", null ],
     [ "pConstantBuffer_", "class_sprite.html#a16429973b45efe030c389fedd80bd6e9", null ],
     [ "pIndexBuffer_", "class_sprite.html#a60d2a6ea9ea65885d9537b8600d53a22", null ],
-    [ "pTexture_", "class_sprite.html#ad2eb6d34d0633503c64e8d6dcbb53865", null ],
+    [ "pTexture_", "class_sprite.html#a3f0769dbd29bbfb615bf1699076d029e", null ],
     [ "pVertexBuffer_", "class_sprite.html#aef4d60a64aa474cefa0569885d2e8c72", null ]
 ];

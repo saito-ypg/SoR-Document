@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['collider_0',['Collider',['../class_box_collider.html#a95f9c6cfd56f684a85ac83dd3f5a4e51',1,'BoxCollider::Collider'],['../class_sphere_collider.html#a95f9c6cfd56f684a85ac83dd3f5a4e51',1,'SphereCollider::Collider']]]
+  ['fbxparts_0',['FbxParts',['../class_fbx.html#ad3185fd2e3fd900090c9d58d849d716b',1,'Fbx']]]
 ];

@@ -1,15 +1,7 @@
 <map id="Sprite::Draw" name="Sprite::Draw">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,98,133"/>
-<area shape="rect" id="Node000002" href="$class_texture.html#a19b4f36a15d7598df898336a43f05601" title=" " alt="" coords="146,5,320,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,104,99,73,144,42,157,36,159,40,147,46,102,77,68,108"/>
-<area shape="rect" id="Node000004" href="$class_texture.html#aab2dfa21eb186f79b424c0c7e6759ac7" title=" " alt="" coords="162,56,304,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,105,167,85,169,90,99,110"/>
-<area shape="rect" id="Node000005" href="$class_texture.html#a2717e1589e2ff4148a3279a7319c6220" title=" " alt="" coords="173,107,293,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="98,117,157,117,157,123,98,123"/>
-<area shape="rect" id="Node000006" href="$namespace_direct3_d.html#a159aa52fd4fc11f96505791eeea00975" title=" " alt="" coords="150,157,316,200"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="96,131,151,149,149,155,94,136"/>
-<area shape="rect" id="Node000007" href="$namespace_direct3_d.html#a2e24a5701dc5e0728ffccc721c690bd4" title=" " alt="" coords="163,224,303,251"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="65,132,99,170,122,192,147,210,158,215,155,220,144,214,118,196,95,174,61,135"/>
-<area shape="rect" id="Node000003" href="$_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="368,5,488,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,16,353,16,353,21,320,21"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,98,69"/>
+<area shape="rect" id="Node000002" href="$namespace_direct3_d.html#a159aa52fd4fc11f96505791eeea00975" title=" " alt="" coords="146,5,312,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,46,130,40,130,46,99,51"/>
+<area shape="rect" id="Node000003" href="$namespace_direct3_d.html#a2e24a5701dc5e0728ffccc721c690bd4" title=" " alt="" coords="159,72,299,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,61,144,69,143,74,98,66"/>
 </map>

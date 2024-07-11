@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['include_5fnlohmann_5fjson_5ffwd_5fhpp_5f_0',['INCLUDE_NLOHMANN_JSON_FWD_HPP_',['../json_8hpp.html#ae7fdc438c6d6cb1f17c4373bce5a802d',1,'json.hpp']]]
+  ['nominmax_0',['NOMINMAX',['../_main_8cpp.html#a9f918755b601cf4bffca775992e6fb90',1,'Main.cpp']]]
 ];

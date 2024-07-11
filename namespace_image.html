@@ -117,8 +117,6 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 <tr class="separator:ab374976a45fdfc0ffa188ee9b9dac6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a729b7937615099872420357877a354" id="r_a5a729b7937615099872420357877a354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a729b7937615099872420357877a354">Draw</a> (int handle)</td></tr>
 <tr class="separator:a5a729b7937615099872420357877a354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7303142b129a3b064c782462e97802" id="r_acf7303142b129a3b064c782462e97802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf7303142b129a3b064c782462e97802">Release</a> (int handle)</td></tr>
-<tr class="separator:acf7303142b129a3b064c782462e97802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39909f3a2a5a8437ee7b55ffb56e814" id="r_ab39909f3a2a5a8437ee7b55ffb56e814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab39909f3a2a5a8437ee7b55ffb56e814">AllRelease</a> ()</td></tr>
 <tr class="separator:ab39909f3a2a5a8437ee7b55ffb56e814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a33e59dfef6e7950f840f819f9759a" id="r_a27a33e59dfef6e7950f840f819f9759a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a33e59dfef6e7950f840f819f9759a">SetRect</a> (int handle, int x, int y, int width, int height)</td></tr>
@@ -155,8 +153,8 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
-<tr class="memitem:aa4d7aa6f46e1f13d09a9723d2eab202f" id="r_aa4d7aa6f46e1f13d09a9723d2eab202f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_image_1_1_image_data.html">ImageData</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4d7aa6f46e1f13d09a9723d2eab202f">_datas</a></td></tr>
-<tr class="separator:aa4d7aa6f46e1f13d09a9723d2eab202f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825388898ef7179c2db00d46ba4f56a5" id="r_a825388898ef7179c2db00d46ba4f56a5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_image_1_1_image_data.html">ImageData</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a825388898ef7179c2db00d46ba4f56a5">_data</a></td></tr>
+<tr class="separator:a825388898ef7179c2db00d46ba4f56a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc6f8122f2e0ffd6d5c826fa598def2" id="r_a0dc6f8122f2e0ffd6d5c826fa598def2"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dc6f8122f2e0ffd6d5c826fa598def2">UNSPECIFIED</a> = std::numeric_limits&lt;float&gt;::quiet_NaN()</td></tr>
 <tr class="separator:a0dc6f8122f2e0ffd6d5c826fa598def2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -202,7 +200,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>方向に応じ調整した画像中央のX or Y(スクリーン座標)</dd></dl>
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00207">207</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00174">174</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -231,17 +229,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00123">123</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_image_ab39909f3a2a5a8437ee7b55ffb56e814_cgraph.png" border="0" usemap="#anamespace_image_ab39909f3a2a5a8437ee7b55ffb56e814_cgraph" alt=""/></div>
-<map name="anamespace_image_ab39909f3a2a5a8437ee7b55ffb56e814_cgraph" id="anamespace_image_ab39909f3a2a5a8437ee7b55ffb56e814_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,132,32"/>
-<area shape="rect" href="namespace_image.html#acf7303142b129a3b064c782462e97802" title=" " alt="" coords="180,5,291,32"/>
-<area shape="poly" title=" " alt="" coords="132,16,164,16,164,21,132,21"/>
-</map>
-</div>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00094">94</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -276,43 +264,37 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00080">80</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00077">77</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_image_a5a729b7937615099872420357877a354_icgraph.png" border="0" usemap="#anamespace_image_a5a729b7937615099872420357877a354_icgraph" alt=""/></div>
 <map name="anamespace_image_a5a729b7937615099872420357877a354_icgraph" id="anamespace_image_a5a729b7937615099872420357877a354_icgraph">
-<area shape="rect" title=" " alt="" coords="625,157,719,184"/>
-<area shape="rect" href="class_clear_scene.html#a6c5a8a3cac1db811ba3638a2e5aa9cae" title=" " alt="" coords="437,5,562,32"/>
-<area shape="poly" title=" " alt="" coords="655,145,623,95,601,69,576,46,555,35,558,30,579,42,605,65,627,91,660,142"/>
-<area shape="rect" href="class_game_over_scene.html#a0ca4f157ce8f5f8e2ccbef58ce93aa46" title=" " alt="" coords="421,56,577,83"/>
-<area shape="poly" title=" " alt="" coords="645,149,613,122,576,97,551,86,553,81,579,92,616,118,648,145"/>
-<area shape="rect" href="namespace_h_p_bar.html#a6226641f58b19a29980611c48cbf3ac3" title=" " alt="" coords="451,107,547,133"/>
-<area shape="poly" title=" " alt="" coords="610,155,547,137,548,131,611,150"/>
-<area shape="rect" href="class_moderator_sequence.html#adb01a14c340e6701c6dc231ae002e7a3" title=" " alt="" coords="5,267,180,293"/>
-<area shape="poly" title=" " alt="" coords="610,167,532,164,435,165,331,175,279,185,229,199,194,213,161,232,111,268,108,264,159,227,192,208,227,193,278,180,330,170,435,160,532,158,610,162"/>
-<area shape="rect" href="class_player_interface.html#a75b02f75f559ac9184301f68a52652ff" title=" " alt="" coords="427,208,571,235"/>
-<area shape="poly" title=" " alt="" coords="611,191,548,210,547,205,610,186"/>
-<area shape="rect" href="class_text.html#a5ec0ab3772e61978a9955b23e96be8cd" title=" " alt="" coords="458,263,541,289"/>
-<area shape="poly" title=" " alt="" coords="647,197,616,224,579,249,543,266,540,261,576,244,612,219,644,193"/>
-<area shape="rect" href="class_title_scene.html#af233ba17c8482c6bec262b8f73c1efed" title=" " alt="" coords="440,313,559,340"/>
-<area shape="poly" title=" " alt="" coords="660,199,628,252,605,280,579,304,558,315,555,310,576,299,601,276,624,249,655,197"/>
-<area shape="rect" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96" title=" " alt="" coords="229,107,372,133"/>
-<area shape="poly" title=" " alt="" coords="435,123,372,123,372,117,435,117"/>
-<area shape="rect" href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7" title=" " alt="" coords="30,107,155,133"/>
-<area shape="poly" title=" " alt="" coords="214,123,155,123,155,117,214,117"/>
-<area shape="rect" href="class_text.html#a35738f5cc4cf3f3758dbedc264da8d58" title=" " alt="" coords="259,208,342,235"/>
-<area shape="poly" title=" " alt="" coords="442,263,342,235,343,230,443,258"/>
-<area shape="rect" href="class_text.html#a04fc62a0c41c328a0a6c071b28d55dcd" title=" " alt="" coords="240,392,361,419"/>
-<area shape="poly" title=" " alt="" coords="444,291,423,303,407,322,399,341,392,362,375,382,356,394,353,389,371,378,387,359,394,340,402,319,419,299,441,286"/>
-<area shape="rect" href="class_moderator_sequence.html#ab7f61b93b04552827b3c2983bba68fb0" title=" " alt="" coords="228,259,373,301"/>
-<area shape="poly" title=" " alt="" coords="442,280,374,281,374,276,442,274"/>
-<area shape="rect" href="class_moderator_sequence.html#a380da48888a6e1f36549f504fcd5b81e" title=" " alt="" coords="228,325,373,368"/>
-<area shape="poly" title=" " alt="" coords="444,296,422,304,359,327,357,322,420,299,442,291"/>
-<area shape="rect" href="class_text.html#a89d1d9d37b4869b850dacd8e72dd5768" title=" " alt="" coords="32,392,153,419"/>
-<area shape="poly" title=" " alt="" coords="224,408,154,408,154,403,224,403"/>
-<area shape="poly" title=" " alt="" coords="212,283,180,283,180,277,212,277"/>
-<area shape="poly" title=" " alt="" coords="217,323,136,296,137,291,218,318"/>
+<area shape="rect" title=" " alt="" coords="590,157,684,184"/>
+<area shape="rect" href="class_clear_scene.html#a6c5a8a3cac1db811ba3638a2e5aa9cae" title=" " alt="" coords="393,5,518,32"/>
+<area shape="poly" title=" " alt="" coords="620,145,588,94,566,68,541,46,517,34,520,29,544,42,570,64,593,91,625,142"/>
+<area shape="rect" href="class_game_over_scene.html#a0ca4f157ce8f5f8e2ccbef58ce93aa46" title=" " alt="" coords="377,56,533,83"/>
+<area shape="poly" title=" " alt="" coords="610,148,578,121,541,97,514,86,516,81,544,92,581,117,613,144"/>
+<area shape="rect" href="namespace_h_p_bar.html#a6226641f58b19a29980611c48cbf3ac3" title=" " alt="" coords="407,107,503,133"/>
+<area shape="poly" title=" " alt="" coords="574,156,503,136,505,131,576,151"/>
+<area shape="rect" href="class_moderator_sequence.html#adb01a14c340e6701c6dc231ae002e7a3" title=" " alt="" coords="368,157,542,184"/>
+<area shape="poly" title=" " alt="" coords="575,173,543,173,543,168,575,168"/>
+<area shape="rect" href="class_player_interface.html#a75b02f75f559ac9184301f68a52652ff" title=" " alt="" coords="383,208,527,235"/>
+<area shape="poly" title=" " alt="" coords="576,190,507,210,505,205,575,185"/>
+<area shape="rect" href="class_text.html#a5ec0ab3772e61978a9955b23e96be8cd" title=" " alt="" coords="414,259,497,285"/>
+<area shape="poly" title=" " alt="" coords="613,197,581,224,544,249,498,266,496,261,541,244,578,220,610,193"/>
+<area shape="rect" href="class_title_scene.html#af233ba17c8482c6bec262b8f73c1efed" title=" " alt="" coords="396,309,515,336"/>
+<area shape="poly" title=" " alt="" coords="625,199,593,250,570,277,544,300,516,313,514,309,541,295,566,273,588,247,620,196"/>
+<area shape="rect" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96" title=" " alt="" coords="178,107,320,133"/>
+<area shape="poly" title=" " alt="" coords="392,123,320,123,320,117,392,117"/>
+<area shape="rect" href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7" title=" " alt="" coords="5,107,130,133"/>
+<area shape="poly" title=" " alt="" coords="162,123,130,123,130,117,162,117"/>
+<area shape="rect" href="class_text.html#a35738f5cc4cf3f3758dbedc264da8d58" title=" " alt="" coords="207,233,291,260"/>
+<area shape="poly" title=" " alt="" coords="398,268,290,254,291,249,399,262"/>
+<area shape="rect" href="class_text.html#a04fc62a0c41c328a0a6c071b28d55dcd" title=" " alt="" coords="188,284,310,311"/>
+<area shape="poly" title=" " alt="" coords="399,282,310,293,310,287,398,276"/>
+<area shape="rect" href="class_text.html#a89d1d9d37b4869b850dacd8e72dd5768" title=" " alt="" coords="7,284,128,311"/>
+<area shape="poly" title=" " alt="" coords="172,300,128,300,128,295,172,295"/>
 </map>
 </div>
 
@@ -333,7 +315,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00268">268</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00235">235</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -361,8 +343,6 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 <area shape="rect" title=" " alt="" coords="5,5,117,32"/>
 <area shape="rect" href="namespace_image.html#ab39909f3a2a5a8437ee7b55ffb56e814" title=" " alt="" coords="165,5,291,32"/>
 <area shape="poly" title=" " alt="" coords="117,16,149,16,149,21,117,21"/>
-<area shape="rect" href="namespace_image.html#acf7303142b129a3b064c782462e97802" title=" " alt="" coords="339,5,450,32"/>
-<area shape="poly" title=" " alt="" coords="291,16,324,16,324,21,291,21"/>
 </map>
 </div>
 
@@ -397,7 +377,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>範囲内か</dd></dl>
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00239">239</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00206">206</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -450,7 +430,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd></dd></dl>
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00246">246</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00213">213</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -497,21 +477,9 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 <div class="dyncontent">
 <div class="center"><img src="namespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_cgraph.png" border="0" usemap="#anamespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_cgraph" alt=""/></div>
 <map name="anamespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_cgraph" id="anamespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,98,133"/>
-<area shape="rect" href="class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="163,81,254,108"/>
-<area shape="poly" title=" " alt="" coords="98,110,147,102,148,107,99,115"/>
-<area shape="rect" href="namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="146,132,271,159"/>
-<area shape="poly" title=" " alt="" coords="99,125,131,130,130,135,98,130"/>
-<area shape="rect" href="class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="319,5,484,32"/>
-<area shape="poly" title=" " alt="" coords="236,78,318,42,336,35,338,40,320,46,238,83"/>
-<area shape="rect" href="class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="346,56,457,83"/>
-<area shape="poly" title=" " alt="" coords="254,86,330,76,331,81,255,91"/>
-<area shape="rect" href="class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="343,107,461,133"/>
-<area shape="poly" title=" " alt="" coords="255,98,328,108,327,113,254,103"/>
-<area shape="rect" href="class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="352,157,452,184"/>
-<area shape="poly" title=" " alt="" coords="246,106,272,118,320,143,338,150,336,155,318,148,270,122,244,111"/>
-<area shape="rect" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="532,157,653,184"/>
-<area shape="poly" title=" " alt="" coords="452,168,516,168,516,173,452,173"/>
+<area shape="rect" title=" " alt="" coords="5,5,98,32"/>
+<area shape="rect" href="namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="146,5,271,32"/>
+<area shape="poly" title=" " alt="" coords="98,16,130,16,130,21,98,21"/>
 </map>
 </div>
 <div class="dynheader">
@@ -519,68 +487,25 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 <div class="dyncontent">
 <div class="center"><img src="namespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_icgraph.png" border="0" usemap="#anamespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_icgraph" alt=""/></div>
 <map name="anamespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_icgraph" id="anamespace_image_ab374976a45fdfc0ffa188ee9b9dac6e9_icgraph">
-<area shape="rect" title=" " alt="" coords="438,157,530,184"/>
-<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
-<area shape="poly" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
-<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
-<area shape="poly" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
-<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
-<area shape="poly" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
-<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
-<area shape="poly" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
-<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
-<area shape="poly" title=" " alt="" coords="463,197,431,225,391,249,335,267,276,278,219,282,168,283,168,278,219,277,275,272,333,262,389,244,428,221,459,193"/>
-<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
-<area shape="poly" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
-<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
-<area shape="poly" title=" " alt="" coords="470,199,438,246,416,271,392,293,357,311,354,306,388,288,412,267,434,243,466,196"/>
-<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
-<area shape="poly" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
-<area shape="poly" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
-<area shape="poly" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
-<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
-<area shape="poly" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="acf7303142b129a3b064c782462e97802" name="acf7303142b129a3b064c782462e97802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf7303142b129a3b064c782462e97802">&#9670;&#160;</a></span>Release()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Image::Release </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>handle</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00094">94</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_image_acf7303142b129a3b064c782462e97802_icgraph.png" border="0" usemap="#anamespace_image_acf7303142b129a3b064c782462e97802_icgraph" alt=""/></div>
-<map name="anamespace_image_acf7303142b129a3b064c782462e97802_icgraph" id="anamespace_image_acf7303142b129a3b064c782462e97802_icgraph">
-<area shape="rect" title=" " alt="" coords="421,132,532,159"/>
-<area shape="rect" href="namespace_image.html#ab39909f3a2a5a8437ee7b55ffb56e814" title=" " alt="" coords="229,81,355,108"/>
-<area shape="poly" title=" " alt="" coords="410,130,343,111,344,106,412,125"/>
-<area shape="rect" href="class_player_interface.html#ae89b4eeb0d5818dd68cda41670b65f49" title=" " alt="" coords="211,132,373,159"/>
-<area shape="poly" title=" " alt="" coords="406,148,373,148,373,143,406,143"/>
-<area shape="rect" href="class_text.html#a2d49e5c280e205125b149f7777ae30c7" title=" " alt="" coords="248,183,336,209"/>
-<area shape="poly" title=" " alt="" coords="411,166,337,187,335,182,410,161"/>
-<area shape="rect" href="namespace_image.html#a6ab921526bbe6bf23bb96bcd6f364000" title=" " alt="" coords="28,5,140,32"/>
-<area shape="poly" title=" " alt="" coords="242,78,162,47,128,35,130,30,164,41,244,73"/>
-<area shape="rect" href="class_title_scene.html#a79a98564eb7b8e3e47ccd6a83e449419" title=" " alt="" coords="15,56,153,83"/>
-<area shape="poly" title=" " alt="" coords="213,88,153,80,154,75,214,83"/>
-<area shape="rect" href="class_scene_manager.html#ae45b05336daf503db67a4a95a19c0947" title=" " alt="" coords="5,107,163,133"/>
-<area shape="poly" title=" " alt="" coords="214,107,164,113,163,108,213,102"/>
-<area shape="rect" href="_main_8cpp.html#a649028f00e62144f15f268d14bc6dae0" title=" " alt="" coords="48,157,120,184"/>
-<area shape="poly" title=" " alt="" coords="229,116,212,122,164,148,122,163,120,158,162,143,210,118,227,111"/>
+<area shape="rect" title=" " alt="" coords="415,165,507,192"/>
+<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="208,5,352,32"/>
+<area shape="poly" title=" " alt="" coords="446,152,414,98,392,70,365,46,345,35,348,30,369,42,396,66,418,95,450,150"/>
+<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="193,56,367,83"/>
+<area shape="poly" title=" " alt="" coords="436,155,404,125,366,97,340,86,342,81,368,92,408,121,440,152"/>
+<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="223,107,337,133"/>
+<area shape="poly" title=" " alt="" coords="408,162,366,148,330,137,331,131,368,143,409,157"/>
+<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="207,157,353,200"/>
+<area shape="poly" title=" " alt="" coords="400,181,353,181,353,176,400,176"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="199,224,361,251"/>
+<area shape="poly" title=" " alt="" coords="409,200,368,215,331,226,330,221,366,209,408,195"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="229,275,331,301"/>
+<area shape="poly" title=" " alt="" coords="440,206,408,237,368,265,332,280,330,275,366,260,404,232,436,202"/>
+<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="211,325,349,352"/>
+<area shape="poly" title=" " alt="" coords="450,208,418,262,396,291,369,316,348,327,345,322,365,311,392,287,414,259,446,205"/>
+<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="5,107,145,133"/>
+<area shape="poly" title=" " alt="" coords="207,123,145,123,145,117,207,117"/>
+<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="24,275,126,301"/>
+<area shape="poly" title=" " alt="" coords="213,291,126,291,126,285,213,285"/>
 </map>
 </div>
 
@@ -601,35 +526,33 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00146">146</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00113">113</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_image_a2db810109fab34435bb45cd14304cb48_icgraph.png" border="0" usemap="#anamespace_image_a2db810109fab34435bb45cd14304cb48_icgraph" alt=""/></div>
 <map name="anamespace_image_a2db810109fab34435bb45cd14304cb48_icgraph" id="anamespace_image_a2db810109fab34435bb45cd14304cb48_icgraph">
-<area shape="rect" title=" " alt="" coords="578,157,704,184"/>
-<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="438,157,530,184"/>
-<area shape="poly" title=" " alt="" coords="563,173,531,173,531,168,563,168"/>
-<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
-<area shape="poly" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
-<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
-<area shape="poly" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
-<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
-<area shape="poly" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
-<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
-<area shape="poly" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
-<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
-<area shape="poly" title=" " alt="" coords="463,197,431,225,391,249,335,267,276,278,219,282,168,283,168,278,219,277,275,272,333,262,389,244,428,221,459,193"/>
-<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
-<area shape="poly" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
-<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
-<area shape="poly" title=" " alt="" coords="470,199,438,246,416,271,392,293,357,311,354,306,388,288,412,267,434,243,466,196"/>
-<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
-<area shape="poly" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
-<area shape="poly" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
-<area shape="poly" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
-<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
-<area shape="poly" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
+<area shape="rect" title=" " alt="" coords="555,165,681,192"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="415,165,507,192"/>
+<area shape="poly" title=" " alt="" coords="540,181,508,181,508,176,540,176"/>
+<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="208,5,352,32"/>
+<area shape="poly" title=" " alt="" coords="446,152,414,98,392,70,365,46,345,35,348,30,369,42,396,66,418,95,450,150"/>
+<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="193,56,367,83"/>
+<area shape="poly" title=" " alt="" coords="436,155,404,125,366,97,340,86,342,81,368,92,408,121,440,152"/>
+<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="223,107,337,133"/>
+<area shape="poly" title=" " alt="" coords="408,162,366,148,330,137,331,131,368,143,409,157"/>
+<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="207,157,353,200"/>
+<area shape="poly" title=" " alt="" coords="400,181,353,181,353,176,400,176"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="199,224,361,251"/>
+<area shape="poly" title=" " alt="" coords="409,200,368,215,331,226,330,221,366,209,408,195"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="229,275,331,301"/>
+<area shape="poly" title=" " alt="" coords="440,206,408,237,368,265,332,280,330,275,366,260,404,232,436,202"/>
+<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="211,325,349,352"/>
+<area shape="poly" title=" " alt="" coords="450,208,418,262,396,291,369,316,348,327,345,322,365,311,392,287,414,259,446,205"/>
+<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="5,107,145,133"/>
+<area shape="poly" title=" " alt="" coords="207,123,145,123,145,117,207,117"/>
+<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="24,275,126,301"/>
+<area shape="poly" title=" " alt="" coords="213,291,126,291,126,285,213,285"/>
 </map>
 </div>
 
@@ -654,7 +577,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00160">160</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00127">127</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -692,28 +615,21 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00134">134</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00101">101</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_image_a27a33e59dfef6e7950f840f819f9759a_icgraph.png" border="0" usemap="#anamespace_image_a27a33e59dfef6e7950f840f819f9759a_icgraph" alt=""/></div>
 <map name="anamespace_image_a27a33e59dfef6e7950f840f819f9759a_icgraph" id="anamespace_image_a27a33e59dfef6e7950f840f819f9759a_icgraph">
-<area shape="rect" title=" " alt="" coords="552,85,664,112"/>
-<area shape="rect" href="class_text.html#a5ec0ab3772e61978a9955b23e96be8cd" title=" " alt="" coords="421,85,504,112"/>
-<area shape="poly" title=" " alt="" coords="537,101,505,101,505,96,537,96"/>
-<area shape="rect" href="class_text.html#a35738f5cc4cf3f3758dbedc264da8d58" title=" " alt="" coords="259,5,342,32"/>
-<area shape="poly" title=" " alt="" coords="428,79,372,46,342,34,344,29,374,42,430,74"/>
-<area shape="rect" href="class_text.html#a04fc62a0c41c328a0a6c071b28d55dcd" title=" " alt="" coords="240,56,361,83"/>
-<area shape="poly" title=" " alt="" coords="405,91,361,83,362,78,406,86"/>
-<area shape="rect" href="class_moderator_sequence.html#ab7f61b93b04552827b3c2983bba68fb0" title=" " alt="" coords="228,107,373,149"/>
-<area shape="poly" title=" " alt="" coords="406,111,374,117,373,112,405,106"/>
-<area shape="rect" href="class_moderator_sequence.html#a380da48888a6e1f36549f504fcd5b81e" title=" " alt="" coords="228,173,373,216"/>
-<area shape="poly" title=" " alt="" coords="433,124,374,164,353,175,350,170,372,159,430,119"/>
-<area shape="rect" href="class_text.html#a89d1d9d37b4869b850dacd8e72dd5768" title=" " alt="" coords="32,56,153,83"/>
-<area shape="poly" title=" " alt="" coords="224,72,154,72,154,67,224,67"/>
-<area shape="rect" href="class_moderator_sequence.html#adb01a14c340e6701c6dc231ae002e7a3" title=" " alt="" coords="5,148,180,175"/>
-<area shape="poly" title=" " alt="" coords="213,145,180,150,179,145,212,139"/>
-<area shape="poly" title=" " alt="" coords="212,183,179,178,180,173,213,178"/>
+<area shape="rect" title=" " alt="" coords="475,31,587,57"/>
+<area shape="rect" href="class_text.html#a5ec0ab3772e61978a9955b23e96be8cd" title=" " alt="" coords="344,31,427,57"/>
+<area shape="poly" title=" " alt="" coords="460,47,428,47,428,41,460,41"/>
+<area shape="rect" href="class_text.html#a35738f5cc4cf3f3758dbedc264da8d58" title=" " alt="" coords="194,5,277,32"/>
+<area shape="poly" title=" " alt="" coords="329,37,277,28,278,23,329,32"/>
+<area shape="rect" href="class_text.html#a04fc62a0c41c328a0a6c071b28d55dcd" title=" " alt="" coords="175,56,296,83"/>
+<area shape="poly" title=" " alt="" coords="329,56,297,62,296,56,328,51"/>
+<area shape="rect" href="class_text.html#a89d1d9d37b4869b850dacd8e72dd5768" title=" " alt="" coords="5,56,127,83"/>
+<area shape="poly" title=" " alt="" coords="159,72,127,72,127,67,159,67"/>
 </map>
 </div>
 
@@ -738,43 +654,37 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00168">168</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00135">135</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_image_a88e2782eb2ba81a77618072490e44d2b_icgraph.png" border="0" usemap="#anamespace_image_a88e2782eb2ba81a77618072490e44d2b_icgraph" alt=""/></div>
 <map name="anamespace_image_a88e2782eb2ba81a77618072490e44d2b_icgraph" id="anamespace_image_a88e2782eb2ba81a77618072490e44d2b_icgraph">
-<area shape="rect" title=" " alt="" coords="631,157,773,184"/>
-<area shape="rect" href="class_clear_scene.html#a6c5a8a3cac1db811ba3638a2e5aa9cae" title=" " alt="" coords="440,5,565,32"/>
-<area shape="poly" title=" " alt="" coords="681,146,639,95,612,69,582,46,559,35,561,30,585,42,615,65,643,92,685,143"/>
-<area shape="rect" href="class_game_over_scene.html#a0ca4f157ce8f5f8e2ccbef58ce93aa46" title=" " alt="" coords="424,56,580,83"/>
-<area shape="poly" title=" " alt="" coords="669,150,629,123,582,97,554,86,556,81,584,92,632,118,672,146"/>
-<area shape="rect" href="namespace_h_p_bar.html#a6226641f58b19a29980611c48cbf3ac3" title=" " alt="" coords="454,107,550,133"/>
-<area shape="poly" title=" " alt="" coords="631,156,550,135,551,129,632,150"/>
-<area shape="rect" href="class_moderator_sequence.html#adb01a14c340e6701c6dc231ae002e7a3" title=" " alt="" coords="5,267,180,293"/>
-<area shape="poly" title=" " alt="" coords="616,165,533,162,435,164,330,175,279,185,229,199,194,213,161,231,111,268,108,264,159,227,192,208,227,193,277,180,330,170,435,159,533,157,616,160"/>
-<area shape="rect" href="class_text.html#a5ec0ab3772e61978a9955b23e96be8cd" title=" " alt="" coords="461,208,544,235"/>
-<area shape="poly" title=" " alt="" coords="632,191,545,214,543,208,631,186"/>
-<area shape="rect" href="class_title_scene.html#af233ba17c8482c6bec262b8f73c1efed" title=" " alt="" coords="443,259,562,285"/>
-<area shape="poly" title=" " alt="" coords="672,196,632,223,584,249,556,261,554,256,582,244,629,218,669,191"/>
-<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="421,309,583,336"/>
-<area shape="poly" title=" " alt="" coords="685,199,643,250,615,276,585,300,561,311,559,306,582,295,612,272,639,246,681,195"/>
-<area shape="rect" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96" title=" " alt="" coords="229,107,372,133"/>
-<area shape="poly" title=" " alt="" coords="439,123,372,123,372,117,439,117"/>
-<area shape="rect" href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7" title=" " alt="" coords="30,107,155,133"/>
-<area shape="poly" title=" " alt="" coords="214,123,155,123,155,117,214,117"/>
-<area shape="rect" href="class_text.html#a35738f5cc4cf3f3758dbedc264da8d58" title=" " alt="" coords="259,208,342,235"/>
-<area shape="poly" title=" " alt="" coords="445,224,342,224,342,219,445,219"/>
-<area shape="rect" href="class_text.html#a04fc62a0c41c328a0a6c071b28d55dcd" title=" " alt="" coords="240,392,361,419"/>
-<area shape="poly" title=" " alt="" coords="447,234,423,249,410,264,403,280,399,313,396,347,388,365,375,382,359,394,356,389,371,378,384,362,390,346,394,313,398,279,405,262,419,245,444,229"/>
-<area shape="rect" href="class_moderator_sequence.html#ab7f61b93b04552827b3c2983bba68fb0" title=" " alt="" coords="228,259,373,301"/>
-<area shape="poly" title=" " alt="" coords="447,240,374,261,373,256,445,235"/>
-<area shape="rect" href="class_moderator_sequence.html#a380da48888a6e1f36549f504fcd5b81e" title=" " alt="" coords="228,325,373,368"/>
-<area shape="poly" title=" " alt="" coords="447,236,423,249,407,264,399,280,390,298,375,315,358,327,355,323,371,311,386,295,394,278,403,261,419,245,444,231"/>
-<area shape="rect" href="class_text.html#a89d1d9d37b4869b850dacd8e72dd5768" title=" " alt="" coords="32,392,153,419"/>
-<area shape="poly" title=" " alt="" coords="224,408,154,408,154,403,224,403"/>
-<area shape="poly" title=" " alt="" coords="212,283,180,283,180,277,212,277"/>
-<area shape="poly" title=" " alt="" coords="217,323,136,296,137,291,218,318"/>
+<area shape="rect" title=" " alt="" coords="590,157,732,184"/>
+<area shape="rect" href="class_clear_scene.html#a6c5a8a3cac1db811ba3638a2e5aa9cae" title=" " alt="" coords="393,5,518,32"/>
+<area shape="poly" title=" " alt="" coords="640,146,599,95,571,69,541,46,517,35,519,30,544,42,575,65,602,92,644,143"/>
+<area shape="rect" href="class_game_over_scene.html#a0ca4f157ce8f5f8e2ccbef58ce93aa46" title=" " alt="" coords="377,56,533,83"/>
+<area shape="poly" title=" " alt="" coords="628,150,588,123,541,97,511,86,513,81,543,92,591,118,631,146"/>
+<area shape="rect" href="namespace_h_p_bar.html#a6226641f58b19a29980611c48cbf3ac3" title=" " alt="" coords="407,107,503,133"/>
+<area shape="poly" title=" " alt="" coords="588,156,503,134,504,129,589,150"/>
+<area shape="rect" href="class_moderator_sequence.html#adb01a14c340e6701c6dc231ae002e7a3" title=" " alt="" coords="368,157,542,184"/>
+<area shape="poly" title=" " alt="" coords="575,173,543,173,543,168,575,168"/>
+<area shape="rect" href="class_text.html#a5ec0ab3772e61978a9955b23e96be8cd" title=" " alt="" coords="414,208,497,235"/>
+<area shape="poly" title=" " alt="" coords="590,191,498,214,496,209,588,186"/>
+<area shape="rect" href="class_title_scene.html#af233ba17c8482c6bec262b8f73c1efed" title=" " alt="" coords="396,259,515,285"/>
+<area shape="poly" title=" " alt="" coords="631,196,591,223,543,249,513,261,511,256,541,244,588,219,628,191"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="374,309,536,336"/>
+<area shape="poly" title=" " alt="" coords="644,198,602,250,575,277,544,300,520,311,518,306,541,295,571,272,599,246,640,195"/>
+<area shape="rect" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96" title=" " alt="" coords="178,107,320,133"/>
+<area shape="poly" title=" " alt="" coords="392,123,320,123,320,117,392,117"/>
+<area shape="rect" href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7" title=" " alt="" coords="5,107,130,133"/>
+<area shape="poly" title=" " alt="" coords="162,123,130,123,130,117,162,117"/>
+<area shape="rect" href="class_text.html#a35738f5cc4cf3f3758dbedc264da8d58" title=" " alt="" coords="207,183,291,209"/>
+<area shape="poly" title=" " alt="" coords="398,217,290,204,291,198,399,212"/>
+<area shape="rect" href="class_text.html#a04fc62a0c41c328a0a6c071b28d55dcd" title=" " alt="" coords="188,233,310,260"/>
+<area shape="poly" title=" " alt="" coords="399,231,310,242,310,237,398,226"/>
+<area shape="rect" href="class_text.html#a89d1d9d37b4869b850dacd8e72dd5768" title=" " alt="" coords="7,233,128,260"/>
+<area shape="poly" title=" " alt="" coords="172,249,128,249,128,244,172,244"/>
 </map>
 </div>
 
@@ -809,7 +719,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>Px単位に変換したに変換したfloat</dd></dl>
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00182">182</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00149">149</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -838,7 +748,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>Px単位に変換したXMFLOAT3</dd></dl>
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00175">175</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00142">142</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -885,7 +795,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>NDCに変換した座標</dd></dl>
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00197">197</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00164">164</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -913,7 +823,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>NDCに変換した座標</dd></dl>
 
-<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00192">192</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8cpp_source.html">Image.cpp</a> の <a class="el" href="_image_8cpp_source.html#l00159">159</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -932,14 +842,14 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </div>
 </div>
 <h2 class="groupheader">変数詳解</h2>
-<a id="aa4d7aa6f46e1f13d09a9723d2eab202f" name="aa4d7aa6f46e1f13d09a9723d2eab202f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4d7aa6f46e1f13d09a9723d2eab202f">&#9670;&#160;</a></span>_datas</h2>
+<a id="a825388898ef7179c2db00d46ba4f56a5" name="a825388898ef7179c2db00d46ba4f56a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825388898ef7179c2db00d46ba4f56a5">&#9670;&#160;</a></span>_data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_image_1_1_image_data.html">ImageData</a>*&gt; Image::_datas</td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="struct_image_1_1_image_data.html">ImageData</a>&gt; &gt; Image::_data</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -968,7 +878,7 @@ $(function(){initNavTree('namespace_image.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00124">124</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00122">122</a> 行目に定義があります。</p>
 
 </div>
 </div>

@@ -1,9 +1,5 @@
 var namespaces_dup =
 [
-    [ "json_literals", "namespaceliterals_1_1json__literals.html", [
-      [ "operator\"\"_json", "namespaceliterals_1_1json__literals.html#ae61a268eddc25d7a0fee62021a3e4f34", null ],
-      [ "operator\"\"_json_pointer", "namespaceliterals_1_1json__literals.html#a6ecf43f6a3b7dbb6008788fd0cd572c0", null ]
-    ] ],
     [ "AreaModels", "namespace_area_models.html", [
       [ "AREATYPE", "namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6f", [
         [ "CIRCLE", "namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6fa95eaeeaa10fa63d17ad7cb91f4f0637e", null ],
@@ -45,7 +41,6 @@ var namespaces_dup =
       [ "Log", "namespace_debug.html#a30ef98e25fe1b864f3814d86dba0482a", null ],
       [ "Log", "namespace_debug.html#a559ad0e819458580e6a11aba70849b94", null ]
     ] ],
-    [ "detail", "namespacedetail.html", "namespacedetail" ],
     [ "Direct3D", "namespace_direct3_d.html", "namespace_direct3_d" ],
     [ "EASE", "namespace_e_a_s_e.html", [
       [ "easeType", "namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2", [
@@ -160,8 +155,6 @@ var namespaces_dup =
       [ "prevKeyState_", "namespace_input.html#acd2276fed2a160ec82c6ade38706d906", null ],
       [ "prevMouseState_", "namespace_input.html#a21258a1ef09d6664a8789edcfd8fa081", null ]
     ] ],
-    [ "literals", "namespaceliterals.html", "namespaceliterals" ],
     [ "Model", "namespace_model.html", "namespace_model" ],
-    [ "std", "namespacestd.html", "namespacestd" ],
     [ "VFX", "namespace_v_f_x.html", "namespace_v_f_x" ]
 ];

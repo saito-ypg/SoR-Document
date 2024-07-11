@@ -1,13 +1,9 @@
 <map id="Sprite::Load" name="Sprite::Load">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,97,108"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,97,83"/>
 <area shape="rect" id="Node000002" href="$class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="145,5,310,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,79,144,42,160,35,162,40,146,46,76,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,54,163,34,165,39,98,59"/>
 <area shape="rect" id="Node000003" href="$class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="172,56,283,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,86,156,77,157,82,97,91"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,67,157,67,157,72,97,72"/>
 <area shape="rect" id="Node000004" href="$class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="168,107,287,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,99,153,107,152,112,97,104"/>
-<area shape="rect" id="Node000005" href="$class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="177,157,278,184"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="76,106,146,143,164,150,162,155,144,148,73,111"/>
-<area shape="rect" id="Node000006" href="$_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="358,157,478,184"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="278,168,342,168,342,173,278,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,80,165,99,163,105,96,85"/>
 </map>

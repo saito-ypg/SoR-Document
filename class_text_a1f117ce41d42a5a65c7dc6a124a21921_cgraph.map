@@ -1,19 +1,7 @@
 <map id="Text::Initialize" name="Text::Initialize">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,107,133"/>
-<area shape="rect" id="Node000002" href="$namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="155,107,247,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,117,139,117,139,123,107,123"/>
-<area shape="rect" id="Node000003" href="$class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="312,81,403,108"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,110,297,102,298,107,248,115"/>
-<area shape="rect" id="Node000009" href="$namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="295,132,420,159"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="248,125,280,130,279,135,247,130"/>
-<area shape="rect" id="Node000004" href="$class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="468,5,634,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="385,78,467,42,486,35,488,40,469,46,388,83"/>
-<area shape="rect" id="Node000005" href="$class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="495,56,607,83"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="403,86,479,76,480,81,404,91"/>
-<area shape="rect" id="Node000006" href="$class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="492,107,610,133"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="404,98,477,108,476,113,403,103"/>
-<area shape="rect" id="Node000007" href="$class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="501,157,601,184"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="395,106,421,118,469,143,487,150,485,155,467,148,419,122,393,111"/>
-<area shape="rect" id="Node000008" href="$_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="682,157,802,184"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="602,168,666,168,666,173,602,173"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect" id="Node000002" href="$namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="155,5,247,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,16,139,16,139,21,107,21"/>
+<area shape="rect" id="Node000003" href="$namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="295,5,420,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,16,279,16,279,21,248,21"/>
 </map>

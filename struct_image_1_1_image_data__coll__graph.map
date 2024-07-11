@@ -1,12 +1,8 @@
 <map id="Image::ImageData" name="Image::ImageData">
-<area shape="rect" id="Node000001" title=" " alt="" coords="54,187,181,213"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,59,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,136,57,161,72,174,89,184,86,188,69,178,53,164,38,138"/>
-<area shape="rect" id="Node000003" href="$class_sprite.html" title=" " alt="" coords="86,96,141,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,138,119,186,114,186,112,138"/>
-<area shape="rect" id="Node000004" href="$class_texture.html" title=" " alt="" coords="81,5,146,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,48,116,95,111,95,111,48"/>
-<area shape="rect" id="Node000005" href="$class_transform.html" title=" " alt="" coords="165,96,243,123"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="190,137,167,165,138,188,135,184,163,161,186,134"/>
-<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="260,100,270,109,261,118,244,120,243,115,259,113,265,109,257,105"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="12,96,138,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,59,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,47,38,71,46,83,57,94,54,97,42,87,33,73,27,48"/>
+<area shape="rect" id="Node000003" href="$class_transform.html" title=" " alt="" coords="82,5,161,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,47,84,97,79,94,105,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="178,10,187,19,179,27,161,30,160,25,176,23,182,19,174,14"/>
 </map>

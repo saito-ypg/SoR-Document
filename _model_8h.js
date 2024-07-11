@@ -9,7 +9,6 @@ var _model_8h =
     [ "Initialize", "_model_8h.html#af584f6fe3cf2ac503110ceb126b9b4ed", null ],
     [ "Load", "_model_8h.html#a69443687c12bb12394ae8bf6a5c22e44", null ],
     [ "RayCast", "_model_8h.html#ac47d55232470e0b96feb538e000012e1", null ],
-    [ "Release", "_model_8h.html#ace98e9790323a88829195b4abb15e584", null ],
     [ "SetAnimFrame", "_model_8h.html#a4e1ee8e5f8b3d34d39b4133261838db4", null ],
     [ "SetTransform", "_model_8h.html#aa9752d2c71b2163a3f1088d4c32ab3ee", null ]
 ];

@@ -19,7 +19,6 @@ var _image_8h =
     [ "isMouseOver", "_image_8h.html#a822c87c875d3d5bacc4504990884098d", null ],
     [ "isPointInside", "_image_8h.html#a81a8c354cae6aa090535a90a4e07a149", null ],
     [ "Load", "_image_8h.html#ab374976a45fdfc0ffa188ee9b9dac6e9", null ],
-    [ "Release", "_image_8h.html#acf7303142b129a3b064c782462e97802", null ],
     [ "ResetRect", "_image_8h.html#a2db810109fab34435bb45cd14304cb48", null ],
     [ "SetAlpha", "_image_8h.html#a3739c0c81e2d0a8efff1fb5af41a0090", null ],
     [ "SetRect", "_image_8h.html#a27a33e59dfef6e7950f840f819f9759a", null ],

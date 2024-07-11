@@ -9,7 +9,6 @@ var _image_8cpp =
     [ "isMouseOver", "_image_8cpp.html#a822c87c875d3d5bacc4504990884098d", null ],
     [ "isPointInside", "_image_8cpp.html#a81a8c354cae6aa090535a90a4e07a149", null ],
     [ "Load", "_image_8cpp.html#ab374976a45fdfc0ffa188ee9b9dac6e9", null ],
-    [ "Release", "_image_8cpp.html#acf7303142b129a3b064c782462e97802", null ],
     [ "ResetRect", "_image_8cpp.html#a2db810109fab34435bb45cd14304cb48", null ],
     [ "SetAlpha", "_image_8cpp.html#a3739c0c81e2d0a8efff1fb5af41a0090", null ],
     [ "SetRect", "_image_8cpp.html#a27a33e59dfef6e7950f840f819f9759a", null ],
@@ -18,5 +17,5 @@ var _image_8cpp =
     [ "toPixel", "_image_8cpp.html#a547b7c2db03ce5f601986ac6c67b7882", null ],
     [ "toPos", "_image_8cpp.html#ac0b36774eefe09ef6648a9d5314f8295", null ],
     [ "toPos", "_image_8cpp.html#af563910c608e9d72aa0acef8fd626728", null ],
-    [ "_datas", "_image_8cpp.html#aa4d7aa6f46e1f13d09a9723d2eab202f", null ]
+    [ "_data", "_image_8cpp.html#a825388898ef7179c2db00d46ba4f56a5", null ]
 ];

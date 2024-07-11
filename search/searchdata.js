@@ -1,17 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: "123456789:_abcdefghijklmnopqrstuvwxy~おアエゲコプ余作入基実演現非順",
-  1: "abcdefghijlmnoprstvw",
-  2: ":acdehilmsv",
-  3: "abcdefghijmprstv",
-  4: "abcdefghijklmnoprstuvw~",
-  5: "_abcdefghiklmnoprstuvwx",
-  6: "abcdefghijklmnoprstuv",
-  7: "abcehipstv",
-  8: "abcdefijklmnopqrsuvwxy",
-  9: ":bcdfjosw",
-  10: "_dijnrs",
-  11: "dlprst実非"
+  0: "123456789_abcdefghijklmnopqrstuvwxy~おアエゲコプ余作入基実演現順",
+  1: "abcdefgimprstv",
+  2: "acdehimv",
+  3: "abcdefghimprstv",
+  4: "abcdefgiklmnoprstuvw~",
+  5: "_abcdefghiklmnoprstuvw",
+  6: "abcehps",
+  7: "bcdefilmnopqrsuwxy",
+  8: "bcfs",
+  9: "_dnrs",
+  10: "dlprst実"
 };
 
 var indexSectionNames =
@@ -22,12 +21,11 @@ var indexSectionNames =
   3: "files",
   4: "functions",
   5: "variables",
-  6: "typedefs",
-  7: "enums",
-  8: "enumvalues",
-  9: "related",
-  10: "defines",
-  11: "pages"
+  6: "enums",
+  7: "enumvalues",
+  8: "related",
+  9: "defines",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -38,11 +36,10 @@ var indexSectionLabels =
   3: "ファイル",
   4: "関数",
   5: "変数",
-  6: "型定義",
-  7: "列挙型",
-  8: "列挙値",
-  9: "フレンド",
-  10: "マクロ定義",
-  11: "ページ"
+  6: "列挙型",
+  7: "列挙値",
+  8: "フレンド",
+  9: "マクロ定義",
+  10: "ページ"
 };
 

@@ -17,10 +17,8 @@ var searchData=
   ['spin_14',['spin',['../struct_emitter_data.html#a91e185dadde8087822cd93ebf0cb76bc',1,'EmitterData']]],
   ['start_15',['start',['../struct_ray_cast_data.html#aab5c4eb7c1dd2645109b8c8447e0bdd2',1,'RayCastData']]],
   ['startframe_16',['startFrame',['../struct_model_1_1_model_data.html#a633238de07c9bd6d3e850c1e7e0bb9c9',1,'Model::ModelData']]],
-  ['state_17',['state',['../classdetail_1_1serializer.html#a2db3d61cfc616f83763b6d4a03d0d772',1,'detail::serializer']]],
-  ['status_5f_18',['status_',['../class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64',1,'GameActor']]],
-  ['stepindex_19',['stepindex',['../class_skill_base.html#aff91b03e575821b3c86214aec492c01e',1,'SkillBase']]],
-  ['steptime_20',['steptime',['../class_skill_base.html#af0a4456cfdbb048552ec5eed9e3b1bcb',1,'SkillBase']]],
-  ['string_5fbuffer_21',['string_buffer',['../classdetail_1_1serializer.html#a27a61728ed0fbc65de009286531a6e70',1,'detail::serializer']]],
-  ['svnum_22',['svNum',['../struct_audio_1_1_audio_data.html#a0a90b2168c518d3ec14808c1c9aa9dd3',1,'Audio::AudioData']]]
+  ['status_5f_17',['status_',['../class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64',1,'GameActor']]],
+  ['stepindex_18',['stepindex',['../class_skill_base.html#aff91b03e575821b3c86214aec492c01e',1,'SkillBase']]],
+  ['steptime_19',['steptime',['../class_skill_base.html#af0a4456cfdbb048552ec5eed9e3b1bcb',1,'SkillBase']]],
+  ['svnum_20',['svNum',['../struct_audio_1_1_audio_data.html#a0a90b2168c518d3ec14808c1c9aa9dd3',1,'Audio::AudioData']]]
 ];

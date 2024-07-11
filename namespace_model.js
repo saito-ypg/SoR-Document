@@ -9,8 +9,7 @@ var namespace_model =
     [ "Initialize", "namespace_model.html#af584f6fe3cf2ac503110ceb126b9b4ed", null ],
     [ "Load", "namespace_model.html#a69443687c12bb12394ae8bf6a5c22e44", null ],
     [ "RayCast", "namespace_model.html#ac47d55232470e0b96feb538e000012e1", null ],
-    [ "Release", "namespace_model.html#ace98e9790323a88829195b4abb15e584", null ],
     [ "SetAnimFrame", "namespace_model.html#a4e1ee8e5f8b3d34d39b4133261838db4", null ],
     [ "SetTransform", "namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee", null ],
-    [ "_datas", "namespace_model.html#a9812721a3c0c058dfd7df88e1d5511d6", null ]
+    [ "_data", "namespace_model.html#a24a3069128460898f6a036b1d37b7be8", null ]
 ];

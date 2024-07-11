@@ -147,14 +147,12 @@ var NAVTREE =
       [ "現在の実装状況", "md__so_r_2_r_e_a_d_m_e.html#autotoc_md117", null ]
     ] ],
     [ "実装すること", "md__so_r_2todo.html", null ],
-    [ "非推奨一覧", "deprecated.html", null ],
     [ "名前空間", "namespaces.html", [
       [ "名前空間一覧", "namespaces.html", "namespaces_dup" ],
       [ "名前空間メンバ", "namespacemembers.html", [
-        [ "全て", "namespacemembers.html", "namespacemembers_dup" ],
-        [ "関数", "namespacemembers_func.html", "namespacemembers_func" ],
+        [ "全て", "namespacemembers.html", null ],
+        [ "関数", "namespacemembers_func.html", null ],
         [ "変数", "namespacemembers_vars.html", null ],
-        [ "型定義", "namespacemembers_type.html", null ],
         [ "列挙型", "namespacemembers_enum.html", null ],
         [ "列挙値", "namespacemembers_eval.html", null ]
       ] ]
@@ -166,8 +164,7 @@ var NAVTREE =
       [ "クラスメンバ", "functions.html", [
         [ "全て", "functions.html", "functions_dup" ],
         [ "関数", "functions_func.html", "functions_func" ],
-        [ "変数", "functions_vars.html", "functions_vars" ],
-        [ "型定義", "functions_type.html", null ],
+        [ "変数", "functions_vars.html", null ],
         [ "列挙型", "functions_enum.html", null ],
         [ "列挙値", "functions_eval.html", null ],
         [ "関連関数", "functions_rela.html", null ]
@@ -176,13 +173,12 @@ var NAVTREE =
     [ "ファイル", "files.html", [
       [ "ファイル一覧", "files.html", "files_dup" ],
       [ "ファイルメンバ", "globals.html", [
-        [ "全て", "globals.html", "globals_dup" ],
+        [ "全て", "globals.html", null ],
         [ "関数", "globals_func.html", null ],
         [ "変数", "globals_vars.html", null ],
-        [ "型定義", "globals_type.html", null ],
         [ "列挙型", "globals_enum.html", null ],
         [ "列挙値", "globals_eval.html", null ],
-        [ "マクロ定義", "globals_defs.html", "globals_defs" ]
+        [ "マクロ定義", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -192,19 +188,11 @@ var NAVTREEINDEX =
 [
 "_actor_collider_8cpp.html",
 "_game_actor_8h.html",
-"_sprite_8cpp.html",
-"class_game_object.html#aa80f2aaebee30f53dc468ebf9e2418fb",
-"classbasic__json.html#a2e11a3f2a234cd296b515173b6a3b986",
-"classdetail_1_1input__stream__adapter.html#a7b698294f93654dd480578a8a6e4028a",
-"classdetail_1_1json__sax__acceptor.html#abaf24f1336b5a204cfad9132967a9aab",
-"classdetail_1_1primitive__iterator__t.html#a06a467805e83af63b4428325889cf5c4",
-"globals_n.html",
-"json_8hpp.html#a8c225a3450f5d8a42cded36558ce54bf",
-"md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md35",
-"namespace_image.html#acf7303142b129a3b064c782462e97802",
-"namespacedetail_1_1impl.html#ac7d52b8817f5a5d4147a8b39dc31a8f1",
-"structadl__serializer.html",
-"structdetail_1_1is__ordered__map_1_1two.html#a762e0d409e9c4f003df0638c04dfa3c8"
+"_test_scene_8cpp_source.html",
+"class_game_object.html#ac05d364e5acbfdf52368092e963887c0",
+"functions_func_s.html",
+"namespace_e_a_s_e.html#a8033eba8abe013f858f98990fb1f0923",
+"struct_model_1_1_model_data.html#a3a676178211646a9581fe1a87e57df27"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

@@ -117,8 +117,6 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
 <tr class="separator:a69443687c12bb12394ae8bf6a5c22e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a444ada60ab1281d88d5062bff87bc65b" id="r_a444ada60ab1281d88d5062bff87bc65b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a444ada60ab1281d88d5062bff87bc65b">Draw</a> (int handle)</td></tr>
 <tr class="separator:a444ada60ab1281d88d5062bff87bc65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace98e9790323a88829195b4abb15e584" id="r_ace98e9790323a88829195b4abb15e584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace98e9790323a88829195b4abb15e584">Release</a> (int handle)</td></tr>
-<tr class="separator:ace98e9790323a88829195b4abb15e584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01b440de2ec82f0e2e68de32b34a9a4" id="r_aa01b440de2ec82f0e2e68de32b34a9a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01b440de2ec82f0e2e68de32b34a9a4">AllRelease</a> ()</td></tr>
 <tr class="separator:aa01b440de2ec82f0e2e68de32b34a9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1ee8e5f8b3d34d39b4133261838db4" id="r_a4e1ee8e5f8b3d34d39b4133261838db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1ee8e5f8b3d34d39b4133261838db4">SetAnimFrame</a> (int handle, int startFrame, int endFrame, float animSpeed)</td></tr>
@@ -136,8 +134,8 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
-<tr class="memitem:a9812721a3c0c058dfd7df88e1d5511d6" id="r_a9812721a3c0c058dfd7df88e1d5511d6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_model_1_1_model_data.html">ModelData</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9812721a3c0c058dfd7df88e1d5511d6">_datas</a></td></tr>
-<tr class="separator:a9812721a3c0c058dfd7df88e1d5511d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a3069128460898f6a036b1d37b7be8" id="r_a24a3069128460898f6a036b1d37b7be8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_model_1_1_model_data.html">ModelData</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24a3069128460898f6a036b1d37b7be8">_data</a></td></tr>
+<tr class="separator:a24a3069128460898f6a036b1d37b7be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">関数詳解</h2>
 <a id="aa01b440de2ec82f0e2e68de32b34a9a4" name="aa01b440de2ec82f0e2e68de32b34a9a4"></a>
@@ -155,17 +153,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00125">125</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_model_aa01b440de2ec82f0e2e68de32b34a9a4_cgraph.png" border="0" usemap="#anamespace_model_aa01b440de2ec82f0e2e68de32b34a9a4_cgraph" alt=""/></div>
-<map name="anamespace_model_aa01b440de2ec82f0e2e68de32b34a9a4_cgraph" id="anamespace_model_aa01b440de2ec82f0e2e68de32b34a9a4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,132,32"/>
-<area shape="rect" href="namespace_model.html#ace98e9790323a88829195b4abb15e584" title=" " alt="" coords="180,5,291,32"/>
-<area shape="poly" title=" " alt="" coords="132,16,164,16,164,21,132,21"/>
-</map>
-</div>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00092">92</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -198,7 +186,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00070">70</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -246,7 +234,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00146">146</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00106">106</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -269,7 +257,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00153">153</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00113">113</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -288,7 +276,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00175">175</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00135">135</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -320,7 +308,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00011">11</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00010">10</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -329,8 +317,6 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
 <area shape="rect" title=" " alt="" coords="5,5,117,32"/>
 <area shape="rect" href="namespace_model.html#aa01b440de2ec82f0e2e68de32b34a9a4" title=" " alt="" coords="165,5,291,32"/>
 <area shape="poly" title=" " alt="" coords="117,16,149,16,149,21,117,21"/>
-<area shape="rect" href="namespace_model.html#ace98e9790323a88829195b4abb15e584" title=" " alt="" coords="339,5,450,32"/>
-<area shape="poly" title=" " alt="" coords="291,16,324,16,324,21,291,21"/>
 </map>
 </div>
 
@@ -351,17 +337,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00017">17</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_model_a69443687c12bb12394ae8bf6a5c22e44_cgraph.png" border="0" usemap="#anamespace_model_a69443687c12bb12394ae8bf6a5c22e44_cgraph" alt=""/></div>
-<map name="anamespace_model_a69443687c12bb12394ae8bf6a5c22e44_cgraph" id="anamespace_model_a69443687c12bb12394ae8bf6a5c22e44_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,98,32"/>
-<area shape="rect" href="class_fbx.html#a7dc06d948358a90b6caee02e6cb2f486" title=" " alt="" coords="146,5,225,32"/>
-<area shape="poly" title=" " alt="" coords="98,16,130,16,130,21,98,21"/>
-</map>
-</div>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00016">16</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -408,7 +384,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00182">182</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00142">142</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -417,43 +393,6 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
 <area shape="rect" title=" " alt="" coords="5,5,120,32"/>
 <area shape="rect" href="class_transform.html#af089d0bfb52885607f0fe6138701a105" title=" " alt="" coords="168,5,313,32"/>
 <area shape="poly" title=" " alt="" coords="120,16,152,16,152,21,120,21"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ace98e9790323a88829195b4abb15e584" name="ace98e9790323a88829195b4abb15e584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace98e9790323a88829195b4abb15e584">&#9670;&#160;</a></span>Release()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Model::Release </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>handle</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00094">94</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_model_ace98e9790323a88829195b4abb15e584_icgraph.png" border="0" usemap="#anamespace_model_ace98e9790323a88829195b4abb15e584_icgraph" alt=""/></div>
-<map name="anamespace_model_ace98e9790323a88829195b4abb15e584_icgraph" id="anamespace_model_ace98e9790323a88829195b4abb15e584_icgraph">
-<area shape="rect" title=" " alt="" coords="401,81,512,108"/>
-<area shape="rect" href="namespace_model.html#aa01b440de2ec82f0e2e68de32b34a9a4" title=" " alt="" coords="219,56,345,83"/>
-<area shape="poly" title=" " alt="" coords="385,87,345,81,346,76,386,82"/>
-<area shape="rect" href="class_game_actor.html#a7a324573278ae34de1df8548437173c8" title=" " alt="" coords="211,107,353,133"/>
-<area shape="poly" title=" " alt="" coords="386,108,354,112,353,107,385,102"/>
-<area shape="rect" href="namespace_model.html#af584f6fe3cf2ac503110ceb126b9b4ed" title=" " alt="" coords="28,5,140,32"/>
-<area shape="poly" title=" " alt="" coords="211,54,138,35,140,30,213,49"/>
-<area shape="rect" href="class_scene_manager.html#ae45b05336daf503db67a4a95a19c0947" title=" " alt="" coords="5,56,163,83"/>
-<area shape="poly" title=" " alt="" coords="203,72,163,72,163,67,203,67"/>
-<area shape="rect" href="_main_8cpp.html#a649028f00e62144f15f268d14bc6dae0" title=" " alt="" coords="48,107,120,133"/>
-<area shape="poly" title=" " alt="" coords="213,90,121,113,120,108,211,85"/>
 </map>
 </div>
 
@@ -488,7 +427,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00139">139</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00099">99</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -511,7 +450,7 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00163">163</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00123">123</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -545,19 +484,19 @@ $(function(){initNavTree('namespace_model.html',''); initResizable(true); });
 </div>
 </div>
 <h2 class="groupheader">変数詳解</h2>
-<a id="a9812721a3c0c058dfd7df88e1d5511d6" name="a9812721a3c0c058dfd7df88e1d5511d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9812721a3c0c058dfd7df88e1d5511d6">&#9670;&#160;</a></span>_datas</h2>
+<a id="a24a3069128460898f6a036b1d37b7be8" name="a24a3069128460898f6a036b1d37b7be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a3069128460898f6a036b1d37b7be8">&#9670;&#160;</a></span>_data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_model_1_1_model_data.html">ModelData</a>*&gt; Model::_datas</td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt;<a class="el" href="struct_model_1_1_model_data.html">ModelData</a>&gt; &gt; Model::_data</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00008">8</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_model_8cpp_source.html">Model.cpp</a> の <a class="el" href="_model_8cpp_source.html#l00007">7</a> 行目に定義があります。</p>
 
 </div>
 </div>
