@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/sources/AttackRange.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_attack_range_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">AttackRange.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_attack_range_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//攻撃範囲の構造体を記述</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&lt;DirectXMath.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&lt;functional&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="areamodels_8h.html">areamodels.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span>DirectX;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span><a class="code hl_struct" href="structactor_addr.html">actorAddr</a>;</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_attack_range_base.html">    8</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_attack_range_base.html">AttackRangeBase</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">//中心位置。扇の場合は中心角の位置</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_attack_range_base.html#a0c2f36d43b2890c965edbba57a93dbfa">   11</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_attack_range_base.html#a0c2f36d43b2890c965edbba57a93dbfa">position_</a>;<span class="comment">//中心座標</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_attack_range_base.html#a69238f8b6aff046f66c43aaf487dbeab">   12</a></span>    std::function&lt;void()&gt;<a class="code hl_variable" href="struct_attack_range_base.html#a69238f8b6aff046f66c43aaf487dbeab">AreaTransition</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="struct_attack_range_base.html#a812f45f8df1b78e84758d6ef1db7cf12">AttackRangeBase</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="struct_attack_range_base.html#a812f45f8df1b78e84758d6ef1db7cf12">AttackRangeBase</a>(XMFLOAT3 pos);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_attack_range_base.html#ae30db5f8b545bd1b8cc5b93c86d899bb">   15</a></span>    <a class="code hl_enumeration" href="namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6f">AreaModels::AREATYPE</a> <a class="code hl_function" href="struct_attack_range_base.html#ae30db5f8b545bd1b8cc5b93c86d899bb">getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="struct_attack_range_base.html#aa9cc4a956dbf2deaeea939b8f5fec785">areatype_</a>; }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_attack_range_base.html#aadb814bd78f0739223639045ed284b1d">   16</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_attack_range_base.html#aadb814bd78f0739223639045ed284b1d">IsHit</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structactor_addr.html">actorAddr</a>&amp; data)=0;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_attack_range_base.html#ad69e89bf692e4905c1ad36f880ba0ef9">   17</a></span>    <span class="keyword">virtual</span> XMVECTOR <a class="code hl_function" href="struct_attack_range_base.html#ad69e89bf692e4905c1ad36f880ba0ef9">getDir</a>(XMFLOAT3 pos)<span class="keyword">const</span> = 0;<span class="comment">//当たり判定の中心と対象との距離をとる</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_attack_range_base.html#aa9cc4a956dbf2deaeea939b8f5fec785">   19</a></span>    <a class="code hl_enumeration" href="namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6f">AreaModels::AREATYPE</a> <a class="code hl_variable" href="struct_attack_range_base.html#aa9cc4a956dbf2deaeea939b8f5fec785">areatype_</a>;<span class="comment">//攻撃エリア。要初期化</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_attack_range_circle.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_attack_range_circle.html">AttackRangeCircle</a>        :<span class="keyword">public</span> <a class="code hl_struct" href="struct_attack_range_base.html">AttackRangeBase</a><span class="comment">//円形の攻撃範囲データ</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_attack_range_circle.html#a4c3485554d350db5b8938b0b1aee3276">   26</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_attack_range_circle.html#a4c3485554d350db5b8938b0b1aee3276">radius_</a>;<span class="comment">//半径</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="struct_attack_range_circle.html#aabc74f1332b1fd4bf947345071433cf6">AttackRangeCircle</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="struct_attack_range_circle.html#aabc74f1332b1fd4bf947345071433cf6">AttackRangeCircle</a>(XMFLOAT3 pos);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_attack_range_circle.html#a76518c457577a0cf3eb816d3303ddc70">IsHit</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structactor_addr.html">actorAddr</a> &amp;data)<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    XMVECTOR <a class="code hl_function" href="struct_attack_range_circle.html#a9829d3d7de020e92e0fd21aa9a0c24f8">getDir</a>(XMFLOAT3 pos)<span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_attack_range_quad.html">   32</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_attack_range_quad.html">AttackRangeQuad</a>          :<span class="keyword">public</span> <a class="code hl_struct" href="struct_attack_range_base.html">AttackRangeBase</a><span class="comment">//矩形の攻撃範囲データ</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_attack_range_quad.html#ab45342df155139ea6621455dd0b1100c">   34</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_attack_range_quad.html#ab45342df155139ea6621455dd0b1100c">width_</a>;<span class="comment">//中央からの幅、実際は倍。奥(Z+方向)が正面とした時のX軸成分がwidth,</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_attack_range_quad.html#a5d0612bc6266923b2e9a4f806a9ea485">   35</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_attack_range_quad.html#a5d0612bc6266923b2e9a4f806a9ea485">length_</a>;<span class="comment">//中央からの奥行き、実際は倍。奥(Z+方向)が正面とした時のZ軸成分がwidth,</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_attack_range_quad.html#a4d56d6a11e71b032c18d274a60737b16">   36</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_attack_range_quad.html#a4d56d6a11e71b032c18d274a60737b16">rotate_</a>;<span class="comment">//y軸回転</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="struct_attack_range_quad.html#a14cb7a7fd65516e6eb0ce77268472130">AttackRangeQuad</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="struct_attack_range_quad.html#a14cb7a7fd65516e6eb0ce77268472130">AttackRangeQuad</a>(XMFLOAT3 pos);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_attack_range_quad.html#a691b2d72756111dd08dab17525ec1060">IsHit</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structactor_addr.html">actorAddr</a>&amp; data)<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    XMVECTOR <a class="code hl_function" href="struct_attack_range_quad.html#a862aed692ffac7bb56190eef6735dce4">getDir</a>(XMFLOAT3 pos)<span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_attack_range_circuler_sector.html">   42</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_attack_range_circuler_sector.html">AttackRangeCirculerSector</a> :<span class="keyword">public</span> <a class="code hl_struct" href="struct_attack_range_base.html">AttackRangeBase</a><span class="comment">//扇型攻撃範囲データ</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_attack_range_circuler_sector.html#aa5c676e53553e99ccd0337ddb70fc654">   44</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_attack_range_circuler_sector.html#aa5c676e53553e99ccd0337ddb70fc654">radius_</a>;<span class="comment">//半径</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_attack_range_circuler_sector.html#af906b1086c94c834e2d921b418a7ef4c">   45</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_attack_range_circuler_sector.html#af906b1086c94c834e2d921b418a7ef4c">centerAngle_</a>;<span class="comment">//片側の開き具合、degで入力</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_attack_range_circuler_sector.html#abf81d259146b07bff0fb0448ba6cfa24">   46</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_attack_range_circuler_sector.html#abf81d259146b07bff0fb0448ba6cfa24">rotate_</a>;<span class="comment">//中心角の二等分線の回転,y軸</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="struct_attack_range_circuler_sector.html#a5cc6f9be9cc2000ea377979a5217d22c">AttackRangeCirculerSector</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="struct_attack_range_circuler_sector.html#a5cc6f9be9cc2000ea377979a5217d22c">AttackRangeCirculerSector</a>(XMFLOAT3 pos);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_attack_range_circuler_sector.html#a6f89e1154bc203861fb374b2d99e7b09">IsHit</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structactor_addr.html">actorAddr</a>&amp; data)<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    XMVECTOR <a class="code hl_function" href="struct_attack_range_circuler_sector.html#a8543389337cfc0a57dbd12e9d575d0be">getDir</a>(XMFLOAT3 pos)<span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="ttc" id="aareamodels_8h_html"><div class="ttname"><a href="areamodels_8h.html">areamodels.h</a></div></div>
+<div class="ttc" id="anamespace_area_models_html_a5bc5b968a6d7d7a14ab6de6b76578f6f"><div class="ttname"><a href="namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6f">AreaModels::AREATYPE</a></div><div class="ttdeci">AREATYPE</div><div class="ttdef"><b>Definition</b> <a href="areamodels_8h_source.html#l00006">areamodels.h:6</a></div></div>
+<div class="ttc" id="astruct_attack_range_base_html"><div class="ttname"><a href="struct_attack_range_base.html">AttackRangeBase</a></div><div class="ttdef"><b>Definition</b> <a href="#l00008">AttackRange.h:9</a></div></div>
+<div class="ttc" id="astruct_attack_range_base_html_a0c2f36d43b2890c965edbba57a93dbfa"><div class="ttname"><a href="struct_attack_range_base.html#a0c2f36d43b2890c965edbba57a93dbfa">AttackRangeBase::position_</a></div><div class="ttdeci">XMFLOAT3 position_</div><div class="ttdef"><b>Definition</b> <a href="#l00011">AttackRange.h:11</a></div></div>
+<div class="ttc" id="astruct_attack_range_base_html_a69238f8b6aff046f66c43aaf487dbeab"><div class="ttname"><a href="struct_attack_range_base.html#a69238f8b6aff046f66c43aaf487dbeab">AttackRangeBase::AreaTransition</a></div><div class="ttdeci">std::function&lt; void()&gt; AreaTransition</div><div class="ttdef"><b>Definition</b> <a href="#l00012">AttackRange.h:12</a></div></div>
+<div class="ttc" id="astruct_attack_range_base_html_a812f45f8df1b78e84758d6ef1db7cf12"><div class="ttname"><a href="struct_attack_range_base.html#a812f45f8df1b78e84758d6ef1db7cf12">AttackRangeBase::AttackRangeBase</a></div><div class="ttdeci">AttackRangeBase()</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00009">AttackRange.cpp:9</a></div></div>
+<div class="ttc" id="astruct_attack_range_base_html_aa9cc4a956dbf2deaeea939b8f5fec785"><div class="ttname"><a href="struct_attack_range_base.html#aa9cc4a956dbf2deaeea939b8f5fec785">AttackRangeBase::areatype_</a></div><div class="ttdeci">AreaModels::AREATYPE areatype_</div><div class="ttdef"><b>Definition</b> <a href="#l00019">AttackRange.h:19</a></div></div>
+<div class="ttc" id="astruct_attack_range_base_html_aadb814bd78f0739223639045ed284b1d"><div class="ttname"><a href="struct_attack_range_base.html#aadb814bd78f0739223639045ed284b1d">AttackRangeBase::IsHit</a></div><div class="ttdeci">virtual bool IsHit(struct actorAddr &amp;data)=0</div></div>
+<div class="ttc" id="astruct_attack_range_base_html_ad69e89bf692e4905c1ad36f880ba0ef9"><div class="ttname"><a href="struct_attack_range_base.html#ad69e89bf692e4905c1ad36f880ba0ef9">AttackRangeBase::getDir</a></div><div class="ttdeci">virtual XMVECTOR getDir(XMFLOAT3 pos) const =0</div></div>
+<div class="ttc" id="astruct_attack_range_base_html_ae30db5f8b545bd1b8cc5b93c86d899bb"><div class="ttname"><a href="struct_attack_range_base.html#ae30db5f8b545bd1b8cc5b93c86d899bb">AttackRangeBase::getType</a></div><div class="ttdeci">AreaModels::AREATYPE getType() const</div><div class="ttdef"><b>Definition</b> <a href="#l00015">AttackRange.h:15</a></div></div>
+<div class="ttc" id="astruct_attack_range_circle_html"><div class="ttname"><a href="struct_attack_range_circle.html">AttackRangeCircle</a></div><div class="ttdef"><b>Definition</b> <a href="#l00023">AttackRange.h:24</a></div></div>
+<div class="ttc" id="astruct_attack_range_circle_html_a4c3485554d350db5b8938b0b1aee3276"><div class="ttname"><a href="struct_attack_range_circle.html#a4c3485554d350db5b8938b0b1aee3276">AttackRangeCircle::radius_</a></div><div class="ttdeci">float radius_</div><div class="ttdef"><b>Definition</b> <a href="#l00026">AttackRange.h:26</a></div></div>
+<div class="ttc" id="astruct_attack_range_circle_html_a76518c457577a0cf3eb816d3303ddc70"><div class="ttname"><a href="struct_attack_range_circle.html#a76518c457577a0cf3eb816d3303ddc70">AttackRangeCircle::IsHit</a></div><div class="ttdeci">bool IsHit(struct actorAddr &amp;data) override</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00029">AttackRange.cpp:29</a></div></div>
+<div class="ttc" id="astruct_attack_range_circle_html_a9829d3d7de020e92e0fd21aa9a0c24f8"><div class="ttname"><a href="struct_attack_range_circle.html#a9829d3d7de020e92e0fd21aa9a0c24f8">AttackRangeCircle::getDir</a></div><div class="ttdeci">XMVECTOR getDir(XMFLOAT3 pos) const override</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00041">AttackRange.cpp:41</a></div></div>
+<div class="ttc" id="astruct_attack_range_circle_html_aabc74f1332b1fd4bf947345071433cf6"><div class="ttname"><a href="struct_attack_range_circle.html#aabc74f1332b1fd4bf947345071433cf6">AttackRangeCircle::AttackRangeCircle</a></div><div class="ttdeci">AttackRangeCircle()</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00018">AttackRange.cpp:18</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html"><div class="ttname"><a href="struct_attack_range_circuler_sector.html">AttackRangeCirculerSector</a></div><div class="ttdef"><b>Definition</b> <a href="#l00042">AttackRange.h:43</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html_a5cc6f9be9cc2000ea377979a5217d22c"><div class="ttname"><a href="struct_attack_range_circuler_sector.html#a5cc6f9be9cc2000ea377979a5217d22c">AttackRangeCirculerSector::AttackRangeCirculerSector</a></div><div class="ttdeci">AttackRangeCirculerSector()</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00096">AttackRange.cpp:96</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html_a6f89e1154bc203861fb374b2d99e7b09"><div class="ttname"><a href="struct_attack_range_circuler_sector.html#a6f89e1154bc203861fb374b2d99e7b09">AttackRangeCirculerSector::IsHit</a></div><div class="ttdeci">bool IsHit(struct actorAddr &amp;data) override</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00109">AttackRange.cpp:109</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html_a8543389337cfc0a57dbd12e9d575d0be"><div class="ttname"><a href="struct_attack_range_circuler_sector.html#a8543389337cfc0a57dbd12e9d575d0be">AttackRangeCirculerSector::getDir</a></div><div class="ttdeci">XMVECTOR getDir(XMFLOAT3 pos) const override</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00147">AttackRange.cpp:147</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html_aa5c676e53553e99ccd0337ddb70fc654"><div class="ttname"><a href="struct_attack_range_circuler_sector.html#aa5c676e53553e99ccd0337ddb70fc654">AttackRangeCirculerSector::radius_</a></div><div class="ttdeci">float radius_</div><div class="ttdef"><b>Definition</b> <a href="#l00044">AttackRange.h:44</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html_abf81d259146b07bff0fb0448ba6cfa24"><div class="ttname"><a href="struct_attack_range_circuler_sector.html#abf81d259146b07bff0fb0448ba6cfa24">AttackRangeCirculerSector::rotate_</a></div><div class="ttdeci">float rotate_</div><div class="ttdef"><b>Definition</b> <a href="#l00046">AttackRange.h:46</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html_af906b1086c94c834e2d921b418a7ef4c"><div class="ttname"><a href="struct_attack_range_circuler_sector.html#af906b1086c94c834e2d921b418a7ef4c">AttackRangeCirculerSector::centerAngle_</a></div><div class="ttdeci">float centerAngle_</div><div class="ttdef"><b>Definition</b> <a href="#l00045">AttackRange.h:45</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html"><div class="ttname"><a href="struct_attack_range_quad.html">AttackRangeQuad</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">AttackRange.h:33</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html_a14cb7a7fd65516e6eb0ce77268472130"><div class="ttname"><a href="struct_attack_range_quad.html#a14cb7a7fd65516e6eb0ce77268472130">AttackRangeQuad::AttackRangeQuad</a></div><div class="ttdeci">AttackRangeQuad()</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00047">AttackRange.cpp:47</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html_a4d56d6a11e71b032c18d274a60737b16"><div class="ttname"><a href="struct_attack_range_quad.html#a4d56d6a11e71b032c18d274a60737b16">AttackRangeQuad::rotate_</a></div><div class="ttdeci">float rotate_</div><div class="ttdef"><b>Definition</b> <a href="#l00036">AttackRange.h:36</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html_a5d0612bc6266923b2e9a4f806a9ea485"><div class="ttname"><a href="struct_attack_range_quad.html#a5d0612bc6266923b2e9a4f806a9ea485">AttackRangeQuad::length_</a></div><div class="ttdeci">float length_</div><div class="ttdef"><b>Definition</b> <a href="#l00035">AttackRange.h:35</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html_a691b2d72756111dd08dab17525ec1060"><div class="ttname"><a href="struct_attack_range_quad.html#a691b2d72756111dd08dab17525ec1060">AttackRangeQuad::IsHit</a></div><div class="ttdeci">bool IsHit(struct actorAddr &amp;data) override</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00061">AttackRange.cpp:61</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html_a862aed692ffac7bb56190eef6735dce4"><div class="ttname"><a href="struct_attack_range_quad.html#a862aed692ffac7bb56190eef6735dce4">AttackRangeQuad::getDir</a></div><div class="ttdeci">XMVECTOR getDir(XMFLOAT3 pos) const override</div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8cpp_source.html#l00089">AttackRange.cpp:89</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html_ab45342df155139ea6621455dd0b1100c"><div class="ttname"><a href="struct_attack_range_quad.html#ab45342df155139ea6621455dd0b1100c">AttackRangeQuad::width_</a></div><div class="ttdeci">float width_</div><div class="ttdef"><b>Definition</b> <a href="#l00034">AttackRange.h:34</a></div></div>
+<div class="ttc" id="astructactor_addr_html"><div class="ttname"><a href="structactor_addr.html">actorAddr</a></div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8h_source.html#l00009">CollisionManager.h:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_2238df16a099c97d3567131b913ed685.html">sources</a></li><li class="navelem"><a class="el" href="_attack_range_8h.html">AttackRange.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

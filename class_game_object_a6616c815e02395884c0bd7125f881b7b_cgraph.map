@@ -1,0 +1,7 @@
+<map id="GameObject::ReleaseSub" name="GameObject::ReleaseSub">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,178,57"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#aafe0d2eb92532ca832027815d8313516" title=" " alt="" coords="226,5,401,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,31,210,28,210,33,179,37"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#aa80f2aaebee30f53dc468ebf9e2418fb" title=" " alt="" coords="239,56,388,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,51,223,56,223,62,178,57"/>
+</map>

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/sources/CollisionManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_collision_manager_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CollisionManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_collision_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include&quot;<a class="code" href="_actor_collider_8h.html">ActorCollider.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&quot;<a class="code" href="_attack_range_8h.html">AttackRange.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//プレイヤー陣営/敵陣営</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">    6</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a>{<a class="code hl_enumvalue" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89dade5dc3e0dbd007d995ed3e37bde5ce7e">PLAYER</a>,<a class="code hl_enumvalue" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89da5ce368bdfc444a87fef6c208b4101571">ENEMY</a>,<a class="code hl_enumvalue" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89da17897512ed7598aeb5912e3d45bf000d">NUM</a>};</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="class_game_actor.html">GameActor</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_damage_data.html">DamageData</a>;</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structactor_addr.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structactor_addr.html">actorAddr</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structactor_addr.html#a1546a8476586671ec67f38b6d05203b3">   10</a></span>    <a class="code hl_class" href="class_game_actor.html">GameActor</a>* <a class="code hl_variable" href="structactor_addr.html#a1546a8476586671ec67f38b6d05203b3">pActor</a>;<span class="comment">//キャラ</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structactor_addr.html#a42b30cf38674ed303dd9401e2714be03">   11</a></span>    <a class="code hl_class" href="class_actor_collider.html">ActorCollider</a>* <a class="code hl_variable" href="structactor_addr.html#a42b30cf38674ed303dd9401e2714be03">pCollider</a>;<span class="comment">//キャラの当たり判定</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structactor_addr.html#a122fd87fc5f7dbcd7aebe87c3587d9ce">   12</a></span>    <a class="code hl_function" href="structactor_addr.html#a122fd87fc5f7dbcd7aebe87c3587d9ce">actorAddr</a>() :<a class="code hl_variable" href="structactor_addr.html#a1546a8476586671ec67f38b6d05203b3">pActor</a>(nullptr), <a class="code hl_variable" href="structactor_addr.html#a42b30cf38674ed303dd9401e2714be03">pCollider</a>(nullptr) {}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structactor_addr.html#a90696442aa832364501e7cd7e6a0f80a">   13</a></span>    <a class="code hl_function" href="structactor_addr.html#a90696442aa832364501e7cd7e6a0f80a">actorAddr</a>(<a class="code hl_class" href="class_game_actor.html">GameActor</a>* pA, <a class="code hl_class" href="class_actor_collider.html">ActorCollider</a>* pC) :<a class="code hl_variable" href="structactor_addr.html#a1546a8476586671ec67f38b6d05203b3">pActor</a>(pA), <a class="code hl_variable" href="structactor_addr.html#a42b30cf38674ed303dd9401e2714be03">pCollider</a>(pC) {}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//全てのアクタの当たり判定を管理・判定する名前空間。</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//当たり判定の際、高さ(=y軸）は考慮しない</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespace_collision_manager.html">   17</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_collision_manager.html">CollisionManager</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc">Update</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b">   31</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b">AddCamp</a>(<a class="code hl_class" href="class_game_actor.html">GameActor</a>* newActor,<a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_collision_manager.html#acf159e1233ae1cce72748ce833d49271">RegisterHitRange</a>(<a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp, <a class="code hl_struct" href="struct_attack_range_circle.html">AttackRangeCircle</a> c, <a class="code hl_struct" href="struct_damage_data.html">DamageData</a> dmg);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_collision_manager.html#acf159e1233ae1cce72748ce833d49271">RegisterHitRange</a>(<a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp, <a class="code hl_struct" href="struct_attack_range_quad.html">AttackRangeQuad</a> q, <a class="code hl_struct" href="struct_damage_data.html">DamageData</a> dmg);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_collision_manager.html#acf159e1233ae1cce72748ce833d49271">RegisterHitRange</a>(<a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp, <a class="code hl_struct" href="struct_attack_range_circuler_sector.html">AttackRangeCirculerSector</a> s, <a class="code hl_struct" href="struct_damage_data.html">DamageData</a> dmg);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_collision_manager.html#af7d80cc1b17304c493fd70c97c44856f">RemoveCamp</a>(<a class="code hl_class" href="class_game_actor.html">GameActor</a>*actor,<a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_collision_manager.html#a29f39ccc8fb9fa3264a3ec9ddc3b0b1b">Release</a>();<span class="comment">//解放処理</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="ttc" id="a_actor_collider_8h_html"><div class="ttname"><a href="_actor_collider_8h.html">ActorCollider.h</a></div></div>
+<div class="ttc" id="a_attack_range_8h_html"><div class="ttname"><a href="_attack_range_8h.html">AttackRange.h</a></div></div>
+<div class="ttc" id="a_collision_manager_8h_html_a83e6e9c914bc93bc7eb7d4392519a89d"><div class="ttname"><a href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a></div><div class="ttdeci">CAMPS</div><div class="ttdef"><b>Definition</b> <a href="#l00006">CollisionManager.h:6</a></div></div>
+<div class="ttc" id="a_collision_manager_8h_html_a83e6e9c914bc93bc7eb7d4392519a89da17897512ed7598aeb5912e3d45bf000d"><div class="ttname"><a href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89da17897512ed7598aeb5912e3d45bf000d">NUM</a></div><div class="ttdeci">@ NUM</div><div class="ttdef"><b>Definition</b> <a href="#l00006">CollisionManager.h:6</a></div></div>
+<div class="ttc" id="a_collision_manager_8h_html_a83e6e9c914bc93bc7eb7d4392519a89da5ce368bdfc444a87fef6c208b4101571"><div class="ttname"><a href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89da5ce368bdfc444a87fef6c208b4101571">ENEMY</a></div><div class="ttdeci">@ ENEMY</div><div class="ttdef"><b>Definition</b> <a href="#l00006">CollisionManager.h:6</a></div></div>
+<div class="ttc" id="a_collision_manager_8h_html_a83e6e9c914bc93bc7eb7d4392519a89dade5dc3e0dbd007d995ed3e37bde5ce7e"><div class="ttname"><a href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89dade5dc3e0dbd007d995ed3e37bde5ce7e">PLAYER</a></div><div class="ttdeci">@ PLAYER</div><div class="ttdef"><b>Definition</b> <a href="#l00006">CollisionManager.h:6</a></div></div>
+<div class="ttc" id="aclass_actor_collider_html"><div class="ttname"><a href="class_actor_collider.html">ActorCollider</a></div><div class="ttdef"><b>Definition</b> <a href="_actor_collider_8h_source.html#l00004">ActorCollider.h:5</a></div></div>
+<div class="ttc" id="aclass_game_actor_html"><div class="ttname"><a href="class_game_actor.html">GameActor</a></div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00010">GameActor.h:10</a></div></div>
+<div class="ttc" id="anamespace_collision_manager_html"><div class="ttname"><a href="namespace_collision_manager.html">CollisionManager</a></div><div class="ttdef"><b>Definition</b> <a href="#l00017">CollisionManager.h:18</a></div></div>
+<div class="ttc" id="anamespace_collision_manager_html_a23c21d077dbfd7ca86e7c0649d775dfc"><div class="ttname"><a href="namespace_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc">CollisionManager::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">シーンのアップデートでこれも呼ぶ 当たり判定が持続する間判定し続けるとか</div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8cpp_source.html#l00033">CollisionManager.cpp:33</a></div></div>
+<div class="ttc" id="anamespace_collision_manager_html_a29f39ccc8fb9fa3264a3ec9ddc3b0b1b"><div class="ttname"><a href="namespace_collision_manager.html#a29f39ccc8fb9fa3264a3ec9ddc3b0b1b">CollisionManager::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8cpp_source.html#l00107">CollisionManager.cpp:107</a></div></div>
+<div class="ttc" id="anamespace_collision_manager_html_a4dd6af0ce1423ded67f8fcb5591b1b6b"><div class="ttname"><a href="namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b">CollisionManager::AddCamp</a></div><div class="ttdeci">void AddCamp(GameActor *newActor, CAMPS camp)</div><div class="ttdoc">当たり判定リストに追加</div></div>
+<div class="ttc" id="anamespace_collision_manager_html_acf159e1233ae1cce72748ce833d49271"><div class="ttname"><a href="namespace_collision_manager.html#acf159e1233ae1cce72748ce833d49271">CollisionManager::RegisterHitRange</a></div><div class="ttdeci">void RegisterHitRange(CAMPS camp, AttackRangeCircle c, DamageData dmg)</div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8cpp_source.html#l00073">CollisionManager.cpp:73</a></div></div>
+<div class="ttc" id="anamespace_collision_manager_html_af7d80cc1b17304c493fd70c97c44856f"><div class="ttname"><a href="namespace_collision_manager.html#af7d80cc1b17304c493fd70c97c44856f">CollisionManager::RemoveCamp</a></div><div class="ttdeci">void RemoveCamp(GameActor *actor, CAMPS camp)</div><div class="ttdoc">陣営リストから削除する。倒された際に呼ぶ</div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8cpp_source.html#l00090">CollisionManager.cpp:90</a></div></div>
+<div class="ttc" id="astruct_attack_range_circle_html"><div class="ttname"><a href="struct_attack_range_circle.html">AttackRangeCircle</a></div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8h_source.html#l00023">AttackRange.h:24</a></div></div>
+<div class="ttc" id="astruct_attack_range_circuler_sector_html"><div class="ttname"><a href="struct_attack_range_circuler_sector.html">AttackRangeCirculerSector</a></div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8h_source.html#l00042">AttackRange.h:43</a></div></div>
+<div class="ttc" id="astruct_attack_range_quad_html"><div class="ttname"><a href="struct_attack_range_quad.html">AttackRangeQuad</a></div><div class="ttdef"><b>Definition</b> <a href="_attack_range_8h_source.html#l00032">AttackRange.h:33</a></div></div>
+<div class="ttc" id="astruct_damage_data_html"><div class="ttname"><a href="struct_damage_data.html">DamageData</a></div><div class="ttdef"><b>Definition</b> <a href="_damage_data_8h_source.html#l00007">DamageData.h:8</a></div></div>
+<div class="ttc" id="astructactor_addr_html"><div class="ttname"><a href="structactor_addr.html">actorAddr</a></div><div class="ttdef"><b>Definition</b> <a href="#l00009">CollisionManager.h:9</a></div></div>
+<div class="ttc" id="astructactor_addr_html_a122fd87fc5f7dbcd7aebe87c3587d9ce"><div class="ttname"><a href="structactor_addr.html#a122fd87fc5f7dbcd7aebe87c3587d9ce">actorAddr::actorAddr</a></div><div class="ttdeci">actorAddr()</div><div class="ttdef"><b>Definition</b> <a href="#l00012">CollisionManager.h:12</a></div></div>
+<div class="ttc" id="astructactor_addr_html_a1546a8476586671ec67f38b6d05203b3"><div class="ttname"><a href="structactor_addr.html#a1546a8476586671ec67f38b6d05203b3">actorAddr::pActor</a></div><div class="ttdeci">GameActor * pActor</div><div class="ttdef"><b>Definition</b> <a href="#l00010">CollisionManager.h:10</a></div></div>
+<div class="ttc" id="astructactor_addr_html_a42b30cf38674ed303dd9401e2714be03"><div class="ttname"><a href="structactor_addr.html#a42b30cf38674ed303dd9401e2714be03">actorAddr::pCollider</a></div><div class="ttdeci">ActorCollider * pCollider</div><div class="ttdef"><b>Definition</b> <a href="#l00011">CollisionManager.h:11</a></div></div>
+<div class="ttc" id="astructactor_addr_html_a90696442aa832364501e7cd7e6a0f80a"><div class="ttname"><a href="structactor_addr.html#a90696442aa832364501e7cd7e6a0f80a">actorAddr::actorAddr</a></div><div class="ttdeci">actorAddr(GameActor *pA, ActorCollider *pC)</div><div class="ttdef"><b>Definition</b> <a href="#l00013">CollisionManager.h:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_2238df16a099c97d3567131b913ed685.html">sources</a></li><li class="navelem"><a class="el" href="_collision_manager_8h.html">CollisionManager.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

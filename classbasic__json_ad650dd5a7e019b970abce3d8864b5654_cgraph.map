@@ -1,0 +1,17 @@
+<map id="basic_json::is_primitive" name="basic_json::is_primitive">
+<area shape="rect" id="Node000001" title="return whether type is primitive" alt="" coords="5,107,161,133"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#abbdd993df08641faa3e24b5d2151e8f8" title="return whether value is a binary array" alt="" coords="214,5,357,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,104,149,73,208,42,222,35,224,40,210,46,152,78,105,108"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#acfe2e3c359b545f8edbb72f6bd78718c" title="return whether value is a boolean" alt="" coords="209,56,362,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,103,214,84,215,90,140,109"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#ad8789d0a365d5afaab61e7492908d8b2" title="return whether value is null" alt="" coords="221,107,350,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,117,206,117,206,123,161,123"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#aacf244be5088fb183f4ba21a66af9631" title="return whether value is a number" alt="" coords="210,157,361,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="140,131,215,150,214,156,139,137"/>
+<area shape="rect" id="Node000008" href="$classbasic__json.html#a007ecebde9a7d40714e300ce0ff52908" title="return whether value is a string" alt="" coords="215,208,356,235"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="105,132,152,162,210,194,224,200,222,205,208,198,149,167,102,136"/>
+<area shape="rect" id="Node000006" href="$classbasic__json.html#a8d5bb82dfc8cceae1753b52a588eef92" title="return whether value is a floating&#45;point number" alt="" coords="410,116,561,159"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="361,155,394,150,395,155,362,161"/>
+<area shape="rect" id="Node000007" href="$classbasic__json.html#a2330e35cda16540058fef090abc709bf" title="return whether value is an integer number" alt="" coords="410,183,561,225"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="362,181,395,186,394,191,361,186"/>
+</map>

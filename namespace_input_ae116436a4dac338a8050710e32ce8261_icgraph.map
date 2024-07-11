@@ -1,0 +1,11 @@
+<map id="Input::IsKeyDown" name="Input::IsKeyDown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="222,81,344,108"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a44e8add5619df47f09df3fa64cbde025" title=" " alt="" coords="20,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,77,173,46,140,35,142,30,175,42,242,72"/>
+<area shape="rect" id="Node000003" href="$class_clear_scene.html#a2bdcbad7526c4e9bf3d0961460f590c7" title=" " alt="" coords="21,56,158,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,87,158,81,159,76,207,82"/>
+<area shape="rect" id="Node000004" href="$class_game_over_scene.html#a121ff42f211a172fc4eb15f704d4088a" title=" " alt="" coords="5,107,174,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,107,174,112,174,106,206,102"/>
+<area shape="rect" id="Node000005" href="$class_title_scene.html#a1cdcc1ef41f43f31b40f4b8451fa4f8b" title=" " alt="" coords="24,157,155,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="242,118,175,148,142,159,140,154,173,143,240,113"/>
+</map>

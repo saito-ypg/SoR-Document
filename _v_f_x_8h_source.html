@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/VFX.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_v_f_x_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">VFX.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_v_f_x_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_game_object_8h.html">GameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_bill_board_8h.html">BillBoard.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//エミッター（パーティクルの発生源）を作る時のデータ一覧</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//Start関数の引数として使う</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_emitter_data.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_emitter_data.html">EmitterData</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#ae012958a0ef8e3dcb40cf8cbe6163cf1">   11</a></span>    std::string <a class="code hl_variable" href="struct_emitter_data.html#ae012958a0ef8e3dcb40cf8cbe6163cf1">textureFileName</a>;    <span class="comment">//画像ファイル名</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a79381182d3bf746560e57753e580938f">   12</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_emitter_data.html#a79381182d3bf746560e57753e580938f">position</a>;      <span class="comment">//位置</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#ac049b5c37fb1795dd56d4edacdfba475">   13</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_emitter_data.html#ac049b5c37fb1795dd56d4edacdfba475">positionRnd</a>;   <span class="comment">//位置の誤差</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a68938cd9df7c1e16ae24b3f0bafde38e">   14</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_emitter_data.html#a68938cd9df7c1e16ae24b3f0bafde38e">direction</a>;     <span class="comment">//パーティクルの移動方向</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a26349dfeb09fc5aebddab90a3484a115">   15</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_emitter_data.html#a26349dfeb09fc5aebddab90a3484a115">directionRnd</a>;  <span class="comment">//移動方向の誤差（各軸の角度）</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a7cf2159ea6849bf5a3662c50b446199c">   16</a></span>    <span class="keywordtype">float</span>    <a class="code hl_variable" href="struct_emitter_data.html#a7cf2159ea6849bf5a3662c50b446199c">speed</a>;         <span class="comment">//1フレームの速度</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a8b6d4e23180a16c50cfbe9a92b41e0d2">   17</a></span>    <span class="keywordtype">float</span>    <a class="code hl_variable" href="struct_emitter_data.html#a8b6d4e23180a16c50cfbe9a92b41e0d2">speedRnd</a>;      <span class="comment">//速度誤差（0〜1）</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a0621834fa760dd42c3a7f44b27b02045">   18</a></span>    <span class="keywordtype">float</span>    <a class="code hl_variable" href="struct_emitter_data.html#a0621834fa760dd42c3a7f44b27b02045">accel</a>;         <span class="comment">//加速度</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a169601055f701fb78b1f763422aba483">   19</a></span>    <span class="keywordtype">float</span>    <a class="code hl_variable" href="struct_emitter_data.html#a169601055f701fb78b1f763422aba483">gravity</a>;       <span class="comment">//重力</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a3a1e8a29391d2255fa793d7759e7b99d">   20</a></span>    XMFLOAT4 <a class="code hl_variable" href="struct_emitter_data.html#a3a1e8a29391d2255fa793d7759e7b99d">color</a>;         <span class="comment">//色（RGBA 0〜1）</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a05ac36933906a4b3c99d869afc381fac">   21</a></span>    XMFLOAT4 <a class="code hl_variable" href="struct_emitter_data.html#a05ac36933906a4b3c99d869afc381fac">deltaColor</a>;    <span class="comment">//色の変化量</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a29c30bdbea70e0203ec935862a2bc79d">   22</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_emitter_data.html#a29c30bdbea70e0203ec935862a2bc79d">rotate</a>;        <span class="comment">//各軸での角度</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#aad297d80f8fe1d2896b1e82fcc92b9e8">   23</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_emitter_data.html#aad297d80f8fe1d2896b1e82fcc92b9e8">rotateRnd</a>;     <span class="comment">//角度誤差</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a91e185dadde8087822cd93ebf0cb76bc">   24</a></span>    XMFLOAT3 <a class="code hl_variable" href="struct_emitter_data.html#a91e185dadde8087822cd93ebf0cb76bc">spin</a>;          <span class="comment">//回転速度</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a3c1645eb6f5771cfb3a60b04f72ef872">   25</a></span>    XMFLOAT2 <a class="code hl_variable" href="struct_emitter_data.html#a3c1645eb6f5771cfb3a60b04f72ef872">size</a>;          <span class="comment">//サイズ</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a6e16f8f412569171dc9f018f9395d334">   26</a></span>    XMFLOAT2 <a class="code hl_variable" href="struct_emitter_data.html#a6e16f8f412569171dc9f018f9395d334">sizeRnd</a>;       <span class="comment">//サイズ誤差（0〜1）</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#abe3d38b74e35e57dcf094faeb2e46907">   27</a></span>    XMFLOAT2 <a class="code hl_variable" href="struct_emitter_data.html#abe3d38b74e35e57dcf094faeb2e46907">scale</a>;         <span class="comment">//1フレームの拡大率</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a527cde453230277f9b9ca334b04336ca">   28</a></span>    DWORD    <a class="code hl_variable" href="struct_emitter_data.html#a527cde453230277f9b9ca334b04336ca">lifeTime</a>;      <span class="comment">//パーティクルの寿命（フレーム数）</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a5efe8378ec3215a5503b00db384458da">   29</a></span>    DWORD    <a class="code hl_variable" href="struct_emitter_data.html#a5efe8378ec3215a5503b00db384458da">delay</a>;         <span class="comment">//何フレームおきにパーティクルを発生させるか</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#ab520aab5a96101276604df5e5987ad55">   30</a></span>    DWORD    <a class="code hl_variable" href="struct_emitter_data.html#ab520aab5a96101276604df5e5987ad55">number</a>;        <span class="comment">//1度に出すパーティクル量</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#ab50b635a0e782ad4832aba2b556c6c0d">   31</a></span>    <span class="keywordtype">bool</span>     <a class="code hl_variable" href="struct_emitter_data.html#ab50b635a0e782ad4832aba2b556c6c0d">isBillBoard</a>;   <span class="comment">//ビルボードかどうか</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//初期化</span></div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_emitter_data.html#a19507cd051c9b5498f501b5515254da8">   34</a></span>    <a class="code hl_function" href="struct_emitter_data.html#a19507cd051c9b5498f501b5515254da8">EmitterData</a>()</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="struct_emitter_data.html#ae012958a0ef8e3dcb40cf8cbe6163cf1">textureFileName</a> = <span class="stringliteral">&quot;defaultParticle.png&quot;</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_variable" href="struct_emitter_data.html#a79381182d3bf746560e57753e580938f">position</a> = <a class="code hl_variable" href="struct_emitter_data.html#ac049b5c37fb1795dd56d4edacdfba475">positionRnd</a> = <a class="code hl_variable" href="struct_emitter_data.html#a26349dfeb09fc5aebddab90a3484a115">directionRnd</a> = <a class="code hl_variable" href="struct_emitter_data.html#a29c30bdbea70e0203ec935862a2bc79d">rotate</a> = <a class="code hl_variable" href="struct_emitter_data.html#aad297d80f8fe1d2896b1e82fcc92b9e8">rotateRnd</a> = <a class="code hl_variable" href="struct_emitter_data.html#a91e185dadde8087822cd93ebf0cb76bc">spin</a> = XMFLOAT3(0, 0, 0);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_variable" href="struct_emitter_data.html#a68938cd9df7c1e16ae24b3f0bafde38e">direction</a> = XMFLOAT3(0, 1, 0);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_variable" href="struct_emitter_data.html#a7cf2159ea6849bf5a3662c50b446199c">speed</a> = 0.1f;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_variable" href="struct_emitter_data.html#a8b6d4e23180a16c50cfbe9a92b41e0d2">speedRnd</a> = 0.0f;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_variable" href="struct_emitter_data.html#a0621834fa760dd42c3a7f44b27b02045">accel</a> = 1.0f;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_variable" href="struct_emitter_data.html#a169601055f701fb78b1f763422aba483">gravity</a> = 0.0f;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_variable" href="struct_emitter_data.html#a3a1e8a29391d2255fa793d7759e7b99d">color</a> = XMFLOAT4(1, 1, 1, 1);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_variable" href="struct_emitter_data.html#a05ac36933906a4b3c99d869afc381fac">deltaColor</a> = XMFLOAT4(0, 0, 0, 0);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_variable" href="struct_emitter_data.html#a3c1645eb6f5771cfb3a60b04f72ef872">size</a> = <a class="code hl_variable" href="struct_emitter_data.html#abe3d38b74e35e57dcf094faeb2e46907">scale</a> = XMFLOAT2(1.0f, 1.0f);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_variable" href="struct_emitter_data.html#a6e16f8f412569171dc9f018f9395d334">sizeRnd</a> = XMFLOAT2(0.0f, 0.0f);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_variable" href="struct_emitter_data.html#a527cde453230277f9b9ca334b04336ca">lifeTime</a> = 30;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="struct_emitter_data.html#a5efe8378ec3215a5503b00db384458da">delay</a> = 10;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_variable" href="struct_emitter_data.html#ab520aab5a96101276604df5e5987ad55">number</a> = 1;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_variable" href="struct_emitter_data.html#ab50b635a0e782ad4832aba2b556c6c0d">isBillBoard</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">//エフェクトを管理するクラス</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_v_f_x.html">VFX</a></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">//エミッター（パーティクルの噴射口）</span></div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="};">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_emitter.html">   60</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_v_f_x_1_1_emitter.html">Emitter</a></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_emitter.html#a12e750568cdbb49fc27576051948662a">   62</a></span>        <a class="code hl_struct" href="struct_emitter_data.html">EmitterData</a> <a class="code hl_variable" href="struct_v_f_x_1_1_emitter.html#a12e750568cdbb49fc27576051948662a">data</a> ;      <span class="comment">//作成時に指定されたデータ</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_emitter.html#a61ac81ded91f37bdad8c6c2562b1d9d5">   63</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_v_f_x_1_1_emitter.html#a61ac81ded91f37bdad8c6c2562b1d9d5">handle</a> = -1;        <span class="comment">//ハンドル（番号）</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_emitter.html#a7f5fab3163555f70ae81996e5137ab1d">   64</a></span>        DWORD <a class="code hl_variable" href="struct_v_f_x_1_1_emitter.html#a7f5fab3163555f70ae81996e5137ab1d">frameCount</a> = 0;   <span class="comment">//開始してからのフレーム数</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_emitter.html#ae27b7b4686a252d72eea6f4f5d5d9999">   65</a></span>        <a class="code hl_class" href="class_bill_board.html">BillBoard</a>* <a class="code hl_variable" href="struct_v_f_x_1_1_emitter.html#ae27b7b4686a252d72eea6f4f5d5d9999">pBillBoard</a> = <span class="keyword">nullptr</span>;    <span class="comment">//パーティクルに使うポリゴン</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_emitter.html#a1a54720997994c1b474a6b5064c19ebd">   66</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_v_f_x_1_1_emitter.html#a1a54720997994c1b474a6b5064c19ebd">isDead</a> = <span class="keyword">false</span>;    <span class="comment">//削除対象かどうか（実際はパーティクルが全部消えるまでエミッターは消えない）</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_emitter.html#a0778cefdb1140619e8c60a0ebd17a859">   67</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_v_f_x_1_1_emitter.html#a0778cefdb1140619e8c60a0ebd17a859">particleNum</a> = 0;    <span class="comment">//このエミッターから出た現存パーティクルの数</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    };</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">//パーティクルの変化するデータ</span></div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_dynamic_data.html">   72</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_v_f_x_1_1_dynamic_data.html">DynamicData</a></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_dynamic_data.html#a2716e7dd12d145d31918379060f64635">   74</a></span>        XMFLOAT3 <a class="code hl_variable" href="struct_v_f_x_1_1_dynamic_data.html#a2716e7dd12d145d31918379060f64635">position</a>;  <span class="comment">//位置</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_dynamic_data.html#a1fe7006824c38fd703a446b745af8544">   75</a></span>        XMFLOAT3 <a class="code hl_variable" href="struct_v_f_x_1_1_dynamic_data.html#a1fe7006824c38fd703a446b745af8544">rotation</a>;  <span class="comment">//回転</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_dynamic_data.html#affb7d2878ffcc3a16a7a0179e6afec74">   76</a></span>        XMFLOAT2 <a class="code hl_variable" href="struct_v_f_x_1_1_dynamic_data.html#affb7d2878ffcc3a16a7a0179e6afec74">scale</a>;     <span class="comment">//サイズ</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_dynamic_data.html#a50478320727ddae462d0025823cf0ed1">   77</a></span>        XMFLOAT4 <a class="code hl_variable" href="struct_v_f_x_1_1_dynamic_data.html#a50478320727ddae462d0025823cf0ed1">color</a>;     <span class="comment">//色</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    };</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">//パーティクル1粒のデータ</span></div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="};">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_particle.html">   81</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_v_f_x_1_1_particle.html">Particle</a></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_particle.html#ac359ed89114d2bf409d9925e92765c9e">   83</a></span>        <a class="code hl_struct" href="struct_v_f_x_1_1_dynamic_data.html">DynamicData</a> <a class="code hl_variable" href="struct_v_f_x_1_1_particle.html#ac359ed89114d2bf409d9925e92765c9e">now</a>;    <span class="comment">//現在の情報</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_particle.html#a0b5dc2637f1b95aecb1d5ea4c3c0e49c">   84</a></span>        <a class="code hl_struct" href="struct_v_f_x_1_1_dynamic_data.html">DynamicData</a> <a class="code hl_variable" href="struct_v_f_x_1_1_particle.html#a0b5dc2637f1b95aecb1d5ea4c3c0e49c">delta</a>;  <span class="comment">//1フレームの変化量</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_particle.html#a02e55ed99353c87dc0c08fddb1ed8bf3">   85</a></span>        DWORD <a class="code hl_variable" href="struct_v_f_x_1_1_particle.html#a02e55ed99353c87dc0c08fddb1ed8bf3">life</a>;         <span class="comment">//残り寿命</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_particle.html#a8fa4facc4084fad4ce6bef42cb48a64d">   86</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_v_f_x_1_1_particle.html#a8fa4facc4084fad4ce6bef42cb48a64d">accel</a>;        <span class="comment">//加速度</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_particle.html#a9441c34421af3b3cdbb6c5d9f515ac2f">   87</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_v_f_x_1_1_particle.html#a9441c34421af3b3cdbb6c5d9f515ac2f">gravity</a>;      <span class="comment">//重力</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="struct_v_f_x_1_1_particle.html#a5312ce76a25d9991143ba69fe072fc77">   88</a></span>        <a class="code hl_struct" href="struct_v_f_x_1_1_emitter.html">Emitter</a>* <a class="code hl_variable" href="struct_v_f_x_1_1_particle.html#a5312ce76a25d9991143ba69fe072fc77">pEmitter</a>;  <span class="comment">//発生元エミッタ</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    };</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">//発生中のパーティクルを更新</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_v_f_x.html#a177e5602c81246d4ae1a10f4f48ebe7e">ParticleUpdate</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">//エミッタの更新（タイミング次第でパーティクルを発生させる）</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_v_f_x.html#ae40b3348be94a7a14849de59a88efdbb">EmitterUpdate</a>();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">//パーティクル生成</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">//引数：emitter    エミッター情報</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_v_f_x.html#aa9c816f5bb4cac299b60bbf837ed4146">CreateParticle</a>(std::list&lt;VFX::Emitter*&gt;::iterator&amp; emitter);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">//更新</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_v_f_x.html#a1d09261885c7dd09998985bd58be7543">Update</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">//描画</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_v_f_x.html#af19e457392e2f9cfa7a18eead6f5807c">Draw</a>();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">//開放</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_v_f_x.html#acb8a46d2bcab23665d838a493862379c">Release</a>();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">//エミッタを作成（エフェクト開始）</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">//引数：emitterData    各種情報</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="comment">//戻値：エフェクト（エミッタ）の番号</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespace_v_f_x.html#a0164289b1d8d10be8e1c03ce68c6fa13">Start</a>(<a class="code hl_struct" href="struct_emitter_data.html">EmitterData</a> emitterData);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="comment">//エミッタを削除（エフェクト終了）</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">//引数：handle エフェクトの番号</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_v_f_x.html#a5a5456a15248d43a3e168cb6a6294e90">End</a>(<span class="keywordtype">int</span> handle);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>};</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="ttc" id="a_bill_board_8h_html"><div class="ttname"><a href="_bill_board_8h.html">BillBoard.h</a></div></div>
+<div class="ttc" id="a_game_object_8h_html"><div class="ttname"><a href="_game_object_8h.html">GameObject.h</a></div></div>
+<div class="ttc" id="aclass_bill_board_html"><div class="ttname"><a href="class_bill_board.html">BillBoard</a></div><div class="ttdef"><b>Definition</b> <a href="_bill_board_8h_source.html#l00024">BillBoard.h:25</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html"><div class="ttname"><a href="namespace_v_f_x.html">VFX</a></div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00004">VFX.cpp:5</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_a0164289b1d8d10be8e1c03ce68c6fa13"><div class="ttname"><a href="namespace_v_f_x.html#a0164289b1d8d10be8e1c03ce68c6fa13">VFX::Start</a></div><div class="ttdeci">int Start(EmitterData emitterData)</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00248">VFX.cpp:248</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_a177e5602c81246d4ae1a10f4f48ebe7e"><div class="ttname"><a href="namespace_v_f_x.html#a177e5602c81246d4ae1a10f4f48ebe7e">VFX::ParticleUpdate</a></div><div class="ttdeci">void ParticleUpdate()</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00022">VFX.cpp:22</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_a1d09261885c7dd09998985bd58be7543"><div class="ttname"><a href="namespace_v_f_x.html#a1d09261885c7dd09998985bd58be7543">VFX::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00011">VFX.cpp:11</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_a5a5456a15248d43a3e168cb6a6294e90"><div class="ttname"><a href="namespace_v_f_x.html#a5a5456a15248d43a3e168cb6a6294e90">VFX::End</a></div><div class="ttdeci">void End(int handle)</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00272">VFX.cpp:272</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_aa9c816f5bb4cac299b60bbf837ed4146"><div class="ttname"><a href="namespace_v_f_x.html#aa9c816f5bb4cac299b60bbf837ed4146">VFX::CreateParticle</a></div><div class="ttdeci">void CreateParticle(std::list&lt; VFX::Emitter * &gt;::iterator &amp;emitter)</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00111">VFX.cpp:111</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_acb8a46d2bcab23665d838a493862379c"><div class="ttname"><a href="namespace_v_f_x.html#acb8a46d2bcab23665d838a493862379c">VFX::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00225">VFX.cpp:225</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_ae40b3348be94a7a14849de59a88efdbb"><div class="ttname"><a href="namespace_v_f_x.html#ae40b3348be94a7a14849de59a88efdbb">VFX::EmitterUpdate</a></div><div class="ttdeci">void EmitterUpdate()</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00064">VFX.cpp:64</a></div></div>
+<div class="ttc" id="anamespace_v_f_x_html_af19e457392e2f9cfa7a18eead6f5807c"><div class="ttname"><a href="namespace_v_f_x.html#af19e457392e2f9cfa7a18eead6f5807c">VFX::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition</b> <a href="_v_f_x_8cpp_source.html#l00191">VFX.cpp:191</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html"><div class="ttname"><a href="struct_emitter_data.html">EmitterData</a></div><div class="ttdef"><b>Definition</b> <a href="#l00009">VFX.h:10</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a05ac36933906a4b3c99d869afc381fac"><div class="ttname"><a href="struct_emitter_data.html#a05ac36933906a4b3c99d869afc381fac">EmitterData::deltaColor</a></div><div class="ttdeci">XMFLOAT4 deltaColor</div><div class="ttdef"><b>Definition</b> <a href="#l00021">VFX.h:21</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a0621834fa760dd42c3a7f44b27b02045"><div class="ttname"><a href="struct_emitter_data.html#a0621834fa760dd42c3a7f44b27b02045">EmitterData::accel</a></div><div class="ttdeci">float accel</div><div class="ttdef"><b>Definition</b> <a href="#l00018">VFX.h:18</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a169601055f701fb78b1f763422aba483"><div class="ttname"><a href="struct_emitter_data.html#a169601055f701fb78b1f763422aba483">EmitterData::gravity</a></div><div class="ttdeci">float gravity</div><div class="ttdef"><b>Definition</b> <a href="#l00019">VFX.h:19</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a19507cd051c9b5498f501b5515254da8"><div class="ttname"><a href="struct_emitter_data.html#a19507cd051c9b5498f501b5515254da8">EmitterData::EmitterData</a></div><div class="ttdeci">EmitterData()</div><div class="ttdef"><b>Definition</b> <a href="#l00034">VFX.h:34</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a26349dfeb09fc5aebddab90a3484a115"><div class="ttname"><a href="struct_emitter_data.html#a26349dfeb09fc5aebddab90a3484a115">EmitterData::directionRnd</a></div><div class="ttdeci">XMFLOAT3 directionRnd</div><div class="ttdef"><b>Definition</b> <a href="#l00015">VFX.h:15</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a29c30bdbea70e0203ec935862a2bc79d"><div class="ttname"><a href="struct_emitter_data.html#a29c30bdbea70e0203ec935862a2bc79d">EmitterData::rotate</a></div><div class="ttdeci">XMFLOAT3 rotate</div><div class="ttdef"><b>Definition</b> <a href="#l00022">VFX.h:22</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a3a1e8a29391d2255fa793d7759e7b99d"><div class="ttname"><a href="struct_emitter_data.html#a3a1e8a29391d2255fa793d7759e7b99d">EmitterData::color</a></div><div class="ttdeci">XMFLOAT4 color</div><div class="ttdef"><b>Definition</b> <a href="#l00020">VFX.h:20</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a3c1645eb6f5771cfb3a60b04f72ef872"><div class="ttname"><a href="struct_emitter_data.html#a3c1645eb6f5771cfb3a60b04f72ef872">EmitterData::size</a></div><div class="ttdeci">XMFLOAT2 size</div><div class="ttdef"><b>Definition</b> <a href="#l00025">VFX.h:25</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a527cde453230277f9b9ca334b04336ca"><div class="ttname"><a href="struct_emitter_data.html#a527cde453230277f9b9ca334b04336ca">EmitterData::lifeTime</a></div><div class="ttdeci">DWORD lifeTime</div><div class="ttdef"><b>Definition</b> <a href="#l00028">VFX.h:28</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a5efe8378ec3215a5503b00db384458da"><div class="ttname"><a href="struct_emitter_data.html#a5efe8378ec3215a5503b00db384458da">EmitterData::delay</a></div><div class="ttdeci">DWORD delay</div><div class="ttdef"><b>Definition</b> <a href="#l00029">VFX.h:29</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a68938cd9df7c1e16ae24b3f0bafde38e"><div class="ttname"><a href="struct_emitter_data.html#a68938cd9df7c1e16ae24b3f0bafde38e">EmitterData::direction</a></div><div class="ttdeci">XMFLOAT3 direction</div><div class="ttdef"><b>Definition</b> <a href="#l00014">VFX.h:14</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a6e16f8f412569171dc9f018f9395d334"><div class="ttname"><a href="struct_emitter_data.html#a6e16f8f412569171dc9f018f9395d334">EmitterData::sizeRnd</a></div><div class="ttdeci">XMFLOAT2 sizeRnd</div><div class="ttdef"><b>Definition</b> <a href="#l00026">VFX.h:26</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a79381182d3bf746560e57753e580938f"><div class="ttname"><a href="struct_emitter_data.html#a79381182d3bf746560e57753e580938f">EmitterData::position</a></div><div class="ttdeci">XMFLOAT3 position</div><div class="ttdef"><b>Definition</b> <a href="#l00012">VFX.h:12</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a7cf2159ea6849bf5a3662c50b446199c"><div class="ttname"><a href="struct_emitter_data.html#a7cf2159ea6849bf5a3662c50b446199c">EmitterData::speed</a></div><div class="ttdeci">float speed</div><div class="ttdef"><b>Definition</b> <a href="#l00016">VFX.h:16</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a8b6d4e23180a16c50cfbe9a92b41e0d2"><div class="ttname"><a href="struct_emitter_data.html#a8b6d4e23180a16c50cfbe9a92b41e0d2">EmitterData::speedRnd</a></div><div class="ttdeci">float speedRnd</div><div class="ttdef"><b>Definition</b> <a href="#l00017">VFX.h:17</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_a91e185dadde8087822cd93ebf0cb76bc"><div class="ttname"><a href="struct_emitter_data.html#a91e185dadde8087822cd93ebf0cb76bc">EmitterData::spin</a></div><div class="ttdeci">XMFLOAT3 spin</div><div class="ttdef"><b>Definition</b> <a href="#l00024">VFX.h:24</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_aad297d80f8fe1d2896b1e82fcc92b9e8"><div class="ttname"><a href="struct_emitter_data.html#aad297d80f8fe1d2896b1e82fcc92b9e8">EmitterData::rotateRnd</a></div><div class="ttdeci">XMFLOAT3 rotateRnd</div><div class="ttdef"><b>Definition</b> <a href="#l00023">VFX.h:23</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_ab50b635a0e782ad4832aba2b556c6c0d"><div class="ttname"><a href="struct_emitter_data.html#ab50b635a0e782ad4832aba2b556c6c0d">EmitterData::isBillBoard</a></div><div class="ttdeci">bool isBillBoard</div><div class="ttdef"><b>Definition</b> <a href="#l00031">VFX.h:31</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_ab520aab5a96101276604df5e5987ad55"><div class="ttname"><a href="struct_emitter_data.html#ab520aab5a96101276604df5e5987ad55">EmitterData::number</a></div><div class="ttdeci">DWORD number</div><div class="ttdef"><b>Definition</b> <a href="#l00030">VFX.h:30</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_abe3d38b74e35e57dcf094faeb2e46907"><div class="ttname"><a href="struct_emitter_data.html#abe3d38b74e35e57dcf094faeb2e46907">EmitterData::scale</a></div><div class="ttdeci">XMFLOAT2 scale</div><div class="ttdef"><b>Definition</b> <a href="#l00027">VFX.h:27</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_ac049b5c37fb1795dd56d4edacdfba475"><div class="ttname"><a href="struct_emitter_data.html#ac049b5c37fb1795dd56d4edacdfba475">EmitterData::positionRnd</a></div><div class="ttdeci">XMFLOAT3 positionRnd</div><div class="ttdef"><b>Definition</b> <a href="#l00013">VFX.h:13</a></div></div>
+<div class="ttc" id="astruct_emitter_data_html_ae012958a0ef8e3dcb40cf8cbe6163cf1"><div class="ttname"><a href="struct_emitter_data.html#ae012958a0ef8e3dcb40cf8cbe6163cf1">EmitterData::textureFileName</a></div><div class="ttdeci">std::string textureFileName</div><div class="ttdef"><b>Definition</b> <a href="#l00011">VFX.h:11</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_dynamic_data_html"><div class="ttname"><a href="struct_v_f_x_1_1_dynamic_data.html">VFX::DynamicData</a></div><div class="ttdef"><b>Definition</b> <a href="#l00072">VFX.h:73</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_dynamic_data_html_a1fe7006824c38fd703a446b745af8544"><div class="ttname"><a href="struct_v_f_x_1_1_dynamic_data.html#a1fe7006824c38fd703a446b745af8544">VFX::DynamicData::rotation</a></div><div class="ttdeci">XMFLOAT3 rotation</div><div class="ttdef"><b>Definition</b> <a href="#l00075">VFX.h:75</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_dynamic_data_html_a2716e7dd12d145d31918379060f64635"><div class="ttname"><a href="struct_v_f_x_1_1_dynamic_data.html#a2716e7dd12d145d31918379060f64635">VFX::DynamicData::position</a></div><div class="ttdeci">XMFLOAT3 position</div><div class="ttdef"><b>Definition</b> <a href="#l00074">VFX.h:74</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_dynamic_data_html_a50478320727ddae462d0025823cf0ed1"><div class="ttname"><a href="struct_v_f_x_1_1_dynamic_data.html#a50478320727ddae462d0025823cf0ed1">VFX::DynamicData::color</a></div><div class="ttdeci">XMFLOAT4 color</div><div class="ttdef"><b>Definition</b> <a href="#l00077">VFX.h:77</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_dynamic_data_html_affb7d2878ffcc3a16a7a0179e6afec74"><div class="ttname"><a href="struct_v_f_x_1_1_dynamic_data.html#affb7d2878ffcc3a16a7a0179e6afec74">VFX::DynamicData::scale</a></div><div class="ttdeci">XMFLOAT2 scale</div><div class="ttdef"><b>Definition</b> <a href="#l00076">VFX.h:76</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_emitter_html"><div class="ttname"><a href="struct_v_f_x_1_1_emitter.html">VFX::Emitter</a></div><div class="ttdef"><b>Definition</b> <a href="#l00060">VFX.h:61</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_emitter_html_a0778cefdb1140619e8c60a0ebd17a859"><div class="ttname"><a href="struct_v_f_x_1_1_emitter.html#a0778cefdb1140619e8c60a0ebd17a859">VFX::Emitter::particleNum</a></div><div class="ttdeci">int particleNum</div><div class="ttdef"><b>Definition</b> <a href="#l00067">VFX.h:67</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_emitter_html_a12e750568cdbb49fc27576051948662a"><div class="ttname"><a href="struct_v_f_x_1_1_emitter.html#a12e750568cdbb49fc27576051948662a">VFX::Emitter::data</a></div><div class="ttdeci">EmitterData data</div><div class="ttdef"><b>Definition</b> <a href="#l00062">VFX.h:62</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_emitter_html_a1a54720997994c1b474a6b5064c19ebd"><div class="ttname"><a href="struct_v_f_x_1_1_emitter.html#a1a54720997994c1b474a6b5064c19ebd">VFX::Emitter::isDead</a></div><div class="ttdeci">bool isDead</div><div class="ttdef"><b>Definition</b> <a href="#l00066">VFX.h:66</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_emitter_html_a61ac81ded91f37bdad8c6c2562b1d9d5"><div class="ttname"><a href="struct_v_f_x_1_1_emitter.html#a61ac81ded91f37bdad8c6c2562b1d9d5">VFX::Emitter::handle</a></div><div class="ttdeci">int handle</div><div class="ttdef"><b>Definition</b> <a href="#l00063">VFX.h:63</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_emitter_html_a7f5fab3163555f70ae81996e5137ab1d"><div class="ttname"><a href="struct_v_f_x_1_1_emitter.html#a7f5fab3163555f70ae81996e5137ab1d">VFX::Emitter::frameCount</a></div><div class="ttdeci">DWORD frameCount</div><div class="ttdef"><b>Definition</b> <a href="#l00064">VFX.h:64</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_emitter_html_ae27b7b4686a252d72eea6f4f5d5d9999"><div class="ttname"><a href="struct_v_f_x_1_1_emitter.html#ae27b7b4686a252d72eea6f4f5d5d9999">VFX::Emitter::pBillBoard</a></div><div class="ttdeci">BillBoard * pBillBoard</div><div class="ttdef"><b>Definition</b> <a href="#l00065">VFX.h:65</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_particle_html"><div class="ttname"><a href="struct_v_f_x_1_1_particle.html">VFX::Particle</a></div><div class="ttdef"><b>Definition</b> <a href="#l00081">VFX.h:82</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_particle_html_a02e55ed99353c87dc0c08fddb1ed8bf3"><div class="ttname"><a href="struct_v_f_x_1_1_particle.html#a02e55ed99353c87dc0c08fddb1ed8bf3">VFX::Particle::life</a></div><div class="ttdeci">DWORD life</div><div class="ttdef"><b>Definition</b> <a href="#l00085">VFX.h:85</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_particle_html_a0b5dc2637f1b95aecb1d5ea4c3c0e49c"><div class="ttname"><a href="struct_v_f_x_1_1_particle.html#a0b5dc2637f1b95aecb1d5ea4c3c0e49c">VFX::Particle::delta</a></div><div class="ttdeci">DynamicData delta</div><div class="ttdef"><b>Definition</b> <a href="#l00084">VFX.h:84</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_particle_html_a5312ce76a25d9991143ba69fe072fc77"><div class="ttname"><a href="struct_v_f_x_1_1_particle.html#a5312ce76a25d9991143ba69fe072fc77">VFX::Particle::pEmitter</a></div><div class="ttdeci">Emitter * pEmitter</div><div class="ttdef"><b>Definition</b> <a href="#l00088">VFX.h:88</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_particle_html_a8fa4facc4084fad4ce6bef42cb48a64d"><div class="ttname"><a href="struct_v_f_x_1_1_particle.html#a8fa4facc4084fad4ce6bef42cb48a64d">VFX::Particle::accel</a></div><div class="ttdeci">float accel</div><div class="ttdef"><b>Definition</b> <a href="#l00086">VFX.h:86</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_particle_html_a9441c34421af3b3cdbb6c5d9f515ac2f"><div class="ttname"><a href="struct_v_f_x_1_1_particle.html#a9441c34421af3b3cdbb6c5d9f515ac2f">VFX::Particle::gravity</a></div><div class="ttdeci">float gravity</div><div class="ttdef"><b>Definition</b> <a href="#l00087">VFX.h:87</a></div></div>
+<div class="ttc" id="astruct_v_f_x_1_1_particle_html_ac359ed89114d2bf409d9925e92765c9e"><div class="ttname"><a href="struct_v_f_x_1_1_particle.html#ac359ed89114d2bf409d9925e92765c9e">VFX::Particle::now</a></div><div class="ttdeci">DynamicData now</div><div class="ttdef"><b>Definition</b> <a href="#l00083">VFX.h:83</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_v_f_x_8h.html">VFX.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

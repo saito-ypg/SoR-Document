@@ -1,0 +1,7 @@
+<map id="GameObject::UpdateSub" name="GameObject::UpdateSub">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,172,57"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="220,5,381,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,204,28,204,33,172,37"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#ae8bdcc3855d8a143685051b541872d8e" title=" " alt="" coords="229,56,372,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,51,213,56,213,62,172,57"/>
+</map>

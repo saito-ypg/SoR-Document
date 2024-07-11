@@ -1,0 +1,25 @@
+<map id="detail::dtoa_impl::grisu2" name="detail::dtoa_impl::grisu2">
+<area shape="rect" id="Node000001" title="v = buf * 10^decimal_exponent len is the length of the buffer (number of decimal digits) The buffer m..." alt="" coords="5,213,130,256"/>
+<area shape="rect" id="Node000002" href="$namespacedetail_1_1dtoa__impl.html#a6a5ccf11847aab7a0f42f587b33935df" title="Compute the (normalized) diyfp representing the input number &#39;value&#39; and its boundaries." alt="" coords="178,105,319,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,211,197,154,199,159,106,215"/>
+<area shape="rect" id="Node000006" href="$namespacedetail_1_1dtoa__impl.html#ad549352ed1a9676a092d143a2daa3dee" title="v = buf * 10^decimal_exponent len is the length of the buffer (number of decimal digits) The buffer m..." alt="" coords="186,251,311,293"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="131,245,171,253,170,259,130,250"/>
+<area shape="rect" id="Node000003" href="$structdetail_1_1dtoa__impl_1_1diyfp.html#a5bad735c2cb50b194938a8a89b82f6ed" title="normalize x such that the significand is &gt;= 2^(q&#45;1)" alt="" coords="380,5,504,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,102,366,58,376,53,378,58,368,62,287,107"/>
+<area shape="rect" id="Node000004" href="$structdetail_1_1dtoa__impl_1_1diyfp.html#a5a9ce83c6c1663c9aaac7ffd9009b971" title="normalize x such that the result has the exponent E" alt="" coords="377,72,507,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="319,112,361,105,362,110,320,117"/>
+<area shape="rect" id="Node000005" href="$namespacedetail_1_1dtoa__impl.html#a3c879bf97b806cacbcbb2da07a5ff5c8" title=" " alt="" coords="380,139,504,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="320,136,365,144,365,149,319,141"/>
+<area shape="rect" id="Node000007" href="$namespacedetail_1_1dtoa__impl.html#a29ae6574f6be09a5c8ab08da9a3f71b4" title="For a normalized diyfp w = f * 2^e, this function returns a (normalized) cached power&#45;of&#45;ten c = f_c ..." alt="" coords="367,205,517,264"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="310,257,351,250,352,255,311,263"/>
+<area shape="rect" id="Node000008" href="$namespacedetail_1_1dtoa__impl.html#ae877aa13ab872c99a1c614e5e1524807" title="Generates V = buffer * 10^decimal_exponent, such that M&#45; &lt;= V &lt;= M+." alt="" coords="380,288,504,331"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="311,281,365,292,364,297,310,287"/>
+<area shape="rect" id="Node000012" href="$structdetail_1_1dtoa__impl_1_1diyfp.html#a046c61f2c13411677eedfb5b9b7a8226" title="returns x * y" alt="" coords="380,355,504,397"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="285,292,368,340,378,345,375,350,366,345,282,296"/>
+<area shape="rect" id="Node000009" href="$namespacedetail_1_1dtoa__impl.html#a04eb234a28617519974fc962cd4da666" title="For n != 0, returns k, such that pow10 := 10^(k&#45;1) &lt;= n &lt; 10^k." alt="" coords="565,221,697,264"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="504,285,553,267,555,272,505,290"/>
+<area shape="rect" id="Node000010" href="$namespacedetail_1_1dtoa__impl.html#a73a15efcb5c2157ea0e1375b98ef0e83" title=" " alt="" coords="569,288,693,331"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="505,307,553,307,553,312,505,312"/>
+<area shape="rect" id="Node000011" href="$structdetail_1_1dtoa__impl_1_1diyfp.html#a75142bace0b78b1e1433b1d35a7ff252" title="returns x &#45; y" alt="" coords="569,355,693,397"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="505,329,555,346,553,352,504,334"/>
+</map>

@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/sources/GameActor.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_game_actor_8cpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GameActor.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_actor_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include&lt;cmath&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_game_actor_8h.html">GameActor.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&quot;<a class="code" href="_model_8h.html">../Engine/Model.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&quot;<a class="code" href="_camera_8h.html">../Engine/Camera.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include&quot;<a class="code" href="_image_8h.html">../Engine/Image.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include&quot;<a class="code" href="_debug_8h.html">../Engine/Debug.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include&quot;<a class="code" href="_direct3_d_8h.html">../Engine/Direct3D.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&quot;<a class="code" href="_h_p_bar_8h.html">HPBar.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include&quot;<a class="code" href="areamodels_8h.html">areamodels.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_actor.html#aebb4261acec41285a2ceaa5fd295af08">   12</a></span><a class="code hl_function" href="class_game_actor.html#aebb4261acec41285a2ceaa5fd295af08">GameActor::GameActor</a>(<a class="code hl_class" href="class_game_object.html">GameObject</a>* parent, <span class="keyword">const</span> std::string&amp; name) : <a class="code hl_class" href="class_game_object.html">GameObject</a>(parent, name)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="class_game_actor.html#a10f17af4412e5ecc67f0dcf58aa2d560">isInvincible_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_variable" href="class_game_actor.html#a440bedde933a7d89f34c8507c5f780de">isDying_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="class_game_actor.html#a19cff1a27e391ade9edc88166629d281">hBody_</a> = -1;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    knockBack = { 0,0,XMVectorZero() };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_actor.html#a7becf6889c14e7df17e31ba0a3329d32">   22</a></span><a class="code hl_function" href="class_game_actor.html#a7becf6889c14e7df17e31ba0a3329d32">GameActor::~GameActor</a>()</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_actor.html#a1db71402a6b50b290625cdd2f9e758c2">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a1db71402a6b50b290625cdd2f9e758c2">GameActor::Update</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; dt)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//いろいろ更新入れる</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="class_game_actor.html#ad6c4998daa8606696f2a9ddecd679862">ActorUpdate</a>(dt);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (knockBack.Time &gt; 0)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">float</span> quart =(float)((1 - std::pow(1 - (<a class="code hl_variable" href="_game_actor_8h.html#a01bc600186bea00c2e8eb2821bb5744e">defTime</a> - knockBack.Time) / <a class="code hl_variable" href="_game_actor_8h.html#a01bc600186bea00c2e8eb2821bb5744e">defTime</a>, 4))-(1 - std::pow(1 - (<a class="code hl_variable" href="_game_actor_8h.html#a01bc600186bea00c2e8eb2821bb5744e">defTime</a> - knockBack.Time-1) / <a class="code hl_variable" href="_game_actor_8h.html#a01bc600186bea00c2e8eb2821bb5744e">defTime</a>, 4)));<span class="comment">//outquartの増分</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        XMVECTOR force = knockBack.Velocity * quart * knockBack.Dir;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_function" href="class_game_actor.html#a6183007228b75125d1a6da008937e6f5">ForceMove</a>(knockBack.Velocity * quart * knockBack.Dir);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        knockBack.Time--;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">if</span> (knockBack.Time &lt;= 0)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            knockBack.Dir = XMVectorZero();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a>.<a class="code hl_variable" href="class_actor_info.html#a1a97b8b701f5a9fb5df91a47cb2221e6">hp_</a> &lt;= 0)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_variable" href="class_game_actor.html#a440bedde933a7d89f34c8507c5f780de">isDying_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_actor.html#a440bedde933a7d89f34c8507c5f780de">isDying_</a>)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_function" href="class_game_actor.html#aac02341b22c13822ee77ee4b99d9e8b4">dyingProcess</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_game_actor.html#ad6c4998daa8606696f2a9ddecd679862">   50</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#ad6c4998daa8606696f2a9ddecd679862">GameActor::ActorUpdate</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; dt)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7">GameActor::Draw</a>()</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">//なんかやる</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_game_object.html#ac05d364e5acbfdf52368092e963887c0">IsVisibled</a>()) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137">DrawBody</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="class_game_actor.html#a3b8eb792530c36af9da8be95bc371482">ActorDraw</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_actor.html#a440bedde933a7d89f34c8507c5f780de">isDying_</a>)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_function" href="class_game_actor.html#a22bf19323146d2f58b999ffab10b0f98">dyingDraw</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_function" href="class_game_actor.html#a498ed1fd302e01a069747b8c43598eee">DrawCollision</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_function" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96">DrawHP</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_game_actor.html#a3b8eb792530c36af9da8be95bc371482">   70</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a3b8eb792530c36af9da8be95bc371482">GameActor::ActorDraw</a>()</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_game_actor.html#a7a324573278ae34de1df8548437173c8">   73</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a7a324573278ae34de1df8548437173c8">GameActor::Release</a>()</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="class_game_actor.html#aef06609c6aae84018489e5d1bbf21d61">ActorRelease</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_function" href="namespace_model.html#ace98e9790323a88829195b4abb15e584">Model::Release</a>(<a class="code hl_variable" href="class_game_actor.html#a19cff1a27e391ade9edc88166629d281">hBody_</a>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_game_actor.html#aac02341b22c13822ee77ee4b99d9e8b4">   78</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#aac02341b22c13822ee77ee4b99d9e8b4">GameActor::dyingProcess</a>()</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_game_actor.html#a22bf19323146d2f58b999ffab10b0f98">   81</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a22bf19323146d2f58b999ffab10b0f98">GameActor::dyingDraw</a>()</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96">   84</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96">GameActor::DrawHP</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> HPBarRatio = 128.0f / <a class="code hl_variable" href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">Direct3D::screenWidth_</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_class" href="class_transform.html">Transform</a> DrawT;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    XMVECTOR vPos = XMLoadFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    XMStoreFloat3(&amp;DrawT.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>,XMVector3TransformCoord(vPos, <a class="code hl_function" href="namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b">Camera::GetViewMatrix</a>() * <a class="code hl_function" href="namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac">Camera::GetProjectionMatrix</a>()*<a class="code hl_function" href="namespace_camera.html#abd2dd52de2c1bebe6628bb3c72eeb17e">Camera::GetVPMatrix</a>()));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    DrawT.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>.z = 0;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    DrawT.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>.x = (<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>((DrawT.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>.x / <a class="code hl_variable" href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">Direct3D::screenWidth_</a> - HPBarRatio / 4.0f) * <a class="code hl_variable" href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">Direct3D::screenWidth_</a>) * 2.0f / <a class="code hl_variable" href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">Direct3D::screenWidth_</a>) - 1.0f;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    DrawT.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>.y = <a class="code hl_function" href="namespace_image.html#af563910c608e9d72aa0acef8fd626728">Image::toPos</a>(DrawT.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>.y+30 ,<a class="code hl_enumvalue" href="_image_8h.html#ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84">Y</a>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_h_p_bar.html">HPBar</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; <a class="code hl_enumvalue" href="namespace_h_p_bar.html#a1c0c1aa694dc89676614d5a9d13bce3faf06ec0a2a764f0f08bb129e01d7f0ec2">HPBar::NUM</a>; i++)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">switch</span> (i)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">case</span> DMG:</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">case</span> BAR:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            DrawT.<a class="code hl_variable" href="class_transform.html#abb59e5b42658dfc257a92c5f8af0806a">scale_</a>.x = <a class="code hl_variable" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a>.<a class="code hl_variable" href="class_actor_info.html#a1a97b8b701f5a9fb5df91a47cb2221e6">hp_</a> / <a class="code hl_variable" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a>.<a class="code hl_variable" href="class_actor_info.html#a819d85cdf0289f3cc093f40eb20c6ea5">maxHp_</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            DrawT.<a class="code hl_variable" href="class_transform.html#abb59e5b42658dfc257a92c5f8af0806a">scale_</a>.x = 1;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span> (DrawT.<a class="code hl_variable" href="class_transform.html#abb59e5b42658dfc257a92c5f8af0806a">scale_</a>.x &lt; 0)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            DrawT.<a class="code hl_variable" href="class_transform.html#abb59e5b42658dfc257a92c5f8af0806a">scale_</a>.x = 0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <a class="code hl_function" href="namespace_h_p_bar.html#a6226641f58b19a29980611c48cbf3ac3">HPBar::Draw</a>((<a class="code hl_enumeration" href="namespace_h_p_bar.html#a1c0c1aa694dc89676614d5a9d13bce3f">HPBar::HANDLE</a>)i, DrawT);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_game_actor.html#a4e63eb09474d5c6acf655d7d4d53a9b5">  116</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a4e63eb09474d5c6acf655d7d4d53a9b5">GameActor::TakeAttacked</a>(<a class="code hl_struct" href="struct_damage_data.html">DamageData</a>&amp; dmg,XMVECTOR&amp; dir)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_actor.html#a10f17af4412e5ecc67f0dcf58aa2d560">isInvincible_</a>)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    {<span class="comment">//無敵の処理あれば書く</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_variable" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a>.<a class="code hl_variable" href="class_actor_info.html#a1a97b8b701f5a9fb5df91a47cb2221e6">hp_</a> -= dmg.<a class="code hl_variable" href="struct_damage_data.html#aec7e67a6a948a3ad403e45876df188f0">damage_</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    {<span class="comment">//ノクバ処理</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        knockBack.Velocity = dmg.<a class="code hl_variable" href="struct_damage_data.html#a29adbe951d9eadf71a6c0de998811636">knockback_</a>/2;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        knockBack.Time = <a class="code hl_variable" href="_game_actor_8h.html#a01bc600186bea00c2e8eb2821bb5744e">defTime</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        knockBack.Dir = dir;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">if</span> (dmg.<a class="code hl_variable" href="struct_damage_data.html#a9df43e603b78ae60bb2ec806a1517856">pEffect_</a>) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="comment">//dmg.pEffect_;//余裕あったら実装しよ</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    XMFLOAT3 fdir;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    XMStoreFloat3(&amp;fdir, -dir);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a677983ce60221914ad621d41eeea114c">rotate_</a>.y= XMConvertToDegrees((<span class="keywordtype">float</span>)atan2(fdir.x, fdir.z));</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00136" data-start="{" data-end="}">
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_game_actor.html#acfeff0c8477472a5c26812b74cddcf52">  136</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#acfeff0c8477472a5c26812b74cddcf52">GameActor::AddColliderCamp</a>(<a class="code hl_class" href="class_game_actor.html">GameActor</a>* act, <a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>{    </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <a class="code hl_function" href="namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b">CollisionManager::AddCamp</a>(act, camp);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_game_actor.html#a97f38a9c2daa7f0b6c452f04a0a4379d">  140</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a97f38a9c2daa7f0b6c452f04a0a4379d">GameActor::RemoveColliderCamp</a>(<a class="code hl_class" href="class_game_actor.html">GameActor</a>* act, <a class="code hl_enumeration" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp)</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <a class="code hl_function" href="namespace_collision_manager.html#af7d80cc1b17304c493fd70c97c44856f">CollisionManager::RemoveCamp</a>(act, camp);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>}</div>
+</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="class_game_actor.html#afd4ad85081854790b6436bb67f04a21e">  145</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_actor.html#afd4ad85081854790b6436bb67f04a21e">GameActor::CanMoveWithEffects</a>()</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137">  150</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137">GameActor::DrawBody</a>()</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    assert(<a class="code hl_variable" href="class_game_actor.html#a19cff1a27e391ade9edc88166629d281">hBody_</a> &gt;= 0);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <a class="code hl_function" href="namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee">Model::SetTransform</a>(<a class="code hl_variable" href="class_game_actor.html#a19cff1a27e391ade9edc88166629d281">hBody_</a>, <a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <a class="code hl_function" href="namespace_model.html#a444ada60ab1281d88d5062bff87bc65b">Model::Draw</a>(<a class="code hl_variable" href="class_game_actor.html#a19cff1a27e391ade9edc88166629d281">hBody_</a>);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="class_game_actor.html#a498ed1fd302e01a069747b8c43598eee">  156</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a498ed1fd302e01a069747b8c43598eee">GameActor::DrawCollision</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_class" href="class_transform.html">Transform</a> circle;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    circle.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a> = <a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    circle.<a class="code hl_variable" href="class_transform.html#abb59e5b42658dfc257a92c5f8af0806a">scale_</a>.x = <a class="code hl_variable" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a>.<a class="code hl_variable" href="class_actor_info.html#a421fef2bad04dcbad239a922953d5e41">hitCircleRange_</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    circle.<a class="code hl_variable" href="class_transform.html#abb59e5b42658dfc257a92c5f8af0806a">scale_</a>.z = <a class="code hl_variable" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a>.<a class="code hl_variable" href="class_actor_info.html#a421fef2bad04dcbad239a922953d5e41">hitCircleRange_</a>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <a class="code hl_function" href="namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee">Model::SetTransform</a>(<a class="code hl_function" href="namespace_area_models.html#ab83a8f7b483fae0f543d0c893354e082">area</a>(<a class="code hl_enumvalue" href="namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6fa95eaeeaa10fa63d17ad7cb91f4f0637e">CIRCLE</a>), circle);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_function" href="namespace_model.html#a444ada60ab1281d88d5062bff87bc65b">Model::Draw</a>(<a class="code hl_function" href="namespace_area_models.html#ab83a8f7b483fae0f543d0c893354e082">area</a>(<a class="code hl_enumvalue" href="namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6fa95eaeeaa10fa63d17ad7cb91f4f0637e">CIRCLE</a>));</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+</div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401">  166</a></span><a class="code hl_class" href="class_transform.html">Transform</a>* <a class="code hl_function" href="class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401">GameActor::GetTransformRef</a>()</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>{</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
+</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="class_game_actor.html#a6183007228b75125d1a6da008937e6f5">  171</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_actor.html#a6183007228b75125d1a6da008937e6f5">GameActor::ForceMove</a>(XMVECTOR translateBy)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    XMVECTOR vpos = XMLoadFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    vpos += translateBy;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    XMStoreFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>, vpos);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+</div>
+<div class="ttc" id="a_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
+<div class="ttc" id="a_collision_manager_8h_html_a83e6e9c914bc93bc7eb7d4392519a89d"><div class="ttname"><a href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a></div><div class="ttdeci">CAMPS</div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8h_source.html#l00006">CollisionManager.h:6</a></div></div>
+<div class="ttc" id="a_debug_8h_html"><div class="ttname"><a href="_debug_8h.html">Debug.h</a></div></div>
+<div class="ttc" id="a_direct3_d_8h_html"><div class="ttname"><a href="_direct3_d_8h.html">Direct3D.h</a></div></div>
+<div class="ttc" id="a_game_actor_8h_html"><div class="ttname"><a href="_game_actor_8h.html">GameActor.h</a></div></div>
+<div class="ttc" id="a_game_actor_8h_html_a01bc600186bea00c2e8eb2821bb5744e"><div class="ttname"><a href="_game_actor_8h.html#a01bc600186bea00c2e8eb2821bb5744e">defTime</a></div><div class="ttdeci">const float defTime</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00009">GameActor.h:9</a></div></div>
+<div class="ttc" id="a_h_p_bar_8h_html"><div class="ttname"><a href="_h_p_bar_8h.html">HPBar.h</a></div></div>
+<div class="ttc" id="a_image_8h_html"><div class="ttname"><a href="_image_8h.html">Image.h</a></div></div>
+<div class="ttc" id="a_image_8h_html_ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84"><div class="ttname"><a href="_image_8h.html#ac79c9040b19c90137f1ae7604877f1d8a5596231eabd6cf29050967d5ac83ad84">Y</a></div><div class="ttdeci">@ Y</div><div class="ttdef"><b>Definition</b> <a href="_image_8h_source.html#l00010">Image.h:10</a></div></div>
+<div class="ttc" id="a_model_8h_html"><div class="ttname"><a href="_model_8h.html">Model.h</a></div></div>
+<div class="ttc" id="aareamodels_8h_html"><div class="ttname"><a href="areamodels_8h.html">areamodels.h</a></div></div>
+<div class="ttc" id="aclass_actor_info_html_a1a97b8b701f5a9fb5df91a47cb2221e6"><div class="ttname"><a href="class_actor_info.html#a1a97b8b701f5a9fb5df91a47cb2221e6">ActorInfo::hp_</a></div><div class="ttdeci">float hp_</div><div class="ttdef"><b>Definition</b> <a href="_actor_info_8h_source.html#l00005">ActorInfo.h:5</a></div></div>
+<div class="ttc" id="aclass_actor_info_html_a421fef2bad04dcbad239a922953d5e41"><div class="ttname"><a href="class_actor_info.html#a421fef2bad04dcbad239a922953d5e41">ActorInfo::hitCircleRange_</a></div><div class="ttdeci">float hitCircleRange_</div><div class="ttdef"><b>Definition</b> <a href="_actor_info_8h_source.html#l00007">ActorInfo.h:7</a></div></div>
+<div class="ttc" id="aclass_actor_info_html_a819d85cdf0289f3cc093f40eb20c6ea5"><div class="ttname"><a href="class_actor_info.html#a819d85cdf0289f3cc093f40eb20c6ea5">ActorInfo::maxHp_</a></div><div class="ttdeci">float maxHp_</div><div class="ttdef"><b>Definition</b> <a href="_actor_info_8h_source.html#l00006">ActorInfo.h:6</a></div></div>
+<div class="ttc" id="aclass_game_actor_html"><div class="ttname"><a href="class_game_actor.html">GameActor</a></div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00010">GameActor.h:10</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a10f17af4412e5ecc67f0dcf58aa2d560"><div class="ttname"><a href="class_game_actor.html#a10f17af4412e5ecc67f0dcf58aa2d560">GameActor::isInvincible_</a></div><div class="ttdeci">bool isInvincible_</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00021">GameActor.h:21</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a19cff1a27e391ade9edc88166629d281"><div class="ttname"><a href="class_game_actor.html#a19cff1a27e391ade9edc88166629d281">GameActor::hBody_</a></div><div class="ttdeci">int hBody_</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00024">GameActor.h:24</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a1db71402a6b50b290625cdd2f9e758c2"><div class="ttname"><a href="class_game_actor.html#a1db71402a6b50b290625cdd2f9e758c2">GameActor::Update</a></div><div class="ttdeci">void Update(const float &amp;dt) override final</div><div class="ttdef"><b>Definition</b> <a href="#l00027">GameActor.cpp:27</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a21d41aaa7abbe39ab6170a83eb170137"><div class="ttname"><a href="class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137">GameActor::DrawBody</a></div><div class="ttdeci">void DrawBody()</div><div class="ttdef"><b>Definition</b> <a href="#l00150">GameActor.cpp:150</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a22bf19323146d2f58b999ffab10b0f98"><div class="ttname"><a href="class_game_actor.html#a22bf19323146d2f58b999ffab10b0f98">GameActor::dyingDraw</a></div><div class="ttdeci">virtual void dyingDraw()</div><div class="ttdef"><b>Definition</b> <a href="#l00081">GameActor.cpp:81</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a3b8eb792530c36af9da8be95bc371482"><div class="ttname"><a href="class_game_actor.html#a3b8eb792530c36af9da8be95bc371482">GameActor::ActorDraw</a></div><div class="ttdeci">virtual void ActorDraw()=0</div><div class="ttdef"><b>Definition</b> <a href="#l00070">GameActor.cpp:70</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a440bedde933a7d89f34c8507c5f780de"><div class="ttname"><a href="class_game_actor.html#a440bedde933a7d89f34c8507c5f780de">GameActor::isDying_</a></div><div class="ttdeci">bool isDying_</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00022">GameActor.h:22</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a498ed1fd302e01a069747b8c43598eee"><div class="ttname"><a href="class_game_actor.html#a498ed1fd302e01a069747b8c43598eee">GameActor::DrawCollision</a></div><div class="ttdeci">void DrawCollision() const</div><div class="ttdef"><b>Definition</b> <a href="#l00156">GameActor.cpp:156</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a4e63eb09474d5c6acf655d7d4d53a9b5"><div class="ttname"><a href="class_game_actor.html#a4e63eb09474d5c6acf655d7d4d53a9b5">GameActor::TakeAttacked</a></div><div class="ttdeci">void TakeAttacked(DamageData &amp;dmg, XMVECTOR &amp;dir)</div><div class="ttdef"><b>Definition</b> <a href="#l00116">GameActor.cpp:116</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7"><div class="ttname"><a href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7">GameActor::Draw</a></div><div class="ttdeci">void Draw() override final</div><div class="ttdef"><b>Definition</b> <a href="#l00054">GameActor.cpp:54</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a6183007228b75125d1a6da008937e6f5"><div class="ttname"><a href="class_game_actor.html#a6183007228b75125d1a6da008937e6f5">GameActor::ForceMove</a></div><div class="ttdeci">void ForceMove(XMVECTOR translateBy)</div><div class="ttdef"><b>Definition</b> <a href="#l00171">GameActor.cpp:171</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a6e0b55e1673ad978a4ef4b7f8ed99401"><div class="ttname"><a href="class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401">GameActor::GetTransformRef</a></div><div class="ttdeci">Transform * GetTransformRef()</div><div class="ttdef"><b>Definition</b> <a href="#l00166">GameActor.cpp:166</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a7a324573278ae34de1df8548437173c8"><div class="ttname"><a href="class_game_actor.html#a7a324573278ae34de1df8548437173c8">GameActor::Release</a></div><div class="ttdeci">void Release() override final</div><div class="ttdef"><b>Definition</b> <a href="#l00073">GameActor.cpp:73</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a7becf6889c14e7df17e31ba0a3329d32"><div class="ttname"><a href="class_game_actor.html#a7becf6889c14e7df17e31ba0a3329d32">GameActor::~GameActor</a></div><div class="ttdeci">virtual ~GameActor()</div><div class="ttdef"><b>Definition</b> <a href="#l00022">GameActor.cpp:22</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_a97f38a9c2daa7f0b6c452f04a0a4379d"><div class="ttname"><a href="class_game_actor.html#a97f38a9c2daa7f0b6c452f04a0a4379d">GameActor::RemoveColliderCamp</a></div><div class="ttdeci">void RemoveColliderCamp(GameActor *act, CAMPS camp)</div><div class="ttdef"><b>Definition</b> <a href="#l00140">GameActor.cpp:140</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_aa3e5ba56e0d11bf66cb0ed38654e5a64"><div class="ttname"><a href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">GameActor::status_</a></div><div class="ttdeci">ActorInfo status_</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00020">GameActor.h:20</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_aa8e0717de9eb78aafe1891fae94a3f96"><div class="ttname"><a href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96">GameActor::DrawHP</a></div><div class="ttdeci">void DrawHP() const</div><div class="ttdef"><b>Definition</b> <a href="#l00084">GameActor.cpp:84</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_aac02341b22c13822ee77ee4b99d9e8b4"><div class="ttname"><a href="class_game_actor.html#aac02341b22c13822ee77ee4b99d9e8b4">GameActor::dyingProcess</a></div><div class="ttdeci">virtual void dyingProcess()</div><div class="ttdef"><b>Definition</b> <a href="#l00078">GameActor.cpp:78</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_acfeff0c8477472a5c26812b74cddcf52"><div class="ttname"><a href="class_game_actor.html#acfeff0c8477472a5c26812b74cddcf52">GameActor::AddColliderCamp</a></div><div class="ttdeci">void AddColliderCamp(GameActor *act, CAMPS camp)</div><div class="ttdef"><b>Definition</b> <a href="#l00136">GameActor.cpp:136</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_ad6c4998daa8606696f2a9ddecd679862"><div class="ttname"><a href="class_game_actor.html#ad6c4998daa8606696f2a9ddecd679862">GameActor::ActorUpdate</a></div><div class="ttdeci">virtual void ActorUpdate(const float &amp;dt)=0</div><div class="ttdef"><b>Definition</b> <a href="#l00050">GameActor.cpp:50</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_aebb4261acec41285a2ceaa5fd295af08"><div class="ttname"><a href="class_game_actor.html#aebb4261acec41285a2ceaa5fd295af08">GameActor::GameActor</a></div><div class="ttdeci">GameActor(GameObject *parent, const std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="#l00012">GameActor.cpp:12</a></div></div>
+<div class="ttc" id="aclass_game_actor_html_aef06609c6aae84018489e5d1bbf21d61"><div class="ttname"><a href="class_game_actor.html#aef06609c6aae84018489e5d1bbf21d61">GameActor::ActorRelease</a></div><div class="ttdeci">virtual void ActorRelease()=0</div></div>
+<div class="ttc" id="aclass_game_actor_html_afd4ad85081854790b6436bb67f04a21e"><div class="ttname"><a href="class_game_actor.html#afd4ad85081854790b6436bb67f04a21e">GameActor::CanMoveWithEffects</a></div><div class="ttdeci">bool CanMoveWithEffects()</div><div class="ttdef"><b>Definition</b> <a href="#l00145">GameActor.cpp:145</a></div></div>
+<div class="ttc" id="aclass_game_object_html"><div class="ttname"><a href="class_game_object.html">GameObject</a></div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00020">GameObject.h:21</a></div></div>
+<div class="ttc" id="aclass_game_object_html_aac1b36ed81c3e3ff28ca5994b4993be3"><div class="ttname"><a href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">GameObject::transform_</a></div><div class="ttdeci">Transform transform_</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00025">GameObject.h:25</a></div></div>
+<div class="ttc" id="aclass_game_object_html_ac05d364e5acbfdf52368092e963887c0"><div class="ttname"><a href="class_game_object.html#ac05d364e5acbfdf52368092e963887c0">GameObject::IsVisibled</a></div><div class="ttdeci">bool IsVisibled()</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8cpp_source.html#l00101">GameObject.cpp:101</a></div></div>
+<div class="ttc" id="aclass_transform_html"><div class="ttname"><a href="class_transform.html">Transform</a></div><div class="ttdef"><b>Definition</b> <a href="_transform_8h_source.html#l00010">Transform.h:11</a></div></div>
+<div class="ttc" id="aclass_transform_html_a677983ce60221914ad621d41eeea114c"><div class="ttname"><a href="class_transform.html#a677983ce60221914ad621d41eeea114c">Transform::rotate_</a></div><div class="ttdeci">XMFLOAT3 rotate_</div><div class="ttdef"><b>Definition</b> <a href="_transform_8h_source.html#l00017">Transform.h:17</a></div></div>
+<div class="ttc" id="aclass_transform_html_a777f64c4eb5da58be5a595976fd959ea"><div class="ttname"><a href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">Transform::position_</a></div><div class="ttdeci">XMFLOAT3 position_</div><div class="ttdef"><b>Definition</b> <a href="_transform_8h_source.html#l00016">Transform.h:16</a></div></div>
+<div class="ttc" id="aclass_transform_html_abb59e5b42658dfc257a92c5f8af0806a"><div class="ttname"><a href="class_transform.html#abb59e5b42658dfc257a92c5f8af0806a">Transform::scale_</a></div><div class="ttdeci">XMFLOAT3 scale_</div><div class="ttdef"><b>Definition</b> <a href="_transform_8h_source.html#l00018">Transform.h:18</a></div></div>
+<div class="ttc" id="anamespace_area_models_html_a5bc5b968a6d7d7a14ab6de6b76578f6fa95eaeeaa10fa63d17ad7cb91f4f0637e"><div class="ttname"><a href="namespace_area_models.html#a5bc5b968a6d7d7a14ab6de6b76578f6fa95eaeeaa10fa63d17ad7cb91f4f0637e">AreaModels::CIRCLE</a></div><div class="ttdeci">@ CIRCLE</div><div class="ttdef"><b>Definition</b> <a href="areamodels_8h_source.html#l00007">areamodels.h:7</a></div></div>
+<div class="ttc" id="anamespace_area_models_html_ab83a8f7b483fae0f543d0c893354e082"><div class="ttname"><a href="namespace_area_models.html#ab83a8f7b483fae0f543d0c893354e082">AreaModels::area</a></div><div class="ttdeci">const int area(AREATYPE handle)</div><div class="ttdef"><b>Definition</b> <a href="areamodels_8cpp_source.html#l00015">areamodels.cpp:15</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a2e6a80af72c230fafd8f5ec9f32db15b"><div class="ttname"><a href="namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b">Camera::GetViewMatrix</a></div><div class="ttdeci">XMMATRIX GetViewMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00048">Camera.cpp:48</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a49a4bbe4aa1cf6c368dc1741bff821ac"><div class="ttname"><a href="namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac">Camera::GetProjectionMatrix</a></div><div class="ttdeci">XMMATRIX GetProjectionMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00051">Camera.cpp:51</a></div></div>
+<div class="ttc" id="anamespace_camera_html_abd2dd52de2c1bebe6628bb3c72eeb17e"><div class="ttname"><a href="namespace_camera.html#abd2dd52de2c1bebe6628bb3c72eeb17e">Camera::GetVPMatrix</a></div><div class="ttdeci">XMMATRIX GetVPMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00056">Camera.cpp:56</a></div></div>
+<div class="ttc" id="anamespace_collision_manager_html_a4dd6af0ce1423ded67f8fcb5591b1b6b"><div class="ttname"><a href="namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b">CollisionManager::AddCamp</a></div><div class="ttdeci">void AddCamp(GameActor *newActor, CAMPS camp)</div><div class="ttdoc">当たり判定リストに追加</div></div>
+<div class="ttc" id="anamespace_collision_manager_html_af7d80cc1b17304c493fd70c97c44856f"><div class="ttname"><a href="namespace_collision_manager.html#af7d80cc1b17304c493fd70c97c44856f">CollisionManager::RemoveCamp</a></div><div class="ttdeci">void RemoveCamp(GameActor *actor, CAMPS camp)</div><div class="ttdoc">陣営リストから削除する。倒された際に呼ぶ</div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8cpp_source.html#l00090">CollisionManager.cpp:90</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_abb513304470b5cdd8ad1b8a488ba42eb"><div class="ttname"><a href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">Direct3D::screenWidth_</a></div><div class="ttdeci">int screenWidth_</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00041">Direct3D.cpp:41</a></div></div>
+<div class="ttc" id="anamespace_h_p_bar_html"><div class="ttname"><a href="namespace_h_p_bar.html">HPBar</a></div><div class="ttdef"><b>Definition</b> <a href="_h_p_bar_8h_source.html#l00004">HPBar.h:5</a></div></div>
+<div class="ttc" id="anamespace_h_p_bar_html_a1c0c1aa694dc89676614d5a9d13bce3f"><div class="ttname"><a href="namespace_h_p_bar.html#a1c0c1aa694dc89676614d5a9d13bce3f">HPBar::HANDLE</a></div><div class="ttdeci">HANDLE</div><div class="ttdef"><b>Definition</b> <a href="_h_p_bar_8h_source.html#l00006">HPBar.h:6</a></div></div>
+<div class="ttc" id="anamespace_h_p_bar_html_a1c0c1aa694dc89676614d5a9d13bce3faf06ec0a2a764f0f08bb129e01d7f0ec2"><div class="ttname"><a href="namespace_h_p_bar.html#a1c0c1aa694dc89676614d5a9d13bce3faf06ec0a2a764f0f08bb129e01d7f0ec2">HPBar::NUM</a></div><div class="ttdeci">@ NUM</div><div class="ttdef"><b>Definition</b> <a href="_h_p_bar_8h_source.html#l00012">HPBar.h:11</a></div></div>
+<div class="ttc" id="anamespace_h_p_bar_html_a6226641f58b19a29980611c48cbf3ac3"><div class="ttname"><a href="namespace_h_p_bar.html#a6226641f58b19a29980611c48cbf3ac3">HPBar::Draw</a></div><div class="ttdeci">void Draw(HANDLE h, Transform t)</div><div class="ttdef"><b>Definition</b> <a href="_h_p_bar_8cpp_source.html#l00030">HPBar.cpp:30</a></div></div>
+<div class="ttc" id="anamespace_image_html_af563910c608e9d72aa0acef8fd626728"><div class="ttname"><a href="namespace_image.html#af563910c608e9d72aa0acef8fd626728">Image::toPos</a></div><div class="ttdeci">XMFLOAT3 toPos(XMFLOAT3 pixel)</div><div class="ttdoc">スクリーン座標系の値から正規化デバイス座標系の値に変換</div><div class="ttdef"><b>Definition</b> <a href="_image_8cpp_source.html#l00192">Image.cpp:192</a></div></div>
+<div class="ttc" id="anamespace_model_html_a444ada60ab1281d88d5062bff87bc65b"><div class="ttname"><a href="namespace_model.html#a444ada60ab1281d88d5062bff87bc65b">Model::Draw</a></div><div class="ttdeci">void Draw(int handle)</div><div class="ttdef"><b>Definition</b> <a href="_model_8cpp_source.html#l00070">Model.cpp:70</a></div></div>
+<div class="ttc" id="anamespace_model_html_aa9752d2c71b2163a3f1088d4c32ab3ee"><div class="ttname"><a href="namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee">Model::SetTransform</a></div><div class="ttdeci">void SetTransform(int handle, Transform &amp;transform)</div><div class="ttdef"><b>Definition</b> <a href="_model_8cpp_source.html#l00163">Model.cpp:163</a></div></div>
+<div class="ttc" id="anamespace_model_html_ace98e9790323a88829195b4abb15e584"><div class="ttname"><a href="namespace_model.html#ace98e9790323a88829195b4abb15e584">Model::Release</a></div><div class="ttdeci">void Release(int handle)</div><div class="ttdef"><b>Definition</b> <a href="_model_8cpp_source.html#l00094">Model.cpp:94</a></div></div>
+<div class="ttc" id="astruct_damage_data_html"><div class="ttname"><a href="struct_damage_data.html">DamageData</a></div><div class="ttdef"><b>Definition</b> <a href="_damage_data_8h_source.html#l00007">DamageData.h:8</a></div></div>
+<div class="ttc" id="astruct_damage_data_html_a29adbe951d9eadf71a6c0de998811636"><div class="ttname"><a href="struct_damage_data.html#a29adbe951d9eadf71a6c0de998811636">DamageData::knockback_</a></div><div class="ttdeci">float knockback_</div><div class="ttdef"><b>Definition</b> <a href="_damage_data_8h_source.html#l00010">DamageData.h:10</a></div></div>
+<div class="ttc" id="astruct_damage_data_html_a9df43e603b78ae60bb2ec806a1517856"><div class="ttname"><a href="struct_damage_data.html#a9df43e603b78ae60bb2ec806a1517856">DamageData::pEffect_</a></div><div class="ttdeci">EffectData * pEffect_</div><div class="ttdef"><b>Definition</b> <a href="_damage_data_8h_source.html#l00012">DamageData.h:12</a></div></div>
+<div class="ttc" id="astruct_damage_data_html_aec7e67a6a948a3ad403e45876df188f0"><div class="ttname"><a href="struct_damage_data.html#aec7e67a6a948a3ad403e45876df188f0">DamageData::damage_</a></div><div class="ttdeci">float damage_</div><div class="ttdef"><b>Definition</b> <a href="_damage_data_8h_source.html#l00009">DamageData.h:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_2238df16a099c97d3567131b913ed685.html">sources</a></li><li class="navelem"><a class="el" href="_game_actor_8cpp.html">GameActor.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="VFX::Emitter" name="VFX::Emitter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="55,187,150,213"/>
+<area shape="rect" id="Node000002" href="$struct_emitter_data.html" title=" " alt="" coords="5,96,96,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,135,97,185,93,187,63,138"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="24,5,77,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="53,48,53,95,48,95,48,48"/>
+<area shape="rect" id="Node000004" href="$class_bill_board.html" title=" " alt="" coords="119,96,193,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,138,112,187,108,185,138,135"/>
+</map>

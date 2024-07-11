@@ -1,0 +1,7 @@
+<map id="detail::dtoa_impl::diyfp::normalize_to" name="detail::dtoa_impl::diyfp::normalize_to">
+<area shape="rect" id="Node000001" title="normalize x such that the result has the exponent E" alt="" coords="367,5,497,48"/>
+<area shape="rect" id="Node000002" href="$namespacedetail_1_1dtoa__impl.html#a6a5ccf11847aab7a0f42f587b33935df" title="Compute the (normalized) diyfp representing the input number &#39;value&#39; and its boundaries." alt="" coords="178,5,319,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,29,319,29,319,24,351,24"/>
+<area shape="rect" id="Node000003" href="$namespacedetail_1_1dtoa__impl.html#abdf6bc05c54068a5930f66c2e803e8b8" title="v = buf * 10^decimal_exponent len is the length of the buffer (number of decimal digits) The buffer m..." alt="" coords="5,5,130,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="162,29,130,29,130,24,162,24"/>
+</map>

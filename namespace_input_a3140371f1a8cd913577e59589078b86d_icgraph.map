@@ -1,0 +1,9 @@
+<map id="Input::IsMouseButton" name="Input::IsMouseButton">
+<area shape="rect" id="Node000001" title=" " alt="" coords="230,56,374,83"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a44e8add5619df47f09df3fa64cbde025" title=" " alt="" coords="24,5,163,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,54,151,35,152,30,230,49"/>
+<area shape="rect" id="Node000003" href="$namespace_input.html#a73504d2d922e0f12f04af1fb4819c9bf" title=" " alt="" coords="5,56,182,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,72,182,72,182,67,214,67"/>
+<area shape="rect" id="Node000004" href="$namespace_input.html#af98ccc3b820094f8c77c076637ba2abc" title=" " alt="" coords="13,107,174,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,89,152,109,151,103,229,84"/>
+</map>

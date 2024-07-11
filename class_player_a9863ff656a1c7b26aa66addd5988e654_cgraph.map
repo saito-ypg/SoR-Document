@@ -1,0 +1,15 @@
+<map id="Player::dyingProcess" name="Player::dyingProcess">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,151,123"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27" title=" " alt="" coords="199,67,364,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,96,183,92,183,97,152,101"/>
+<area shape="rect" id="Node000006" href="$class_moderator_sequence.html#ac5d51f337862356b8c42fb97b25e2360" title=" " alt="" coords="209,117,354,160"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="152,117,194,123,193,129,151,122"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#afb8f28a08b13d6e2d234c7fc3488b2b7" title=" " alt="" coords="412,29,606,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,64,409,56,409,62,365,69"/>
+<area shape="rect" id="Node000004" href="$class_game_object.html#a582a09eb9f4fbfe8b12a1f4bf054498a" title=" " alt="" coords="424,104,594,131"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="365,91,409,98,409,104,364,96"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="471,30,464,21,469,11,484,5,509,3,536,5,550,12,548,17,535,10,509,8,485,10,473,15,470,20,475,27"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="471,105,464,95,469,85,484,79,509,77,536,80,550,86,548,91,535,85,509,83,485,85,473,89,470,95,475,102"/>
+<area shape="rect" id="Node000005" href="$class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="654,104,816,131"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="595,115,639,115,639,120,595,120"/>
+</map>

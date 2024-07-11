@@ -1,0 +1,9 @@
+<map id="Camera::GetPosition" name="Camera::GetPosition">
+<area shape="rect" id="Node000001" title=" " alt="" coords="393,31,535,57"/>
+<area shape="rect" id="Node000002" href="$class_fbx_parts.html#a6f4a56d494ea33ba40d50c4ebfcb2469" title=" " alt="" coords="234,31,345,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,47,345,47,345,41,378,41"/>
+<area shape="rect" id="Node000003" href="$class_fbx_parts.html#a72ccd90d28fcc8025b5a324490c18c43" title=" " alt="" coords="5,5,186,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,37,186,33,187,28,219,32"/>
+<area shape="rect" id="Node000004" href="$class_fbx_parts.html#ab79c7b8ace640a5fedc46697b214e433" title=" " alt="" coords="8,56,183,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="218,56,183,61,183,55,218,51"/>
+</map>

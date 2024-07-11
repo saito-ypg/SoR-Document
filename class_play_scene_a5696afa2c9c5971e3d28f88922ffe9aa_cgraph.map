@@ -1,0 +1,5 @@
+<map id="PlayScene::Release" name="PlayScene::Release">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,145,32"/>
+<area shape="rect" id="Node000002" href="$namespace_collision_manager.html#a29f39ccc8fb9fa3264a3ec9ddc3b0b1b" title=" " alt="" coords="193,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,16,177,16,177,21,145,21"/>
+</map>

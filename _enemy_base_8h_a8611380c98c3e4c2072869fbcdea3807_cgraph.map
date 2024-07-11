@@ -1,0 +1,5 @@
+<map id="InstantiateEnemy" name="InstantiateEnemy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,128,32"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#a72e5a5fda14cb7bda24cffdc06c4830d" title=" " alt="" coords="176,5,367,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,16,160,16,160,21,128,21"/>
+</map>

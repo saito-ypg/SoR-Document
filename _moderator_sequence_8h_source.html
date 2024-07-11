@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/sources/ModeratorSequence.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_moderator_sequence_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ModeratorSequence.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_moderator_sequence_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include&lt;chrono&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&lt;map&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_game_object_8h.html">../Engine/GameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include&quot;<a class="code" href="_text_8h.html">../Engine/Text.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include&quot;<a class="code" href="_enemy_type_8h.html">EnemyType.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="class_enemy_manager.html">EnemyManager</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span><a class="code hl_class" href="class_enemy_spawner.html">EnemySpawner</a>;</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_enemy_spawning.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_enemy_spawning.html">EnemySpawning</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_enemy_spawning.html#a307e8058d87ef3a9c35f7c8eccf0f2d9">   19</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_enemy_spawning.html#a307e8058d87ef3a9c35f7c8eccf0f2d9">spawntime</a>;<span class="comment">//ウェーブ開始後スポーンする時間（秒)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_enemy_spawning.html#aeea8a9a80919f787f21d935af8f92ece">   20</a></span>    <a class="code hl_enumeration" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268e">EnemyType</a> <a class="code hl_variable" href="struct_enemy_spawning.html#aeea8a9a80919f787f21d935af8f92ece">type</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_enemy_spawning.html#a9e94727f70103ffed2e087d104501274">   21</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_enemy_spawning.html#a9e94727f70103ffed2e087d104501274">is_boss</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_enemy_spawning.html#abf18b935db67e573d2ac698a85740f61">   22</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="struct_enemy_spawning.html#abf18b935db67e573d2ac698a85740f61">operator&lt;=&gt;</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_enemy_spawning.html">EnemySpawning</a>&amp; other)<span class="keyword">const</span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="struct_enemy_spawning.html#a307e8058d87ef3a9c35f7c8eccf0f2d9">spawntime &lt;=&gt;</a> other.<a class="code hl_variable" href="struct_enemy_spawning.html#a307e8058d87ef3a9c35f7c8eccf0f2d9">spawntime</a>; }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_enemy_spawning.html#aa13cdab7ee7466c9a366c68a4643b1e6">   23</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="struct_enemy_spawning.html#aa13cdab7ee7466c9a366c68a4643b1e6">operator&lt;=&gt;</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; f)<span class="keyword">const </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="struct_enemy_spawning.html#a307e8058d87ef3a9c35f7c8eccf0f2d9">spawntime &lt;=&gt;</a> f; }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_enemy_spawning.html#aa134f5e6da1ba81c70f1f9aaddf8eba2">   24</a></span>    <a class="code hl_function" href="struct_enemy_spawning.html#aa134f5e6da1ba81c70f1f9aaddf8eba2">EnemySpawning</a>() :<a class="code hl_variable" href="struct_enemy_spawning.html#a307e8058d87ef3a9c35f7c8eccf0f2d9">spawntime</a>(0), <a class="code hl_variable" href="struct_enemy_spawning.html#aeea8a9a80919f787f21d935af8f92ece">type</a>(<a class="code hl_enumeration" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268e">EnemyType</a>::<a class="code hl_enumvalue" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea26a4b44a837bf97b972628509912b4a5">MAX</a>), <a class="code hl_variable" href="struct_enemy_spawning.html#a9e94727f70103ffed2e087d104501274">is_boss</a>(false) {}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_moderator_sequence.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="class_moderator_sequence.html">ModeratorSequence</a> :</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <a class="code hl_class" href="class_game_object.html">GameObject</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    std::chrono::milliseconds curTime;<span class="comment">//今は処理時間依存じゃなくフレーム数依存だから、時間増やすのも固定でいいか</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::chrono::milliseconds ttlTime;<span class="comment">//ゲーム全体</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">int</span> waves;<span class="comment">//ウェーブ数</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">int</span> spawnindex;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_text.html">Text</a>* pText;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">int</span> hImage[2];</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="class_enemy_manager.html">EnemyManager</a>* manager;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="class_enemy_spawner.html">EnemySpawner</a>* spawner;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">enum</span> s{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        CHANGED=0,<span class="comment">//シーン変わった直後</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        PREP,<span class="comment">//準備</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        BEGIN,<span class="comment">//敵スポーン開始</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        END,<span class="comment">//敵全滅後</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        NEXT,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        GAMEOVER,<span class="comment">//ゲームオーバーになったら</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    } state;<span class="comment">//</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">float</span> transitionTime;<span class="comment">//ミリ秒単位、進行に使う</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> std::map&lt;std::string, EnemyType&gt; TypeMap =</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        {<span class="stringliteral">&quot;DECOY&quot;</span>,<a class="code hl_enumvalue" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea0a8bcb7592ec781af7dc44033dfe7377">EnemyType::DECOY</a>},</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        {<span class="stringliteral">&quot;SOLDIER&quot;</span>,<a class="code hl_enumvalue" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea36101183b0be7bffbbe6d24ef81987a1">EnemyType::SOLDIER</a> }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    };</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>   </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::vector&lt;std::vector&lt;EnemySpawning&gt;&gt; spawnDataList;<span class="comment">//ウェーブ数・敵の数</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> LoadData();<span class="comment">//jsonからデータを読む</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_function" href="class_moderator_sequence.html#ac615a25c0b397e44047c533c3b9888f4">ModeratorSequence</a>(<a class="code hl_class" href="class_game_object.html">GameObject</a>*parent);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="class_moderator_sequence.html#a53dfc1978462cb46353ebadf91851b7f">~ModeratorSequence</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941">Initialize</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_moderator_sequence.html#ab409913ca8b9ad248d7f28f13cd606ca">Update</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; dt)<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_moderator_sequence.html#adb01a14c340e6701c6dc231ae002e7a3">Draw</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_moderator_sequence.html#a380da48888a6e1f36549f504fcd5b81e">DrawWaves</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_moderator_sequence.html#ab7f61b93b04552827b3c2983bba68fb0">DrawTime</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_moderator_sequence.html#aaab3db0bd78abe5ac330501b6d658082">Release</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_moderator_sequence.html#ac5d51f337862356b8c42fb97b25e2360">   67</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_moderator_sequence.html#ac5d51f337862356b8c42fb97b25e2360">SetGameOver</a>() { state = GAMEOVER; }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="ttc" id="a_enemy_type_8h_html"><div class="ttname"><a href="_enemy_type_8h.html">EnemyType.h</a></div></div>
+<div class="ttc" id="a_enemy_type_8h_html_ac3e413a86119db4b031458c7259e268e"><div class="ttname"><a href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268e">EnemyType</a></div><div class="ttdeci">EnemyType</div><div class="ttdef"><b>Definition</b> <a href="_enemy_type_8h_source.html#l00002">EnemyType.h:2</a></div></div>
+<div class="ttc" id="a_enemy_type_8h_html_ac3e413a86119db4b031458c7259e268ea0a8bcb7592ec781af7dc44033dfe7377"><div class="ttname"><a href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea0a8bcb7592ec781af7dc44033dfe7377">EnemyType::DECOY</a></div><div class="ttdeci">@ DECOY</div></div>
+<div class="ttc" id="a_enemy_type_8h_html_ac3e413a86119db4b031458c7259e268ea26a4b44a837bf97b972628509912b4a5"><div class="ttname"><a href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea26a4b44a837bf97b972628509912b4a5">EnemyType::MAX</a></div><div class="ttdeci">@ MAX</div></div>
+<div class="ttc" id="a_enemy_type_8h_html_ac3e413a86119db4b031458c7259e268ea36101183b0be7bffbbe6d24ef81987a1"><div class="ttname"><a href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea36101183b0be7bffbbe6d24ef81987a1">EnemyType::SOLDIER</a></div><div class="ttdeci">@ SOLDIER</div></div>
+<div class="ttc" id="a_game_object_8h_html"><div class="ttname"><a href="_game_object_8h.html">GameObject.h</a></div></div>
+<div class="ttc" id="a_text_8h_html"><div class="ttname"><a href="_text_8h.html">Text.h</a></div></div>
+<div class="ttc" id="aclass_enemy_manager_html"><div class="ttname"><a href="class_enemy_manager.html">EnemyManager</a></div><div class="ttdef"><b>Definition</b> <a href="_enemy_manager_8h_source.html#l00007">EnemyManager.h:7</a></div></div>
+<div class="ttc" id="aclass_enemy_spawner_html"><div class="ttname"><a href="class_enemy_spawner.html">EnemySpawner</a></div><div class="ttdef"><b>Definition</b> <a href="_enemy_spawner_8h_source.html#l00007">EnemySpawner.h:8</a></div></div>
+<div class="ttc" id="aclass_game_object_html"><div class="ttname"><a href="class_game_object.html">GameObject</a></div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00020">GameObject.h:21</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html"><div class="ttname"><a href="class_moderator_sequence.html">ModeratorSequence</a></div><div class="ttdef"><b>Definition</b> <a href="#l00026">ModeratorSequence.h:28</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_a380da48888a6e1f36549f504fcd5b81e"><div class="ttname"><a href="class_moderator_sequence.html#a380da48888a6e1f36549f504fcd5b81e">ModeratorSequence::DrawWaves</a></div><div class="ttdeci">void DrawWaves()</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00177">ModeratorSequence.cpp:177</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_a3e3ba78ad8c9de21d07a156384be9941"><div class="ttname"><a href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941">ModeratorSequence::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00042">ModeratorSequence.cpp:42</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_a53dfc1978462cb46353ebadf91851b7f"><div class="ttname"><a href="class_moderator_sequence.html#a53dfc1978462cb46353ebadf91851b7f">ModeratorSequence::~ModeratorSequence</a></div><div class="ttdeci">~ModeratorSequence()</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00036">ModeratorSequence.cpp:36</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_aaab3db0bd78abe5ac330501b6d658082"><div class="ttname"><a href="class_moderator_sequence.html#aaab3db0bd78abe5ac330501b6d658082">ModeratorSequence::Release</a></div><div class="ttdeci">void Release() override</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00198">ModeratorSequence.cpp:198</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_ab409913ca8b9ad248d7f28f13cd606ca"><div class="ttname"><a href="class_moderator_sequence.html#ab409913ca8b9ad248d7f28f13cd606ca">ModeratorSequence::Update</a></div><div class="ttdeci">void Update(const float &amp;dt) override</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00088">ModeratorSequence.cpp:88</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_ab7f61b93b04552827b3c2983bba68fb0"><div class="ttname"><a href="class_moderator_sequence.html#ab7f61b93b04552827b3c2983bba68fb0">ModeratorSequence::DrawTime</a></div><div class="ttdeci">void DrawTime()</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00184">ModeratorSequence.cpp:184</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_ac5d51f337862356b8c42fb97b25e2360"><div class="ttname"><a href="class_moderator_sequence.html#ac5d51f337862356b8c42fb97b25e2360">ModeratorSequence::SetGameOver</a></div><div class="ttdeci">void SetGameOver()</div><div class="ttdef"><b>Definition</b> <a href="#l00067">ModeratorSequence.h:67</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_ac615a25c0b397e44047c533c3b9888f4"><div class="ttname"><a href="class_moderator_sequence.html#ac615a25c0b397e44047c533c3b9888f4">ModeratorSequence::ModeratorSequence</a></div><div class="ttdeci">ModeratorSequence(GameObject *parent)</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00021">ModeratorSequence.cpp:21</a></div></div>
+<div class="ttc" id="aclass_moderator_sequence_html_adb01a14c340e6701c6dc231ae002e7a3"><div class="ttname"><a href="class_moderator_sequence.html#adb01a14c340e6701c6dc231ae002e7a3">ModeratorSequence::Draw</a></div><div class="ttdeci">void Draw() override</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8cpp_source.html#l00156">ModeratorSequence.cpp:156</a></div></div>
+<div class="ttc" id="aclass_text_html"><div class="ttname"><a href="class_text.html">Text</a></div><div class="ttdef"><b>Definition</b> <a href="_text_8h_source.html#l00004">Text.h:5</a></div></div>
+<div class="ttc" id="astruct_enemy_spawning_html"><div class="ttname"><a href="struct_enemy_spawning.html">EnemySpawning</a></div><div class="ttdef"><b>Definition</b> <a href="#l00017">ModeratorSequence.h:18</a></div></div>
+<div class="ttc" id="astruct_enemy_spawning_html_a307e8058d87ef3a9c35f7c8eccf0f2d9"><div class="ttname"><a href="struct_enemy_spawning.html#a307e8058d87ef3a9c35f7c8eccf0f2d9">EnemySpawning::spawntime</a></div><div class="ttdeci">float spawntime</div><div class="ttdef"><b>Definition</b> <a href="#l00019">ModeratorSequence.h:19</a></div></div>
+<div class="ttc" id="astruct_enemy_spawning_html_a9e94727f70103ffed2e087d104501274"><div class="ttname"><a href="struct_enemy_spawning.html#a9e94727f70103ffed2e087d104501274">EnemySpawning::is_boss</a></div><div class="ttdeci">bool is_boss</div><div class="ttdef"><b>Definition</b> <a href="#l00021">ModeratorSequence.h:21</a></div></div>
+<div class="ttc" id="astruct_enemy_spawning_html_aa134f5e6da1ba81c70f1f9aaddf8eba2"><div class="ttname"><a href="struct_enemy_spawning.html#aa134f5e6da1ba81c70f1f9aaddf8eba2">EnemySpawning::EnemySpawning</a></div><div class="ttdeci">EnemySpawning()</div><div class="ttdef"><b>Definition</b> <a href="#l00024">ModeratorSequence.h:24</a></div></div>
+<div class="ttc" id="astruct_enemy_spawning_html_aa13cdab7ee7466c9a366c68a4643b1e6"><div class="ttname"><a href="struct_enemy_spawning.html#aa13cdab7ee7466c9a366c68a4643b1e6">EnemySpawning::operator&lt;=&gt;</a></div><div class="ttdeci">auto operator&lt;=&gt;(const float &amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="#l00023">ModeratorSequence.h:23</a></div></div>
+<div class="ttc" id="astruct_enemy_spawning_html_abf18b935db67e573d2ac698a85740f61"><div class="ttname"><a href="struct_enemy_spawning.html#abf18b935db67e573d2ac698a85740f61">EnemySpawning::operator&lt;=&gt;</a></div><div class="ttdeci">auto operator&lt;=&gt;(const EnemySpawning &amp;other) const</div><div class="ttdef"><b>Definition</b> <a href="#l00022">ModeratorSequence.h:22</a></div></div>
+<div class="ttc" id="astruct_enemy_spawning_html_aeea8a9a80919f787f21d935af8f92ece"><div class="ttname"><a href="struct_enemy_spawning.html#aeea8a9a80919f787f21d935af8f92ece">EnemySpawning::type</a></div><div class="ttdeci">EnemyType type</div><div class="ttdef"><b>Definition</b> <a href="#l00020">ModeratorSequence.h:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_2238df16a099c97d3567131b913ed685.html">sources</a></li><li class="navelem"><a class="el" href="_moderator_sequence_8h.html">ModeratorSequence.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

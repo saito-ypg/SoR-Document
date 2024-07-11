@@ -1,0 +1,58 @@
+<map id="detail::invalid_iterator::create" name="detail::invalid_iterator::create">
+<area shape="rect" id="Node000001" title=" " alt="" coords="597,403,740,445"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#af97b4fcd01509076c8a7b32ec1a10aec" title="construct a JSON container given an iterator range" alt="" coords="396,5,549,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="664,387,657,315,639,224,624,176,605,129,579,85,547,46,532,35,535,30,551,42,584,82,609,127,629,174,644,223,662,315,669,387"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#a437b81c6e968a4192a22bc0de6c4df80" title="remove elements given an iterator range" alt="" coords="411,56,534,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="662,387,652,325,633,247,618,206,599,166,576,129,548,97,531,85,535,81,551,93,580,126,604,164,623,204,638,245,658,324,667,387"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#a7d0fef086b1b72372113db6ce7446189" title="remove element given an iterator" alt="" coords="411,107,534,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="659,388,647,335,626,270,593,204,572,174,548,147,531,136,534,132,551,143,576,171,598,201,631,268,652,333,664,387"/>
+<area shape="rect" id="Node000008" href="$classbasic__json.html#aaf55c485c75ddd7bd5f9791e59d3aec7" title="inserts range of elements into object" alt="" coords="411,157,534,184"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="655,389,641,345,618,294,587,242,548,198,530,187,533,182,551,194,592,239,623,291,646,343,660,387"/>
+<area shape="rect" id="Node000009" href="$classbasic__json.html#a7f3817060c2bec896a99cb2c236b9c27" title="inserts element into array" alt="" coords="411,208,534,235"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="650,390,610,318,582,281,548,249,528,238,531,233,551,245,586,277,614,315,655,387"/>
+<area shape="rect" id="Node000012" href="$classbasic__json.html#a68e1707248a00a2608a304da5ae5c911" title="inserts range of elements into array" alt="" coords="411,259,534,285"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="641,392,600,344,575,320,548,300,525,288,528,284,551,295,579,316,604,340,645,388"/>
+<area shape="rect" id="Node000013" href="$classbasic__json.html#abdfee6a3db80431a24c68bfaf038c47d" title="inserts elements from initializer list into array" alt="" coords="411,309,534,336"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="624,396,548,350,520,339,522,334,551,346,627,391"/>
+<area shape="rect" id="Node000014" href="$classbasic__json.html#a47b623200562da188886a385c716d101" title="inserts copies of element into array" alt="" coords="411,360,534,387"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="581,404,526,390,528,385,583,399"/>
+<area shape="rect" id="Node000015" href="$classdetail_1_1iter__impl.html#a4064b295014b32f3cabd86f94264fc74" title="return the key of an object iterator" alt="" coords="404,411,542,437"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="582,427,542,427,542,421,582,421"/>
+<area shape="rect" id="Node000016" href="$classdetail_1_1iter__impl.html#abbef7d5bdb2c45980a34e907610c32b2" title="return a reference to the value pointed to by the iterator" alt="" coords="414,461,531,504"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="583,452,533,468,531,463,582,447"/>
+<area shape="rect" id="Node000018" href="$classdetail_1_1iter__impl.html#a5e2dd333526ae85044fe78f65aac9b52" title="add to iterator" alt="" coords="414,528,531,571"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="634,457,595,488,551,518,529,530,527,525,548,514,592,484,630,453"/>
+<area shape="rect" id="Node000020" href="$classdetail_1_1iter__impl.html#a848837b8db99998c90d7bd71492d0dee" title="return difference" alt="" coords="414,595,531,637"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="651,460,610,523,582,555,551,585,533,596,530,592,548,581,578,552,605,519,646,457"/>
+<area shape="rect" id="Node000021" href="$classdetail_1_1iter__impl.html#a72314a87e67ba523f1be2f014f4eab56" title="dereference the iterator" alt="" coords="414,661,531,704"/>
+<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="659,461,644,504,621,554,590,606,551,651,533,664,530,660,548,647,586,603,616,552,639,502,654,459"/>
+<area shape="rect" id="Node000022" href="$classdetail_1_1iter__impl.html#a339df296df7f5d014d5c7cedf40497da" title="comparison: smaller" alt="" coords="414,728,531,771"/>
+<area shape="poly" id="edge24_Node000001_Node000022" title=" " alt="" coords="664,461,652,517,630,585,598,655,576,688,551,718,533,732,530,727,547,714,572,685,593,652,625,583,647,515,659,460"/>
+<area shape="rect" id="Node000024" href="$classdetail_1_1iter__impl.html#a57b4e1eee4a3cdb3c0683cf64979da8d" title="comparison: equal" alt="" coords="414,795,531,837"/>
+<area shape="poly" id="edge26_Node000001_Node000024" title=" " alt="" coords="667,461,659,528,639,614,624,659,605,704,581,746,551,785,533,799,530,795,547,781,576,743,600,702,619,657,634,612,653,527,662,461"/>
+<area shape="rect" id="Node000026" href="$classdetail_1_1iter__impl.html#a5e557e30103e2af36cd8173c88eb586c" title="access to successor" alt="" coords="414,861,531,904"/>
+<area shape="poly" id="edge28_Node000001_Node000026" title=" " alt="" coords="670,461,664,540,647,643,632,698,612,752,585,804,551,851,533,866,530,862,547,848,581,801,607,750,627,696,642,641,659,539,664,461"/>
+<area shape="rect" id="Node000027" href="$classbasic__json.html#a4ea2b8cef5e4aba5b92d14e6ebe25936" title="updates a JSON object from another object, overwriting existing keys" alt="" coords="408,928,538,955"/>
+<area shape="poly" id="edge29_Node000001_Node000027" title=" " alt="" coords="666,461,651,565,627,702,612,770,594,831,574,882,551,918,536,930,533,925,547,914,569,880,589,830,607,768,622,700,646,565,660,460"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#a8676ac2433fe299b8d420f00a0741395" title="applies a JSON Merge Patch" alt="" coords="179,83,346,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="395,114,346,108,346,103,396,109"/>
+<area shape="rect" id="Node000006" href="$classbasic__json.html#a693812b31e106dec9166e93d8f6dd7d7" title="applies a JSON patch in&#45;place without copying the object" alt="" coords="177,133,348,160"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="396,132,349,138,348,133,395,127"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="296,70,284,64,262,61,242,63,231,68,228,73,234,81,229,84,223,74,227,64,241,58,262,56,286,59,298,65"/>
+<area shape="rect" id="Node000007" href="$classbasic__json.html#a145a004c0a2fa5be84b260ecc98ab5d9" title="applies a JSON patch to a copy of the current object" alt="" coords="5,133,129,160"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="161,149,129,149,129,144,161,144"/>
+<area shape="poly" id="edge13_Node000009_Node000006" title=" " alt="" coords="411,205,395,198,347,174,314,163,316,158,349,170,397,194,413,200"/>
+<area shape="rect" id="Node000010" href="$classbasic__json.html#a699ef418df577e75f28dfce6b04d6c2f" title="creates a diff as a JSON patch" alt="" coords="209,208,316,235"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="396,224,317,224,317,219,396,219"/>
+<area shape="rect" id="Node000011" href="$classbasic__json.html#ae5da62116a40a0f86e87f11fdd54e9f0" title="inserts element into array" alt="" coords="201,259,324,285"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="400,241,321,261,320,255,399,236"/>
+<area shape="poly" id="edge11_Node000010_Node000010" title=" " alt="" coords="296,195,284,189,262,187,242,189,231,193,228,199,234,206,229,209,223,199,227,190,241,183,262,181,286,184,298,190"/>
+<area shape="rect" id="Node000017" href="$classdetail_1_1iter__impl.html#a96557c87bc9b3adf6aa0b1a6b6209525" title="return the value of an iterator" alt="" coords="204,461,321,504"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="398,485,322,485,322,480,398,480"/>
+<area shape="rect" id="Node000019" href="$classdetail_1_1iter__impl.html#a3b48ed5856ca2011e8463d868fda3d0b" title="subtract from iterator" alt="" coords="204,528,321,571"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="398,552,322,552,322,547,398,547"/>
+<area shape="rect" id="Node000023" href="$classdetail_1_1iter__impl.html#a25a3a8e85eb37727487f210f5304a48e" title="comparison: greater than or equal" alt="" coords="204,728,321,771"/>
+<area shape="poly" id="edge25_Node000022_Node000023" title=" " alt="" coords="398,752,322,752,322,747,398,747"/>
+<area shape="rect" id="Node000025" href="$classdetail_1_1iter__impl.html#ae52db5f16f00edc13c848fe99e4c521b" title="comparison: not equal" alt="" coords="204,795,321,837"/>
+<area shape="poly" id="edge27_Node000024_Node000025" title=" " alt="" coords="398,819,322,819,322,813,398,813"/>
+</map>

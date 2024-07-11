@@ -1,0 +1,9 @@
+<map id="Model::AllRelease" name="Model::AllRelease">
+<area shape="rect" id="Node000001" title=" " alt="" coords="211,56,337,83"/>
+<area shape="rect" id="Node000002" href="$namespace_model.html#af584f6fe3cf2ac503110ceb126b9b4ed" title=" " alt="" coords="28,5,140,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,54,136,35,138,30,207,49"/>
+<area shape="rect" id="Node000003" href="$class_scene_manager.html#ae45b05336daf503db67a4a95a19c0947" title=" " alt="" coords="5,56,163,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,72,163,72,163,67,195,67"/>
+<area shape="rect" id="Node000004" href="$_main_8cpp.html#a649028f00e62144f15f268d14bc6dae0" title=" " alt="" coords="48,107,120,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,90,122,113,120,108,206,85"/>
+</map>

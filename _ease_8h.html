@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/Ease.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_ease_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">Ease.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Ease.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ease_8h__incl.png" border="0" usemap="#a_so_r_2_engine_2_ease_8h" alt=""/></div>
+<map name="a_so_r_2_engine_2_ease_8h" id="a_so_r_2_engine_2_ease_8h">
+<area shape="rect" title=" " alt="" coords="19,5,154,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,82,107"/>
+<area shape="poly" title=" " alt="" coords="81,34,61,68,56,65,76,31"/>
+<area shape="rect" title=" " alt="" coords="106,80,152,107"/>
+<area shape="poly" title=" " alt="" coords="96,31,116,65,112,68,91,34"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ease_8h__dep__incl.png" border="0" usemap="#a_so_r_2_engine_2_ease_8hdep" alt=""/></div>
+<map name="a_so_r_2_engine_2_ease_8hdep" id="a_so_r_2_engine_2_ease_8hdep">
+<area shape="rect" title=" " alt="" coords="110,5,245,32"/>
+<area shape="rect" href="_ease_8cpp.html" title=" " alt="" coords="5,80,155,107"/>
+<area shape="poly" title=" " alt="" coords="150,44,98,82,95,77,147,39"/>
+<area shape="rect" href="_charge_skill_8cpp.html" title=" " alt="" coords="179,80,370,107"/>
+<area shape="poly" title=" " alt="" coords="208,39,259,77,256,82,205,44"/>
+</map>
+</div>
+</div>
+<p><a href="_ease_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_e_a_s_e.html">EASE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:ac34aacc05012dc7001bc46b3d73552e2" id="r_ac34aacc05012dc7001bc46b3d73552e2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2">EASE::easeType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a3be40e21a1ae00f3a93200e3c596cbc8">EASE::InSine</a> =0
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a344bb00a356995bedf325549cd2121da">EASE::OutSine</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a72ed6cb31c123f569649220af818ed66">EASE::InOutSine</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2aff1e3c60f1cbe1e3f5c368f34ec59be5">EASE::InQuad</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2abc9c9a695ebe74b36ac1f5267af396ba">EASE::OutQuad</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a869f34f357c234ef6199d605971ea75c">EASE::InOutQuad</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a8fa76da54d32ce2466a7dccdf2a9321e">EASE::InCubic</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2aedc965d37685ff8169a45b9ac24449b3">EASE::OutCubic</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a131ea6e4dfca4298a29327837b2ab5c6">EASE::InOutCubic</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a1add3e412da6e8005f6e8ab971efdd64">EASE::InQuart</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2aca738578a8a91cdfd713806ca8bb8223">EASE::OutQuart</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a5207537ca2a73758a31810e952591b42">EASE::InOutQuart</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2ae63c97f77b76d7e89628c91514e94699">EASE::InQuint</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2ac6e65c9f3d3e549d77ef00f705fc7759">EASE::InOutQuint</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2ab3edf28366bb104a3371991df583c95b">EASE::InExpo</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a2f5673f9598abd9c9554a47592aa5f4f">EASE::OutExpo</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a0111c47f4e5faf4d72c40f6c8d7a9364">EASE::InOutExpo</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2acd97c6cacf6aecd20d37f6894ec26a83">EASE::InCirc</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a80837bc52cfec1abb1165361afd63284">EASE::OutCirc</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a84d67a5b7626af479a41b38fefa46357">EASE::InOutCirc</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2afb33f957e95f1a884ef4725344a00664">EASE::InBack</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2ad2ec95eb1bcde214ddd9a7ce4ca82a99">EASE::OutBack</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a4a7964719e38cb868d0f361e9d5c06be">EASE::InOutBack</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a3d34ccccef75f03c9e36283e8ce0e1a5">EASE::InElastic</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2abd4598a8a36a637db5a640e6b22ac023">EASE::OutElastic</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a241d71adf8e4029ad44c1a34914d8340">EASE::InOutElastic</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a2a5ef16cee43782b5453edd97168f650">EASE::InBounce</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a1c46f922a5f4a357df4ba7fda2dc5662">EASE::OutBounce</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a3687849a33d239ba18281b5fa65d9a20">EASE::InOutBounce</a>
+, <a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2a26a4b44a837bf97b972628509912b4a5">EASE::MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac34aacc05012dc7001bc46b3d73552e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a5898decb23a11eab03f0ca7d70d6942e" id="r_a5898decb23a11eab03f0ca7d70d6942e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_e_a_s_e.html#a5898decb23a11eab03f0ca7d70d6942e">EASE::easing</a> (<a class="el" href="namespace_e_a_s_e.html#ac34aacc05012dc7001bc46b3d73552e2">easeType</a> type, double rate)</td></tr>
+<tr class="separator:a5898decb23a11eab03f0ca7d70d6942e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_ease_8h.html">Ease.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

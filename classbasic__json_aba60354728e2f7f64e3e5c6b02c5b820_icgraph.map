@@ -1,0 +1,9 @@
+<map id="basic_json::get_ptr" name="basic_json::get_ptr">
+<area shape="rect" id="Node000001" title="get a pointer value (implicit)" alt="" coords="205,56,336,83"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#ab11f66d4edc50a209fab3f8c48664a53" title="get a pointer value (explicit)" alt="" coords="26,5,136,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,54,133,35,134,30,204,49"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#aaa2432a7c01833b02c6330709211ede7" title="get a binary value" alt="" coords="5,56,157,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,72,157,72,157,67,189,67"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#a67d6da9fb8325a87d9513f960d88512a" title="get a binary value" alt="" coords="5,107,157,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="204,90,134,109,133,103,202,85"/>
+</map>

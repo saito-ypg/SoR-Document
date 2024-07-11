@@ -1,0 +1,10 @@
+<map id="Collider::IsHitBoxVsBox" name="Collider::IsHitBoxVsBox">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,166,57"/>
+<area shape="rect" id="Node000002" href="$class_transform.html#af089d0bfb52885607f0fe6138701a105" title=" " alt="" coords="474,5,619,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,37,458,21,458,26,166,42"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#aced96b154f432431101c7f6270484ca0" title=" " alt="" coords="214,56,418,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,50,199,54,198,59,166,55"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="380,53,467,33,469,38,381,58"/>
+<area shape="rect" id="Node000004" href="$class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="466,56,627,83"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="419,67,450,67,450,72,419,72"/>
+</map>

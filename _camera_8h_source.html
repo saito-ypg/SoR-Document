@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/Camera.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_camera_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Camera.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_camera_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_game_object_8h.html">GameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//カメラ</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//-----------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespace_camera.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_camera.html">Camera</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">//初期化（プロジェクション行列作成）</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_camera.html#afd88c2780203f02c9fe236a7239e414c">Initialize</a>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">//更新（ビュー行列作成）</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_camera.html#a4a596a3ea1fdc7d244ba4268031a360b">Update</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">//視点（カメラの位置）を設定</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_camera.html#a9e8888d211598104934a5f3bcc5f7148">SetPosition</a>(XMFLOAT3 position);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">//焦点（見る位置）を設定</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_camera.html#a84174e7d4994a3047000c6cb1b40add8">SetTarget</a>(XMFLOAT3 target);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">//位置を取得</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    XMFLOAT3 <a class="code hl_function" href="namespace_camera.html#ac7d5aa78b2dcee91198c07f525371aba">GetPosition</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">//焦点を取得</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    XMFLOAT3 <a class="code hl_function" href="namespace_camera.html#a1f70dbf08673f98179afd15c3ffd04fe">GetTarget</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">//ビュー行列を取得</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    XMMATRIX <a class="code hl_function" href="namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b">GetViewMatrix</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//プロジェクション行列を取得</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    XMMATRIX <a class="code hl_function" href="namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac">GetProjectionMatrix</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//ビルボード用回転行列を取得</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    XMMATRIX <a class="code hl_function" href="namespace_camera.html#a4c275fe841c631f7a6cc61606befbf86">GetBillboardMatrix</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//ビューポート行列を取得</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    XMMATRIX <a class="code hl_function" href="namespace_camera.html#abd2dd52de2c1bebe6628bb3c72eeb17e">GetVPMatrix</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//~~~~~~~~~~~~~~以下拡張~~~~~~~~~~~~~~~</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">//view,proj,vp3つの逆行列を合わせたものを取得</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    XMMATRIX <a class="code hl_function" href="namespace_camera.html#a42194afb175fe59556c4eacf33cd8868">GetInverseMatrix</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    XMFLOAT3 <a class="code hl_function" href="namespace_camera.html#a582a9aa86a773ca0e9c6435eabd882c4">convertWorldToNDC</a>(<a class="code hl_class" href="class_transform.html">Transform</a>&amp; t);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="ttc" id="a_game_object_8h_html"><div class="ttname"><a href="_game_object_8h.html">GameObject.h</a></div></div>
+<div class="ttc" id="aclass_transform_html"><div class="ttname"><a href="class_transform.html">Transform</a></div><div class="ttdef"><b>Definition</b> <a href="_transform_8h_source.html#l00010">Transform.h:11</a></div></div>
+<div class="ttc" id="anamespace_camera_html"><div class="ttname"><a href="namespace_camera.html">Camera</a></div><div class="ttdef"><b>Definition</b> <a href="#l00007">Camera.h:8</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a1f70dbf08673f98179afd15c3ffd04fe"><div class="ttname"><a href="namespace_camera.html#a1f70dbf08673f98179afd15c3ffd04fe">Camera::GetTarget</a></div><div class="ttdeci">XMFLOAT3 GetTarget()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00042">Camera.cpp:42</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a2e6a80af72c230fafd8f5ec9f32db15b"><div class="ttname"><a href="namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b">Camera::GetViewMatrix</a></div><div class="ttdeci">XMMATRIX GetViewMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00048">Camera.cpp:48</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a42194afb175fe59556c4eacf33cd8868"><div class="ttname"><a href="namespace_camera.html#a42194afb175fe59556c4eacf33cd8868">Camera::GetInverseMatrix</a></div><div class="ttdeci">XMMATRIX GetInverseMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00070">Camera.cpp:70</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a49a4bbe4aa1cf6c368dc1741bff821ac"><div class="ttname"><a href="namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac">Camera::GetProjectionMatrix</a></div><div class="ttdeci">XMMATRIX GetProjectionMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00051">Camera.cpp:51</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a4a596a3ea1fdc7d244ba4268031a360b"><div class="ttname"><a href="namespace_camera.html#a4a596a3ea1fdc7d244ba4268031a360b">Camera::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00021">Camera.cpp:21</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a4c275fe841c631f7a6cc61606befbf86"><div class="ttname"><a href="namespace_camera.html#a4c275fe841c631f7a6cc61606befbf86">Camera::GetBillboardMatrix</a></div><div class="ttdeci">XMMATRIX GetBillboardMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00054">Camera.cpp:54</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a582a9aa86a773ca0e9c6435eabd882c4"><div class="ttname"><a href="namespace_camera.html#a582a9aa86a773ca0e9c6435eabd882c4">Camera::convertWorldToNDC</a></div><div class="ttdeci">XMFLOAT3 convertWorldToNDC(Transform &amp;t)</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00077">Camera.cpp:77</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a84174e7d4994a3047000c6cb1b40add8"><div class="ttname"><a href="namespace_camera.html#a84174e7d4994a3047000c6cb1b40add8">Camera::SetTarget</a></div><div class="ttdeci">void SetTarget(XMFLOAT3 target)</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00036">Camera.cpp:36</a></div></div>
+<div class="ttc" id="anamespace_camera_html_a9e8888d211598104934a5f3bcc5f7148"><div class="ttname"><a href="namespace_camera.html#a9e8888d211598104934a5f3bcc5f7148">Camera::SetPosition</a></div><div class="ttdeci">void SetPosition(XMFLOAT3 position)</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00039">Camera.cpp:39</a></div></div>
+<div class="ttc" id="anamespace_camera_html_abd2dd52de2c1bebe6628bb3c72eeb17e"><div class="ttname"><a href="namespace_camera.html#abd2dd52de2c1bebe6628bb3c72eeb17e">Camera::GetVPMatrix</a></div><div class="ttdeci">XMMATRIX GetVPMatrix()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00056">Camera.cpp:56</a></div></div>
+<div class="ttc" id="anamespace_camera_html_ac7d5aa78b2dcee91198c07f525371aba"><div class="ttname"><a href="namespace_camera.html#ac7d5aa78b2dcee91198c07f525371aba">Camera::GetPosition</a></div><div class="ttdeci">XMFLOAT3 GetPosition()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00045">Camera.cpp:45</a></div></div>
+<div class="ttc" id="anamespace_camera_html_afd88c2780203f02c9fe236a7239e414c"><div class="ttname"><a href="namespace_camera.html#afd88c2780203f02c9fe236a7239e414c">Camera::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition</b> <a href="_camera_8cpp_source.html#l00011">Camera.cpp:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_camera_8h.html">Camera.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

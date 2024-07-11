@@ -1,0 +1,13 @@
+<map id="ChargeSkill::DrawRangeDisplay" name="ChargeSkill::DrawRangeDisplay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,210,108"/>
+<area shape="rect" id="Node000002" href="$namespace_area_models.html#ab83a8f7b483fae0f543d0c893354e082" title=" " alt="" coords="296,5,419,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,78,257,41,284,34,286,39,258,47,148,83"/>
+<area shape="rect" id="Node000003" href="$namespace_model.html#a444ada60ab1281d88d5062bff87bc65b" title=" " alt="" coords="311,56,404,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,82,295,73,296,78,210,87"/>
+<area shape="rect" id="Node000004" href="$class_skill_base.html#ac7f57f5996455e5770211e7dcd98ae9b" title=" " alt="" coords="258,107,457,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,102,243,106,242,111,210,108"/>
+<area shape="rect" id="Node000006" href="$namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee" title=" " alt="" coords="287,157,428,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="148,106,258,143,286,150,284,156,257,148,146,111"/>
+<area shape="rect" id="Node000005" href="$class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401" title=" " alt="" coords="505,107,697,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="457,117,490,117,490,123,457,123"/>
+</map>

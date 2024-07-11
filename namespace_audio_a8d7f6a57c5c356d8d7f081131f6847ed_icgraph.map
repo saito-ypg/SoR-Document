@@ -1,0 +1,7 @@
+<map id="Audio::Initialize" name="Audio::Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="211,31,320,57"/>
+<area shape="rect" id="Node000002" href="$class_scene_manager.html#ae45b05336daf503db67a4a95a19c0947" title=" " alt="" coords="5,5,163,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,37,162,32,163,27,196,32"/>
+<area shape="rect" id="Node000003" href="$_main_8cpp.html#a649028f00e62144f15f268d14bc6dae0" title=" " alt="" coords="48,56,120,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,56,121,67,120,62,195,51"/>
+</map>

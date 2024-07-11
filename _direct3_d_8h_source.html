@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/Direct3D.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_direct3_d_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Direct3D.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_direct3_d_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//インクルード</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;d3d11.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;DirectXMath.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//リンカ</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma comment(lib, &quot;d3d11.lib&quot;)</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma comment(lib, &quot;d3dcompiler.lib&quot;)</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using namespace </span>DirectX;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//画面の描画に関する処理</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_direct3_d.html">Direct3D</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">//【デバイス】</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//描画を行うための環境やリソースの作成に使う</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">extern</span> ID3D11Device*           <a class="code hl_variable" href="namespace_direct3_d.html#aa15f322502786f5f168aad00ad67f3ae">pDevice_</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">//【コンテキスト】</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">//GPUに命令を出すためのやつ</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">extern</span> ID3D11DeviceContext*    <a class="code hl_variable" href="namespace_direct3_d.html#a87dcf9081e6b03c8720e07e4a30f9c67">pContext_</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//■シェーダー関連で必要なセット</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69adc142a5a400bb0ff9d1b906730bdb09a">   31</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69">SHADER_TYPE</a>{<a class="code hl_enumvalue" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69a89afd0c661567c1cd27309091588b95d">SHADER_3D</a>, <a class="code hl_enumvalue" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69adc142a5a400bb0ff9d1b906730bdb09a">SHADER_2D</a>, <a class="code hl_enumvalue" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69aa2cc308afa361658860cbc1bc261a8b2">SHADER_UNLIT</a>, <a class="code hl_enumvalue" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69ab8d5c0d42ff90783adec0cd1f709f19a">SHADER_BILLBOARD</a>, <a class="code hl_enumvalue" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69aa03fd3b21fab63785732f638f4fb0b0a">SHADER_MAX</a>}; <span class="comment">//3タイプ（3D用、2D用、当たり判定枠表示用）</span></div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html">   32</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html">SHADER_BUNDLE</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">//【頂点入力レイアウト情報】</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">//1つの頂点データがどんな情報をどんな順番で格納してるか（位置と色と法線と…とか）</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#a4ac5f720971570173605382dd627455c">   36</a></span>        ID3D11InputLayout *<a class="code hl_variable" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#a4ac5f720971570173605382dd627455c">pVertexLayout</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">//【頂点シェーダ】</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="comment">//シェーダー（〇〇.hlsl）の中の頂点シェーダー（VS）部分をコンパイルしたものが入る</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="comment">//シェーダーはハードによって動作が異なるので、実行時にコンパイルする。</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#ae67aafa4371b444848723fafbb4be3b9">   41</a></span>        ID3D11VertexShader *<a class="code hl_variable" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#ae67aafa4371b444848723fafbb4be3b9">pVertexShader</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="comment">//【ピクセルシェーダ】</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">//シェーダー（〇〇.hlsl）の中のピクセルシェーダー（PS）部分をコンパイルしたものが入る</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#a51a43afd32d504b0acdd027ad9f40f8c">   45</a></span>        ID3D11PixelShader *<a class="code hl_variable" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#a51a43afd32d504b0acdd027ad9f40f8c">pPixelShader</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">//【ラスタライザ】</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="comment">//頂点の表示位置確定後、画面のどのピクセルを光らせればいいか求めるもの</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#aea9b010db276ee6d4689f45219c5db86">   49</a></span>        ID3D11RasterizerState*  <a class="code hl_variable" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#aea9b010db276ee6d4689f45219c5db86">pRasterizerState</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    };</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">//■ブレンドモード</span></div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="};">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70">   53</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70">BLEND_MODE</a></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70ac7331173bcf881743b4731f93729a906">   55</a></span>        <a class="code hl_enumvalue" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70a181124ce5dee9a18ef7f5f9e330cb971">BLEND_DEFAULT</a>, <a class="code hl_enumvalue" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70ac7331173bcf881743b4731f93729a906">BLEND_ADD</a>, <a class="code hl_enumvalue" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70a75fb48f47f56bad39f594b7023125822">BLEND_MAX</a></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70a75fb48f47f56bad39f594b7023125822">   56</a></span>    };</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">//その他</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">extern</span> <span class="keywordtype">int</span>      <a class="code hl_variable" href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">screenWidth_</a>;       <span class="comment">//スクリーンの幅</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">extern</span> <span class="keywordtype">int</span>      <a class="code hl_variable" href="namespace_direct3_d.html#a0f9716292586592cb6473c2b86eac2f0">screenHeight_</a>;      <span class="comment">//スクリーンの高さ</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">extern</span> <span class="keywordtype">bool</span>     <a class="code hl_variable" href="namespace_direct3_d.html#ae9914db4861226b894d0456270e339a0">isDrawCollision_</a>;   <span class="comment">//コリジョンを表示するかフラグ</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">//初期化処理</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">//引数：hWnd           ウィンドウハンドル</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">//引数：screenWidth        スクリーンの幅</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">//引数：screenHeight   スクリーンの高さ</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    HRESULT <a class="code hl_function" href="namespace_direct3_d.html#a4dfbdfc93aa1ba4d22a52150f60e73e6">Initialize</a>(HWND hWnd, <span class="keywordtype">int</span> screenWidth, <span class="keywordtype">int</span> screenHeight);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">//シェーダー関連で必要なセット準備</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_direct3_d.html#a9df96d2d4cc234d389fc8e09edf88543">InitShaderBundle</a>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">//今から描画するShaderBundleを設定</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">//引数：type   SHADER_3D, SHADER_2D, SHADER_UNLITのどれか</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_direct3_d.html#a2e24a5701dc5e0728ffccc721c690bd4">SetShader</a>(<a class="code hl_enumeration" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69">SHADER_TYPE</a> type);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">//ブレンドモードの変更</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">//引数：blendMode  BLEND_DEFAULT   通常</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">//                  BLEND_ADD       加算合成（パーティクル用）</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_direct3_d.html#ad0108ebd1b00c9884850eb9c51b72153">SetBlendMode</a>(<a class="code hl_enumeration" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70">BLEND_MODE</a> blendMode);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">//描画開始</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_direct3_d.html#a7f43673e7d416f164368d083347c9ae4">BeginDraw</a>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">//描画終了</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_direct3_d.html#a4f677e97ed43f00ca43d67e7ffae945a">EndDraw</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">//開放処理</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_direct3_d.html#aca42f107418a2283c2a3362f6702f902">Release</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">//三角形と線分（レイ）の衝突判定（衝突判定に使用）</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">//引数：start　     レイのスタート位置</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">//引数：direction  レイの方向</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">//引数：v0,v1,v2   三角形の各頂点位置</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">//引数：distance   衝突点までの距離を返す</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">//戻値：衝突したかどうか</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_direct3_d.html#ad9088a8ef6738c3d63b6fc63d2cf624d">Intersect</a>(XMFLOAT3&amp; start, XMFLOAT3&amp; direction, XMFLOAT3 &amp;v0, XMFLOAT3&amp; v1, XMFLOAT3&amp; v2, <span class="keywordtype">float</span>* distance);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">//Zバッファへの書き込みON/OFF</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">//引数：isWrite      true=書き込みON／false=書き込みOFF</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_direct3_d.html#a159aa52fd4fc11f96505791eeea00975">SetDepthBafferWriteEnable</a>(<span class="keywordtype">bool</span> isWrite);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="ttc" id="anamespace_direct3_d_html"><div class="ttname"><a href="namespace_direct3_d.html">Direct3D</a></div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00007">Direct3D.cpp:8</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a0d48ba404770b495c131816c93ac1e70"><div class="ttname"><a href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70">Direct3D::BLEND_MODE</a></div><div class="ttdeci">BLEND_MODE</div><div class="ttdef"><b>Definition</b> <a href="#l00053">Direct3D.h:54</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a0d48ba404770b495c131816c93ac1e70a181124ce5dee9a18ef7f5f9e330cb971"><div class="ttname"><a href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70a181124ce5dee9a18ef7f5f9e330cb971">Direct3D::BLEND_DEFAULT</a></div><div class="ttdeci">@ BLEND_DEFAULT</div><div class="ttdef"><b>Definition</b> <a href="#l00055">Direct3D.h:55</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a0d48ba404770b495c131816c93ac1e70a75fb48f47f56bad39f594b7023125822"><div class="ttname"><a href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70a75fb48f47f56bad39f594b7023125822">Direct3D::BLEND_MAX</a></div><div class="ttdeci">@ BLEND_MAX</div><div class="ttdef"><b>Definition</b> <a href="#l00056">Direct3D.h:55</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a0d48ba404770b495c131816c93ac1e70ac7331173bcf881743b4731f93729a906"><div class="ttname"><a href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70ac7331173bcf881743b4731f93729a906">Direct3D::BLEND_ADD</a></div><div class="ttdeci">@ BLEND_ADD</div><div class="ttdef"><b>Definition</b> <a href="#l00055">Direct3D.h:55</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a0f9716292586592cb6473c2b86eac2f0"><div class="ttname"><a href="namespace_direct3_d.html#a0f9716292586592cb6473c2b86eac2f0">Direct3D::screenHeight_</a></div><div class="ttdeci">int screenHeight_</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00042">Direct3D.cpp:42</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a159aa52fd4fc11f96505791eeea00975"><div class="ttname"><a href="namespace_direct3_d.html#a159aa52fd4fc11f96505791eeea00975">Direct3D::SetDepthBafferWriteEnable</a></div><div class="ttdeci">void SetDepthBafferWriteEnable(bool isWrite)</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00501">Direct3D.cpp:501</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a2e24a5701dc5e0728ffccc721c690bd4"><div class="ttname"><a href="namespace_direct3_d.html#a2e24a5701dc5e0728ffccc721c690bd4">Direct3D::SetShader</a></div><div class="ttdeci">void SetShader(SHADER_TYPE type)</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00366">Direct3D.cpp:366</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a4dfbdfc93aa1ba4d22a52150f60e73e6"><div class="ttname"><a href="namespace_direct3_d.html#a4dfbdfc93aa1ba4d22a52150f60e73e6">Direct3D::Initialize</a></div><div class="ttdeci">HRESULT Initialize(HWND hWnd, int screenWidth, int screenHeight)</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00047">Direct3D.cpp:47</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a4f677e97ed43f00ca43d67e7ffae945a"><div class="ttname"><a href="namespace_direct3_d.html#a4f677e97ed43f00ca43d67e7ffae945a">Direct3D::EndDraw</a></div><div class="ttdeci">void EndDraw()</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00406">Direct3D.cpp:406</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a7f43673e7d416f164368d083347c9ae4"><div class="ttname"><a href="namespace_direct3_d.html#a7f43673e7d416f164368d083347c9ae4">Direct3D::BeginDraw</a></div><div class="ttdeci">void BeginDraw()</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00386">Direct3D.cpp:386</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a87dcf9081e6b03c8720e07e4a30f9c67"><div class="ttname"><a href="namespace_direct3_d.html#a87dcf9081e6b03c8720e07e4a30f9c67">Direct3D::pContext_</a></div><div class="ttdeci">ID3D11DeviceContext * pContext_</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00039">Direct3D.cpp:39</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_a9df96d2d4cc234d389fc8e09edf88543"><div class="ttname"><a href="namespace_direct3_d.html#a9df96d2d4cc234d389fc8e09edf88543">Direct3D::InitShaderBundle</a></div><div class="ttdeci">void InitShaderBundle()</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00221">Direct3D.cpp:221</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_aa15f322502786f5f168aad00ad67f3ae"><div class="ttname"><a href="namespace_direct3_d.html#aa15f322502786f5f168aad00ad67f3ae">Direct3D::pDevice_</a></div><div class="ttdeci">ID3D11Device * pDevice_</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00038">Direct3D.cpp:38</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_abb513304470b5cdd8ad1b8a488ba42eb"><div class="ttname"><a href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">Direct3D::screenWidth_</a></div><div class="ttdeci">int screenWidth_</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00041">Direct3D.cpp:41</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_aca42f107418a2283c2a3362f6702f902"><div class="ttname"><a href="namespace_direct3_d.html#aca42f107418a2283c2a3362f6702f902">Direct3D::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00414">Direct3D.cpp:414</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_ad0108ebd1b00c9884850eb9c51b72153"><div class="ttname"><a href="namespace_direct3_d.html#ad0108ebd1b00c9884850eb9c51b72153">Direct3D::SetBlendMode</a></div><div class="ttdeci">void SetBlendMode(BLEND_MODE blendMode)</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00375">Direct3D.cpp:375</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_ad9088a8ef6738c3d63b6fc63d2cf624d"><div class="ttname"><a href="namespace_direct3_d.html#ad9088a8ef6738c3d63b6fc63d2cf624d">Direct3D::Intersect</a></div><div class="ttdeci">bool Intersect(XMFLOAT3 &amp;start, XMFLOAT3 &amp;direction, XMFLOAT3 &amp;v0, XMFLOAT3 &amp;v1, XMFLOAT3 &amp;v2, float *distance)</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00449">Direct3D.cpp:449</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_ae9914db4861226b894d0456270e339a0"><div class="ttname"><a href="namespace_direct3_d.html#ae9914db4861226b894d0456270e339a0">Direct3D::isDrawCollision_</a></div><div class="ttdeci">bool isDrawCollision_</div><div class="ttdef"><b>Definition</b> <a href="_direct3_d_8cpp_source.html#l00032">Direct3D.cpp:32</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_af9076213b15c3dcac6203ea749a7ab69"><div class="ttname"><a href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69">Direct3D::SHADER_TYPE</a></div><div class="ttdeci">SHADER_TYPE</div><div class="ttdef"><b>Definition</b> <a href="#l00031">Direct3D.h:31</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_af9076213b15c3dcac6203ea749a7ab69a89afd0c661567c1cd27309091588b95d"><div class="ttname"><a href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69a89afd0c661567c1cd27309091588b95d">Direct3D::SHADER_3D</a></div><div class="ttdeci">@ SHADER_3D</div><div class="ttdef"><b>Definition</b> <a href="#l00031">Direct3D.h:31</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_af9076213b15c3dcac6203ea749a7ab69aa03fd3b21fab63785732f638f4fb0b0a"><div class="ttname"><a href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69aa03fd3b21fab63785732f638f4fb0b0a">Direct3D::SHADER_MAX</a></div><div class="ttdeci">@ SHADER_MAX</div><div class="ttdef"><b>Definition</b> <a href="#l00031">Direct3D.h:31</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_af9076213b15c3dcac6203ea749a7ab69aa2cc308afa361658860cbc1bc261a8b2"><div class="ttname"><a href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69aa2cc308afa361658860cbc1bc261a8b2">Direct3D::SHADER_UNLIT</a></div><div class="ttdeci">@ SHADER_UNLIT</div><div class="ttdef"><b>Definition</b> <a href="#l00031">Direct3D.h:31</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_af9076213b15c3dcac6203ea749a7ab69ab8d5c0d42ff90783adec0cd1f709f19a"><div class="ttname"><a href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69ab8d5c0d42ff90783adec0cd1f709f19a">Direct3D::SHADER_BILLBOARD</a></div><div class="ttdeci">@ SHADER_BILLBOARD</div><div class="ttdef"><b>Definition</b> <a href="#l00031">Direct3D.h:31</a></div></div>
+<div class="ttc" id="anamespace_direct3_d_html_af9076213b15c3dcac6203ea749a7ab69adc142a5a400bb0ff9d1b906730bdb09a"><div class="ttname"><a href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69adc142a5a400bb0ff9d1b906730bdb09a">Direct3D::SHADER_2D</a></div><div class="ttdeci">@ SHADER_2D</div><div class="ttdef"><b>Definition</b> <a href="#l00031">Direct3D.h:31</a></div></div>
+<div class="ttc" id="astruct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e_html"><div class="ttname"><a href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html">Direct3D::SHADER_BUNDLE</a></div><div class="ttdef"><b>Definition</b> <a href="#l00032">Direct3D.h:33</a></div></div>
+<div class="ttc" id="astruct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e_html_a4ac5f720971570173605382dd627455c"><div class="ttname"><a href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#a4ac5f720971570173605382dd627455c">Direct3D::SHADER_BUNDLE::pVertexLayout</a></div><div class="ttdeci">ID3D11InputLayout * pVertexLayout</div><div class="ttdef"><b>Definition</b> <a href="#l00036">Direct3D.h:36</a></div></div>
+<div class="ttc" id="astruct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e_html_a51a43afd32d504b0acdd027ad9f40f8c"><div class="ttname"><a href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#a51a43afd32d504b0acdd027ad9f40f8c">Direct3D::SHADER_BUNDLE::pPixelShader</a></div><div class="ttdeci">ID3D11PixelShader * pPixelShader</div><div class="ttdef"><b>Definition</b> <a href="#l00045">Direct3D.h:45</a></div></div>
+<div class="ttc" id="astruct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e_html_ae67aafa4371b444848723fafbb4be3b9"><div class="ttname"><a href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#ae67aafa4371b444848723fafbb4be3b9">Direct3D::SHADER_BUNDLE::pVertexShader</a></div><div class="ttdeci">ID3D11VertexShader * pVertexShader</div><div class="ttdef"><b>Definition</b> <a href="#l00041">Direct3D.h:41</a></div></div>
+<div class="ttc" id="astruct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e_html_aea9b010db276ee6d4689f45219c5db86"><div class="ttname"><a href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html#aea9b010db276ee6d4689f45219c5db86">Direct3D::SHADER_BUNDLE::pRasterizerState</a></div><div class="ttdeci">ID3D11RasterizerState * pRasterizerState</div><div class="ttdef"><b>Definition</b> <a href="#l00049">Direct3D.h:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_direct3_d_8h.html">Direct3D.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

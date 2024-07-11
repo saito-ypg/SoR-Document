@@ -1,0 +1,5 @@
+<map id="ChargeSkill" name="ChargeSkill">
+<area shape="rect" id="Node000001" title="プレイヤーが突進を行うスキル。縦長の矩形の範囲に攻撃をする。突進をするため、大きく前に踏み込む。 突進中は無敵。" alt="" coords="5,80,93,107"/>
+<area shape="rect" id="Node000002" href="$class_skill_base.html" title="プレイヤー用スキルの基礎クラス。各種パラメーターは一旦フレーム単位で指定。 各派生先のactionの中でstep毎に処理変える(switch&#45;case)。必要なら専用のenum作る。 コンストラクタでC..." alt="" coords="11,5,87,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,48,52,80,46,80,46,48"/>
+</map>

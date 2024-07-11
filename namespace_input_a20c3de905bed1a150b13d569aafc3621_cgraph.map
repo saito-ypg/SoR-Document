@@ -1,0 +1,5 @@
+<map id="Input::IsPadButtonDown" name="Input::IsPadButtonDown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,166,32"/>
+<area shape="rect" id="Node000002" href="$namespace_input.html#a8c006403cfda4bd6f56460a8ca4967e3" title=" " alt="" coords="214,5,342,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,198,16,198,21,166,21"/>
+</map>

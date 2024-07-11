@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): EnemyManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_enemy_manager.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_enemy_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">EnemyManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_enemy_manager_8h_source.html">EnemyManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:acad1a45f0af4abe39c89367f2e22b80d" id="r_acad1a45f0af4abe39c89367f2e22b80d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acad1a45f0af4abe39c89367f2e22b80d">EnemyManager</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent)</td></tr>
+<tr class="separator:acad1a45f0af4abe39c89367f2e22b80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3583e45273d5509e59467d06a3feb6" id="r_afe3583e45273d5509e59467d06a3feb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe3583e45273d5509e59467d06a3feb6">~EnemyManager</a> ()</td></tr>
+<tr class="separator:afe3583e45273d5509e59467d06a3feb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac6c51f1a3bfd831161f96825171e24" id="r_acac6c51f1a3bfd831161f96825171e24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acac6c51f1a3bfd831161f96825171e24">Initialize</a> ()</td></tr>
+<tr class="separator:acac6c51f1a3bfd831161f96825171e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d38a7345dfbba47c7a654170e80d675" id="r_a3d38a7345dfbba47c7a654170e80d675"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d38a7345dfbba47c7a654170e80d675">Update</a> (const float &amp;dt)</td></tr>
+<tr class="separator:a3d38a7345dfbba47c7a654170e80d675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5141d34cd6a7565a9d08e1cefc94d518" id="r_a5141d34cd6a7565a9d08e1cefc94d518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5141d34cd6a7565a9d08e1cefc94d518">Draw</a> ()</td></tr>
+<tr class="separator:a5141d34cd6a7565a9d08e1cefc94d518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86832978af1659dae05d2651735bf9da" id="r_a86832978af1659dae05d2651735bf9da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86832978af1659dae05d2651735bf9da">Release</a> ()</td></tr>
+<tr class="separator:a86832978af1659dae05d2651735bf9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1469c69a34a9e0ebe551c17db879101f" id="r_a1469c69a34a9e0ebe551c17db879101f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1469c69a34a9e0ebe551c17db879101f">add</a> (<a class="el" href="class_enemy_base.html">EnemyBase</a> *enemy)</td></tr>
+<tr class="separator:a1469c69a34a9e0ebe551c17db879101f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3264e295c7350095d44c7a7b6b3813f" id="r_ad3264e295c7350095d44c7a7b6b3813f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3264e295c7350095d44c7a7b6b3813f">Eliminated</a> ()</td></tr>
+<tr class="separator:ad3264e295c7350095d44c7a7b6b3813f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50d75fd418bc9e71f3b7dd1aa481df2" id="r_ac50d75fd418bc9e71f3b7dd1aa481df2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac50d75fd418bc9e71f3b7dd1aa481df2">clearEnemy</a> ()</td></tr>
+<tr class="separator:ac50d75fd418bc9e71f3b7dd1aa481df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_enemy_manager_8h_source.html">EnemyManager.h</a> の <a class="el" href="_enemy_manager_8h_source.html#l00007">7</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="acad1a45f0af4abe39c89367f2e22b80d" name="acad1a45f0af4abe39c89367f2e22b80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad1a45f0af4abe39c89367f2e22b80d">&#9670;&#160;</a></span>EnemyManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnemyManager::EnemyManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_object.html">GameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00032">32</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="afe3583e45273d5509e59467d06a3feb6" name="afe3583e45273d5509e59467d06a3feb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3583e45273d5509e59467d06a3feb6">&#9670;&#160;</a></span>~EnemyManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnemyManager::~EnemyManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00036">36</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_afe3583e45273d5509e59467d06a3feb6_cgraph.png" border="0" usemap="#aclass_enemy_manager_afe3583e45273d5509e59467d06a3feb6_cgraph" alt=""/></div>
+<map name="aclass_enemy_manager_afe3583e45273d5509e59467d06a3feb6_cgraph" id="aclass_enemy_manager_afe3583e45273d5509e59467d06a3feb6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,225,32"/>
+<area shape="rect" href="class_enemy_manager.html#a86832978af1659dae05d2651735bf9da" title=" " alt="" coords="273,5,440,32"/>
+<area shape="poly" title=" " alt="" coords="225,16,257,16,257,21,225,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a1469c69a34a9e0ebe551c17db879101f" name="a1469c69a34a9e0ebe551c17db879101f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1469c69a34a9e0ebe551c17db879101f">&#9670;&#160;</a></span>add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_enemy_base.html">EnemyBase</a> *</td>          <td class="paramname"><span class="paramname"><em>enemy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00004">4</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a1469c69a34a9e0ebe551c17db879101f_icgraph.png" border="0" usemap="#aclass_enemy_manager_a1469c69a34a9e0ebe551c17db879101f_icgraph" alt=""/></div>
+<map name="aclass_enemy_manager_a1469c69a34a9e0ebe551c17db879101f_icgraph" id="aclass_enemy_manager_a1469c69a34a9e0ebe551c17db879101f_icgraph">
+<area shape="rect" title=" " alt="" coords="199,13,340,40"/>
+<area shape="rect" href="class_moderator_sequence.html#ab409913ca8b9ad248d7f28f13cd606ca" title=" " alt="" coords="5,5,151,48"/>
+<area shape="poly" title=" " alt="" coords="183,29,151,29,151,24,183,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac50d75fd418bc9e71f3b7dd1aa481df2" name="ac50d75fd418bc9e71f3b7dd1aa481df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50d75fd418bc9e71f3b7dd1aa481df2">&#9670;&#160;</a></span>clearEnemy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::clearEnemy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00022">22</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_ac50d75fd418bc9e71f3b7dd1aa481df2_icgraph.png" border="0" usemap="#aclass_enemy_manager_ac50d75fd418bc9e71f3b7dd1aa481df2_icgraph" alt=""/></div>
+<map name="aclass_enemy_manager_ac50d75fd418bc9e71f3b7dd1aa481df2_icgraph" id="aclass_enemy_manager_ac50d75fd418bc9e71f3b7dd1aa481df2_icgraph">
+<area shape="rect" title=" " alt="" coords="199,13,388,40"/>
+<area shape="rect" href="class_moderator_sequence.html#ab409913ca8b9ad248d7f28f13cd606ca" title=" " alt="" coords="5,5,151,48"/>
+<area shape="poly" title=" " alt="" coords="183,29,151,29,151,24,183,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5141d34cd6a7565a9d08e1cefc94d518" name="a5141d34cd6a7565a9d08e1cefc94d518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5141d34cd6a7565a9d08e1cefc94d518">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::Draw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00053">53</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad3264e295c7350095d44c7a7b6b3813f" name="ad3264e295c7350095d44c7a7b6b3813f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3264e295c7350095d44c7a7b6b3813f">&#9670;&#160;</a></span>Eliminated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EnemyManager::Eliminated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00010">10</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_ad3264e295c7350095d44c7a7b6b3813f_icgraph.png" border="0" usemap="#aclass_enemy_manager_ad3264e295c7350095d44c7a7b6b3813f_icgraph" alt=""/></div>
+<map name="aclass_enemy_manager_ad3264e295c7350095d44c7a7b6b3813f_icgraph" id="aclass_enemy_manager_ad3264e295c7350095d44c7a7b6b3813f_icgraph">
+<area shape="rect" title=" " alt="" coords="199,13,380,40"/>
+<area shape="rect" href="class_moderator_sequence.html#ab409913ca8b9ad248d7f28f13cd606ca" title=" " alt="" coords="5,5,151,48"/>
+<area shape="poly" title=" " alt="" coords="183,29,151,29,151,24,183,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acac6c51f1a3bfd831161f96825171e24" name="acac6c51f1a3bfd831161f96825171e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac6c51f1a3bfd831161f96825171e24">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a86832978af1659dae05d2651735bf9da" name="a86832978af1659dae05d2651735bf9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86832978af1659dae05d2651735bf9da">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::Release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00061">61</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a86832978af1659dae05d2651735bf9da_icgraph.png" border="0" usemap="#aclass_enemy_manager_a86832978af1659dae05d2651735bf9da_icgraph" alt=""/></div>
+<map name="aclass_enemy_manager_a86832978af1659dae05d2651735bf9da_icgraph" id="aclass_enemy_manager_a86832978af1659dae05d2651735bf9da_icgraph">
+<area shape="rect" title=" " alt="" coords="273,5,440,32"/>
+<area shape="rect" href="class_enemy_manager.html#afe3583e45273d5509e59467d06a3feb6" title=" " alt="" coords="5,5,225,32"/>
+<area shape="poly" title=" " alt="" coords="257,21,225,21,225,16,257,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d38a7345dfbba47c7a654170e80d675" name="a3d38a7345dfbba47c7a654170e80d675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d38a7345dfbba47c7a654170e80d675">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyManager::Update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a> の <a class="el" href="_enemy_manager_8cpp_source.html#l00045">45</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_manager_a3d38a7345dfbba47c7a654170e80d675_icgraph.png" border="0" usemap="#aclass_enemy_manager_a3d38a7345dfbba47c7a654170e80d675_icgraph" alt=""/></div>
+<map name="aclass_enemy_manager_a3d38a7345dfbba47c7a654170e80d675_icgraph" id="aclass_enemy_manager_a3d38a7345dfbba47c7a654170e80d675_icgraph">
+<area shape="rect" title=" " alt="" coords="199,13,360,40"/>
+<area shape="rect" href="class_moderator_sequence.html#ab409913ca8b9ad248d7f28f13cd606ca" title=" " alt="" coords="5,5,151,48"/>
+<area shape="poly" title=" " alt="" coords="183,29,151,29,151,24,183,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/sources/<a class="el" href="_enemy_manager_8h_source.html">EnemyManager.h</a></li>
+<li>SoR/sources/<a class="el" href="_enemy_manager_8cpp_source.html">EnemyManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_enemy_manager.html">EnemyManager</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="GameActor::AddColliderCamp" name="GameActor::AddColliderCamp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,201,32"/>
+<area shape="rect" id="Node000002" href="$namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b" title="当たり判定リストに追加" alt="" coords="249,5,434,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,16,233,16,233,21,201,21"/>
+</map>

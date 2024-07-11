@@ -1,0 +1,9 @@
+<map id="basic_json::from_bson" name="basic_json::from_bson">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,157,57"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a4b0dfca88b11ea59a2568707767622d8" title="create a JSON value from an input in BSON format" alt="" coords="205,31,356,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,41,189,41,189,47,157,47"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#ae2d5bc42270881ed3e219e8b1456fec5" title="create an empty value with a given type" alt="" coords="404,5,557,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,32,388,28,389,33,357,37"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#aada1510d1b55ad2faf4a71c70cffb374" title=" " alt="" coords="412,56,550,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="357,51,396,56,396,61,356,56"/>
+</map>

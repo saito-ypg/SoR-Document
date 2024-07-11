@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): MediatorBase クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_mediator_base.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_mediator_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">MediatorBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a>&gt;</code></p>
+<div class="dynheader">
+MediatorBase の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mediator_base__inherit__graph.png" border="0" usemap="#a_mediator_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_mediator_base_inherit__map" id="a_mediator_base_inherit__map">
+<area shape="rect" title="敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する" alt="" coords="9,5,110,32"/>
+<area shape="rect" href="class_decoy_mediator.html" title=" " alt="" coords="5,80,114,107"/>
+<area shape="poly" title=" " alt="" coords="62,48,62,80,57,80,57,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+MediatorBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mediator_base__coll__graph.png" border="0" usemap="#a_mediator_base_coll__map" alt="Collaboration graph"/></div>
+<map name="a_mediator_base_coll__map" id="a_mediator_base_coll__map">
+<area shape="rect" title="敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する" alt="" coords="133,368,234,395"/>
+<area shape="rect" href="class_enemy_base.html" title=" " alt="" coords="137,277,229,304"/>
+<area shape="poly" title=" " alt="" coords="186,320,186,367,181,367,181,320"/>
+<area shape="rect" href="class_game_actor.html" title=" " alt="" coords="140,187,227,213"/>
+<area shape="poly" title=" " alt="" coords="185,229,184,237,185,277,180,277,179,237,179,229"/>
+<area shape="poly" title=" " alt="" coords="186,229,186,277,181,277,181,229"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="83,96,177,123"/>
+<area shape="poly" title=" " alt="" coords="148,135,178,185,173,187,143,138"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="68,41,96,70,119,94,115,97,92,74,64,45"/>
+<area shape="poly" title=" " alt="" coords="101,10,110,19,102,27,84,30,84,25,100,23,105,19,97,14"/>
+<area shape="rect" title=" " alt="" coords="187,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="193,46,144,97,140,94,189,42"/>
+<area shape="rect" href="class_actor_info.html" title=" " alt="" coords="202,96,274,123"/>
+<area shape="poly" title=" " alt="" coords="224,138,193,187,189,185,220,135"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aec7139ab8e3a8df4aa74f59ccdba523a" id="r_aec7139ab8e3a8df4aa74f59ccdba523a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec7139ab8e3a8df4aa74f59ccdba523a">MediatorBase</a> (<a class="el" href="class_enemy_base.html">EnemyBase</a> &amp;enemy)</td></tr>
+<tr class="separator:aec7139ab8e3a8df4aa74f59ccdba523a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c08408500357d338b32821322dbe43" id="r_a08c08408500357d338b32821322dbe43"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08c08408500357d338b32821322dbe43">~MediatorBase</a> ()</td></tr>
+<tr class="separator:a08c08408500357d338b32821322dbe43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c6d5302c5e8b4ccd2b4f7152d7d8ee" id="r_af3c6d5302c5e8b4ccd2b4f7152d7d8ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3c6d5302c5e8b4ccd2b4f7152d7d8ee">Update</a> (const float &amp;dt)</td></tr>
+<tr class="separator:af3c6d5302c5e8b4ccd2b4f7152d7d8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:abac306da6152bd5ab39f2925e5e380eb" id="r_abac306da6152bd5ab39f2925e5e380eb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abac306da6152bd5ab39f2925e5e380eb">DetermineNextState</a> ()=0</td></tr>
+<tr class="separator:abac306da6152bd5ab39f2925e5e380eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51efbf25ac7cddfc0047f324de69225f" id="r_a51efbf25ac7cddfc0047f324de69225f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51efbf25ac7cddfc0047f324de69225f">changeState</a> ()=0</td></tr>
+<tr class="separator:a51efbf25ac7cddfc0047f324de69225f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a97e0b3ff907e5654111fce81588784bd" id="r_a97e0b3ff907e5654111fce81588784bd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_movement_state_base.html">MovementStateBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97e0b3ff907e5654111fce81588784bd">curState_</a></td></tr>
+<tr class="separator:a97e0b3ff907e5654111fce81588784bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6bf8fbc17308de93b95c0967553c38" id="r_a4a6bf8fbc17308de93b95c0967553c38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_enemy_base.html">EnemyBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6bf8fbc17308de93b95c0967553c38">base_</a></td></tr>
+<tr class="separator:a4a6bf8fbc17308de93b95c0967553c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c9089ae9c9965d47b515f7ddcdbfb9" id="r_a37c9089ae9c9965d47b515f7ddcdbfb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37c9089ae9c9965d47b515f7ddcdbfb9">isTransition_</a></td></tr>
+<tr class="separator:a37c9089ae9c9965d47b515f7ddcdbfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する </p>
+
+<p class="definition"> <a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a> の <a class="el" href="_mediator_base_8h_source.html#l00010">10</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aec7139ab8e3a8df4aa74f59ccdba523a" name="aec7139ab8e3a8df4aa74f59ccdba523a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7139ab8e3a8df4aa74f59ccdba523a">&#9670;&#160;</a></span>MediatorBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MediatorBase::MediatorBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_enemy_base.html">EnemyBase</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>enemy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00004">4</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a08c08408500357d338b32821322dbe43" name="a08c08408500357d338b32821322dbe43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c08408500357d338b32821322dbe43">&#9670;&#160;</a></span>~MediatorBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MediatorBase::~MediatorBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00009">9</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a51efbf25ac7cddfc0047f324de69225f" name="a51efbf25ac7cddfc0047f324de69225f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51efbf25ac7cddfc0047f324de69225f">&#9670;&#160;</a></span>changeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MediatorBase::changeState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abac306da6152bd5ab39f2925e5e380eb" name="abac306da6152bd5ab39f2925e5e380eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac306da6152bd5ab39f2925e5e380eb">&#9670;&#160;</a></span>DetermineNextState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MediatorBase::DetermineNextState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph.png" border="0" usemap="#aclass_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph" alt=""/></div>
+<map name="aclass_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph" id="aclass_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph">
+<area shape="rect" title=" " alt="" coords="204,5,399,48"/>
+<area shape="rect" href="class_mediator_base.html#af3c6d5302c5e8b4ccd2b4f7152d7d8ee" title=" " alt="" coords="5,13,156,40"/>
+<area shape="poly" title=" " alt="" coords="188,29,156,29,156,24,188,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af3c6d5302c5e8b4ccd2b4f7152d7d8ee" name="af3c6d5302c5e8b4ccd2b4f7152d7d8ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c6d5302c5e8b4ccd2b4f7152d7d8ee">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MediatorBase::Update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00013">13</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph.png" border="0" usemap="#aclass_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph" alt=""/></div>
+<map name="aclass_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph" id="aclass_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,156,40"/>
+<area shape="rect" href="class_mediator_base.html#abac306da6152bd5ab39f2925e5e380eb" title=" " alt="" coords="204,5,399,48"/>
+<area shape="poly" title=" " alt="" coords="156,24,188,24,188,29,156,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a4a6bf8fbc17308de93b95c0967553c38" name="a4a6bf8fbc17308de93b95c0967553c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6bf8fbc17308de93b95c0967553c38">&#9670;&#160;</a></span>base_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_enemy_base.html">EnemyBase</a>&amp; MediatorBase::base_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a> の <a class="el" href="_mediator_base_8h_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a97e0b3ff907e5654111fce81588784bd" name="a97e0b3ff907e5654111fce81588784bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e0b3ff907e5654111fce81588784bd">&#9670;&#160;</a></span>curState_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_movement_state_base.html">MovementStateBase</a>&gt; MediatorBase::curState_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a> の <a class="el" href="_mediator_base_8h_source.html#l00013">13</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a37c9089ae9c9965d47b515f7ddcdbfb9" name="a37c9089ae9c9965d47b515f7ddcdbfb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c9089ae9c9965d47b515f7ddcdbfb9">&#9670;&#160;</a></span>isTransition_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MediatorBase::isTransition_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a> の <a class="el" href="_mediator_base_8h_source.html#l00015">15</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/sources/<a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a></li>
+<li>SoR/sources/<a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mediator_base.html">MediatorBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

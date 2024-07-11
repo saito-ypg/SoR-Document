@@ -1,0 +1,7 @@
+<map id="EnemyBase::AddCamp" name="EnemyBase::AddCamp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="Node000002" href="$class_game_actor.html#acfeff0c8477472a5c26812b74cddcf52" title=" " alt="" coords="211,5,406,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,16,195,16,195,21,163,21"/>
+<area shape="rect" id="Node000003" href="$namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b" title="当たり判定リストに追加" alt="" coords="454,5,639,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,16,438,16,438,21,407,21"/>
+</map>

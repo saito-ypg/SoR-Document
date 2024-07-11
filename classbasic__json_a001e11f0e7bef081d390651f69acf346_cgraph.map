@@ -1,0 +1,31 @@
+<map id="basic_json::value" name="basic_json::value">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,199,126,225"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a80c2436388fd16a1529ce9afce8229ef" title="access specified object element with default value" alt="" coords="174,199,294,225"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,209,158,209,158,215,126,215"/>
+<area shape="rect" id="Node000003" href="$namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="750,31,849,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="239,197,253,169,274,133,304,97,341,67,389,44,442,28,495,18,549,14,651,17,735,28,734,33,651,22,550,19,496,23,443,33,391,49,343,72,308,100,279,136,257,171,243,199"/>
+<area shape="rect" id="Node000006" href="$classdetail_1_1type__error.html#a2d25372628cf1e09ec67718f4bc42762" title=" " alt="" coords="361,81,479,124"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="254,196,341,140,360,129,363,134,343,145,257,200"/>
+<area shape="rect" id="Node000009" href="$classbasic__json.html#a4dbc83213b31a171aa8ba65ff00fa954" title="returns an iterator to one past the last element" alt="" coords="567,199,680,225"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="283,195,342,184,420,178,498,184,553,193,552,198,497,189,420,184,342,189,284,201"/>
+<area shape="rect" id="Node000010" href="$classbasic__json.html#a727e3cfb5a874314d8deb12cb53a8105" title="find an element in a JSON object" alt="" coords="364,199,475,225"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="295,209,348,209,348,215,295,215"/>
+<area shape="rect" id="Node000011" href="$classbasic__json.html#af355a2b131068acf3d623eb6d80a711c" title="return whether value is an object" alt="" coords="552,249,695,276"/>
+<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="288,223,342,235,443,248,537,255,536,261,442,253,342,240,286,228"/>
+<area shape="rect" id="Node000012" href="$classbasic__json.html#a0ab31c7fdbab38898070bca01637f886" title="get a (pointer) value (explicit)" alt="" coords="365,300,474,327"/>
+<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="256,224,295,251,343,279,369,291,367,296,341,284,292,255,253,228"/>
+<area shape="rect" id="Node000013" href="$classbasic__json.html#a15b177614647598e238e15ab1cc889c7" title="return the type as string" alt="" coords="342,351,497,377"/>
+<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="245,224,283,279,311,310,344,336,352,341,349,346,340,341,308,314,279,282,241,228"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="904,5,1031,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="849,34,888,28,889,33,850,39"/>
+<area shape="rect" id="Node000005" href="$namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="897,56,1038,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="850,49,882,54,881,59,849,54"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="479,82,545,67,644,53,734,45,734,50,645,58,546,72,480,88"/>
+<area shape="rect" id="Node000007" href="$classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="561,81,686,124"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="479,100,546,100,546,105,479,105"/>
+<area shape="rect" id="Node000008" href="$classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="545,148,702,175"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="480,117,560,141,559,146,478,122"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="676,145,700,134,742,102,775,68,779,71,745,106,703,138,679,150"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="476,209,552,209,552,215,476,215"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="477,223,553,242,552,248,475,228"/>
+</map>

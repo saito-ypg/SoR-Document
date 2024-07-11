@@ -1,0 +1,9 @@
+<map id="basic_json::object" name="basic_json::object">
+<area shape="rect" id="Node000001" title="explicitly create an object from an initializer list" alt="" coords="220,67,346,93"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a699ef418df577e75f28dfce6b04d6c2f" title="creates a diff as a JSON patch" alt="" coords="35,29,142,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,68,142,56,143,50,205,62"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#a8676ac2433fe299b8d420f00a0741395" title="applies a JSON Merge Patch" alt="" coords="5,104,172,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="205,98,162,106,161,101,204,92"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="122,16,110,10,88,8,68,10,57,15,55,20,60,27,55,30,49,21,54,11,67,5,89,3,112,5,124,12"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="122,91,110,85,88,83,68,85,57,89,55,95,60,102,55,105,49,95,54,86,67,79,89,77,112,80,124,86"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="CollisionManager::RegisterHitRange" name="CollisionManager::RegisterHitRange">
+<area shape="rect" id="Node000001" title=" " alt="" coords="239,48,415,91"/>
+<area shape="rect" id="Node000002" href="$class_skill_base.html#a6702b04b2e07ce411bca5d3b1f12be3d" title=" " alt="" coords="5,5,191,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,49,161,35,162,30,224,44"/>
+<area shape="rect" id="Node000003" href="$class_skill_base.html#ae46380a24b89bd2609c361f65ebf2381" title=" " alt="" coords="5,56,191,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,72,191,72,191,67,223,67"/>
+<area shape="rect" id="Node000004" href="$class_skill_base.html#a2fa53dedb76c014b56d731e7b8120553" title=" " alt="" coords="5,107,191,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,95,162,109,161,103,223,90"/>
+</map>

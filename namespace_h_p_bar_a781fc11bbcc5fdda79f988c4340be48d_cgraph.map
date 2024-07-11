@@ -1,0 +1,19 @@
+<map id="HPBar::Initialize" name="HPBar::Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,120,133"/>
+<area shape="rect" id="Node000002" href="$namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="168,107,260,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,117,152,117,152,123,120,123"/>
+<area shape="rect" id="Node000003" href="$class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="325,81,416,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,110,310,102,311,107,261,115"/>
+<area shape="rect" id="Node000009" href="$namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="308,132,433,159"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="261,125,293,130,292,135,260,130"/>
+<area shape="rect" id="Node000004" href="$class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="481,5,647,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="398,78,480,42,499,35,501,40,482,46,401,83"/>
+<area shape="rect" id="Node000005" href="$class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="508,56,620,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="416,86,492,76,493,81,417,91"/>
+<area shape="rect" id="Node000006" href="$class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="505,107,623,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="417,98,490,108,489,113,416,103"/>
+<area shape="rect" id="Node000007" href="$class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="514,157,614,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="408,106,434,118,482,143,500,150,498,155,480,148,432,122,406,111"/>
+<area shape="rect" id="Node000008" href="$_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="695,157,815,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="615,168,679,168,679,173,615,173"/>
+</map>

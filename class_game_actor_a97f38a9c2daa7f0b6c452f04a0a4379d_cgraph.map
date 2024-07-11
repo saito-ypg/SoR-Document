@@ -1,0 +1,5 @@
+<map id="GameActor::RemoveColliderCamp" name="GameActor::RemoveColliderCamp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,224,32"/>
+<area shape="rect" id="Node000002" href="$namespace_collision_manager.html#af7d80cc1b17304c493fd70c97c44856f" title="陣営リストから削除する。倒された際に呼ぶ" alt="" coords="272,5,480,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,16,256,16,256,21,224,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="GameActor::ActorUpdate" name="GameActor::ActorUpdate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="190,5,357,32"/>
+<area shape="rect" id="Node000002" href="$class_game_actor.html#a1db71402a6b50b290625cdd2f9e758c2" title=" " alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,21,142,21,142,16,174,16"/>
+</map>

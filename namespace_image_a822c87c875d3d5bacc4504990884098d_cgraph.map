@@ -1,0 +1,9 @@
+<map id="Image::isMouseOver" name="Image::isMouseOver">
+<area shape="rect" id="Node000001" title="引数に渡した画像とそのTransformを用いて、マウス座標が画像内にあるかを判断する ベースのロジックはisPointInside" alt="" coords="5,31,145,57"/>
+<area shape="rect" id="Node000002" href="$namespace_input.html#a165471717f446745e298fdfafe0f8ef5" title=" " alt="" coords="193,5,357,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,32,177,28,177,34,146,38"/>
+<area shape="rect" id="Node000003" href="$namespace_image.html#a81a8c354cae6aa090535a90a4e07a149" title="引数に渡した画像とそのTransformを用いて、第三引数のポジションが画像範囲内かを調べる" alt="" coords="206,56,344,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,50,191,56,190,61,145,56"/>
+<area shape="rect" id="Node000004" href="$namespace_image.html#a547b7c2db03ce5f601986ac6c67b7882" title="~~~~~~~~~~~ここから拡張~~~~~~~~~~~///" alt="" coords="405,56,509,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="345,67,389,67,389,72,345,72"/>
+</map>

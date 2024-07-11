@@ -1,0 +1,37 @@
+<map id="GameActor::Draw" name="GameActor::Draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,157,130,184"/>
+<area shape="rect" id="Node000002" href="$class_game_actor.html#a3b8eb792530c36af9da8be95bc371482" title=" " alt="" coords="187,5,342,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,155,114,100,143,69,176,42,185,37,188,41,179,46,146,73,118,104,79,158"/>
+<area shape="rect" id="Node000003" href="$class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137" title=" " alt="" coords="187,56,342,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,155,124,124,176,92,191,86,193,91,179,97,127,128,87,159"/>
+<area shape="rect" id="Node000006" href="$class_game_actor.html#a498ed1fd302e01a069747b8c43598eee" title=" " alt="" coords="178,107,351,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="122,154,194,135,195,140,123,159"/>
+<area shape="rect" id="Node000008" href="$class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96" title=" " alt="" coords="193,183,336,209"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="131,176,178,182,177,188,130,181"/>
+<area shape="rect" id="Node000016" href="$class_game_actor.html#a22bf19323146d2f58b999ffab10b0f98" title=" " alt="" coords="187,233,342,260"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="97,182,179,219,198,226,196,231,177,224,95,187"/>
+<area shape="rect" id="Node000017" href="$class_game_object.html#ac05d364e5acbfdf52368092e963887c0" title=" " alt="" coords="185,284,344,311"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="82,183,122,226,149,249,179,270,191,276,188,280,176,274,146,254,118,230,78,186"/>
+<area shape="rect" id="Node000004" href="$namespace_model.html#a444ada60ab1281d88d5062bff87bc65b" title=" " alt="" coords="447,5,540,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="328,53,431,30,432,35,329,58"/>
+<area shape="rect" id="Node000005" href="$namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee" title=" " alt="" coords="423,56,564,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="342,67,407,67,407,72,342,72"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="326,104,350,92,364,80,373,68,382,55,398,42,431,27,433,32,400,46,386,58,377,71,368,84,352,97,328,108"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="328,103,415,84,416,89,329,109"/>
+<area shape="rect" id="Node000007" href="$namespace_area_models.html#ab83a8f7b483fae0f543d0c893354e082" title=" " alt="" coords="432,107,555,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="351,117,417,117,417,123,351,123"/>
+<area shape="rect" id="Node000009" href="$namespace_h_p_bar.html#a6226641f58b19a29980611c48cbf3ac3" title=" " alt="" coords="446,360,542,387"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="336,208,353,219,366,235,373,252,377,285,381,316,388,331,401,346,415,356,431,363,429,368,412,361,397,350,384,334,376,318,372,285,368,253,362,238,349,223,333,212"/>
+<area shape="rect" id="Node000012" href="$namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac" title=" " alt="" coords="399,157,588,184"/>
+<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="336,185,383,180,384,185,336,191"/>
+<area shape="rect" id="Node000013" href="$namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b" title=" " alt="" coords="414,208,573,235"/>
+<area shape="poly" id="edge14_Node000008_Node000013" title=" " alt="" coords="336,201,399,208,398,214,336,207"/>
+<area shape="rect" id="Node000014" href="$namespace_camera.html#abd2dd52de2c1bebe6628bb3c72eeb17e" title=" " alt="" coords="419,259,568,285"/>
+<area shape="poly" id="edge15_Node000008_Node000014" title=" " alt="" coords="319,207,352,219,400,244,420,251,418,256,398,249,350,224,318,212"/>
+<area shape="rect" id="Node000015" href="$namespace_image.html#af563910c608e9d72aa0acef8fd626728" title="スクリーン座標系の値から正規化デバイス座標系の値に変換" alt="" coords="445,309,543,336"/>
+<area shape="poly" id="edge16_Node000008_Node000015" title=" " alt="" coords="332,208,353,219,370,239,377,259,385,277,401,295,431,310,428,315,397,299,380,280,372,260,365,241,349,223,330,212"/>
+<area shape="rect" id="Node000010" href="$namespace_image.html#a5a729b7937615099872420357877a354" title=" " alt="" coords="660,335,754,361"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="542,365,645,353,645,358,543,370"/>
+<area shape="rect" id="Node000011" href="$namespace_image.html#a88e2782eb2ba81a77618072490e44d2b" title=" " alt="" coords="636,385,778,412"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="543,376,621,386,620,391,542,382"/>
+</map>

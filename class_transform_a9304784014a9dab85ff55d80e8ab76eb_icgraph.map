@@ -1,0 +1,14 @@
+<map id="Transform::GetWorldMatrix" name="Transform::GetWorldMatrix">
+<area shape="rect" id="Node000001" title=" " alt="" coords="475,81,652,108"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="604,69,590,62,564,60,539,62,526,67,523,72,529,79,524,83,517,73,522,63,538,57,564,55,592,57,606,64"/>
+<area shape="rect" id="Node000002" href="$class_fbx_parts.html#a6f4a56d494ea33ba40d50c4ebfcb2469" title=" " alt="" coords="275,31,386,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,80,386,59,387,53,484,75"/>
+<area shape="rect" id="Node000005" href="$namespace_model.html#ab93a165aac3d0c852a38215ac3ac6258" title=" " alt="" coords="270,81,391,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="459,97,391,97,391,92,459,92"/>
+<area shape="rect" id="Node000006" href="$class_game_object.html#a6c0d4e8eaf47f457927850b2cd8be670" title=" " alt="" coords="234,132,427,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="484,114,396,134,395,129,483,109"/>
+<area shape="rect" id="Node000003" href="$class_fbx_parts.html#a72ccd90d28fcc8025b5a324490c18c43" title=" " alt="" coords="5,5,186,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,39,186,31,186,26,260,34"/>
+<area shape="rect" id="Node000004" href="$class_fbx_parts.html#ab79c7b8ace640a5fedc46697b214e433" title=" " alt="" coords="8,56,183,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="260,54,183,63,183,57,259,49"/>
+</map>

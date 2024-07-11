@@ -1,0 +1,13 @@
+<map id="GameActor::GetTransformRef" name="GameActor::GetTransformRef">
+<area shape="rect" id="Node000001" title=" " alt="" coords="505,56,697,83"/>
+<area shape="rect" id="Node000002" href="$class_skill_base.html#a73f84abce31ab1f50a6cb378a4908359" title=" " alt="" coords="292,5,423,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="518,55,422,35,423,30,519,50"/>
+<area shape="rect" id="Node000003" href="$class_player_interface.html#a75b02f75f559ac9184301f68a52652ff" title=" " alt="" coords="285,56,430,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="489,72,430,72,430,67,489,67"/>
+<area shape="rect" id="Node000004" href="$class_skill_base.html#ac7f57f5996455e5770211e7dcd98ae9b" title=" " alt="" coords="258,107,457,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="519,89,426,109,424,103,518,84"/>
+<area shape="rect" id="Node000005" href="$class_charge_skill.html#ad656af05ae6e13aa50a4357b63af5769" title=" " alt="" coords="5,81,210,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="242,111,210,108,211,102,243,106"/>
+<area shape="rect" id="Node000006" href="$classtest_skill.html#a6d96e0ac7838bd97205840d053863885" title=" " alt="" coords="15,132,200,159"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="242,134,201,139,200,133,242,129"/>
+</map>

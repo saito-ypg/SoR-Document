@@ -1,0 +1,30 @@
+<map id="basic_json::insert" name="basic_json::insert">
+<area shape="rect" id="Node000001" title="inserts element into array" alt="" coords="5,175,129,202"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a7f3817060c2bec896a99cb2c236b9c27" title="inserts element into array" alt="" coords="177,175,300,202"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,186,161,186,161,191,129,191"/>
+<area shape="rect" id="Node000003" href="$namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="756,83,855,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,173,258,146,280,113,310,79,347,53,397,29,442,14,483,5,523,3,564,6,607,14,708,39,744,53,775,72,773,76,742,58,707,44,606,19,563,11,523,8,484,10,443,19,399,34,349,57,314,83,285,116,263,149,248,176"/>
+<area shape="rect" id="Node000006" href="$classdetail_1_1invalid__iterator.html#a35d0b713b151188622791891314949f9" title=" " alt="" coords="355,134,497,176"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="300,175,339,168,340,173,301,180"/>
+<area shape="rect" id="Node000009" href="$classdetail_1_1type__error.html#a2d25372628cf1e09ec67718f4bc42762" title=" " alt="" coords="367,67,485,110"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="259,172,347,119,357,114,359,119,349,124,262,177"/>
+<area shape="rect" id="Node000010" href="$classbasic__json.html#af8c5ca19d22a32054452470669c43bb9" title="Helper for insertion of an iterator" alt="" coords="364,200,487,243"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="301,197,349,205,348,211,300,202"/>
+<area shape="rect" id="Node000011" href="$classbasic__json.html#a184ba4a6b47e6da3703af19349bd776f" title="return whether value is an array" alt="" coords="357,267,494,294"/>
+<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="261,200,301,226,349,253,364,259,362,264,347,257,298,231,258,205"/>
+<area shape="rect" id="Node000012" href="$classbasic__json.html#a15b177614647598e238e15ab1cc889c7" title="return the type as string" alt="" coords="348,318,503,344"/>
+<area shape="poly" id="edge16_Node000002_Node000012" title=" " alt="" coords="251,200,290,251,318,279,349,303,358,308,355,313,347,308,314,283,286,254,247,204"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="910,58,1037,84"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="855,86,894,80,895,86,856,92"/>
+<area shape="rect" id="Node000005" href="$namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="903,108,1044,135"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="856,101,888,106,887,111,855,106"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="494,174,542,185,596,192,653,190,707,178,729,167,749,152,783,119,786,123,753,156,732,171,709,183,653,196,596,197,541,190,493,180"/>
+<area shape="rect" id="Node000007" href="$classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="567,75,692,118"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="497,132,552,116,553,121,498,137"/>
+<area shape="rect" id="Node000008" href="$classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="551,142,708,168"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="497,152,536,152,536,158,497,158"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="673,139,707,127,749,113,751,118,709,132,674,144"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="485,71,551,60,630,53,664,55,708,60,759,74,758,80,707,66,664,60,630,59,552,66,486,77"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="485,88,552,91,552,96,485,93"/>
+<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="486,105,552,127,572,134,570,139,550,132,484,110"/>
+</map>

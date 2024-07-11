@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/sources/EnemySpawner.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_enemy_spawner_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">EnemySpawner.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &quot;<a class="el" href="_game_object_8h_source.html">../Engine/GameObject.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enemy_spawner_8h_source.html">EnemySpawner.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_mediator_factory_registry_8h_source.html">MediatorFactoryRegistry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_mediator_factory_8h_source.html">MediatorFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_registration_factory_8h_source.html">RegistrationFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_decoy_8h_source.html">Decoy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_soldier_enemy_8h_source.html">SoldierEnemy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json_8hpp_source.html">../libraries/json.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+EnemySpawner.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_enemy_spawner_8cpp__incl.png" border="0" usemap="#a_so_r_2sources_2_enemy_spawner_8cpp" alt=""/></div>
+<map name="a_so_r_2sources_2_enemy_spawner_8cpp" id="a_so_r_2sources_2_enemy_spawner_8cpp">
+<area shape="rect" title=" " alt="" coords="2578,5,2794,32"/>
+<area shape="rect" title=" " alt="" coords="5,304,52,331"/>
+<area shape="poly" title=" " alt="" coords="2577,26,2170,46,1881,65,1551,93,1193,129,818,176,439,235,252,269,68,307,67,301,251,264,438,230,817,171,1192,124,1550,87,1880,60,2169,41,2577,21"/>
+<area shape="rect" title=" " alt="" coords="3012,80,3077,107"/>
+<area shape="poly" title=" " alt="" coords="2755,30,2994,77,2998,78,2997,83,2993,83,2754,35"/>
+<area shape="rect" href="_game_object_8h.html" title=" " alt="" coords="2720,304,2881,331"/>
+<area shape="poly" title=" " alt="" coords="2742,30,2792,47,2846,72,2898,107,2920,128,2939,153,2955,180,2964,205,2964,230,2952,258,2926,284,2893,301,2891,296,2923,279,2948,254,2959,229,2959,206,2950,183,2934,156,2916,132,2894,111,2844,76,2790,51,2741,35"/>
+<area shape="rect" href="_enemy_spawner_8h.html" title=" " alt="" coords="2802,155,2925,181"/>
+<area shape="poly" title=" " alt="" coords="2723,30,2765,50,2806,78,2833,108,2852,139,2848,142,2829,111,2803,82,2762,54,2721,35"/>
+<area shape="rect" href="_enemy_base_8h.html" title=" " alt="" coords="2634,155,2738,181"/>
+<area shape="poly" title=" " alt="" coords="2689,33,2689,139,2683,139,2683,33"/>
+<area shape="rect" href="_mediator_factory_registry_8h.html" title=" " alt="" coords="2279,229,2453,256"/>
+<area shape="poly" title=" " alt="" coords="2626,35,2564,54,2502,82,2457,114,2420,156,2398,187,2381,217,2376,214,2394,184,2416,153,2453,110,2499,78,2563,49,2625,30"/>
+<area shape="rect" href="_mediator_factory_8h.html" title=" " alt="" coords="2429,155,2556,181"/>
+<area shape="poly" title=" " alt="" coords="2614,35,2566,53,2544,66,2525,82,2507,110,2499,140,2493,139,2503,108,2521,78,2541,61,2564,48,2612,30"/>
+<area shape="rect" href="_registration_factory_8h.html" title=" " alt="" coords="3101,80,3247,107"/>
+<area shape="poly" title=" " alt="" coords="2772,30,3086,76,3085,82,2771,35"/>
+<area shape="rect" href="_decoy_8h.html" title=" " alt="" coords="2723,80,2793,107"/>
+<area shape="poly" title=" " alt="" coords="2700,31,2737,67,2733,71,2696,34"/>
+<area shape="rect" href="_soldier_enemy_8h.html" title=" " alt="" coords="2535,80,2648,107"/>
+<area shape="poly" title=" " alt="" coords="2671,35,2621,73,2618,68,2668,30"/>
+<area shape="rect" href="json_8hpp.html" title=" " alt="" coords="1223,229,1354,256"/>
+<area shape="poly" title=" " alt="" coords="2607,35,1370,231,1369,226,2606,30"/>
+<area shape="rect" title=" " alt="" coords="3027,453,3129,480"/>
+<area shape="poly" title=" " alt="" coords="2882,321,2944,328,3007,339,3061,355,3082,365,3096,377,3103,392,3104,409,3095,440,3090,439,3099,408,3098,393,3092,380,3079,370,3059,360,3006,344,2943,334,2881,327"/>
+<area shape="rect" title=" " alt="" coords="2575,379,2613,405"/>
+<area shape="poly" title=" " alt="" coords="2763,334,2628,380,2627,375,2761,329"/>
+<area shape="rect" title=" " alt="" coords="2485,379,2538,405"/>
+<area shape="poly" title=" " alt="" coords="2751,334,2554,383,2552,378,2749,329"/>
+<area shape="rect" title=" " alt="" coords="2637,379,2705,405"/>
+<area shape="poly" title=" " alt="" coords="2779,334,2708,373,2706,368,2777,329"/>
+<area shape="rect" href="_sphere_collider_8h.html" title=" " alt="" coords="2729,379,2845,405"/>
+<area shape="poly" title=" " alt="" coords="2801,332,2795,364,2790,363,2796,331"/>
+<area shape="rect" href="_box_collider_8h.html" title=" " alt="" coords="2870,379,2968,405"/>
+<area shape="poly" title=" " alt="" coords="2823,329,2887,368,2884,373,2820,333"/>
+<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="2992,379,3081,405"/>
+<area shape="poly" title=" " alt="" coords="2842,329,2981,371,2980,376,2841,334"/>
+<area shape="poly" title=" " alt="" coords="3046,405,3066,439,3061,441,3041,407"/>
+<area shape="rect" href="_enemy_type_8h.html" title=" " alt="" coords="2837,229,2938,256"/>
+<area shape="poly" title=" " alt="" coords="2870,181,2881,214,2876,215,2865,183"/>
+<area shape="poly" title=" " alt="" coords="2722,179,2839,221,2837,226,2720,184"/>
+<area shape="rect" title=" " alt="" coords="2549,304,2617,331"/>
+<area shape="poly" title=" " alt="" coords="2685,182,2674,217,2653,257,2635,279,2615,297,2612,293,2631,275,2649,255,2669,215,2680,181"/>
+<area shape="rect" href="_game_actor_8h.html" title=" " alt="" coords="2714,229,2812,256"/>
+<area shape="poly" title=" " alt="" coords="2701,180,2741,217,2737,221,2697,184"/>
+<area shape="rect" href="_mediator_base_8h.html" title=" " alt="" coords="2527,229,2639,256"/>
+<area shape="poly" title=" " alt="" coords="2669,184,2615,222,2612,218,2666,180"/>
+<area shape="poly" title=" " alt="" coords="2772,255,2790,289,2785,292,2767,258"/>
+<area shape="rect" title=" " alt="" coords="2641,304,2696,331"/>
+<area shape="poly" title=" " alt="" coords="2748,259,2699,297,2695,292,2745,254"/>
+<area shape="poly" title=" " alt="" coords="2586,257,2586,288,2581,288,2581,257"/>
+<area shape="poly" title=" " alt="" coords="2412,254,2452,273,2471,286,2488,302,2504,332,2511,362,2506,364,2499,334,2484,306,2468,290,2449,277,2410,259"/>
+<area shape="poly" title=" " alt="" coords="2405,254,2535,297,2533,302,2403,259"/>
+<area shape="rect" title=" " alt="" coords="2364,304,2474,331"/>
+<area shape="poly" title=" " alt="" coords="2377,255,2403,290,2399,293,2373,258"/>
+<area shape="poly" title=" " alt="" coords="2496,181,2502,216,2517,255,2534,275,2553,293,2550,297,2530,279,2513,257,2497,217,2491,182"/>
+<area shape="poly" title=" " alt="" coords="2747,109,2711,145,2707,142,2743,105"/>
+<area shape="poly" title=" " alt="" coords="2609,105,2659,143,2656,147,2606,109"/>
+<area shape="poly" title=" " alt="" coords="1222,248,986,252,658,262,323,280,180,292,67,307,67,302,180,287,323,275,657,257,986,247,1222,242"/>
+<area shape="poly" title=" " alt="" coords="1276,258,1260,274,1246,293,1240,313,1241,321,1246,329,1264,336,1301,343,1424,356,1594,366,1792,374,2193,384,2469,388,2469,393,2192,389,1792,379,1594,372,1423,361,1300,349,1262,341,1243,333,1236,323,1235,312,1241,291,1256,271,1272,255"/>
+<area shape="poly" title=" " alt="" coords="1355,243,1827,260,2153,277,2486,301,2534,307,2533,312,2486,307,2153,283,1827,265,1355,248"/>
+<area shape="poly" title=" " alt="" coords="1355,242,1612,246,1974,256,2344,274,2502,286,2626,301,2625,306,2501,291,2343,279,1973,262,1612,252,1355,247"/>
+<area shape="poly" title=" " alt="" coords="1355,242,1526,246,1770,256,2055,274,2349,301,2349,306,2055,279,1770,261,1526,252,1355,248"/>
+<area shape="rect" title=" " alt="" coords="1107,304,1182,331"/>
+<area shape="poly" title=" " alt="" coords="1265,259,1185,299,1182,294,1262,254"/>
+<area shape="rect" title=" " alt="" coords="1257,304,1320,331"/>
+<area shape="poly" title=" " alt="" coords="1291,257,1291,288,1286,288,1286,257"/>
+<area shape="rect" title=" " alt="" coords="1344,304,1420,331"/>
+<area shape="poly" title=" " alt="" coords="1306,254,1355,292,1352,297,1303,259"/>
+<area shape="rect" title=" " alt="" coords="1444,304,1541,331"/>
+<area shape="poly" title=" " alt="" coords="1325,254,1443,296,1441,301,1323,259"/>
+<area shape="rect" title=" " alt="" coords="1565,304,1623,331"/>
+<area shape="poly" title=" " alt="" coords="1349,254,1550,301,1549,306,1348,259"/>
+<area shape="rect" title=" " alt="" coords="1647,304,1709,331"/>
+<area shape="poly" title=" " alt="" coords="1355,251,1479,271,1632,301,1631,306,1478,276,1354,256"/>
+<area shape="rect" title=" " alt="" coords="1733,304,1785,331"/>
+<area shape="poly" title=" " alt="" coords="1355,247,1516,266,1616,281,1718,301,1717,306,1615,287,1516,271,1354,252"/>
+<area shape="rect" title=" " alt="" coords="1810,304,1860,331"/>
+<area shape="poly" title=" " alt="" coords="1355,245,1549,262,1670,279,1795,301,1794,306,1669,284,1548,268,1354,250"/>
+<area shape="rect" title=" " alt="" coords="1884,304,1970,331"/>
+<area shape="poly" title=" " alt="" coords="1355,246,1579,265,1722,280,1869,301,1868,306,1721,286,1578,270,1354,251"/>
+<area shape="rect" title=" " alt="" coords="1995,304,2044,331"/>
+<area shape="poly" title=" " alt="" coords="1355,242,1471,246,1624,255,1800,273,1980,301,1979,307,1799,278,1624,261,1470,251,1355,247"/>
+<area shape="rect" title=" " alt="" coords="2067,304,2150,331"/>
+<area shape="poly" title=" " alt="" coords="1355,243,1653,259,1850,276,2053,301,2052,306,1850,281,1653,264,1354,249"/>
+<area shape="rect" title=" " alt="" coords="2173,304,2239,331"/>
+<area shape="poly" title=" " alt="" coords="1355,241,1498,244,1696,253,1924,271,2158,301,2158,306,1923,276,1696,258,1498,249,1355,247"/>
+<area shape="rect" title=" " alt="" coords="2263,304,2341,331"/>
+<area shape="poly" title=" " alt="" coords="1354,242,1511,244,1731,253,1986,271,2248,301,2248,307,1985,276,1730,259,1511,250,1354,247"/>
+<area shape="rect" title=" " alt="" coords="76,304,154,331"/>
+<area shape="poly" title=" " alt="" coords="1222,246,1042,247,784,255,482,273,325,287,170,306,170,301,324,282,481,267,784,249,1042,242,1222,241"/>
+<area shape="rect" title=" " alt="" coords="178,304,239,331"/>
+<area shape="poly" title=" " alt="" coords="1223,249,746,268,468,285,349,295,254,307,253,302,348,290,468,279,745,262,1222,243"/>
+<area shape="rect" title=" " alt="" coords="263,304,322,331"/>
+<area shape="poly" title=" " alt="" coords="1223,246,1067,247,849,254,597,273,467,287,338,306,337,301,466,282,597,267,849,249,1067,242,1223,241"/>
+<area shape="rect" title=" " alt="" coords="346,304,410,331"/>
+<area shape="poly" title=" " alt="" coords="1222,247,1080,250,884,258,658,276,426,307,425,301,657,271,884,253,1080,244,1222,241"/>
+<area shape="rect" title=" " alt="" coords="434,304,487,331"/>
+<area shape="poly" title=" " alt="" coords="1222,246,1091,249,914,257,711,275,606,289,503,306,502,301,605,284,710,270,914,252,1091,244,1222,241"/>
+<area shape="rect" title=" " alt="" coords="510,304,571,331"/>
+<area shape="poly" title=" " alt="" coords="1223,248,1105,252,949,262,770,279,586,306,586,301,769,274,948,257,1105,247,1223,243"/>
+<area shape="rect" title=" " alt="" coords="595,304,652,331"/>
+<area shape="poly" title=" " alt="" coords="1223,249,982,265,827,282,668,307,667,301,826,276,981,260,1222,244"/>
+<area shape="rect" title=" " alt="" coords="676,304,733,331"/>
+<area shape="poly" title=" " alt="" coords="1222,250,1014,267,883,284,749,306,748,301,883,278,1014,262,1222,245"/>
+<area shape="rect" title=" " alt="" coords="756,304,824,331"/>
+<area shape="poly" title=" " alt="" coords="1223,253,1053,272,839,306,838,301,1052,267,1222,247"/>
+<area shape="rect" title=" " alt="" coords="847,304,911,331"/>
+<area shape="poly" title=" " alt="" coords="1223,256,1091,276,927,306,926,301,1090,271,1222,250"/>
+<area shape="rect" title=" " alt="" coords="936,304,998,331"/>
+<area shape="poly" title=" " alt="" coords="1225,259,1014,306,1013,301,1224,254"/>
+<area shape="rect" title=" " alt="" coords="1022,304,1083,331"/>
+<area shape="poly" title=" " alt="" coords="1248,259,1098,305,1097,300,1247,254"/>
+</map>
+</div>
+</div>
+<p><a href="_enemy_spawner_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a838edcaed2303e92e28d3e8b7cdb92f5" id="r_a838edcaed2303e92e28d3e8b7cdb92f5"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a838edcaed2303e92e28d3e8b7cdb92f5">SPAWN_DISTANCE</a> = 10.0f</td></tr>
+<tr class="separator:a838edcaed2303e92e28d3e8b7cdb92f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54eaf1670100f66955b22ff19dd2fb5" id="r_af54eaf1670100f66955b22ff19dd2fb5"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af54eaf1670100f66955b22ff19dd2fb5">ANGLE360</a> = 360</td></tr>
+<tr class="separator:af54eaf1670100f66955b22ff19dd2fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">変数詳解</h2>
+<a id="af54eaf1670100f66955b22ff19dd2fb5" name="af54eaf1670100f66955b22ff19dd2fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54eaf1670100f66955b22ff19dd2fb5">&#9670;&#160;</a></span>ANGLE360</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ANGLE360 = 360</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_spawner_8cpp_source.html">EnemySpawner.cpp</a> の <a class="el" href="_enemy_spawner_8cpp_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a838edcaed2303e92e28d3e8b7cdb92f5" name="a838edcaed2303e92e28d3e8b7cdb92f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838edcaed2303e92e28d3e8b7cdb92f5">&#9670;&#160;</a></span>SPAWN_DISTANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SPAWN_DISTANCE = 10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_spawner_8cpp_source.html">EnemySpawner.cpp</a> の <a class="el" href="_enemy_spawner_8cpp_source.html#l00013">13</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_2238df16a099c97d3567131b913ed685.html">sources</a></li><li class="navelem"><a class="el" href="_enemy_spawner_8cpp.html">EnemySpawner.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

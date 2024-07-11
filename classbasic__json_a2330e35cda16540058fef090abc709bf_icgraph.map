@@ -1,0 +1,7 @@
+<map id="basic_json::is_number_integer" name="basic_json::is_number_integer">
+<area shape="rect" id="Node000001" title="return whether value is an integer number" alt="" coords="408,5,559,48"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#aacf244be5088fb183f4ba21a66af9631" title="return whether value is a number" alt="" coords="209,13,360,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="392,29,360,29,360,24,392,24"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#ad650dd5a7e019b970abce3d8864b5654" title="return whether type is primitive" alt="" coords="5,13,161,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,29,161,29,161,24,193,24"/>
+</map>

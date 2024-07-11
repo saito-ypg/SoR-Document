@@ -1,0 +1,22 @@
+<map id="SoR/Engine/FbxParts.h" name="SoR/Engine/FbxParts.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="116,5,274,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,76,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,35,82,75,80,71,167,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="80,155,148,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,34,161,55,141,81,129,111,121,140,116,138,124,109,137,79,157,52,178,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="173,155,276,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,31,237,51,255,79,258,95,257,112,245,142,240,140,251,111,253,96,250,81,233,55,211,34"/>
+<area shape="rect" id="Node000005" href="$_texture_8h.html" title=" " alt="" coords="315,80,390,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="224,30,312,71,310,75,221,35"/>
+<area shape="rect" id="Node000009" href="$_transform_8h.html" title=" " alt="" coords="151,80,240,107"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="198,33,198,64,193,64,193,33"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="315,109,163,155,162,149,314,104"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="332,110,261,149,259,144,329,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="300,155,402,181"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="355,107,354,139,349,139,350,107"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="427,155,513,181"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="374,105,438,144,435,149,372,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="537,155,590,181"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="390,105,523,150,521,155,388,110"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="203,106,216,139,211,141,198,108"/>
+</map>

@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/Model.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_model_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">Model.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;DirectXMath.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="_fbx_8h_source.html">Fbx.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_transform_8h_source.html">Transform.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Model.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_model_8h__incl.png" border="0" usemap="#a_so_r_2_engine_2_model_8h" alt=""/></div>
+<map name="a_so_r_2_engine_2_model_8h" id="a_so_r_2_engine_2_model_8h">
+<area shape="rect" title=" " alt="" coords="156,5,296,32"/>
+<area shape="rect" title=" " alt="" coords="5,229,108,256"/>
+<area shape="poly" title=" " alt="" coords="194,35,156,53,114,79,73,114,57,134,43,156,39,170,38,185,46,214,41,216,33,185,33,169,38,154,52,131,70,110,111,75,154,49,192,30"/>
+<area shape="rect" title=" " alt="" coords="360,80,428,107"/>
+<area shape="poly" title=" " alt="" coords="256,30,352,71,349,76,254,35"/>
+<area shape="rect" title=" " alt="" coords="166,155,222,181"/>
+<area shape="poly" title=" " alt="" coords="226,33,202,140,197,139,220,32"/>
+<area shape="rect" title=" " alt="" coords="431,155,485,181"/>
+<area shape="poly" title=" " alt="" coords="243,30,349,104,421,145,418,150,346,109,240,35"/>
+<area shape="rect" href="_fbx_8h.html" title=" " alt="" coords="231,80,285,107"/>
+<area shape="poly" title=" " alt="" coords="234,31,249,65,244,67,229,34"/>
+<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="53,155,143,181"/>
+<area shape="poly" title=" " alt="" coords="217,34,121,145,116,141,213,31"/>
+<area shape="poly" title=" " alt="" coords="249,109,217,145,213,141,245,105"/>
+<area shape="poly" title=" " alt="" coords="287,102,418,149,416,154,285,107"/>
+<area shape="rect" title=" " alt="" coords="246,155,313,181"/>
+<area shape="poly" title=" " alt="" coords="264,106,274,139,269,141,259,108"/>
+<area shape="rect" title=" " alt="" coords="337,155,408,181"/>
+<area shape="poly" title=" " alt="" coords="279,105,341,144,338,148,276,109"/>
+<area shape="poly" title=" " alt="" coords="231,109,140,150,138,146,229,105"/>
+<area shape="poly" title=" " alt="" coords="93,183,73,217,69,215,88,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_model_8h__dep__incl.png" border="0" usemap="#a_so_r_2_engine_2_model_8hdep" alt=""/></div>
+<map name="a_so_r_2_engine_2_model_8hdep" id="a_so_r_2_engine_2_model_8hdep">
+<area shape="rect" title=" " alt="" coords="1333,5,1474,32"/>
+<area shape="rect" href="_box_collider_8cpp.html" title=" " alt="" coords="5,80,191,107"/>
+<area shape="poly" title=" " alt="" coords="1318,25,843,43,525,60,202,83,191,84,191,78,202,77,525,55,843,38,1318,20"/>
+<area shape="rect" href="_collider_8cpp.html" title=" " alt="" coords="214,80,377,107"/>
+<area shape="poly" title=" " alt="" coords="1318,26,917,45,654,61,389,83,377,84,376,79,388,77,654,56,916,39,1318,20"/>
+<area shape="rect" href="_main_8cpp.html" title=" " alt="" coords="400,80,548,107"/>
+<area shape="poly" title=" " alt="" coords="1318,27,985,47,773,63,560,83,548,84,548,79,559,77,773,57,985,41,1317,21"/>
+<area shape="rect" href="_model_8cpp.html" title=" " alt="" coords="572,80,726,107"/>
+<area shape="poly" title=" " alt="" coords="1318,29,1058,51,738,83,726,84,726,79,738,77,1058,46,1317,24"/>
+<area shape="rect" href="_scene_manager_8cpp.html" title=" " alt="" coords="750,80,956,107"/>
+<area shape="poly" title=" " alt="" coords="1319,34,950,82,949,77,1318,28"/>
+<area shape="rect" href="_sphere_collider_8cpp.html" title=" " alt="" coords="980,80,1184,107"/>
+<area shape="poly" title=" " alt="" coords="1333,39,1139,82,1138,77,1332,33"/>
+<area shape="rect" href="_charge_skill_8cpp.html" title=" " alt="" coords="1208,80,1399,107"/>
+<area shape="poly" title=" " alt="" coords="1375,43,1322,82,1319,77,1372,39"/>
+<area shape="rect" href="_decoy_8cpp.html" title=" " alt="" coords="1424,80,1586,107"/>
+<area shape="poly" title=" " alt="" coords="1435,39,1488,77,1485,82,1432,44"/>
+<area shape="rect" href="_game_actor_8cpp.html" title=" " alt="" coords="1610,80,1802,107"/>
+<area shape="poly" title=" " alt="" coords="1472,34,1654,77,1652,82,1471,39"/>
+<area shape="rect" href="_ground_8cpp.html" title=" " alt="" coords="1826,80,1994,107"/>
+<area shape="poly" title=" " alt="" coords="1489,30,1826,77,1825,83,1489,35"/>
+<area shape="rect" href="_player_8cpp.html" title=" " alt="" coords="2018,80,2181,107"/>
+<area shape="poly" title=" " alt="" coords="1489,25,2006,77,2018,79,2018,84,2006,83,1489,30"/>
+<area shape="rect" href="_soldier_enemy_8cpp.html" title=" " alt="" coords="2204,80,2411,107"/>
+<area shape="poly" title=" " alt="" coords="1490,23,1800,45,2193,77,2204,78,2203,84,2192,83,1799,51,1489,28"/>
+<area shape="rect" href="areamodels_8cpp.html" title=" " alt="" coords="2435,80,2628,107"/>
+<area shape="poly" title=" " alt="" coords="1489,21,1892,41,2155,57,2422,77,2435,78,2435,84,2422,83,2155,63,1892,46,1489,26"/>
+<area shape="rect" href="test_skill_8cpp.html" title=" " alt="" coords="2652,80,2824,107"/>
+<area shape="poly" title=" " alt="" coords="1489,19,1978,37,2306,54,2640,77,2652,78,2651,84,2639,83,2306,59,1978,42,1489,25"/>
+</map>
+</div>
+</div>
+<p><a href="_model_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_model_1_1_model_data.html">Model::ModelData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html">Model</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:af584f6fe3cf2ac503110ceb126b9b4ed" id="r_af584f6fe3cf2ac503110ceb126b9b4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#af584f6fe3cf2ac503110ceb126b9b4ed">Model::Initialize</a> ()</td></tr>
+<tr class="separator:af584f6fe3cf2ac503110ceb126b9b4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69443687c12bb12394ae8bf6a5c22e44" id="r_a69443687c12bb12394ae8bf6a5c22e44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#a69443687c12bb12394ae8bf6a5c22e44">Model::Load</a> (std::string fileName)</td></tr>
+<tr class="separator:a69443687c12bb12394ae8bf6a5c22e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444ada60ab1281d88d5062bff87bc65b" id="r_a444ada60ab1281d88d5062bff87bc65b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#a444ada60ab1281d88d5062bff87bc65b">Model::Draw</a> (int handle)</td></tr>
+<tr class="separator:a444ada60ab1281d88d5062bff87bc65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace98e9790323a88829195b4abb15e584" id="r_ace98e9790323a88829195b4abb15e584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#ace98e9790323a88829195b4abb15e584">Model::Release</a> (int handle)</td></tr>
+<tr class="separator:ace98e9790323a88829195b4abb15e584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01b440de2ec82f0e2e68de32b34a9a4" id="r_aa01b440de2ec82f0e2e68de32b34a9a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#aa01b440de2ec82f0e2e68de32b34a9a4">Model::AllRelease</a> ()</td></tr>
+<tr class="separator:aa01b440de2ec82f0e2e68de32b34a9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1ee8e5f8b3d34d39b4133261838db4" id="r_a4e1ee8e5f8b3d34d39b4133261838db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#a4e1ee8e5f8b3d34d39b4133261838db4">Model::SetAnimFrame</a> (int handle, int startFrame, int endFrame, float animSpeed)</td></tr>
+<tr class="separator:a4e1ee8e5f8b3d34d39b4133261838db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7804682c96f82a9dbf66c9ed132eb5d" id="r_ad7804682c96f82a9dbf66c9ed132eb5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#ad7804682c96f82a9dbf66c9ed132eb5d">Model::GetAnimFrame</a> (int handle)</td></tr>
+<tr class="separator:ad7804682c96f82a9dbf66c9ed132eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe7d16b11f3441b15be6ca48cd8018e" id="r_aefe7d16b11f3441b15be6ca48cd8018e"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#aefe7d16b11f3441b15be6ca48cd8018e">Model::GetBonePosition</a> (int handle, std::string boneName)</td></tr>
+<tr class="separator:aefe7d16b11f3441b15be6ca48cd8018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9752d2c71b2163a3f1088d4c32ab3ee" id="r_aa9752d2c71b2163a3f1088d4c32ab3ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee">Model::SetTransform</a> (int handle, <a class="el" href="class_transform.html">Transform</a> &amp;transform)</td></tr>
+<tr class="separator:aa9752d2c71b2163a3f1088d4c32ab3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93a165aac3d0c852a38215ac3ac6258" id="r_ab93a165aac3d0c852a38215ac3ac6258"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#ab93a165aac3d0c852a38215ac3ac6258">Model::GetMatrix</a> (int handle)</td></tr>
+<tr class="separator:ab93a165aac3d0c852a38215ac3ac6258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47d55232470e0b96feb538e000012e1" id="r_ac47d55232470e0b96feb538e000012e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_model.html#ac47d55232470e0b96feb538e000012e1">Model::RayCast</a> (int handle, <a class="el" href="struct_ray_cast_data.html">RayCastData</a> *data)</td></tr>
+<tr class="separator:ac47d55232470e0b96feb538e000012e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_model_8h.html">Model.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/sources/EnemyManager.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_enemy_manager_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a>  </div>
+  <div class="headertitle"><div class="title">EnemyManager.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;list&gt;</code><br />
+<code>#include &quot;<a class="el" href="_game_actor_8h_source.html">GameActor.h</a>&quot;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+EnemyManager.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_enemy_manager_8h__incl.png" border="0" usemap="#a_so_r_2sources_2_enemy_manager_8h" alt=""/></div>
+<map name="a_so_r_2sources_2_enemy_manager_8h" id="a_so_r_2sources_2_enemy_manager_8h">
+<area shape="rect" title=" " alt="" coords="434,5,636,32"/>
+<area shape="rect" title=" " alt="" coords="5,229,44,256"/>
+<area shape="poly" title=" " alt="" coords="507,35,59,229,57,224,505,30"/>
+<area shape="rect" href="_game_actor_8h.html" title=" " alt="" coords="486,80,584,107"/>
+<area shape="poly" title=" " alt="" coords="538,33,538,64,533,64,533,33"/>
+<area shape="rect" title=" " alt="" coords="609,80,661,107"/>
+<area shape="poly" title=" " alt="" coords="554,30,607,68,604,73,551,35"/>
+<area shape="rect" title=" " alt="" coords="744,155,799,181"/>
+<area shape="poly" title=" " alt="" coords="577,105,730,151,728,156,576,110"/>
+<area shape="rect" href="_game_object_8h.html" title=" " alt="" coords="269,155,431,181"/>
+<area shape="poly" title=" " alt="" coords="504,110,397,151,395,146,502,105"/>
+<area shape="rect" href="_actor_info_8h.html" title=" " alt="" coords="455,155,538,181"/>
+<area shape="poly" title=" " alt="" coords="531,108,513,142,508,140,526,106"/>
+<area shape="rect" href="_collision_manager_8h.html" title=" " alt="" coords="602,229,733,256"/>
+<area shape="poly" title=" " alt="" coords="546,105,570,140,602,180,642,217,638,221,599,183,566,143,541,109"/>
+<area shape="rect" href="_damage_data_8h.html" title=" " alt="" coords="612,155,720,181"/>
+<area shape="poly" title=" " alt="" coords="559,105,631,144,628,149,557,110"/>
+<area shape="poly" title=" " alt="" coords="269,185,172,203,59,232,58,226,171,198,268,179"/>
+<area shape="rect" title=" " alt="" coords="436,379,538,405"/>
+<area shape="poly" title=" " alt="" coords="376,180,406,200,435,228,455,261,470,297,486,362,481,364,465,299,450,264,430,231,403,204,373,184"/>
+<area shape="rect" title=" " alt="" coords="525,229,578,256"/>
+<area shape="poly" title=" " alt="" coords="386,179,511,224,509,229,384,184"/>
+<area shape="rect" title=" " alt="" coords="68,229,136,256"/>
+<area shape="poly" title=" " alt="" coords="307,184,152,230,150,224,306,179"/>
+<area shape="rect" href="_sphere_collider_8h.html" title=" " alt="" coords="160,229,276,256"/>
+<area shape="poly" title=" " alt="" coords="328,184,255,224,253,219,326,180"/>
+<area shape="rect" href="_box_collider_8h.html" title=" " alt="" coords="301,229,399,256"/>
+<area shape="poly" title=" " alt="" coords="353,182,353,214,347,214,347,182"/>
+<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="360,304,449,331"/>
+<area shape="poly" title=" " alt="" coords="371,180,395,200,414,228,419,260,415,290,410,289,414,260,409,230,391,204,368,184"/>
+<area shape="rect" href="_collider_8h.html" title=" " alt="" coords="260,304,336,331"/>
+<area shape="poly" title=" " alt="" coords="234,255,275,292,271,296,230,259"/>
+<area shape="poly" title=" " alt="" coords="332,329,441,370,439,375,330,334"/>
+<area shape="rect" title=" " alt="" coords="264,379,332,405"/>
+<area shape="poly" title=" " alt="" coords="301,331,301,363,295,363,295,331"/>
+<area shape="poly" title=" " alt="" coords="343,258,318,293,313,290,339,255"/>
+<area shape="poly" title=" " alt="" coords="421,329,463,366,460,370,417,333"/>
+<area shape="rect" href="_actor_collider_8h.html" title=" " alt="" coords="525,304,631,331"/>
+<area shape="poly" title=" " alt="" coords="653,259,607,296,603,292,650,254"/>
+<area shape="rect" href="_attack_range_8h.html" title=" " alt="" coords="655,304,762,331"/>
+<area shape="poly" title=" " alt="" coords="677,255,696,289,692,292,672,258"/>
+<area shape="poly" title=" " alt="" coords="564,333,516,371,513,367,560,329"/>
+<area shape="poly" title=" " alt="" coords="671,334,541,376,540,371,669,329"/>
+<area shape="rect" title=" " alt="" coords="616,379,692,405"/>
+<area shape="poly" title=" " alt="" coords="701,333,675,368,670,364,697,330"/>
+<area shape="rect" href="areamodels_8h.html" title=" " alt="" coords="716,379,816,405"/>
+<area shape="poly" title=" " alt="" coords="721,330,749,365,745,368,716,333"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_enemy_manager_8h__dep__incl.png" border="0" usemap="#a_so_r_2sources_2_enemy_manager_8hdep" alt=""/></div>
+<map name="a_so_r_2sources_2_enemy_manager_8hdep" id="a_so_r_2sources_2_enemy_manager_8hdep">
+<area shape="rect" title=" " alt="" coords="266,5,468,32"/>
+<area shape="rect" href="_enemy_manager_8cpp.html" title=" " alt="" coords="5,80,222,107"/>
+<area shape="poly" title=" " alt="" coords="309,39,159,82,157,77,308,34"/>
+<area shape="rect" href="_moderator_sequence_8cpp.html" title=" " alt="" coords="246,80,488,107"/>
+<area shape="poly" title=" " alt="" coords="370,48,370,80,364,80,364,48"/>
+<area shape="rect" href="_play_scene_8cpp.html" title=" " alt="" coords="511,80,700,107"/>
+<area shape="poly" title=" " alt="" coords="424,34,564,77,563,82,422,39"/>
+</map>
+</div>
+</div>
+<p><a href="_enemy_manager_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html">EnemyManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_2238df16a099c97d3567131b913ed685.html">sources</a></li><li class="navelem"><a class="el" href="_enemy_manager_8h.html">EnemyManager.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

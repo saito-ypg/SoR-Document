@@ -1,0 +1,9 @@
+<map id="basic_json::from_ubjson" name="basic_json::from_ubjson">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,167,57"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a4588941095d03624ada4f0023d93944a" title="create a JSON value from an input in UBJSON format" alt="" coords="215,31,376,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,41,199,41,199,47,167,47"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#ae2d5bc42270881ed3e219e8b1456fec5" title="create an empty value with a given type" alt="" coords="424,5,577,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,31,408,27,409,33,377,37"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#aada1510d1b55ad2faf4a71c70cffb374" title=" " alt="" coords="432,56,570,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="377,51,416,56,416,62,376,57"/>
+</map>

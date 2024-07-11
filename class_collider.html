@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): Collider クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_collider.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#friends">フレンド</a> &#124;
+<a href="class_collider-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">Collider クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_collider_8h_source.html">Collider.h</a>&gt;</code></p>
+<div class="dynheader">
+Collider の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collider__inherit__graph.png" border="0" usemap="#a_collider_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_collider_inherit__map" id="a_collider_inherit__map">
+<area shape="rect" title=" " alt="" coords="77,5,141,32"/>
+<area shape="rect" href="class_box_collider.html" title=" " alt="" coords="5,80,93,107"/>
+<area shape="poly" title=" " alt="" coords="91,46,61,81,57,78,87,42"/>
+<area shape="rect" href="class_sphere_collider.html" title=" " alt="" coords="116,80,222,107"/>
+<area shape="poly" title=" " alt="" coords="131,42,161,78,157,81,127,46"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+Collider 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collider__coll__graph.png" border="0" usemap="#a_collider_coll__map" alt="Collaboration graph"/></div>
+<map name="a_collider_coll__map" id="a_collider_coll__map">
+<area shape="rect" title=" " alt="" coords="98,187,162,213"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="83,96,177,123"/>
+<area shape="poly" title=" " alt="" coords="133,138,133,186,127,186,127,138"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="68,42,95,70,119,94,115,97,91,74,64,46"/>
+<area shape="poly" title=" " alt="" coords="101,10,110,19,102,27,84,30,84,25,100,23,105,19,97,14"/>
+<area shape="rect" title=" " alt="" coords="187,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="193,46,144,97,140,94,189,42"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa7186870221f868bbc74c3ae8609fa66" id="r_aa7186870221f868bbc74c3ae8609fa66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7186870221f868bbc74c3ae8609fa66">Collider</a> ()</td></tr>
+<tr class="separator:aa7186870221f868bbc74c3ae8609fa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564acde9860f875a32a6638c573d87be" id="r_a564acde9860f875a32a6638c573d87be"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a564acde9860f875a32a6638c573d87be">~Collider</a> ()</td></tr>
+<tr class="separator:a564acde9860f875a32a6638c573d87be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e00980253ff58f0563b4b775a12537" id="r_a88e00980253ff58f0563b4b775a12537"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88e00980253ff58f0563b4b775a12537">IsHit</a> (<a class="el" href="class_collider.html">Collider</a> *target)=0</td></tr>
+<tr class="separator:a88e00980253ff58f0563b4b775a12537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cacea54f9085db5e578b415ab8a93dc" id="r_a5cacea54f9085db5e578b415ab8a93dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cacea54f9085db5e578b415ab8a93dc">IsHitBoxVsBox</a> (<a class="el" href="class_box_collider.html">BoxCollider</a> *boxA, <a class="el" href="class_box_collider.html">BoxCollider</a> *boxB)</td></tr>
+<tr class="separator:a5cacea54f9085db5e578b415ab8a93dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4ef44a6068825202e070cc59eb447c" id="r_acc4ef44a6068825202e070cc59eb447c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc4ef44a6068825202e070cc59eb447c">IsHitBoxVsCircle</a> (<a class="el" href="class_box_collider.html">BoxCollider</a> *box, <a class="el" href="class_sphere_collider.html">SphereCollider</a> *sphere)</td></tr>
+<tr class="separator:acc4ef44a6068825202e070cc59eb447c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca890d5658306f7c18fefc7c539091be" id="r_aca890d5658306f7c18fefc7c539091be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca890d5658306f7c18fefc7c539091be">IsHitCircleVsCircle</a> (<a class="el" href="class_sphere_collider.html">SphereCollider</a> *circleA, <a class="el" href="class_sphere_collider.html">SphereCollider</a> *circleB)</td></tr>
+<tr class="separator:aca890d5658306f7c18fefc7c539091be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae706014c07e6aa05440fe64baa160bcb" id="r_ae706014c07e6aa05440fe64baa160bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae706014c07e6aa05440fe64baa160bcb">Draw</a> (XMFLOAT3 position)</td></tr>
+<tr class="separator:ae706014c07e6aa05440fe64baa160bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6ec9fa7a431a7bb98e715c06d67ce5" id="r_a3f6ec9fa7a431a7bb98e715c06d67ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6ec9fa7a431a7bb98e715c06d67ce5">SetGameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *gameObject)</td></tr>
+<tr class="separator:a3f6ec9fa7a431a7bb98e715c06d67ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a1336d100ed104d4727ed89cdb5dd257c" id="r_a1336d100ed104d4727ed89cdb5dd257c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1336d100ed104d4727ed89cdb5dd257c">pGameObject_</a></td></tr>
+<tr class="separator:a1336d100ed104d4727ed89cdb5dd257c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa626547bf74d3b1bdeaf22eef07f82f3" id="r_aa626547bf74d3b1bdeaf22eef07f82f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_8h.html#a7f138e75fc3cc79e825c39e040690395">ColliderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa626547bf74d3b1bdeaf22eef07f82f3">type_</a></td></tr>
+<tr class="separator:aa626547bf74d3b1bdeaf22eef07f82f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb9bbe1d075c073eaa3dca93c56295c" id="r_a9fb9bbe1d075c073eaa3dca93c56295c"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fb9bbe1d075c073eaa3dca93c56295c">center_</a></td></tr>
+<tr class="separator:a9fb9bbe1d075c073eaa3dca93c56295c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aaa5a793cc1937457e36a66a89e7ebf" id="r_a8aaa5a793cc1937457e36a66a89e7ebf"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8aaa5a793cc1937457e36a66a89e7ebf">size_</a></td></tr>
+<tr class="separator:a8aaa5a793cc1937457e36a66a89e7ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9483829a733fc43dd2094c6e61b6e7b2" id="r_a9483829a733fc43dd2094c6e61b6e7b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9483829a733fc43dd2094c6e61b6e7b2">hDebugModel_</a></td></tr>
+<tr class="separator:a9483829a733fc43dd2094c6e61b6e7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+フレンド</h2></td></tr>
+<tr class="memitem:a5c44bcc0dacdde1fd8d3d0a73b40a187" id="r_a5c44bcc0dacdde1fd8d3d0a73b40a187"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c44bcc0dacdde1fd8d3d0a73b40a187">BoxCollider</a></td></tr>
+<tr class="separator:a5c44bcc0dacdde1fd8d3d0a73b40a187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15793375868d0302266e8d1ca58e3cf2" id="r_a15793375868d0302266e8d1ca58e3cf2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15793375868d0302266e8d1ca58e3cf2">SphereCollider</a></td></tr>
+<tr class="separator:a15793375868d0302266e8d1ca58e3cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00022">22</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aa7186870221f868bbc74c3ae8609fa66" name="aa7186870221f868bbc74c3ae8609fa66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7186870221f868bbc74c3ae8609fa66">&#9670;&#160;</a></span>Collider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collider::Collider </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8cpp_source.html">Collider.cpp</a> の <a class="el" href="_collider_8cpp_source.html#l00008">8</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a564acde9860f875a32a6638c573d87be" name="a564acde9860f875a32a6638c573d87be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564acde9860f875a32a6638c573d87be">&#9670;&#160;</a></span>~Collider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collider::~Collider </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8cpp_source.html">Collider.cpp</a> の <a class="el" href="_collider_8cpp_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae706014c07e6aa05440fe64baa160bcb" name="ae706014c07e6aa05440fe64baa160bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae706014c07e6aa05440fe64baa160bcb">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::Draw </td>
+          <td>(</td>
+          <td class="paramtype">XMFLOAT3</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8cpp_source.html">Collider.cpp</a> の <a class="el" href="_collider_8cpp_source.html#l00089">89</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collider_ae706014c07e6aa05440fe64baa160bcb_cgraph.png" border="0" usemap="#aclass_collider_ae706014c07e6aa05440fe64baa160bcb_cgraph" alt=""/></div>
+<map name="aclass_collider_ae706014c07e6aa05440fe64baa160bcb_cgraph" id="aclass_collider_ae706014c07e6aa05440fe64baa160bcb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,107,83"/>
+<area shape="rect" href="class_transform.html#a50210aab26359b2fc6a3a343a3f8039b" title=" " alt="" coords="155,5,305,32"/>
+<area shape="poly" title=" " alt="" coords="104,53,166,34,168,39,105,58"/>
+<area shape="rect" href="namespace_model.html#a444ada60ab1281d88d5062bff87bc65b" title=" " alt="" coords="183,56,277,83"/>
+<area shape="poly" title=" " alt="" coords="107,67,168,67,168,72,107,72"/>
+<area shape="rect" href="namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee" title=" " alt="" coords="159,107,301,133"/>
+<area shape="poly" title=" " alt="" coords="105,81,168,99,166,104,104,86"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a88e00980253ff58f0563b4b775a12537" name="a88e00980253ff58f0563b4b775a12537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e00980253ff58f0563b4b775a12537">&#9670;&#160;</a></span>IsHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Collider::IsHit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cacea54f9085db5e578b415ab8a93dc" name="a5cacea54f9085db5e578b415ab8a93dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cacea54f9085db5e578b415ab8a93dc">&#9670;&#160;</a></span>IsHitBoxVsBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Collider::IsHitBoxVsBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_box_collider.html">BoxCollider</a> *</td>          <td class="paramname"><span class="paramname"><em>boxA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_box_collider.html">BoxCollider</a> *</td>          <td class="paramname"><span class="paramname"><em>boxB</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8cpp_source.html">Collider.cpp</a> の <a class="el" href="_collider_8cpp_source.html#l00022">22</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collider_a5cacea54f9085db5e578b415ab8a93dc_cgraph.png" border="0" usemap="#aclass_collider_a5cacea54f9085db5e578b415ab8a93dc_cgraph" alt=""/></div>
+<map name="aclass_collider_a5cacea54f9085db5e578b415ab8a93dc_cgraph" id="aclass_collider_a5cacea54f9085db5e578b415ab8a93dc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,166,57"/>
+<area shape="rect" href="class_transform.html#af089d0bfb52885607f0fe6138701a105" title=" " alt="" coords="474,5,619,32"/>
+<area shape="poly" title=" " alt="" coords="166,37,458,21,458,26,166,42"/>
+<area shape="rect" href="class_game_object.html#aced96b154f432431101c7f6270484ca0" title=" " alt="" coords="214,56,418,83"/>
+<area shape="poly" title=" " alt="" coords="166,50,199,54,198,59,166,55"/>
+<area shape="poly" title=" " alt="" coords="380,53,467,33,469,38,381,58"/>
+<area shape="rect" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="466,56,627,83"/>
+<area shape="poly" title=" " alt="" coords="419,67,450,67,450,72,419,72"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc4ef44a6068825202e070cc59eb447c" name="acc4ef44a6068825202e070cc59eb447c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4ef44a6068825202e070cc59eb447c">&#9670;&#160;</a></span>IsHitBoxVsCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Collider::IsHitBoxVsCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_box_collider.html">BoxCollider</a> *</td>          <td class="paramname"><span class="paramname"><em>box</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere_collider.html">SphereCollider</a> *</td>          <td class="paramname"><span class="paramname"><em>sphere</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8cpp_source.html">Collider.cpp</a> の <a class="el" href="_collider_8cpp_source.html#l00045">45</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collider_acc4ef44a6068825202e070cc59eb447c_cgraph.png" border="0" usemap="#aclass_collider_acc4ef44a6068825202e070cc59eb447c_cgraph" alt=""/></div>
+<map name="aclass_collider_acc4ef44a6068825202e070cc59eb447c_cgraph" id="aclass_collider_acc4ef44a6068825202e070cc59eb447c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,176,57"/>
+<area shape="rect" href="class_transform.html#af089d0bfb52885607f0fe6138701a105" title=" " alt="" coords="484,5,629,32"/>
+<area shape="poly" title=" " alt="" coords="176,37,468,21,469,26,176,42"/>
+<area shape="rect" href="class_game_object.html#aced96b154f432431101c7f6270484ca0" title=" " alt="" coords="224,56,428,83"/>
+<area shape="poly" title=" " alt="" coords="176,50,208,54,208,59,176,56"/>
+<area shape="poly" title=" " alt="" coords="390,53,477,33,479,38,391,58"/>
+<area shape="rect" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="476,56,637,83"/>
+<area shape="poly" title=" " alt="" coords="429,67,460,67,460,72,429,72"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca890d5658306f7c18fefc7c539091be" name="aca890d5658306f7c18fefc7c539091be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca890d5658306f7c18fefc7c539091be">&#9670;&#160;</a></span>IsHitCircleVsCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Collider::IsHitCircleVsCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_sphere_collider.html">SphereCollider</a> *</td>          <td class="paramname"><span class="paramname"><em>circleA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere_collider.html">SphereCollider</a> *</td>          <td class="paramname"><span class="paramname"><em>circleB</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8cpp_source.html">Collider.cpp</a> の <a class="el" href="_collider_8cpp_source.html#l00069">69</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collider_aca890d5658306f7c18fefc7c539091be_cgraph.png" border="0" usemap="#aclass_collider_aca890d5658306f7c18fefc7c539091be_cgraph" alt=""/></div>
+<map name="aclass_collider_aca890d5658306f7c18fefc7c539091be_cgraph" id="aclass_collider_aca890d5658306f7c18fefc7c539091be_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,186,57"/>
+<area shape="rect" href="class_game_object.html#aced96b154f432431101c7f6270484ca0" title=" " alt="" coords="234,31,438,57"/>
+<area shape="poly" title=" " alt="" coords="186,41,218,41,218,47,186,47"/>
+<area shape="rect" href="class_transform.html#af089d0bfb52885607f0fe6138701a105" title=" " alt="" coords="494,5,639,32"/>
+<area shape="poly" title=" " alt="" coords="438,30,478,26,479,31,439,35"/>
+<area shape="rect" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="486,56,647,83"/>
+<area shape="poly" title=" " alt="" coords="439,53,471,56,470,61,438,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f6ec9fa7a431a7bb98e715c06d67ce5" name="a3f6ec9fa7a431a7bb98e715c06d67ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6ec9fa7a431a7bb98e715c06d67ce5">&#9670;&#160;</a></span>SetGameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::SetGameObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_object.html">GameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>gameObject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00070">70</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collider_a3f6ec9fa7a431a7bb98e715c06d67ce5_icgraph.png" border="0" usemap="#aclass_collider_a3f6ec9fa7a431a7bb98e715c06d67ce5_icgraph" alt=""/></div>
+<map name="aclass_collider_a3f6ec9fa7a431a7bb98e715c06d67ce5_icgraph" id="aclass_collider_a3f6ec9fa7a431a7bb98e715c06d67ce5_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,387,32"/>
+<area shape="rect" href="class_game_object.html#a3fb855b45044a3c362be78583f66c2a2" title=" " alt="" coords="5,5,174,32"/>
+<area shape="poly" title=" " alt="" coords="206,21,174,21,174,16,206,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">フレンドと関連関数の詳解</h2>
+<a id="a5c44bcc0dacdde1fd8d3d0a73b40a187" name="a5c44bcc0dacdde1fd8d3d0a73b40a187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c44bcc0dacdde1fd8d3d0a73b40a187">&#9670;&#160;</a></span>BoxCollider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_box_collider.html">BoxCollider</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00025">25</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a15793375868d0302266e8d1ca58e3cf2" name="a15793375868d0302266e8d1ca58e3cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15793375868d0302266e8d1ca58e3cf2">&#9670;&#160;</a></span>SphereCollider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_sphere_collider.html">SphereCollider</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00026">26</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9fb9bbe1d075c073eaa3dca93c56295c" name="a9fb9bbe1d075c073eaa3dca93c56295c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb9bbe1d075c073eaa3dca93c56295c">&#9670;&#160;</a></span>center_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 Collider::center_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00031">31</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9483829a733fc43dd2094c6e61b6e7b2" name="a9483829a733fc43dd2094c6e61b6e7b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9483829a733fc43dd2094c6e61b6e7b2">&#9670;&#160;</a></span>hDebugModel_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Collider::hDebugModel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00033">33</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a1336d100ed104d4727ed89cdb5dd257c" name="a1336d100ed104d4727ed89cdb5dd257c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1336d100ed104d4727ed89cdb5dd257c">&#9670;&#160;</a></span>pGameObject_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_object.html">GameObject</a>* Collider::pGameObject_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00029">29</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8aaa5a793cc1937457e36a66a89e7ebf" name="a8aaa5a793cc1937457e36a66a89e7ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aaa5a793cc1937457e36a66a89e7ebf">&#9670;&#160;</a></span>size_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 Collider::size_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00032">32</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa626547bf74d3b1bdeaf22eef07f82f3" name="aa626547bf74d3b1bdeaf22eef07f82f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa626547bf74d3b1bdeaf22eef07f82f3">&#9670;&#160;</a></span>type_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_collider_8h.html#a7f138e75fc3cc79e825c39e040690395">ColliderType</a> Collider::type_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collider_8h_source.html">Collider.h</a> の <a class="el" href="_collider_8h_source.html#l00030">30</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/Engine/<a class="el" href="_collider_8h_source.html">Collider.h</a></li>
+<li>SoR/Engine/<a class="el" href="_collider_8cpp_source.html">Collider.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_collider.html">Collider</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<map id="GameObject::FindChildObject" name="GameObject::FindChildObject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="435,173,629,200"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="572,161,558,154,532,152,508,154,495,159,492,164,498,171,494,174,487,165,492,155,507,149,532,147,560,149,574,156"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27" title=" " alt="" coords="222,173,387,200"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="420,189,388,189,388,184,420,184"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a9863ff656a1c7b26aa66addd5988e654" title=" " alt="" coords="17,5,162,32"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="284,162,238,103,207,73,172,46,149,35,152,30,175,42,210,69,242,100,288,159"/>
+<area shape="rect" id="Node000004" href="$class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="17,56,162,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="268,167,172,113,147,102,149,97,175,108,270,162"/>
+<area shape="rect" id="Node000005" href="$class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="8,123,171,149"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="229,172,149,153,150,147,230,167"/>
+<area shape="rect" id="Node000006" href="$class_clear_scene.html#a2bdcbad7526c4e9bf3d0961460f590c7" title=" " alt="" coords="21,173,158,200"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="206,189,159,189,159,184,206,184"/>
+<area shape="rect" id="Node000007" href="$class_game_over_scene.html#a121ff42f211a172fc4eb15f704d4088a" title=" " alt="" coords="5,224,174,251"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="230,207,150,226,149,221,229,202"/>
+<area shape="rect" id="Node000008" href="$class_moderator_sequence.html#ab409913ca8b9ad248d7f28f13cd606ca" title=" " alt="" coords="17,275,162,317"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="270,211,175,265,149,277,147,272,172,260,268,206"/>
+<area shape="rect" id="Node000009" href="$class_title_scene.html#a1cdcc1ef41f43f31b40f4b8451fa4f8b" title=" " alt="" coords="24,341,155,368"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="288,215,242,273,210,305,175,332,152,343,149,338,172,327,207,301,238,270,284,211"/>
+</map>

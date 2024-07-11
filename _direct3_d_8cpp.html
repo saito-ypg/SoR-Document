@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/Direct3D.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_direct3_d_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">Direct3D.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;d3dcompiler.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_direct3_d_8h_source.html">Direct3D.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">Global.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_transform_8h_source.html">Transform.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Direct3D.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_direct3_d_8cpp__incl.png" border="0" usemap="#a_so_r_2_engine_2_direct3_d_8cpp" alt=""/></div>
+<map name="a_so_r_2_engine_2_direct3_d_8cpp" id="a_so_r_2_engine_2_direct3_d_8cpp">
+<area shape="rect" title=" " alt="" coords="96,5,265,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,108,107"/>
+<area shape="poly" title=" " alt="" coords="160,35,92,74,90,70,158,30"/>
+<area shape="rect" href="_direct3_d_8h.html" title=" " alt="" coords="138,155,220,181"/>
+<area shape="poly" title=" " alt="" coords="180,33,172,80,173,111,176,139,171,140,167,111,167,80,175,32"/>
+<area shape="rect" href="global_8h.html" title=" " alt="" coords="182,80,251,107"/>
+<area shape="poly" title=" " alt="" coords="189,31,206,65,201,67,184,34"/>
+<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="244,155,333,181"/>
+<area shape="poly" title=" " alt="" coords="208,30,238,50,265,78,280,109,288,139,283,140,275,111,261,82,234,54,205,35"/>
+<area shape="rect" title=" " alt="" coords="37,229,122,256"/>
+<area shape="poly" title=" " alt="" coords="163,184,111,222,107,218,160,180"/>
+<area shape="rect" title=" " alt="" coords="146,229,213,256"/>
+<area shape="poly" title=" " alt="" coords="182,182,182,214,177,214,177,182"/>
+<area shape="rect" title=" " alt="" coords="237,229,340,256"/>
+<area shape="poly" title=" " alt="" coords="200,180,258,218,256,223,197,184"/>
+<area shape="poly" title=" " alt="" coords="212,108,195,142,190,140,208,106"/>
+<area shape="poly" title=" " alt="" coords="291,182,291,214,286,214,286,182"/>
+</map>
+</div>
+</div>
+<p><a href="_direct3_d_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html">Direct3D</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a9df96d2d4cc234d389fc8e09edf88543" id="r_a9df96d2d4cc234d389fc8e09edf88543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a9df96d2d4cc234d389fc8e09edf88543">Direct3D::InitShaderBundle</a> ()</td></tr>
+<tr class="separator:a9df96d2d4cc234d389fc8e09edf88543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e24a5701dc5e0728ffccc721c690bd4" id="r_a2e24a5701dc5e0728ffccc721c690bd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a2e24a5701dc5e0728ffccc721c690bd4">Direct3D::SetShader</a> (<a class="el" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69">SHADER_TYPE</a> type)</td></tr>
+<tr class="separator:a2e24a5701dc5e0728ffccc721c690bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0108ebd1b00c9884850eb9c51b72153" id="r_ad0108ebd1b00c9884850eb9c51b72153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#ad0108ebd1b00c9884850eb9c51b72153">Direct3D::SetBlendMode</a> (<a class="el" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70">BLEND_MODE</a> blendMode)</td></tr>
+<tr class="separator:ad0108ebd1b00c9884850eb9c51b72153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f43673e7d416f164368d083347c9ae4" id="r_a7f43673e7d416f164368d083347c9ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a7f43673e7d416f164368d083347c9ae4">Direct3D::BeginDraw</a> ()</td></tr>
+<tr class="separator:a7f43673e7d416f164368d083347c9ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f677e97ed43f00ca43d67e7ffae945a" id="r_a4f677e97ed43f00ca43d67e7ffae945a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a4f677e97ed43f00ca43d67e7ffae945a">Direct3D::EndDraw</a> ()</td></tr>
+<tr class="separator:a4f677e97ed43f00ca43d67e7ffae945a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca42f107418a2283c2a3362f6702f902" id="r_aca42f107418a2283c2a3362f6702f902"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#aca42f107418a2283c2a3362f6702f902">Direct3D::Release</a> ()</td></tr>
+<tr class="separator:aca42f107418a2283c2a3362f6702f902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9088a8ef6738c3d63b6fc63d2cf624d" id="r_ad9088a8ef6738c3d63b6fc63d2cf624d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#ad9088a8ef6738c3d63b6fc63d2cf624d">Direct3D::Intersect</a> (XMFLOAT3 &amp;start, XMFLOAT3 &amp;direction, XMFLOAT3 &amp;v0, XMFLOAT3 &amp;v1, XMFLOAT3 &amp;v2, float *distance)</td></tr>
+<tr class="separator:ad9088a8ef6738c3d63b6fc63d2cf624d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159aa52fd4fc11f96505791eeea00975" id="r_a159aa52fd4fc11f96505791eeea00975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a159aa52fd4fc11f96505791eeea00975">Direct3D::SetDepthBafferWriteEnable</a> (bool isWrite)</td></tr>
+<tr class="separator:a159aa52fd4fc11f96505791eeea00975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a49517d6f17a91e80bf2e8dc13176bbf1" id="r_a49517d6f17a91e80bf2e8dc13176bbf1"><td class="memItemLeft" align="right" valign="top">IDXGISwapChain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a49517d6f17a91e80bf2e8dc13176bbf1">Direct3D::pSwapChain_</a> = nullptr</td></tr>
+<tr class="separator:a49517d6f17a91e80bf2e8dc13176bbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c44b2c342a2db6f3b66ec6e41c891c6" id="r_a4c44b2c342a2db6f3b66ec6e41c891c6"><td class="memItemLeft" align="right" valign="top">ID3D11RenderTargetView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a4c44b2c342a2db6f3b66ec6e41c891c6">Direct3D::pRenderTargetView_</a> = nullptr</td></tr>
+<tr class="separator:a4c44b2c342a2db6f3b66ec6e41c891c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c1a891b5234c535419e9ad83dc2754" id="r_a69c1a891b5234c535419e9ad83dc2754"><td class="memItemLeft" align="right" valign="top">ID3D11Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a69c1a891b5234c535419e9ad83dc2754">Direct3D::pDepthStencil</a></td></tr>
+<tr class="separator:a69c1a891b5234c535419e9ad83dc2754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea0fbe277359d96d9064adfd1303fb9" id="r_adea0fbe277359d96d9064adfd1303fb9"><td class="memItemLeft" align="right" valign="top">ID3D11DepthStencilView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#adea0fbe277359d96d9064adfd1303fb9">Direct3D::pDepthStencilView</a></td></tr>
+<tr class="separator:adea0fbe277359d96d9064adfd1303fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0165dfa2a5296469358e9ed34a0b3207" id="r_a0165dfa2a5296469358e9ed34a0b3207"><td class="memItemLeft" align="right" valign="top">ID3D11DepthStencilState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a0165dfa2a5296469358e9ed34a0b3207">Direct3D::pDepthStencilState</a> [<a class="el" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70a75fb48f47f56bad39f594b7023125822">BLEND_MAX</a>]</td></tr>
+<tr class="separator:a0165dfa2a5296469358e9ed34a0b3207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa359f6cdfbe68ff7b065c7f0aead08f1" id="r_aa359f6cdfbe68ff7b065c7f0aead08f1"><td class="memItemLeft" align="right" valign="top">ID3D11BlendState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#aa359f6cdfbe68ff7b065c7f0aead08f1">Direct3D::pBlendState</a> [<a class="el" href="namespace_direct3_d.html#a0d48ba404770b495c131816c93ac1e70a75fb48f47f56bad39f594b7023125822">BLEND_MAX</a>]</td></tr>
+<tr class="separator:aa359f6cdfbe68ff7b065c7f0aead08f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9914db4861226b894d0456270e339a0" id="r_ae9914db4861226b894d0456270e339a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#ae9914db4861226b894d0456270e339a0">Direct3D::isDrawCollision_</a> = true</td></tr>
+<tr class="separator:ae9914db4861226b894d0456270e339a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcaedecb8ac2110b2b11ab9a46c7bd8" id="r_a1bcaedecb8ac2110b2b11ab9a46c7bd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a1bcaedecb8ac2110b2b11ab9a46c7bd8">Direct3D::_isLighting</a> = false</td></tr>
+<tr class="separator:a1bcaedecb8ac2110b2b11ab9a46c7bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15f322502786f5f168aad00ad67f3ae" id="r_aa15f322502786f5f168aad00ad67f3ae"><td class="memItemLeft" align="right" valign="top">ID3D11Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#aa15f322502786f5f168aad00ad67f3ae">Direct3D::pDevice_</a> = nullptr</td></tr>
+<tr class="separator:aa15f322502786f5f168aad00ad67f3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87dcf9081e6b03c8720e07e4a30f9c67" id="r_a87dcf9081e6b03c8720e07e4a30f9c67"><td class="memItemLeft" align="right" valign="top">ID3D11DeviceContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a87dcf9081e6b03c8720e07e4a30f9c67">Direct3D::pContext_</a> = nullptr</td></tr>
+<tr class="separator:a87dcf9081e6b03c8720e07e4a30f9c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b1744ccc6b239dd29b3d9ef0acb379" id="r_ac3b1744ccc6b239dd29b3d9ef0acb379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_direct3_d_1_1_s_h_a_d_e_r___b_u_n_d_l_e.html">SHADER_BUNDLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#ac3b1744ccc6b239dd29b3d9ef0acb379">Direct3D::shaderBundle</a> [<a class="el" href="namespace_direct3_d.html#af9076213b15c3dcac6203ea749a7ab69aa03fd3b21fab63785732f638f4fb0b0a">SHADER_MAX</a>] = { 0 }</td></tr>
+<tr class="separator:ac3b1744ccc6b239dd29b3d9ef0acb379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb513304470b5cdd8ad1b8a488ba42eb" id="r_abb513304470b5cdd8ad1b8a488ba42eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#abb513304470b5cdd8ad1b8a488ba42eb">Direct3D::screenWidth_</a> = 0</td></tr>
+<tr class="separator:abb513304470b5cdd8ad1b8a488ba42eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9716292586592cb6473c2b86eac2f0" id="r_a0f9716292586592cb6473c2b86eac2f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct3_d.html#a0f9716292586592cb6473c2b86eac2f0">Direct3D::screenHeight_</a> = 0</td></tr>
+<tr class="separator:a0f9716292586592cb6473c2b86eac2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_direct3_d_8cpp.html">Direct3D.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

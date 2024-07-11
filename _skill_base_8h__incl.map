@@ -1,0 +1,21 @@
+<map id="SoR/sources/SkillBase.h" name="SoR/sources/SkillBase.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="227,5,394,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,61,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,35,76,82,75,77,257,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="85,80,138,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,35,154,80,152,75,275,30"/>
+<area shape="rect" id="Node000004" href="$_transform_8h.html" title=" " alt="" coords="163,80,308,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,34,261,71,257,67,295,31"/>
+<area shape="rect" id="Node000006" href="$areamodels_8h.html" title=" " alt="" coords="427,155,527,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="371,30,415,48,435,62,454,78,470,108,478,139,472,140,465,110,450,82,432,66,412,53,369,35"/>
+<area shape="rect" id="Node000007" href="$_attack_range_8h.html" title=" " alt="" coords="333,80,440,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="325,31,364,67,361,71,322,34"/>
+<area shape="rect" id="Node000009" href="$_damage_data_8h.html" title=" " alt="" coords="514,80,621,107"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="356,30,509,73,507,78,354,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="193,155,295,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="240,107,243,139,238,139,234,108"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="363,110,283,150,281,145,360,105"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="404,105,451,143,448,147,400,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="327,155,403,181"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="385,108,376,141,370,139,380,106"/>
+</map>

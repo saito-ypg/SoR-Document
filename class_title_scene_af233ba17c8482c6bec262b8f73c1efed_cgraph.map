@@ -1,0 +1,7 @@
+<map id="TitleScene::Draw" name="TitleScene::Draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,125,57"/>
+<area shape="rect" id="Node000002" href="$namespace_image.html#a5a729b7937615099872420357877a354" title=" " alt="" coords="197,5,290,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,33,181,25,182,30,126,38"/>
+<area shape="rect" id="Node000003" href="$namespace_image.html#a88e2782eb2ba81a77618072490e44d2b" title=" " alt="" coords="173,56,314,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,50,158,55,157,60,125,55"/>
+</map>

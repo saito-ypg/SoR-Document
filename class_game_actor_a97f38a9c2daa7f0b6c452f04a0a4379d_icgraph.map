@@ -1,0 +1,9 @@
+<map id="GameActor::RemoveColliderCamp" name="GameActor::RemoveColliderCamp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="461,31,679,57"/>
+<area shape="rect" id="Node000002" href="$class_enemy_base.html#a0e7ebe08e35775fa1ff7157e7b8f066b" title=" " alt="" coords="233,31,413,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,47,413,47,413,41,445,41"/>
+<area shape="rect" id="Node000003" href="$class_decoy.html#a61f2a4eddbc336957f84339eeaa2d887" title=" " alt="" coords="23,5,167,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,35,167,29,168,24,218,30"/>
+<area shape="rect" id="Node000004" href="$class_enemy_base.html#ab28de4eb50f183feb9e019f92b7cce75" title=" " alt="" coords="5,56,185,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="218,58,185,62,185,57,217,53"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="basic_json::insert_iterator" name="basic_json::insert_iterator">
+<area shape="rect" id="Node000001" title="Helper for insertion of an iterator" alt="" coords="567,148,691,191"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a7f3817060c2bec896a99cb2c236b9c27" title="inserts element into array" alt="" coords="396,80,519,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="567,144,518,121,492,110,494,105,520,116,570,139"/>
+<area shape="rect" id="Node000007" href="$classbasic__json.html#a68e1707248a00a2608a304da5ae5c911" title="inserts range of elements into array" alt="" coords="396,131,519,157"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="551,161,519,156,520,150,552,155"/>
+<area shape="rect" id="Node000008" href="$classbasic__json.html#abdfee6a3db80431a24c68bfaf038c47d" title="inserts elements from initializer list into array" alt="" coords="396,181,519,208"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="552,183,520,188,519,183,551,178"/>
+<area shape="rect" id="Node000009" href="$classbasic__json.html#a47b623200562da188886a385c716d101" title="inserts copies of element into array" alt="" coords="396,232,519,259"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="570,200,520,222,494,234,492,229,518,218,567,195"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#a699ef418df577e75f28dfce6b04d6c2f" title="creates a diff as a JSON patch" alt="" coords="209,29,316,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="388,78,316,59,317,54,389,73"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#ae5da62116a40a0f86e87f11fdd54e9f0" title="inserts element into array" alt="" coords="201,80,324,107"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="380,96,324,96,324,91,380,91"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#a693812b31e106dec9166e93d8f6dd7d7" title="applies a JSON patch in&#45;place without copying the object" alt="" coords="177,131,348,157"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="389,114,317,133,316,127,388,109"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="296,16,284,10,262,8,242,10,231,15,228,20,234,27,229,30,223,21,227,11,241,5,262,3,286,5,298,12"/>
+<area shape="rect" id="Node000006" href="$classbasic__json.html#a145a004c0a2fa5be84b260ecc98ab5d9" title="applies a JSON patch to a copy of the current object" alt="" coords="5,131,129,157"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="161,147,129,147,129,141,161,141"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="SoR/Engine/global.h" name="SoR/Engine/global.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="78,5,218,32"/>
+<area shape="rect" id="Node000002" href="$_direct3_d_8h.html" title=" " alt="" coords="107,80,189,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,33,151,64,145,64,145,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,91,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,109,79,147,76,143,129,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="114,155,182,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="151,107,151,139,145,139,145,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="206,155,309,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="169,105,227,144,224,148,166,109"/>
+</map>

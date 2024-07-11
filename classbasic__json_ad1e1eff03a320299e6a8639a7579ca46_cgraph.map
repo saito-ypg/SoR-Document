@@ -1,0 +1,5 @@
+<map id="basic_json::count" name="basic_json::count">
+<area shape="rect" id="Node000001" title="returns the number of occurrences of a key in a JSON object" alt="" coords="5,5,129,32"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#af355a2b131068acf3d623eb6d80a711c" title="return whether value is an object" alt="" coords="177,5,320,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,16,161,16,161,21,129,21"/>
+</map>

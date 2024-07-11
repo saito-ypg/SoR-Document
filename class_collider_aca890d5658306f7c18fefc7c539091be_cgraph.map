@@ -1,0 +1,9 @@
+<map id="Collider::IsHitCircleVsCircle" name="Collider::IsHitCircleVsCircle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,186,57"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#aced96b154f432431101c7f6270484ca0" title=" " alt="" coords="234,31,438,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,41,218,41,218,47,186,47"/>
+<area shape="rect" id="Node000003" href="$class_transform.html#af089d0bfb52885607f0fe6138701a105" title=" " alt="" coords="494,5,639,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,30,478,26,479,31,439,35"/>
+<area shape="rect" id="Node000004" href="$class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="486,56,647,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="439,53,471,56,470,61,438,58"/>
+</map>

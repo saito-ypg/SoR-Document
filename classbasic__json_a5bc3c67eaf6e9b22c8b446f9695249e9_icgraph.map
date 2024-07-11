@@ -1,0 +1,5 @@
+<map id="basic_json::from_cbor" name="basic_json::from_cbor">
+<area shape="rect" id="Node000001" title="create a JSON value from an input in CBOR format" alt="" coords="202,5,350,32"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a89a8b31922ebb7a637e723ac7873fa4a" title=" " alt="" coords="5,5,154,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,21,154,21,154,16,186,16"/>
+</map>

@@ -1,0 +1,644 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): Sprite クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_sprite.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_sprite-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">Sprite クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_sprite_8h_source.html">Sprite.h</a>&gt;</code></p>
+<div class="dynheader">
+Sprite 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite__coll__graph.png" border="0" usemap="#a_sprite_coll__map" alt="Collaboration graph"/></div>
+<map name="a_sprite_coll__map" id="a_sprite_coll__map">
+<area shape="rect" title=" " alt="" coords="10,96,65,123"/>
+<area shape="rect" href="class_texture.html" title=" " alt="" coords="5,5,70,32"/>
+<area shape="poly" title=" " alt="" coords="40,48,40,95,35,95,35,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sprite_1_1_c_o_n_s_t_a_n_t___b_u_f_f_e_r.html">CONSTANT_BUFFER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sprite_1_1_v_e_r_t_e_x.html">VERTEX</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a12cba3ac1868418add3c4d95ce87e615" id="r_a12cba3ac1868418add3c4d95ce87e615"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12cba3ac1868418add3c4d95ce87e615">Sprite</a> ()</td></tr>
+<tr class="separator:a12cba3ac1868418add3c4d95ce87e615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8accab430f9d90ae5117b57d67e32b84" id="r_a8accab430f9d90ae5117b57d67e32b84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8accab430f9d90ae5117b57d67e32b84">~Sprite</a> ()</td></tr>
+<tr class="separator:a8accab430f9d90ae5117b57d67e32b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e61adf3227b1ea9cb72910298a2a01" id="r_a34e61adf3227b1ea9cb72910298a2a01"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34e61adf3227b1ea9cb72910298a2a01">Load</a> (std::string fileName)</td></tr>
+<tr class="separator:a34e61adf3227b1ea9cb72910298a2a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f701e43e5562dd1eabd32416109709" id="r_a22f701e43e5562dd1eabd32416109709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22f701e43e5562dd1eabd32416109709">Draw</a> (<a class="el" href="class_transform.html">Transform</a> &amp;transform, RECT rect, float alpha)</td></tr>
+<tr class="separator:a22f701e43e5562dd1eabd32416109709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8590c640f41510277f26d30943737907" id="r_a8590c640f41510277f26d30943737907"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8590c640f41510277f26d30943737907">GetTextureSize</a> ()</td></tr>
+<tr class="separator:a8590c640f41510277f26d30943737907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab78f1f87a8c3a8916641e42b70160907" id="r_ab78f1f87a8c3a8916641e42b70160907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab78f1f87a8c3a8916641e42b70160907">InitVertex</a> ()</td></tr>
+<tr class="separator:ab78f1f87a8c3a8916641e42b70160907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cabe1576ff95a77a2ae51af1b02d111" id="r_a7cabe1576ff95a77a2ae51af1b02d111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cabe1576ff95a77a2ae51af1b02d111">InitIndex</a> ()</td></tr>
+<tr class="separator:a7cabe1576ff95a77a2ae51af1b02d111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ab3d8a8c57c5d500e30c099106ccf2" id="r_ae6ab3d8a8c57c5d500e30c099106ccf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6ab3d8a8c57c5d500e30c099106ccf2">InitConstantBuffer</a> ()</td></tr>
+<tr class="separator:ae6ab3d8a8c57c5d500e30c099106ccf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:aef4d60a64aa474cefa0569885d2e8c72" id="r_aef4d60a64aa474cefa0569885d2e8c72"><td class="memItemLeft" align="right" valign="top">ID3D11Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef4d60a64aa474cefa0569885d2e8c72">pVertexBuffer_</a></td></tr>
+<tr class="separator:aef4d60a64aa474cefa0569885d2e8c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d2a6ea9ea65885d9537b8600d53a22" id="r_a60d2a6ea9ea65885d9537b8600d53a22"><td class="memItemLeft" align="right" valign="top">ID3D11Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60d2a6ea9ea65885d9537b8600d53a22">pIndexBuffer_</a></td></tr>
+<tr class="separator:a60d2a6ea9ea65885d9537b8600d53a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2eb6d34d0633503c64e8d6dcbb53865" id="r_ad2eb6d34d0633503c64e8d6dcbb53865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2eb6d34d0633503c64e8d6dcbb53865">pTexture_</a></td></tr>
+<tr class="separator:ad2eb6d34d0633503c64e8d6dcbb53865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16429973b45efe030c389fedd80bd6e9" id="r_a16429973b45efe030c389fedd80bd6e9"><td class="memItemLeft" align="right" valign="top">ID3D11Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16429973b45efe030c389fedd80bd6e9">pConstantBuffer_</a></td></tr>
+<tr class="separator:a16429973b45efe030c389fedd80bd6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_sprite_8h_source.html">Sprite.h</a> の <a class="el" href="_sprite_8h_source.html#l00017">17</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a12cba3ac1868418add3c4d95ce87e615" name="a12cba3ac1868418add3c4d95ce87e615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cba3ac1868418add3c4d95ce87e615">&#9670;&#160;</a></span>Sprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sprite::Sprite </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a> の <a class="el" href="_sprite_8cpp_source.html#l00006">6</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8accab430f9d90ae5117b57d67e32b84" name="a8accab430f9d90ae5117b57d67e32b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8accab430f9d90ae5117b57d67e32b84">&#9670;&#160;</a></span>~Sprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sprite::~Sprite </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a> の <a class="el" href="_sprite_8cpp_source.html#l00012">12</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a22f701e43e5562dd1eabd32416109709" name="a22f701e43e5562dd1eabd32416109709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f701e43e5562dd1eabd32416109709">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sprite::Draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_transform.html">Transform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RECT</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a> の <a class="el" href="_sprite_8cpp_source.html#l00104">104</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite_a22f701e43e5562dd1eabd32416109709_cgraph.png" border="0" usemap="#aclass_sprite_a22f701e43e5562dd1eabd32416109709_cgraph" alt=""/></div>
+<map name="aclass_sprite_a22f701e43e5562dd1eabd32416109709_cgraph" id="aclass_sprite_a22f701e43e5562dd1eabd32416109709_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,98,133"/>
+<area shape="rect" href="class_texture.html#a19b4f36a15d7598df898336a43f05601" title=" " alt="" coords="146,5,320,32"/>
+<area shape="poly" title=" " alt="" coords="64,104,99,73,144,42,157,36,159,40,147,46,102,77,68,108"/>
+<area shape="rect" href="class_texture.html#aab2dfa21eb186f79b424c0c7e6759ac7" title=" " alt="" coords="162,56,304,83"/>
+<area shape="poly" title=" " alt="" coords="97,105,167,85,169,90,99,110"/>
+<area shape="rect" href="class_texture.html#a2717e1589e2ff4148a3279a7319c6220" title=" " alt="" coords="173,107,293,133"/>
+<area shape="poly" title=" " alt="" coords="98,117,157,117,157,123,98,123"/>
+<area shape="rect" href="namespace_direct3_d.html#a159aa52fd4fc11f96505791eeea00975" title=" " alt="" coords="150,157,316,200"/>
+<area shape="poly" title=" " alt="" coords="96,131,151,149,149,155,94,136"/>
+<area shape="rect" href="namespace_direct3_d.html#a2e24a5701dc5e0728ffccc721c690bd4" title=" " alt="" coords="163,224,303,251"/>
+<area shape="poly" title=" " alt="" coords="65,132,99,170,122,192,147,210,158,215,155,220,144,214,118,196,95,174,61,135"/>
+<area shape="rect" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="368,5,488,32"/>
+<area shape="poly" title=" " alt="" coords="320,16,353,16,353,21,320,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8590c640f41510277f26d30943737907" name="a8590c640f41510277f26d30943737907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8590c640f41510277f26d30943737907">&#9670;&#160;</a></span>GetTextureSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 Sprite::GetTextureSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8h_source.html">Sprite.h</a> の <a class="el" href="_sprite_8h_source.html#l00079">79</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite_a8590c640f41510277f26d30943737907_cgraph.png" border="0" usemap="#aclass_sprite_a8590c640f41510277f26d30943737907_cgraph" alt=""/></div>
+<map name="aclass_sprite_a8590c640f41510277f26d30943737907_cgraph" id="aclass_sprite_a8590c640f41510277f26d30943737907_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect" href="class_texture.html#ad111e3ad474bc5cd9bf901a1e2031afb" title=" " alt="" coords="207,5,326,32"/>
+<area shape="poly" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6ab3d8a8c57c5d500e30c099106ccf2" name="ae6ab3d8a8c57c5d500e30c099106ccf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ab3d8a8c57c5d500e30c099106ccf2">&#9670;&#160;</a></span>InitConstantBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sprite::InitConstantBuffer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a> の <a class="el" href="_sprite_8cpp_source.html#l00042">42</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite_ae6ab3d8a8c57c5d500e30c099106ccf2_icgraph.png" border="0" usemap="#aclass_sprite_ae6ab3d8a8c57c5d500e30c099106ccf2_icgraph" alt=""/></div>
+<map name="aclass_sprite_ae6ab3d8a8c57c5d500e30c099106ccf2_icgraph" id="aclass_sprite_ae6ab3d8a8c57c5d500e30c099106ccf2_icgraph">
+<area shape="rect" title=" " alt="" coords="718,157,883,184"/>
+<area shape="rect" href="class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="578,157,670,184"/>
+<area shape="poly" title=" " alt="" coords="702,173,670,173,670,168,702,168"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="438,157,530,184"/>
+<area shape="poly" title=" " alt="" coords="563,173,531,173,531,168,563,168"/>
+<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
+<area shape="poly" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
+<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
+<area shape="poly" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
+<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
+<area shape="poly" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
+<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
+<area shape="poly" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
+<area shape="poly" title=" " alt="" coords="463,197,431,225,391,249,335,267,276,278,219,282,168,283,168,278,219,277,275,272,333,262,389,244,428,221,459,193"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
+<area shape="poly" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
+<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
+<area shape="poly" title=" " alt="" coords="470,199,438,246,416,271,392,293,357,311,354,306,388,288,412,267,434,243,466,196"/>
+<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
+<area shape="poly" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
+<area shape="poly" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
+<area shape="poly" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
+<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
+<area shape="poly" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7cabe1576ff95a77a2ae51af1b02d111" name="a7cabe1576ff95a77a2ae51af1b02d111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cabe1576ff95a77a2ae51af1b02d111">&#9670;&#160;</a></span>InitIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sprite::InitIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a> の <a class="el" href="_sprite_8cpp_source.html#l00083">83</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite_a7cabe1576ff95a77a2ae51af1b02d111_icgraph.png" border="0" usemap="#aclass_sprite_a7cabe1576ff95a77a2ae51af1b02d111_icgraph" alt=""/></div>
+<map name="aclass_sprite_a7cabe1576ff95a77a2ae51af1b02d111_icgraph" id="aclass_sprite_a7cabe1576ff95a77a2ae51af1b02d111_icgraph">
+<area shape="rect" title=" " alt="" coords="718,157,829,184"/>
+<area shape="rect" href="class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="578,157,670,184"/>
+<area shape="poly" title=" " alt="" coords="702,173,670,173,670,168,702,168"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="438,157,530,184"/>
+<area shape="poly" title=" " alt="" coords="563,173,531,173,531,168,563,168"/>
+<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
+<area shape="poly" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
+<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
+<area shape="poly" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
+<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
+<area shape="poly" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
+<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
+<area shape="poly" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
+<area shape="poly" title=" " alt="" coords="463,197,431,225,391,249,335,267,276,278,219,282,168,283,168,278,219,277,275,272,333,262,389,244,428,221,459,193"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
+<area shape="poly" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
+<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
+<area shape="poly" title=" " alt="" coords="470,199,438,246,416,271,392,293,357,311,354,306,388,288,412,267,434,243,466,196"/>
+<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
+<area shape="poly" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
+<area shape="poly" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
+<area shape="poly" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
+<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
+<area shape="poly" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab78f1f87a8c3a8916641e42b70160907" name="ab78f1f87a8c3a8916641e42b70160907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab78f1f87a8c3a8916641e42b70160907">&#9670;&#160;</a></span>InitVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sprite::InitVertex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a> の <a class="el" href="_sprite_8cpp_source.html#l00058">58</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite_ab78f1f87a8c3a8916641e42b70160907_icgraph.png" border="0" usemap="#aclass_sprite_ab78f1f87a8c3a8916641e42b70160907_icgraph" alt=""/></div>
+<map name="aclass_sprite_ab78f1f87a8c3a8916641e42b70160907_icgraph" id="aclass_sprite_ab78f1f87a8c3a8916641e42b70160907_icgraph">
+<area shape="rect" title=" " alt="" coords="718,157,836,184"/>
+<area shape="rect" href="class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="578,157,670,184"/>
+<area shape="poly" title=" " alt="" coords="702,173,670,173,670,168,702,168"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="438,157,530,184"/>
+<area shape="poly" title=" " alt="" coords="563,173,531,173,531,168,563,168"/>
+<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
+<area shape="poly" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
+<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
+<area shape="poly" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
+<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
+<area shape="poly" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
+<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
+<area shape="poly" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
+<area shape="poly" title=" " alt="" coords="463,197,431,225,391,249,335,267,276,278,219,282,168,283,168,278,219,277,275,272,333,262,389,244,428,221,459,193"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
+<area shape="poly" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
+<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
+<area shape="poly" title=" " alt="" coords="470,199,438,246,416,271,392,293,357,311,354,306,388,288,412,267,434,243,466,196"/>
+<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
+<area shape="poly" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
+<area shape="poly" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
+<area shape="poly" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
+<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
+<area shape="poly" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a34e61adf3227b1ea9cb72910298a2a01" name="a34e61adf3227b1ea9cb72910298a2a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e61adf3227b1ea9cb72910298a2a01">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT Sprite::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a> の <a class="el" href="_sprite_8cpp_source.html#l00020">20</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite_a34e61adf3227b1ea9cb72910298a2a01_cgraph.png" border="0" usemap="#aclass_sprite_a34e61adf3227b1ea9cb72910298a2a01_cgraph" alt=""/></div>
+<map name="aclass_sprite_a34e61adf3227b1ea9cb72910298a2a01_cgraph" id="aclass_sprite_a34e61adf3227b1ea9cb72910298a2a01_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,97,108"/>
+<area shape="rect" href="class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="145,5,310,32"/>
+<area shape="poly" title=" " alt="" coords="73,79,144,42,160,35,162,40,146,46,76,83"/>
+<area shape="rect" href="class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="172,56,283,83"/>
+<area shape="poly" title=" " alt="" coords="97,86,156,77,157,82,97,91"/>
+<area shape="rect" href="class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="168,107,287,133"/>
+<area shape="poly" title=" " alt="" coords="97,99,153,107,152,112,97,104"/>
+<area shape="rect" href="class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="177,157,278,184"/>
+<area shape="poly" title=" " alt="" coords="76,106,146,143,164,150,162,155,144,148,73,111"/>
+<area shape="rect" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="358,157,478,184"/>
+<area shape="poly" title=" " alt="" coords="278,168,342,168,342,173,278,173"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sprite_a34e61adf3227b1ea9cb72910298a2a01_icgraph.png" border="0" usemap="#aclass_sprite_a34e61adf3227b1ea9cb72910298a2a01_icgraph" alt=""/></div>
+<map name="aclass_sprite_a34e61adf3227b1ea9cb72910298a2a01_icgraph" id="aclass_sprite_a34e61adf3227b1ea9cb72910298a2a01_icgraph">
+<area shape="rect" title=" " alt="" coords="578,157,670,184"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="438,157,530,184"/>
+<area shape="poly" title=" " alt="" coords="563,173,531,173,531,168,563,168"/>
+<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
+<area shape="poly" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
+<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
+<area shape="poly" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
+<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
+<area shape="poly" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
+<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
+<area shape="poly" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
+<area shape="poly" title=" " alt="" coords="463,197,431,225,391,249,335,267,276,278,219,282,168,283,168,278,219,277,275,272,333,262,389,244,428,221,459,193"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
+<area shape="poly" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
+<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
+<area shape="poly" title=" " alt="" coords="470,199,438,246,416,271,392,293,357,311,354,306,388,288,412,267,434,243,466,196"/>
+<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
+<area shape="poly" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
+<area shape="poly" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
+<area shape="poly" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
+<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
+<area shape="poly" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a16429973b45efe030c389fedd80bd6e9" name="a16429973b45efe030c389fedd80bd6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16429973b45efe030c389fedd80bd6e9">&#9670;&#160;</a></span>pConstantBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11Buffer* Sprite::pConstantBuffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8h_source.html">Sprite.h</a> の <a class="el" href="_sprite_8h_source.html#l00052">52</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a60d2a6ea9ea65885d9537b8600d53a22" name="a60d2a6ea9ea65885d9537b8600d53a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d2a6ea9ea65885d9537b8600d53a22">&#9670;&#160;</a></span>pIndexBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11Buffer* Sprite::pIndexBuffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8h_source.html">Sprite.h</a> の <a class="el" href="_sprite_8h_source.html#l00045">45</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad2eb6d34d0633503c64e8d6dcbb53865" name="ad2eb6d34d0633503c64e8d6dcbb53865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2eb6d34d0633503c64e8d6dcbb53865">&#9670;&#160;</a></span>pTexture_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_texture.html">Texture</a>* Sprite::pTexture_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8h_source.html">Sprite.h</a> の <a class="el" href="_sprite_8h_source.html#l00048">48</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aef4d60a64aa474cefa0569885d2e8c72" name="aef4d60a64aa474cefa0569885d2e8c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4d60a64aa474cefa0569885d2e8c72">&#9670;&#160;</a></span>pVertexBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11Buffer* Sprite::pVertexBuffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_sprite_8h_source.html">Sprite.h</a> の <a class="el" href="_sprite_8h_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/Engine/<a class="el" href="_sprite_8h_source.html">Sprite.h</a></li>
+<li>SoR/Engine/<a class="el" href="_sprite_8cpp_source.html">Sprite.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_sprite.html">Sprite</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

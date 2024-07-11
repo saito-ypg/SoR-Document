@@ -1,0 +1,9 @@
+<map id="SoldierEnemy::ActorDraw" name="SoldierEnemy::ActorDraw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,176,57"/>
+<area shape="rect" id="Node000002" href="$class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137" title=" " alt="" coords="224,31,378,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,41,208,41,208,47,176,47"/>
+<area shape="rect" id="Node000003" href="$namespace_model.html#a444ada60ab1281d88d5062bff87bc65b" title=" " alt="" coords="450,5,543,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,31,434,24,435,29,379,37"/>
+<area shape="rect" id="Node000004" href="$namespace_model.html#aa9752d2c71b2163a3f1088d4c32ab3ee" title=" " alt="" coords="426,56,567,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="379,51,411,56,410,61,378,57"/>
+</map>

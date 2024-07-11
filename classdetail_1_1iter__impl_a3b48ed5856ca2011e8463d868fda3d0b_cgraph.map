@@ -1,0 +1,18 @@
+<map id="detail::iter_impl::operator&#45;=" name="detail::iter_impl::operator&#45;=">
+<area shape="rect" id="Node000001" title="subtract from iterator" alt="" coords="5,25,123,68"/>
+<area shape="rect" id="Node000002" href="$classdetail_1_1iter__impl.html#a5e2dd333526ae85044fe78f65aac9b52" title="add to iterator" alt="" coords="171,25,288,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,44,155,44,155,49,123,49"/>
+<area shape="rect" id="Node000003" href="$classdetail_1_1invalid__iterator.html#a35d0b713b151188622791891314949f9" title=" " alt="" coords="336,25,478,68"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,44,321,44,321,49,289,49"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="731,33,830,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="473,22,526,11,605,3,683,11,734,25,733,30,682,16,605,8,527,16,474,27"/>
+<area shape="rect" id="Node000007" href="$classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="542,25,667,68"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="479,44,527,44,527,49,479,49"/>
+<area shape="rect" id="Node000008" href="$classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="526,92,683,119"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="480,65,544,85,542,90,478,71"/>
+<area shape="rect" id="Node000005" href="$namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="885,8,1012,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="830,37,869,31,870,36,831,42"/>
+<area shape="rect" id="Node000006" href="$namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="878,59,1019,85"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="831,52,863,57,862,62,830,57"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="648,89,682,78,724,63,726,68,684,83,649,94"/>
+</map>

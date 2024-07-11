@@ -1,0 +1,18 @@
+<map id="Transform::Calculation" name="Transform::Calculation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="700,44,851,71"/>
+<area shape="rect" id="Node000002" href="$class_collider.html#ae706014c07e6aa05440fe64baa160bcb" title=" " alt="" coords="513,7,614,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="684,44,614,32,615,26,685,39"/>
+<area shape="rect" id="Node000003" href="$class_transform.html#a9304784014a9dab85ff55d80e8ab76eb" title=" " alt="" coords="475,81,652,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="685,76,644,83,643,78,685,71"/>
+<area shape="poly" id="edge8_Node000003_Node000003" title=" " alt="" coords="600,68,587,62,564,60,541,62,529,67,527,72,532,79,528,82,521,73,526,63,540,57,564,55,589,57,602,64"/>
+<area shape="rect" id="Node000004" href="$class_fbx_parts.html#a6f4a56d494ea33ba40d50c4ebfcb2469" title=" " alt="" coords="275,31,386,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="483,80,386,59,387,53,484,75"/>
+<area shape="rect" id="Node000007" href="$namespace_model.html#ab93a165aac3d0c852a38215ac3ac6258" title=" " alt="" coords="270,81,391,108"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="459,97,391,97,391,92,459,92"/>
+<area shape="rect" id="Node000008" href="$class_game_object.html#a6c0d4e8eaf47f457927850b2cd8be670" title=" " alt="" coords="234,132,427,159"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="484,114,396,134,395,129,483,109"/>
+<area shape="rect" id="Node000005" href="$class_fbx_parts.html#a72ccd90d28fcc8025b5a324490c18c43" title=" " alt="" coords="5,5,186,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,39,186,31,186,26,260,34"/>
+<area shape="rect" id="Node000006" href="$class_fbx_parts.html#ab79c7b8ace640a5fedc46697b214e433" title=" " alt="" coords="8,56,183,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="260,54,183,63,183,57,259,49"/>
+</map>

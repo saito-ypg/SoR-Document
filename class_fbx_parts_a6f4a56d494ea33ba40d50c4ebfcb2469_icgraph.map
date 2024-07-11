@@ -1,0 +1,7 @@
+<map id="FbxParts::Draw" name="FbxParts::Draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="234,31,345,57"/>
+<area shape="rect" id="Node000002" href="$class_fbx_parts.html#a72ccd90d28fcc8025b5a324490c18c43" title=" " alt="" coords="5,5,186,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,37,186,33,187,28,219,32"/>
+<area shape="rect" id="Node000003" href="$class_fbx_parts.html#ab79c7b8ace640a5fedc46697b214e433" title=" " alt="" coords="8,56,183,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,56,183,61,183,55,218,51"/>
+</map>

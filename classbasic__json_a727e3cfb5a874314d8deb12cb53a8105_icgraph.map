@@ -1,0 +1,22 @@
+<map id="basic_json::find" name="basic_json::find">
+<area shape="rect" id="Node000001" title="find an element in a JSON object" alt="" coords="396,156,507,183"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a699ef418df577e75f28dfce6b04d6c2f" title="creates a diff as a JSON patch" alt="" coords="209,29,316,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="429,146,393,107,347,70,316,57,318,52,349,66,397,103,433,142"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#a693812b31e106dec9166e93d8f6dd7d7" title="applies a JSON patch in&#45;place without copying the object" alt="" coords="177,80,348,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="411,151,347,121,314,110,316,105,349,116,413,146"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#a80c2436388fd16a1529ce9afce8229ef" title="access specified object element with default value" alt="" coords="202,131,323,157"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="380,162,322,155,323,149,381,157"/>
+<area shape="rect" id="Node000008" href="$classbasic__json.html#a56244e0ed0943ad62faf61b06e7ba139" title="access specified object element with default value" alt="" coords="202,181,323,208"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="381,181,323,189,322,184,380,176"/>
+<area shape="rect" id="Node000009" href="$classbasic__json.html#acbe572bbfbd4687a7a9167465e4d41f2" title="access specified object element with default value" alt="" coords="202,232,323,259"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="413,193,349,222,316,234,314,229,347,218,411,188"/>
+<area shape="rect" id="Node000010" href="$classbasic__json.html#a694398741710ce1c22797ad47109898b" title="access specified object element via JSON Pointer with default value" alt="" coords="202,283,323,309"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="433,197,397,236,349,273,324,285,322,280,347,268,393,232,429,193"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="295,16,283,10,262,8,243,10,232,15,230,20,235,27,230,30,224,21,228,11,241,5,262,3,285,5,297,12"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#a145a004c0a2fa5be84b260ecc98ab5d9" title="applies a JSON patch to a copy of the current object" alt="" coords="5,80,129,107"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="161,96,129,96,129,91,161,91"/>
+<area shape="rect" id="Node000006" href="$classbasic__json.html#a7e65cc92d9f1db5edb42294a705c2d4e" title=" " alt="" coords="7,131,127,157"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="187,147,127,147,127,141,187,141"/>
+<area shape="rect" id="Node000007" href="$classbasic__json.html#a001e11f0e7bef081d390651f69acf346" title=" " alt="" coords="7,181,127,208"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="194,164,122,183,121,178,192,159"/>
+</map>

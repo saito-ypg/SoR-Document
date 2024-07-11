@@ -1,0 +1,5 @@
+<map id="basic_json::binary" name="basic_json::binary">
+<area shape="rect" id="Node000001" title="explicitly create a binary array (without subtype)" alt="" coords="5,5,132,32"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#ae2d5bc42270881ed3e219e8b1456fec5" title="create an empty value with a given type" alt="" coords="180,5,333,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,16,164,16,164,21,132,21"/>
+</map>

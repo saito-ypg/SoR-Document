@@ -1,0 +1,5 @@
+<map id="AttackRangeCircle::IsHit" name="AttackRangeCircle::IsHit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,143,48"/>
+<area shape="rect" id="Node000002" href="$class_game_actor.html#ae4526450bb4ef315f531a9237de11528" title=" " alt="" coords="191,13,347,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,24,175,24,175,29,143,29"/>
+</map>

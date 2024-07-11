@@ -1,0 +1,13 @@
+<map id="Text::DrawCenter" name="Text::DrawCenter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,127,83"/>
+<area shape="rect" id="Node000002" href="$class_text.html#a04fc62a0c41c328a0a6c071b28d55dcd" title=" " alt="" coords="175,56,296,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,67,159,67,159,72,127,72"/>
+<area shape="rect" id="Node000003" href="$class_text.html#a5ec0ab3772e61978a9955b23e96be8cd" title=" " alt="" coords="344,56,427,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,67,328,67,328,72,296,72"/>
+<area shape="rect" id="Node000004" href="$namespace_image.html#a5a729b7937615099872420357877a354" title=" " alt="" coords="499,5,593,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="427,54,486,35,488,40,428,59"/>
+<area shape="rect" id="Node000005" href="$namespace_image.html#a27a33e59dfef6e7950f840f819f9759a" title=" " alt="" coords="490,56,602,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="428,67,475,67,475,72,428,72"/>
+<area shape="rect" id="Node000006" href="$namespace_image.html#a88e2782eb2ba81a77618072490e44d2b" title=" " alt="" coords="475,107,617,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="428,80,488,99,486,104,427,85"/>
+</map>

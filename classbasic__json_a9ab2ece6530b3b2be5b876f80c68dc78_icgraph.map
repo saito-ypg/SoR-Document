@@ -1,0 +1,14 @@
+<map id="basic_json::cbegin" name="basic_json::cbegin">
+<area shape="rect" id="Node000001" title="returns a const iterator to the first element" alt="" coords="341,93,470,120"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#aac84462424ea7a14f9abb4ddb8e6dd7f" title="returns an iterator to the first element" alt="" coords="170,5,293,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,87,292,46,266,35,269,30,294,42,369,83"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#aa52cc6cc0de1e81d9cc21f9c48feb588" title="returns a const reverse iterator to one before the first" alt="" coords="170,56,293,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="325,92,293,85,294,80,326,87"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#a699ef418df577e75f28dfce6b04d6c2f" title="creates a diff as a JSON patch" alt="" coords="178,131,285,157"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="326,126,286,135,285,130,325,121"/>
+<area shape="rect" id="Node000006" href="$classbasic__json.html#a162089e94f24182ba3e4484be63c0c1a" title="access the first element" alt="" coords="173,181,290,208"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="369,131,294,172,269,183,266,178,292,167,367,126"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#ae81c3b38089a63d988a1efefe3ebc4bf" title="returns an iterator to the reverse&#45;end" alt="" coords="5,56,122,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="154,72,122,72,122,67,154,67"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="260,118,250,112,231,109,214,111,205,116,203,121,207,129,202,132,197,122,201,112,212,106,231,104,252,107,262,113"/>
+</map>

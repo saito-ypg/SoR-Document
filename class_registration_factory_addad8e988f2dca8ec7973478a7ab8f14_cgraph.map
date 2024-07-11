@@ -1,0 +1,7 @@
+<map id="RegistrationFactory::RegisterAllFactory" name="RegistrationFactory::RegisterAllFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,142,81"/>
+<area shape="rect" id="Node000002" href="$class_mediator_factory_registry.html#a30a576013ab36c73f8d77b6001d0d372" title=" " alt="" coords="190,5,353,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,46,174,40,175,46,142,51"/>
+<area shape="rect" id="Node000003" href="$class_mediator_factory_registry.html#aff2eb75a14d30051688f2e3b299c654c" title=" " alt="" coords="190,72,353,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,69,175,74,174,80,142,74"/>
+</map>

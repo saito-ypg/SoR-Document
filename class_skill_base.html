@@ -1,0 +1,1440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SkillBase クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_skill_base.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pro-types">限定公開型</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_skill_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">SkillBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>プレイヤー用スキルの基礎クラス。各種パラメーターは一旦フレーム単位で指定。 各派生先のactionの中でstep毎に処理変える(switch-case)。必要なら専用のenum作る。 コンストラクタでCastTime・CoolDownの指定 sequenceのフレーム数指定を行うこと  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_skill_base_8h_source.html">SkillBase.h</a>&gt;</code></p>
+<div class="dynheader">
+SkillBase の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base__inherit__graph.png" border="0" usemap="#a_skill_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_skill_base_inherit__map" id="a_skill_base_inherit__map">
+<area shape="rect" title="プレイヤー用スキルの基礎クラス。各種パラメーターは一旦フレーム単位で指定。 各派生先のactionの中でstep毎に処理変える(switch&#45;case)。必要なら専用のenum作る。 コンストラクタでC..." alt="" coords="62,5,138,32"/>
+<area shape="rect" href="class_charge_skill.html" title="プレイヤーが突進を行うスキル。縦長の矩形の範囲に攻撃をする。突進をするため、大きく前に踏み込む。 突進中は無敵。" alt="" coords="5,80,93,107"/>
+<area shape="poly" title=" " alt="" coords="84,46,60,81,56,78,80,43"/>
+<area shape="rect" href="classtest_skill.html" title="仮のスキル。現状では円形に攻撃範囲を出す。" alt="" coords="116,80,185,107"/>
+<area shape="poly" title=" " alt="" coords="119,43,144,78,139,81,115,46"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+SkillBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base__coll__graph.png" border="0" usemap="#a_skill_base_coll__map" alt="Collaboration graph"/></div>
+<map name="a_skill_base_coll__map" id="a_skill_base_coll__map">
+<area shape="rect" title="プレイヤー用スキルの基礎クラス。各種パラメーターは一旦フレーム単位で指定。 各派生先のactionの中でstep毎に処理変える(switch&#45;case)。必要なら専用のenum作る。 コンストラクタでC..." alt="" coords="142,353,219,380"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="31,47,18,76,12,108,12,277,16,297,25,313,40,326,58,337,101,352,142,360,141,365,99,357,56,342,37,331,21,316,11,299,7,278,7,108,13,74,26,45"/>
+<area shape="poly" title=" " alt="" coords="101,10,110,19,102,27,84,30,84,25,100,23,105,19,97,14"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="47,96,141,123"/>
+<area shape="poly" title=" " alt="" coords="61,44,89,94,84,97,57,47"/>
+<area shape="rect" title=" " alt="" coords="218,5,271,32"/>
+<area shape="poly" title=" " alt="" coords="261,45,272,75,278,108,278,278,271,304,255,325,233,342,211,355,209,351,230,338,251,322,266,301,273,277,273,108,267,76,256,47"/>
+<area shape="poly" title=" " alt="" coords="208,42,178,58,114,98,112,93,175,54,205,37"/>
+<area shape="rect" href="class_player.html" title=" " alt="" coords="151,263,210,289"/>
+<area shape="poly" title=" " alt="" coords="183,305,183,353,178,353,178,305"/>
+<area shape="rect" href="class_game_actor.html" title=" " alt="" coords="137,187,224,213"/>
+<area shape="poly" title=" " alt="" coords="183,228,183,262,178,262,178,228"/>
+<area shape="poly" title=" " alt="" coords="119,132,170,184,166,188,115,136"/>
+<area shape="rect" href="class_actor_info.html" title=" " alt="" coords="166,96,238,123"/>
+<area shape="poly" title=" " alt="" coords="198,138,186,187,181,185,193,137"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a27c564686eedefbcf0ce48775bb5709b" id="r_a27c564686eedefbcf0ce48775bb5709b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27c564686eedefbcf0ce48775bb5709b">SkillBase</a> (const float CT, const float CD, <a class="el" href="class_player.html">Player</a> *const pPlayer, const std::string iconName)</td></tr>
+<tr class="memdesc:a27c564686eedefbcf0ce48775bb5709b"><td class="mdescLeft">&#160;</td><td class="mdescRight">引数はフレーム単位  <br /></td></tr>
+<tr class="separator:a27c564686eedefbcf0ce48775bb5709b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a631efe8930e73d4be8035d3af4be14" id="r_a0a631efe8930e73d4be8035d3af4be14"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a631efe8930e73d4be8035d3af4be14">~SkillBase</a> ()</td></tr>
+<tr class="separator:a0a631efe8930e73d4be8035d3af4be14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5345080bec472ba355b6a699ceb6cd80" id="r_a5345080bec472ba355b6a699ceb6cd80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5345080bec472ba355b6a699ceb6cd80">Update</a> ()</td></tr>
+<tr class="separator:a5345080bec472ba355b6a699ceb6cd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f84abce31ab1f50a6cb378a4908359" id="r_a73f84abce31ab1f50a6cb378a4908359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73f84abce31ab1f50a6cb378a4908359">Activate</a> ()</td></tr>
+<tr class="separator:a73f84abce31ab1f50a6cb378a4908359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a122096488f25d3f8d07e51391f0785" id="r_a1a122096488f25d3f8d07e51391f0785"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a122096488f25d3f8d07e51391f0785">Draw</a> ()=0</td></tr>
+<tr class="separator:a1a122096488f25d3f8d07e51391f0785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc2bc928fccfb30289150548e5c876a" id="r_a1dc2bc928fccfb30289150548e5c876a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc2bc928fccfb30289150548e5c876a">DrawRangeDisplay</a> (float deg)=0</td></tr>
+<tr class="separator:a1dc2bc928fccfb30289150548e5c876a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e8951af36ccfcae7b939d402239739" id="r_ae0e8951af36ccfcae7b939d402239739"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0e8951af36ccfcae7b939d402239739">Release</a> ()=0</td></tr>
+<tr class="separator:ae0e8951af36ccfcae7b939d402239739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357d7f437ec2053e9e00b013aad9f8da" id="r_a357d7f437ec2053e9e00b013aad9f8da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a357d7f437ec2053e9e00b013aad9f8da">CanUse</a> () const</td></tr>
+<tr class="separator:a357d7f437ec2053e9e00b013aad9f8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7b9cc8c2c2d6b6eb3cd7e2dd79c53d" id="r_a6c7b9cc8c2c2d6b6eb3cd7e2dd79c53d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c7b9cc8c2c2d6b6eb3cd7e2dd79c53d">CanMove</a> () const</td></tr>
+<tr class="separator:a6c7b9cc8c2c2d6b6eb3cd7e2dd79c53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a3a3f584ae96840c5af27ff5603ca9" id="r_a48a3a3f584ae96840c5af27ff5603ca9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a3a3f584ae96840c5af27ff5603ca9">getCdPercentage</a> () const</td></tr>
+<tr class="separator:a48a3a3f584ae96840c5af27ff5603ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05c07a4281f7108ea8a80d5bc78ccc7" id="r_ab05c07a4281f7108ea8a80d5bc78ccc7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab05c07a4281f7108ea8a80d5bc78ccc7">getCtPercentage</a> () const</td></tr>
+<tr class="separator:ab05c07a4281f7108ea8a80d5bc78ccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7c70ae01be78ab6a7d96680997269e" id="r_a0d7c70ae01be78ab6a7d96680997269e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d7c70ae01be78ab6a7d96680997269e">IsInOperation</a> () const</td></tr>
+<tr class="separator:a0d7c70ae01be78ab6a7d96680997269e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215e74a452a9a596e04f7d68f946e686" id="r_a215e74a452a9a596e04f7d68f946e686"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a215e74a452a9a596e04f7d68f946e686">getIconName</a> () const</td></tr>
+<tr class="separator:a215e74a452a9a596e04f7d68f946e686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a27590dd8df1ef4a0dd2b749308ed78ab" id="r_a27590dd8df1ef4a0dd2b749308ed78ab"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27590dd8df1ef4a0dd2b749308ed78ab">ConvToSeconds</a> (float frames)</td></tr>
+<tr class="separator:a27590dd8df1ef4a0dd2b749308ed78ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d13faf19252f7af81a46ec08eb93f0d" id="r_a5d13faf19252f7af81a46ec08eb93f0d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d13faf19252f7af81a46ec08eb93f0d">ConvToFrames</a> (float seconds)</td></tr>
+<tr class="separator:a5d13faf19252f7af81a46ec08eb93f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+限定公開型</h2></td></tr>
+<tr class="memitem:a7ae3848a231c49c67608c2c015299a3e" id="r_a7ae3848a231c49c67608c2c015299a3e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae3848a231c49c67608c2c015299a3e">base_steps</a> { <a class="el" href="#a7ae3848a231c49c67608c2c015299a3ea967678f66c1e2f7d36f92a3760b7b7bb">INVOKED</a> = 0
+, <a class="el" href="#a7ae3848a231c49c67608c2c015299a3eaa897dbb0ad04db900d2cb42b2f50af5e">START_ATTACK</a>
+, <a class="el" href="#a7ae3848a231c49c67608c2c015299a3ea1f433a3017f559fde63f8827afca1310">END_ATTACK</a>
+ }</td></tr>
+<tr class="separator:a7ae3848a231c49c67608c2c015299a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9306d8b161565f9898bdfa5e55bdd8b1" id="r_a9306d8b161565f9898bdfa5e55bdd8b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9306d8b161565f9898bdfa5e55bdd8b1">action</a> ()=0</td></tr>
+<tr class="memdesc:a9306d8b161565f9898bdfa5e55bdd8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">スキル発動中の動作と処理の実装  <br /></td></tr>
+<tr class="separator:a9306d8b161565f9898bdfa5e55bdd8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83427e0b781f0a6cba458cf9a7b69e0" id="r_aa83427e0b781f0a6cba458cf9a7b69e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa83427e0b781f0a6cba458cf9a7b69e0">SwitchActionByStep</a> ()</td></tr>
+<tr class="memdesc:aa83427e0b781f0a6cba458cf9a7b69e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">各ステップの処理を呼び分ける  <br /></td></tr>
+<tr class="separator:aa83427e0b781f0a6cba458cf9a7b69e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb27b3b6ee985e9037ab33ee3276a65" id="r_a4bb27b3b6ee985e9037ab33ee3276a65"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bb27b3b6ee985e9037ab33ee3276a65">invokedStep</a> ()=0</td></tr>
+<tr class="memdesc:a4bb27b3b6ee985e9037ab33ee3276a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃前ステップの実装  <br /></td></tr>
+<tr class="separator:a4bb27b3b6ee985e9037ab33ee3276a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99178679debab735c6d01d56bbad210" id="r_aa99178679debab735c6d01d56bbad210"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa99178679debab735c6d01d56bbad210">startStep</a> ()=0</td></tr>
+<tr class="memdesc:aa99178679debab735c6d01d56bbad210"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃開始ステップの実装  <br /></td></tr>
+<tr class="separator:aa99178679debab735c6d01d56bbad210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8bd7e38e394a17c809e235780627fa" id="r_aed8bd7e38e394a17c809e235780627fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed8bd7e38e394a17c809e235780627fa">endStep</a> ()=0</td></tr>
+<tr class="memdesc:aed8bd7e38e394a17c809e235780627fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃終了後ステップの実装  <br /></td></tr>
+<tr class="separator:aed8bd7e38e394a17c809e235780627fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6702b04b2e07ce411bca5d3b1f12be3d" id="r_a6702b04b2e07ce411bca5d3b1f12be3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6702b04b2e07ce411bca5d3b1f12be3d">RegisterHitRange</a> (<a class="el" href="struct_attack_range_circle.html">AttackRangeCircle</a> c, <a class="el" href="struct_damage_data.html">DamageData</a> &amp;dmg)</td></tr>
+<tr class="separator:a6702b04b2e07ce411bca5d3b1f12be3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa53dedb76c014b56d731e7b8120553" id="r_a2fa53dedb76c014b56d731e7b8120553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fa53dedb76c014b56d731e7b8120553">RegisterHitRange</a> (<a class="el" href="struct_attack_range_quad.html">AttackRangeQuad</a> q, <a class="el" href="struct_damage_data.html">DamageData</a> &amp;dmg)</td></tr>
+<tr class="separator:a2fa53dedb76c014b56d731e7b8120553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46380a24b89bd2609c361f65ebf2381" id="r_ae46380a24b89bd2609c361f65ebf2381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae46380a24b89bd2609c361f65ebf2381">RegisterHitRange</a> (<a class="el" href="struct_attack_range_circuler_sector.html">AttackRangeCirculerSector</a> s, <a class="el" href="struct_damage_data.html">DamageData</a> &amp;dmg)</td></tr>
+<tr class="separator:ae46380a24b89bd2609c361f65ebf2381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f57f5996455e5770211e7dcd98ae9b" id="r_ac7f57f5996455e5770211e7dcd98ae9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7f57f5996455e5770211e7dcd98ae9b">GetPlayerTransform</a> ()</td></tr>
+<tr class="separator:ac7f57f5996455e5770211e7dcd98ae9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3599daa323813a84963e73e63fd0526f" id="r_a3599daa323813a84963e73e63fd0526f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3599daa323813a84963e73e63fd0526f">ResetInheritedSkillMembers</a> ()</td></tr>
+<tr class="memdesc:a3599daa323813a84963e73e63fd0526f"><td class="mdescLeft">&#160;</td><td class="mdescRight">必要なら継承先でこれをオーバーライドし、固有のメンバなどを初期化する  <br /></td></tr>
+<tr class="separator:a3599daa323813a84963e73e63fd0526f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:aeae95bbb48a61a045f14889701a54bdf" id="r_aeae95bbb48a61a045f14889701a54bdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeae95bbb48a61a045f14889701a54bdf">beginTransform_</a></td></tr>
+<tr class="separator:aeae95bbb48a61a045f14889701a54bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1791ef8331727422bb3bba8ab0846e" id="r_abb1791ef8331727422bb3bba8ab0846e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb1791ef8331727422bb3bba8ab0846e">sequence</a> {0}</td></tr>
+<tr class="separator:abb1791ef8331727422bb3bba8ab0846e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a4456cfdbb048552ec5eed9e3b1bcb" id="r_af0a4456cfdbb048552ec5eed9e3b1bcb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0a4456cfdbb048552ec5eed9e3b1bcb">steptime</a></td></tr>
+<tr class="separator:af0a4456cfdbb048552ec5eed9e3b1bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff91b03e575821b3c86214aec492c01e" id="r_aff91b03e575821b3c86214aec492c01e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff91b03e575821b3c86214aec492c01e">stepindex</a></td></tr>
+<tr class="separator:aff91b03e575821b3c86214aec492c01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecac031a7652f3d865707d582825cfea" id="r_aecac031a7652f3d865707d582825cfea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecac031a7652f3d865707d582825cfea">isStepChanged</a></td></tr>
+<tr class="separator:aecac031a7652f3d865707d582825cfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ad4f04b83b78966b3dce87639d0ce9" id="r_af9ad4f04b83b78966b3dce87639d0ce9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9ad4f04b83b78966b3dce87639d0ce9">IconImageName</a></td></tr>
+<tr class="memdesc:af9ad4f04b83b78966b3dce87639d0ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">UIクラス用、画像に使う名前  <br /></td></tr>
+<tr class="separator:af9ad4f04b83b78966b3dce87639d0ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3884153df0541b72a4e72a46c7502751" id="r_a3884153df0541b72a4e72a46c7502751"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3884153df0541b72a4e72a46c7502751">defaultCastTime_</a></td></tr>
+<tr class="separator:a3884153df0541b72a4e72a46c7502751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2571948f2d79567f716fc217db3260" id="r_a3f2571948f2d79567f716fc217db3260"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f2571948f2d79567f716fc217db3260">castTime_</a></td></tr>
+<tr class="separator:a3f2571948f2d79567f716fc217db3260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042b30e913e67f0d4d0c66f84d8240a3" id="r_a042b30e913e67f0d4d0c66f84d8240a3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a042b30e913e67f0d4d0c66f84d8240a3">defaultCoolDown_</a></td></tr>
+<tr class="separator:a042b30e913e67f0d4d0c66f84d8240a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b87f076b3355e8a436161e9472bdc7" id="r_a13b87f076b3355e8a436161e9472bdc7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13b87f076b3355e8a436161e9472bdc7">coolDown_</a></td></tr>
+<tr class="separator:a13b87f076b3355e8a436161e9472bdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7a0df95a70acbd21f25b6d015fdcf5" id="r_a3a7a0df95a70acbd21f25b6d015fdcf5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a7a0df95a70acbd21f25b6d015fdcf5">isInOperation_</a></td></tr>
+<tr class="separator:a3a7a0df95a70acbd21f25b6d015fdcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab161531456b013c52426de38c914338d" id="r_ab161531456b013c52426de38c914338d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab161531456b013c52426de38c914338d">pPlayer_</a></td></tr>
+<tr class="separator:ab161531456b013c52426de38c914338d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>プレイヤー用スキルの基礎クラス。各種パラメーターは一旦フレーム単位で指定。 各派生先のactionの中でstep毎に処理変える(switch-case)。必要なら専用のenum作る。 コンストラクタでCastTime・CoolDownの指定 sequenceのフレーム数指定を行うこと </p>
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00015">15</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a7ae3848a231c49c67608c2c015299a3e" name="a7ae3848a231c49c67608c2c015299a3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae3848a231c49c67608c2c015299a3e">&#9670;&#160;</a></span>base_steps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a7ae3848a231c49c67608c2c015299a3e">SkillBase::base_steps</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a7ae3848a231c49c67608c2c015299a3ea967678f66c1e2f7d36f92a3760b7b7bb" name="a7ae3848a231c49c67608c2c015299a3ea967678f66c1e2f7d36f92a3760b7b7bb"></a>INVOKED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7ae3848a231c49c67608c2c015299a3eaa897dbb0ad04db900d2cb42b2f50af5e" name="a7ae3848a231c49c67608c2c015299a3eaa897dbb0ad04db900d2cb42b2f50af5e"></a>START_ATTACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7ae3848a231c49c67608c2c015299a3ea1f433a3017f559fde63f8827afca1310" name="a7ae3848a231c49c67608c2c015299a3ea1f433a3017f559fde63f8827afca1310"></a>END_ATTACK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00028">28</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a27c564686eedefbcf0ce48775bb5709b" name="a27c564686eedefbcf0ce48775bb5709b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c564686eedefbcf0ce48775bb5709b">&#9670;&#160;</a></span>SkillBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SkillBase::SkillBase </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>CT</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>CD</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a> *const</td>          <td class="paramname"><span class="paramname"><em>pPlayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string</td>          <td class="paramname"><span class="paramname"><em>iconName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>引数はフレーム単位 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CT</td><td>使用にあたる時間</td></tr>
+    <tr><td class="paramname">CD</td><td>再使用時間</td></tr>
+    <tr><td class="paramname">pPlayer</td><td>プレイヤーのポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00007">7</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0a631efe8930e73d4be8035d3af4be14" name="a0a631efe8930e73d4be8035d3af4be14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a631efe8930e73d4be8035d3af4be14">&#9670;&#160;</a></span>~SkillBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SkillBase::~SkillBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a9306d8b161565f9898bdfa5e55bdd8b1" name="a9306d8b161565f9898bdfa5e55bdd8b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9306d8b161565f9898bdfa5e55bdd8b1">&#9670;&#160;</a></span>action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SkillBase::action </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スキル発動中の動作と処理の実装 </p>
+
+<p><a class="el" href="class_charge_skill.html#a14d1d278c50407bc0924702b0a3e30d4">ChargeSkill</a>, <a class="el" href="classtest_skill.html#a94d6f6f264dedb4328391048c7894e6f">testSkill</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_a9306d8b161565f9898bdfa5e55bdd8b1_icgraph.png" border="0" usemap="#aclass_skill_base_a9306d8b161565f9898bdfa5e55bdd8b1_icgraph" alt=""/></div>
+<map name="aclass_skill_base_a9306d8b161565f9898bdfa5e55bdd8b1_icgraph" id="aclass_skill_base_a9306d8b161565f9898bdfa5e55bdd8b1_icgraph">
+<area shape="rect" title="スキル発動中の動作と処理の実装" alt="" coords="179,5,298,32"/>
+<area shape="rect" href="class_skill_base.html#a5345080bec472ba355b6a699ceb6cd80" title=" " alt="" coords="5,5,131,32"/>
+<area shape="poly" title=" " alt="" coords="163,21,131,21,131,16,163,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73f84abce31ab1f50a6cb378a4908359" name="a73f84abce31ab1f50a6cb378a4908359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f84abce31ab1f50a6cb378a4908359">&#9670;&#160;</a></span>Activate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkillBase::Activate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00046">46</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_a73f84abce31ab1f50a6cb378a4908359_cgraph.png" border="0" usemap="#aclass_skill_base_a73f84abce31ab1f50a6cb378a4908359_cgraph" alt=""/></div>
+<map name="aclass_skill_base_a73f84abce31ab1f50a6cb378a4908359_cgraph" id="aclass_skill_base_a73f84abce31ab1f50a6cb378a4908359_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,136,61"/>
+<area shape="rect" href="class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401" title=" " alt="" coords="184,5,376,32"/>
+<area shape="poly" title=" " alt="" coords="136,36,168,32,169,37,136,42"/>
+<area shape="rect" href="class_skill_base.html#a3599daa323813a84963e73e63fd0526f" title="必要なら継承先でこれをオーバーライドし、固有のメンバなどを初期化する" alt="" coords="196,56,364,99"/>
+<area shape="poly" title=" " alt="" coords="136,54,181,61,180,66,136,60"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c7b9cc8c2c2d6b6eb3cd7e2dd79c53d" name="a6c7b9cc8c2c2d6b6eb3cd7e2dd79c53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7b9cc8c2c2d6b6eb3cd7e2dd79c53d">&#9670;&#160;</a></span>CanMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SkillBase::CanMove </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00098">98</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a357d7f437ec2053e9e00b013aad9f8da" name="a357d7f437ec2053e9e00b013aad9f8da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357d7f437ec2053e9e00b013aad9f8da">&#9670;&#160;</a></span>CanUse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SkillBase::CanUse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00097">97</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5d13faf19252f7af81a46ec08eb93f0d" name="a5d13faf19252f7af81a46ec08eb93f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d13faf19252f7af81a46ec08eb93f0d">&#9670;&#160;</a></span>ConvToFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float SkillBase::ConvToFrames </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>seconds</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00103">103</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a27590dd8df1ef4a0dd2b749308ed78ab" name="a27590dd8df1ef4a0dd2b749308ed78ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27590dd8df1ef4a0dd2b749308ed78ab">&#9670;&#160;</a></span>ConvToSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float SkillBase::ConvToSeconds </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>frames</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00102">102</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a1a122096488f25d3f8d07e51391f0785" name="a1a122096488f25d3f8d07e51391f0785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a122096488f25d3f8d07e51391f0785">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SkillBase::Draw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_charge_skill.html#aabe6017d4a54627035d62d8306131407">ChargeSkill</a>, <a class="el" href="classtest_skill.html#a928ad5e28e17e7baea5807ceb5dcd6e4">testSkill</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a1dc2bc928fccfb30289150548e5c876a" name="a1dc2bc928fccfb30289150548e5c876a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc2bc928fccfb30289150548e5c876a">&#9670;&#160;</a></span>DrawRangeDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SkillBase::DrawRangeDisplay </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_charge_skill.html#ad656af05ae6e13aa50a4357b63af5769">ChargeSkill</a>, <a class="el" href="classtest_skill.html#a6d96e0ac7838bd97205840d053863885">testSkill</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="aed8bd7e38e394a17c809e235780627fa" name="aed8bd7e38e394a17c809e235780627fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed8bd7e38e394a17c809e235780627fa">&#9670;&#160;</a></span>endStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SkillBase::endStep </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>攻撃終了後ステップの実装 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_aed8bd7e38e394a17c809e235780627fa_icgraph.png" border="0" usemap="#aclass_skill_base_aed8bd7e38e394a17c809e235780627fa_icgraph" alt=""/></div>
+<map name="aclass_skill_base_aed8bd7e38e394a17c809e235780627fa_icgraph" id="aclass_skill_base_aed8bd7e38e394a17c809e235780627fa_icgraph">
+<area shape="rect" title="攻撃終了後ステップの実装" alt="" coords="435,31,567,57"/>
+<area shape="rect" href="class_skill_base.html#aa83427e0b781f0a6cba458cf9a7b69e0" title="各ステップの処理を呼び分ける" alt="" coords="184,31,387,57"/>
+<area shape="poly" title=" " alt="" coords="420,47,388,47,388,41,420,41"/>
+<area shape="rect" href="class_charge_skill.html#a14d1d278c50407bc0924702b0a3e30d4" title="スキル発動中の動作と処理の実装" alt="" coords="5,5,136,32"/>
+<area shape="poly" title=" " alt="" coords="168,33,136,29,137,24,169,28"/>
+<area shape="rect" href="classtest_skill.html#a94d6f6f264dedb4328391048c7894e6f" title="スキル発動中の動作と処理の実装" alt="" coords="15,56,126,83"/>
+<area shape="poly" title=" " alt="" coords="169,60,127,65,126,60,168,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a48a3a3f584ae96840c5af27ff5603ca9" name="a48a3a3f584ae96840c5af27ff5603ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a3a3f584ae96840c5af27ff5603ca9">&#9670;&#160;</a></span>getCdPercentage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SkillBase::getCdPercentage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00057">57</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab05c07a4281f7108ea8a80d5bc78ccc7" name="ab05c07a4281f7108ea8a80d5bc78ccc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05c07a4281f7108ea8a80d5bc78ccc7">&#9670;&#160;</a></span>getCtPercentage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SkillBase::getCtPercentage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00062">62</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a215e74a452a9a596e04f7d68f946e686" name="a215e74a452a9a596e04f7d68f946e686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215e74a452a9a596e04f7d68f946e686">&#9670;&#160;</a></span>getIconName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SkillBase::getIconName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00104">104</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac7f57f5996455e5770211e7dcd98ae9b" name="ac7f57f5996455e5770211e7dcd98ae9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f57f5996455e5770211e7dcd98ae9b">&#9670;&#160;</a></span>GetPlayerTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a> SkillBase::GetPlayerTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00098">98</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_cgraph.png" border="0" usemap="#aclass_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_cgraph" alt=""/></div>
+<map name="aclass_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_cgraph" id="aclass_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,205,32"/>
+<area shape="rect" href="class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401" title=" " alt="" coords="253,5,445,32"/>
+<area shape="poly" title=" " alt="" coords="205,16,237,16,237,21,205,21"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_icgraph.png" border="0" usemap="#aclass_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_icgraph" alt=""/></div>
+<map name="aclass_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_icgraph" id="aclass_skill_base_ac7f57f5996455e5770211e7dcd98ae9b_icgraph">
+<area shape="rect" title=" " alt="" coords="258,31,457,57"/>
+<area shape="rect" href="class_charge_skill.html#ad656af05ae6e13aa50a4357b63af5769" title=" " alt="" coords="5,5,210,32"/>
+<area shape="poly" title=" " alt="" coords="242,35,210,32,211,26,243,30"/>
+<area shape="rect" href="classtest_skill.html#a6d96e0ac7838bd97205840d053863885" title=" " alt="" coords="15,56,200,83"/>
+<area shape="poly" title=" " alt="" coords="242,58,201,63,200,57,242,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4bb27b3b6ee985e9037ab33ee3276a65" name="a4bb27b3b6ee985e9037ab33ee3276a65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb27b3b6ee985e9037ab33ee3276a65">&#9670;&#160;</a></span>invokedStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SkillBase::invokedStep </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>攻撃前ステップの実装 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_a4bb27b3b6ee985e9037ab33ee3276a65_icgraph.png" border="0" usemap="#aclass_skill_base_a4bb27b3b6ee985e9037ab33ee3276a65_icgraph" alt=""/></div>
+<map name="aclass_skill_base_a4bb27b3b6ee985e9037ab33ee3276a65_icgraph" id="aclass_skill_base_a4bb27b3b6ee985e9037ab33ee3276a65_icgraph">
+<area shape="rect" title="攻撃前ステップの実装" alt="" coords="435,31,589,57"/>
+<area shape="rect" href="class_skill_base.html#aa83427e0b781f0a6cba458cf9a7b69e0" title="各ステップの処理を呼び分ける" alt="" coords="184,31,387,57"/>
+<area shape="poly" title=" " alt="" coords="420,47,388,47,388,41,420,41"/>
+<area shape="rect" href="class_charge_skill.html#a14d1d278c50407bc0924702b0a3e30d4" title="スキル発動中の動作と処理の実装" alt="" coords="5,5,136,32"/>
+<area shape="poly" title=" " alt="" coords="168,33,136,29,137,24,169,28"/>
+<area shape="rect" href="classtest_skill.html#a94d6f6f264dedb4328391048c7894e6f" title="スキル発動中の動作と処理の実装" alt="" coords="15,56,126,83"/>
+<area shape="poly" title=" " alt="" coords="169,60,127,65,126,60,168,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0d7c70ae01be78ab6a7d96680997269e" name="a0d7c70ae01be78ab6a7d96680997269e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7c70ae01be78ab6a7d96680997269e">&#9670;&#160;</a></span>IsInOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SkillBase::IsInOperation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00101">101</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6702b04b2e07ce411bca5d3b1f12be3d" name="a6702b04b2e07ce411bca5d3b1f12be3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6702b04b2e07ce411bca5d3b1f12be3d">&#9670;&#160;</a></span>RegisterHitRange() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkillBase::RegisterHitRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_attack_range_circle.html">AttackRangeCircle</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_damage_data.html">DamageData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dmg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00083">83</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_a6702b04b2e07ce411bca5d3b1f12be3d_cgraph.png" border="0" usemap="#aclass_skill_base_a6702b04b2e07ce411bca5d3b1f12be3d_cgraph" alt=""/></div>
+<map name="aclass_skill_base_a6702b04b2e07ce411bca5d3b1f12be3d_cgraph" id="aclass_skill_base_a6702b04b2e07ce411bca5d3b1f12be3d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,191,40"/>
+<area shape="rect" href="namespace_collision_manager.html#acf159e1233ae1cce72748ce833d49271" title=" " alt="" coords="239,5,415,48"/>
+<area shape="poly" title=" " alt="" coords="191,24,223,24,223,29,191,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae46380a24b89bd2609c361f65ebf2381" name="ae46380a24b89bd2609c361f65ebf2381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae46380a24b89bd2609c361f65ebf2381">&#9670;&#160;</a></span>RegisterHitRange() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkillBase::RegisterHitRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_attack_range_circuler_sector.html">AttackRangeCirculerSector</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_damage_data.html">DamageData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dmg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00093">93</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_ae46380a24b89bd2609c361f65ebf2381_cgraph.png" border="0" usemap="#aclass_skill_base_ae46380a24b89bd2609c361f65ebf2381_cgraph" alt=""/></div>
+<map name="aclass_skill_base_ae46380a24b89bd2609c361f65ebf2381_cgraph" id="aclass_skill_base_ae46380a24b89bd2609c361f65ebf2381_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,191,40"/>
+<area shape="rect" href="namespace_collision_manager.html#acf159e1233ae1cce72748ce833d49271" title=" " alt="" coords="239,5,415,48"/>
+<area shape="poly" title=" " alt="" coords="191,24,223,24,223,29,191,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2fa53dedb76c014b56d731e7b8120553" name="a2fa53dedb76c014b56d731e7b8120553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa53dedb76c014b56d731e7b8120553">&#9670;&#160;</a></span>RegisterHitRange() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkillBase::RegisterHitRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_attack_range_quad.html">AttackRangeQuad</a></td>          <td class="paramname"><span class="paramname"><em>q</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_damage_data.html">DamageData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dmg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00088">88</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_a2fa53dedb76c014b56d731e7b8120553_cgraph.png" border="0" usemap="#aclass_skill_base_a2fa53dedb76c014b56d731e7b8120553_cgraph" alt=""/></div>
+<map name="aclass_skill_base_a2fa53dedb76c014b56d731e7b8120553_cgraph" id="aclass_skill_base_a2fa53dedb76c014b56d731e7b8120553_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,191,40"/>
+<area shape="rect" href="namespace_collision_manager.html#acf159e1233ae1cce72748ce833d49271" title=" " alt="" coords="239,5,415,48"/>
+<area shape="poly" title=" " alt="" coords="191,24,223,24,223,29,191,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0e8951af36ccfcae7b939d402239739" name="ae0e8951af36ccfcae7b939d402239739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e8951af36ccfcae7b939d402239739">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SkillBase::Release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_charge_skill.html#a053e3d15d0505a8763512d6177830d6d">ChargeSkill</a>, <a class="el" href="classtest_skill.html#af90bc7817d1b96655407ef630dad415f">testSkill</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a3599daa323813a84963e73e63fd0526f" name="a3599daa323813a84963e73e63fd0526f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3599daa323813a84963e73e63fd0526f">&#9670;&#160;</a></span>ResetInheritedSkillMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkillBase::ResetInheritedSkillMembers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>必要なら継承先でこれをオーバーライドし、固有のメンバなどを初期化する </p>
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00103">103</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_a3599daa323813a84963e73e63fd0526f_icgraph.png" border="0" usemap="#aclass_skill_base_a3599daa323813a84963e73e63fd0526f_icgraph" alt=""/></div>
+<map name="aclass_skill_base_a3599daa323813a84963e73e63fd0526f_icgraph" id="aclass_skill_base_a3599daa323813a84963e73e63fd0526f_icgraph">
+<area shape="rect" title="必要なら継承先でこれをオーバーライドし、固有のメンバなどを初期化する" alt="" coords="184,5,351,48"/>
+<area shape="rect" href="class_skill_base.html#a73f84abce31ab1f50a6cb378a4908359" title=" " alt="" coords="5,13,136,40"/>
+<area shape="poly" title=" " alt="" coords="168,29,136,29,136,24,168,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa99178679debab735c6d01d56bbad210" name="aa99178679debab735c6d01d56bbad210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99178679debab735c6d01d56bbad210">&#9670;&#160;</a></span>startStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SkillBase::startStep </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>攻撃開始ステップの実装 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_aa99178679debab735c6d01d56bbad210_icgraph.png" border="0" usemap="#aclass_skill_base_aa99178679debab735c6d01d56bbad210_icgraph" alt=""/></div>
+<map name="aclass_skill_base_aa99178679debab735c6d01d56bbad210_icgraph" id="aclass_skill_base_aa99178679debab735c6d01d56bbad210_icgraph">
+<area shape="rect" title="攻撃開始ステップの実装" alt="" coords="435,31,572,57"/>
+<area shape="rect" href="class_skill_base.html#aa83427e0b781f0a6cba458cf9a7b69e0" title="各ステップの処理を呼び分ける" alt="" coords="184,31,387,57"/>
+<area shape="poly" title=" " alt="" coords="420,47,388,47,388,41,420,41"/>
+<area shape="rect" href="class_charge_skill.html#a14d1d278c50407bc0924702b0a3e30d4" title="スキル発動中の動作と処理の実装" alt="" coords="5,5,136,32"/>
+<area shape="poly" title=" " alt="" coords="168,33,136,29,137,24,169,28"/>
+<area shape="rect" href="classtest_skill.html#a94d6f6f264dedb4328391048c7894e6f" title="スキル発動中の動作と処理の実装" alt="" coords="15,56,126,83"/>
+<area shape="poly" title=" " alt="" coords="169,60,127,65,126,60,168,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa83427e0b781f0a6cba458cf9a7b69e0" name="aa83427e0b781f0a6cba458cf9a7b69e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83427e0b781f0a6cba458cf9a7b69e0">&#9670;&#160;</a></span>SwitchActionByStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkillBase::SwitchActionByStep </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>各ステップの処理を呼び分ける </p>
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_cgraph.png" border="0" usemap="#aclass_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_cgraph" alt=""/></div>
+<map name="aclass_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_cgraph" id="aclass_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_cgraph">
+<area shape="rect" title="各ステップの処理を呼び分ける" alt="" coords="5,56,209,83"/>
+<area shape="rect" href="class_skill_base.html#aed8bd7e38e394a17c809e235780627fa" title="攻撃終了後ステップの実装" alt="" coords="268,5,400,32"/>
+<area shape="poly" title=" " alt="" coords="170,53,256,33,257,39,171,58"/>
+<area shape="rect" href="class_skill_base.html#a4bb27b3b6ee985e9037ab33ee3276a65" title="攻撃前ステップの実装" alt="" coords="257,56,411,83"/>
+<area shape="poly" title=" " alt="" coords="209,67,241,67,241,72,209,72"/>
+<area shape="rect" href="class_skill_base.html#aa99178679debab735c6d01d56bbad210" title="攻撃開始ステップの実装" alt="" coords="265,107,403,133"/>
+<area shape="poly" title=" " alt="" coords="171,81,257,100,256,105,170,86"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_icgraph.png" border="0" usemap="#aclass_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_icgraph" alt=""/></div>
+<map name="aclass_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_icgraph" id="aclass_skill_base_aa83427e0b781f0a6cba458cf9a7b69e0_icgraph">
+<area shape="rect" title="各ステップの処理を呼び分ける" alt="" coords="184,31,387,57"/>
+<area shape="rect" href="class_charge_skill.html#a14d1d278c50407bc0924702b0a3e30d4" title="スキル発動中の動作と処理の実装" alt="" coords="5,5,136,32"/>
+<area shape="poly" title=" " alt="" coords="168,33,136,29,137,24,169,28"/>
+<area shape="rect" href="classtest_skill.html#a94d6f6f264dedb4328391048c7894e6f" title="スキル発動中の動作と処理の実装" alt="" coords="15,56,126,83"/>
+<area shape="poly" title=" " alt="" coords="169,60,127,65,126,60,168,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5345080bec472ba355b6a699ceb6cd80" name="a5345080bec472ba355b6a699ceb6cd80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5345080bec472ba355b6a699ceb6cd80">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SkillBase::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a> の <a class="el" href="_skill_base_8cpp_source.html#l00021">21</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_skill_base_a5345080bec472ba355b6a699ceb6cd80_cgraph.png" border="0" usemap="#aclass_skill_base_a5345080bec472ba355b6a699ceb6cd80_cgraph" alt=""/></div>
+<map name="aclass_skill_base_a5345080bec472ba355b6a699ceb6cd80_cgraph" id="aclass_skill_base_a5345080bec472ba355b6a699ceb6cd80_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,131,32"/>
+<area shape="rect" href="class_skill_base.html#a9306d8b161565f9898bdfa5e55bdd8b1" title="スキル発動中の動作と処理の実装" alt="" coords="179,5,298,32"/>
+<area shape="poly" title=" " alt="" coords="131,16,163,16,163,21,131,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aeae95bbb48a61a045f14889701a54bdf" name="aeae95bbb48a61a045f14889701a54bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae95bbb48a61a045f14889701a54bdf">&#9670;&#160;</a></span>beginTransform_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a> SkillBase::beginTransform_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00023">23</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3f2571948f2d79567f716fc217db3260" name="a3f2571948f2d79567f716fc217db3260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2571948f2d79567f716fc217db3260">&#9670;&#160;</a></span>castTime_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SkillBase::castTime_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00065">65</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a13b87f076b3355e8a436161e9472bdc7" name="a13b87f076b3355e8a436161e9472bdc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b87f076b3355e8a436161e9472bdc7">&#9670;&#160;</a></span>coolDown_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SkillBase::coolDown_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00067">67</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3884153df0541b72a4e72a46c7502751" name="a3884153df0541b72a4e72a46c7502751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3884153df0541b72a4e72a46c7502751">&#9670;&#160;</a></span>defaultCastTime_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SkillBase::defaultCastTime_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00064">64</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a042b30e913e67f0d4d0c66f84d8240a3" name="a042b30e913e67f0d4d0c66f84d8240a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042b30e913e67f0d4d0c66f84d8240a3">&#9670;&#160;</a></span>defaultCoolDown_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SkillBase::defaultCoolDown_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00066">66</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af9ad4f04b83b78966b3dce87639d0ce9" name="af9ad4f04b83b78966b3dce87639d0ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ad4f04b83b78966b3dce87639d0ce9">&#9670;&#160;</a></span>IconImageName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SkillBase::IconImageName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>UIクラス用、画像に使う名前 </p>
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00036">36</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3a7a0df95a70acbd21f25b6d015fdcf5" name="a3a7a0df95a70acbd21f25b6d015fdcf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7a0df95a70acbd21f25b6d015fdcf5">&#9670;&#160;</a></span>isInOperation_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SkillBase::isInOperation_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00068">68</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aecac031a7652f3d865707d582825cfea" name="aecac031a7652f3d865707d582825cfea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecac031a7652f3d865707d582825cfea">&#9670;&#160;</a></span>isStepChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SkillBase::isStepChanged</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00027">27</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab161531456b013c52426de38c914338d" name="ab161531456b013c52426de38c914338d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab161531456b013c52426de38c914338d">&#9670;&#160;</a></span>pPlayer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player.html">Player</a>* SkillBase::pPlayer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00069">69</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abb1791ef8331727422bb3bba8ab0846e" name="abb1791ef8331727422bb3bba8ab0846e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1791ef8331727422bb3bba8ab0846e">&#9670;&#160;</a></span>sequence</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; SkillBase::sequence {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00024">24</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aff91b03e575821b3c86214aec492c01e" name="aff91b03e575821b3c86214aec492c01e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff91b03e575821b3c86214aec492c01e">&#9670;&#160;</a></span>stepindex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SkillBase::stepindex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00026">26</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af0a4456cfdbb048552ec5eed9e3b1bcb" name="af0a4456cfdbb048552ec5eed9e3b1bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a4456cfdbb048552ec5eed9e3b1bcb">&#9670;&#160;</a></span>steptime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SkillBase::steptime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_skill_base_8h_source.html">SkillBase.h</a> の <a class="el" href="_skill_base_8h_source.html#l00025">25</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/sources/<a class="el" href="_skill_base_8h_source.html">SkillBase.h</a></li>
+<li>SoR/sources/<a class="el" href="_skill_base_8cpp_source.html">SkillBase.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_skill_base.html">SkillBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

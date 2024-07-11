@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/Input.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_input_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Input.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="_input_8h.html#a1d7ab29fdefabdb4e7e7cd27ac4c9934">    2</a></span><span class="preprocessor">#define DIRECTINPUT_VERSION 0x0800</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;dInput.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;DirectXMath.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;XInput.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma comment(lib, &quot;dxguid.lib&quot;)</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma comment(lib, &quot;dInput8.lib&quot;)</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma comment(lib, &quot;Xinput.lib&quot;)</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using namespace </span>DirectX;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//DirectInputを使ったキーボード入力処理</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_input.html">Input</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//初期化</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">//引数：hWnd   ウィンドウハンドル</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_input.html#a15225195dae88be602c8f38f0ed720b9">Initialize</a>(HWND hWnd);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">//更新</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_input.html#af80dcfde6dbfe39bf3bc0345c75595ce">Update</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">//キーが押されているか調べる</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//引数：keyCode    調べたいキーのコード</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//戻値：押されていればtrue</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#ab9f5815c042daa91a5e96395003514a0">IsKey</a>(<span class="keywordtype">int</span> keyCode);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//キーを今押したか調べる（押しっぱなしは無効）</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//引数：keyCode    調べたいキーのコード</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//戻値：押した瞬間だったらtrue</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#ae116436a4dac338a8050710e32ce8261">IsKeyDown</a>(<span class="keywordtype">int</span> keyCode);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">//キーを今放したか調べる</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//引数：keyCode    調べたいキーのコード</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">//戻値：放した瞬間だったらtrue</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#a9795ac97f7e38774509cbb3db0861679">IsKeyUp</a>(<span class="keywordtype">int</span> keyCode);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">//マウスのボタンが押されているか調べる</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">//引数：buttonCode 調べたいボタンの番号</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">//戻値：押されていればtrue</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#a3140371f1a8cd913577e59589078b86d">IsMouseButton</a>(<span class="keywordtype">int</span> buttonCode);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">//マウスのボタンを今押したか調べる（押しっぱなしは無効）</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">//引数：buttonCode 調べたいボタンの番号</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">//戻値：押した瞬間だったらtrue</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#a73504d2d922e0f12f04af1fb4819c9bf">IsMouseButtonDown</a>(<span class="keywordtype">int</span> buttonCode);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">//マウスのボタンを今放したか調べる</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">//引数：buttonCode 調べたいボタンの番号</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">//戻値：放した瞬間だったらtrue</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#af98ccc3b820094f8c77c076637ba2abc">IsMouseButtonUp</a>(<span class="keywordtype">int</span> buttonCode);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">//マウスカーソルの位置を取得</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">//戻値：マウスカーソルの位置</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    XMFLOAT3 <a class="code hl_function" href="namespace_input.html#a165471717f446745e298fdfafe0f8ef5">GetMousePosition</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">//マウスカーソルの位置をセット</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">//引数：マウスカーソルの位置</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_input.html#a640a00013ea81830dca7117bfdd40318">SetMousePosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">//そのフレームでのマウスの移動量を取得</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">//戻値：X,Y マウスの移動量　／　Z,ホイールの回転量</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    XMFLOAT3 <a class="code hl_function" href="namespace_input.html#a1938f0c088afe4b2d176bab7ceeeafd9">GetMouseMove</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">//コントローラーのボタンが押されているか調べる</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">//引数：buttonCode 調べたいボタンの番号</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">//戻値：押されていればtrue</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#a8c006403cfda4bd6f56460a8ca4967e3">IsPadButton</a>(<span class="keywordtype">int</span> buttonCode, <span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">//コントローラーのボタンを今押したか調べる（押しっぱなしは無効）</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">//引数：buttonCode 調べたいボタンの番号</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">//戻値：押した瞬間だったらtrue</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#a20c3de905bed1a150b13d569aafc3621">IsPadButtonDown</a>(<span class="keywordtype">int</span> buttonCode, <span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">//コントローラーのボタンを今放したか調べる</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">//引数：buttonCode 調べたいボタンの番号</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">//戻値：放した瞬間だったらtrue</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_input.html#a68df5126535fb9523bd8eae6468b7c3d">IsPadButtonUp</a>(<span class="keywordtype">int</span> buttonCode, <span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">//左スティックの傾きを取得</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">//戻値:傾き具合（-1〜1）</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    XMFLOAT3 <a class="code hl_function" href="namespace_input.html#aa6bb30277a4080b1a4d055f68a91148f">GetPadStickL</a>(<span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//右スティックの傾きを取得</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">//戻値:傾き具合（-1〜1）</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    XMFLOAT3 <a class="code hl_function" href="namespace_input.html#abec49888ac31e14387bdd2dbd3978334">GetPadStickR</a>(<span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">//左トリガーの押し込み具合を取得</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">//戻値:押し込み具合（0〜1）</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">float</span>       <a class="code hl_function" href="namespace_input.html#af6571d57a16a02d2d66e1751d7856cb6">GetPadTrrigerL</a>(<span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">//右トリガーの押し込み具合を取得</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">//戻値:押し込み具合（0〜1）</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">float</span>       <a class="code hl_function" href="namespace_input.html#a1cc7e2e5539b257744b5c7b3006b0b58">GetPadTrrigerR</a>(<span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">//振動させる</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_input.html#a65a7e93d591f91343f7a112f2d9adb92">SetPadVibration</a>(<span class="keywordtype">int</span> l, <span class="keywordtype">int</span> r, <span class="keywordtype">int</span> padID = 0);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">//開放</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_input.html#a42588aeb5f0bf0457704df212f6c1357">Release</a>();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+<div class="ttc" id="anamespace_input_html"><div class="ttname"><a href="namespace_input.html">Input</a></div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00004">Input.cpp:5</a></div></div>
+<div class="ttc" id="anamespace_input_html_a15225195dae88be602c8f38f0ed720b9"><div class="ttname"><a href="namespace_input.html#a15225195dae88be602c8f38f0ed720b9">Input::Initialize</a></div><div class="ttdeci">void Initialize(HWND hWnd)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00032">Input.cpp:32</a></div></div>
+<div class="ttc" id="anamespace_input_html_a165471717f446745e298fdfafe0f8ef5"><div class="ttname"><a href="namespace_input.html#a165471717f446745e298fdfafe0f8ef5">Input::GetMousePosition</a></div><div class="ttdeci">XMFLOAT3 GetMousePosition()</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00161">Input.cpp:161</a></div></div>
+<div class="ttc" id="anamespace_input_html_a1938f0c088afe4b2d176bab7ceeeafd9"><div class="ttname"><a href="namespace_input.html#a1938f0c088afe4b2d176bab7ceeeafd9">Input::GetMouseMove</a></div><div class="ttdeci">XMFLOAT3 GetMouseMove()</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00176">Input.cpp:176</a></div></div>
+<div class="ttc" id="anamespace_input_html_a1cc7e2e5539b257744b5c7b3006b0b58"><div class="ttname"><a href="namespace_input.html#a1cc7e2e5539b257744b5c7b3006b0b58">Input::GetPadTrrigerR</a></div><div class="ttdeci">float GetPadTrrigerR(int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00275">Input.cpp:275</a></div></div>
+<div class="ttc" id="anamespace_input_html_a20c3de905bed1a150b13d569aafc3621"><div class="ttname"><a href="namespace_input.html#a20c3de905bed1a150b13d569aafc3621">Input::IsPadButtonDown</a></div><div class="ttdeci">bool IsPadButtonDown(int buttonCode, int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00196">Input.cpp:196</a></div></div>
+<div class="ttc" id="anamespace_input_html_a3140371f1a8cd913577e59589078b86d"><div class="ttname"><a href="namespace_input.html#a3140371f1a8cd913577e59589078b86d">Input::IsMouseButton</a></div><div class="ttdeci">bool IsMouseButton(int buttonCode)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00128">Input.cpp:128</a></div></div>
+<div class="ttc" id="anamespace_input_html_a42588aeb5f0bf0457704df212f6c1357"><div class="ttname"><a href="namespace_input.html#a42588aeb5f0bf0457704df212f6c1357">Input::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00078">Input.cpp:78</a></div></div>
+<div class="ttc" id="anamespace_input_html_a640a00013ea81830dca7117bfdd40318"><div class="ttname"><a href="namespace_input.html#a640a00013ea81830dca7117bfdd40318">Input::SetMousePosition</a></div><div class="ttdeci">void SetMousePosition(int x, int y)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00168">Input.cpp:168</a></div></div>
+<div class="ttc" id="anamespace_input_html_a65a7e93d591f91343f7a112f2d9adb92"><div class="ttname"><a href="namespace_input.html#a65a7e93d591f91343f7a112f2d9adb92">Input::SetPadVibration</a></div><div class="ttdeci">void SetPadVibration(int l, int r, int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00281">Input.cpp:281</a></div></div>
+<div class="ttc" id="anamespace_input_html_a68df5126535fb9523bd8eae6468b7c3d"><div class="ttname"><a href="namespace_input.html#a68df5126535fb9523bd8eae6468b7c3d">Input::IsPadButtonUp</a></div><div class="ttdeci">bool IsPadButtonUp(int buttonCode, int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00207">Input.cpp:207</a></div></div>
+<div class="ttc" id="anamespace_input_html_a73504d2d922e0f12f04af1fb4819c9bf"><div class="ttname"><a href="namespace_input.html#a73504d2d922e0f12f04af1fb4819c9bf">Input::IsMouseButtonDown</a></div><div class="ttdeci">bool IsMouseButtonDown(int buttonCode)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00139">Input.cpp:139</a></div></div>
+<div class="ttc" id="anamespace_input_html_a8c006403cfda4bd6f56460a8ca4967e3"><div class="ttname"><a href="namespace_input.html#a8c006403cfda4bd6f56460a8ca4967e3">Input::IsPadButton</a></div><div class="ttdeci">bool IsPadButton(int buttonCode, int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00186">Input.cpp:186</a></div></div>
+<div class="ttc" id="anamespace_input_html_a9795ac97f7e38774509cbb3db0861679"><div class="ttname"><a href="namespace_input.html#a9795ac97f7e38774509cbb3db0861679">Input::IsKeyUp</a></div><div class="ttdeci">bool IsKeyUp(int keyCode)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00114">Input.cpp:114</a></div></div>
+<div class="ttc" id="anamespace_input_html_aa6bb30277a4080b1a4d055f68a91148f"><div class="ttname"><a href="namespace_input.html#aa6bb30277a4080b1a4d055f68a91148f">Input::GetPadStickL</a></div><div class="ttdeci">XMFLOAT3 GetPadStickL(int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00253">Input.cpp:253</a></div></div>
+<div class="ttc" id="anamespace_input_html_ab9f5815c042daa91a5e96395003514a0"><div class="ttname"><a href="namespace_input.html#ab9f5815c042daa91a5e96395003514a0">Input::IsKey</a></div><div class="ttdeci">bool IsKey(int keyCode)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00090">Input.cpp:90</a></div></div>
+<div class="ttc" id="anamespace_input_html_abec49888ac31e14387bdd2dbd3978334"><div class="ttname"><a href="namespace_input.html#abec49888ac31e14387bdd2dbd3978334">Input::GetPadStickR</a></div><div class="ttdeci">XMFLOAT3 GetPadStickR(int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00261">Input.cpp:261</a></div></div>
+<div class="ttc" id="anamespace_input_html_ae116436a4dac338a8050710e32ce8261"><div class="ttname"><a href="namespace_input.html#ae116436a4dac338a8050710e32ce8261">Input::IsKeyDown</a></div><div class="ttdeci">bool IsKeyDown(int keyCode)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00102">Input.cpp:102</a></div></div>
+<div class="ttc" id="anamespace_input_html_af6571d57a16a02d2d66e1751d7856cb6"><div class="ttname"><a href="namespace_input.html#af6571d57a16a02d2d66e1751d7856cb6">Input::GetPadTrrigerL</a></div><div class="ttdeci">float GetPadTrrigerL(int padID)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00269">Input.cpp:269</a></div></div>
+<div class="ttc" id="anamespace_input_html_af80dcfde6dbfe39bf3bc0345c75595ce"><div class="ttname"><a href="namespace_input.html#af80dcfde6dbfe39bf3bc0345c75595ce">Input::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00054">Input.cpp:54</a></div></div>
+<div class="ttc" id="anamespace_input_html_af98ccc3b820094f8c77c076637ba2abc"><div class="ttname"><a href="namespace_input.html#af98ccc3b820094f8c77c076637ba2abc">Input::IsMouseButtonUp</a></div><div class="ttdeci">bool IsMouseButtonUp(int buttonCode)</div><div class="ttdef"><b>Definition</b> <a href="_input_8cpp_source.html#l00150">Input.cpp:150</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_input_8h.html">Input.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/SphereCollider.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_sphere_collider_8cpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SphereCollider.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_sphere_collider_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_sphere_collider_8h.html">SphereCollider.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_box_collider_8h.html">BoxCollider.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_model_8h.html">Model.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//コンストラクタ（当たり判定の作成）</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//引数：basePos    当たり判定の中心位置（ゲームオブジェクトの原点から見た位置）</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//引数：size   当たり判定のサイズ</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_sphere_collider.html#a31ece50d6faa1d87d923866ccb2c59e8">    8</a></span><a class="code hl_friend" href="class_collider.html#a15793375868d0302266e8d1ca58e3cf2">SphereCollider::SphereCollider</a>(XMFLOAT3 center, <span class="keywordtype">float</span> radius)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_variable" href="class_collider.html#a9fb9bbe1d075c073eaa3dca93c56295c">center_</a> = center;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_variable" href="class_collider.html#a8aaa5a793cc1937457e36a66a89e7ebf">size_</a> = XMFLOAT3(radius, radius, radius);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_variable" href="class_collider.html#aa626547bf74d3b1bdeaf22eef07f82f3">type_</a> = <a class="code hl_enumvalue" href="_collider_8h.html#a7f138e75fc3cc79e825c39e040690395abe21a337359c7eec0d671071c6c2b9a9">COLLIDER_CIRCLE</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">//リリース時は判定枠は表示しない</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">//テスト表示用判定枠</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_variable" href="class_collider.html#a9483829a733fc43dd2094c6e61b6e7b2">hDebugModel_</a> = <a class="code hl_function" href="namespace_model.html#a69443687c12bb12394ae8bf6a5c22e44">Model::Load</a>(<span class="stringliteral">&quot;DebugCollision/sphereCollider.fbx&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//接触判定</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//引数：target 相手の当たり判定</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//戻値：接触してればtrue</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">bool</span> SphereCollider::IsHit(<a class="code hl_class" href="class_collider.html">Collider</a>* target)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (target-&gt;<a class="code hl_variable" href="class_collider.html#aa626547bf74d3b1bdeaf22eef07f82f3">type_</a> == <a class="code hl_enumvalue" href="_collider_8h.html#a7f138e75fc3cc79e825c39e040690395ac78dc738c4687ff83c09b345f02aff03">COLLIDER_BOX</a>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_collider.html#acc4ef44a6068825202e070cc59eb447c">IsHitBoxVsCircle</a>((<a class="code hl_class" href="class_box_collider.html">BoxCollider</a>*)target, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_collider.html#aca890d5658306f7c18fefc7c539091be">IsHitCircleVsCircle</a>((<a class="code hl_class" href="class_sphere_collider.html">SphereCollider</a>*)target, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+<div class="ttc" id="a_box_collider_8h_html"><div class="ttname"><a href="_box_collider_8h.html">BoxCollider.h</a></div></div>
+<div class="ttc" id="a_collider_8h_html_a7f138e75fc3cc79e825c39e040690395abe21a337359c7eec0d671071c6c2b9a9"><div class="ttname"><a href="_collider_8h.html#a7f138e75fc3cc79e825c39e040690395abe21a337359c7eec0d671071c6c2b9a9">COLLIDER_CIRCLE</a></div><div class="ttdeci">@ COLLIDER_CIRCLE</div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00017">Collider.h:16</a></div></div>
+<div class="ttc" id="a_collider_8h_html_a7f138e75fc3cc79e825c39e040690395ac78dc738c4687ff83c09b345f02aff03"><div class="ttname"><a href="_collider_8h.html#a7f138e75fc3cc79e825c39e040690395ac78dc738c4687ff83c09b345f02aff03">COLLIDER_BOX</a></div><div class="ttdeci">@ COLLIDER_BOX</div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00015">Collider.h:15</a></div></div>
+<div class="ttc" id="a_model_8h_html"><div class="ttname"><a href="_model_8h.html">Model.h</a></div></div>
+<div class="ttc" id="a_sphere_collider_8h_html"><div class="ttname"><a href="_sphere_collider_8h.html">SphereCollider.h</a></div></div>
+<div class="ttc" id="aclass_box_collider_html"><div class="ttname"><a href="class_box_collider.html">BoxCollider</a></div><div class="ttdef"><b>Definition</b> <a href="_box_collider_8h_source.html#l00008">BoxCollider.h:9</a></div></div>
+<div class="ttc" id="aclass_collider_html"><div class="ttname"><a href="class_collider.html">Collider</a></div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00022">Collider.h:23</a></div></div>
+<div class="ttc" id="aclass_collider_html_a15793375868d0302266e8d1ca58e3cf2"><div class="ttname"><a href="class_collider.html#a15793375868d0302266e8d1ca58e3cf2">Collider::SphereCollider</a></div><div class="ttdeci">friend class SphereCollider</div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00026">Collider.h:26</a></div></div>
+<div class="ttc" id="aclass_collider_html_a8aaa5a793cc1937457e36a66a89e7ebf"><div class="ttname"><a href="class_collider.html#a8aaa5a793cc1937457e36a66a89e7ebf">Collider::size_</a></div><div class="ttdeci">XMFLOAT3 size_</div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00032">Collider.h:32</a></div></div>
+<div class="ttc" id="aclass_collider_html_a9483829a733fc43dd2094c6e61b6e7b2"><div class="ttname"><a href="class_collider.html#a9483829a733fc43dd2094c6e61b6e7b2">Collider::hDebugModel_</a></div><div class="ttdeci">int hDebugModel_</div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00033">Collider.h:33</a></div></div>
+<div class="ttc" id="aclass_collider_html_a9fb9bbe1d075c073eaa3dca93c56295c"><div class="ttname"><a href="class_collider.html#a9fb9bbe1d075c073eaa3dca93c56295c">Collider::center_</a></div><div class="ttdeci">XMFLOAT3 center_</div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00031">Collider.h:31</a></div></div>
+<div class="ttc" id="aclass_collider_html_aa626547bf74d3b1bdeaf22eef07f82f3"><div class="ttname"><a href="class_collider.html#aa626547bf74d3b1bdeaf22eef07f82f3">Collider::type_</a></div><div class="ttdeci">ColliderType type_</div><div class="ttdef"><b>Definition</b> <a href="_collider_8h_source.html#l00030">Collider.h:30</a></div></div>
+<div class="ttc" id="aclass_collider_html_aca890d5658306f7c18fefc7c539091be"><div class="ttname"><a href="class_collider.html#aca890d5658306f7c18fefc7c539091be">Collider::IsHitCircleVsCircle</a></div><div class="ttdeci">bool IsHitCircleVsCircle(SphereCollider *circleA, SphereCollider *circleB)</div><div class="ttdef"><b>Definition</b> <a href="_collider_8cpp_source.html#l00069">Collider.cpp:69</a></div></div>
+<div class="ttc" id="aclass_collider_html_acc4ef44a6068825202e070cc59eb447c"><div class="ttname"><a href="class_collider.html#acc4ef44a6068825202e070cc59eb447c">Collider::IsHitBoxVsCircle</a></div><div class="ttdeci">bool IsHitBoxVsCircle(BoxCollider *box, SphereCollider *sphere)</div><div class="ttdef"><b>Definition</b> <a href="_collider_8cpp_source.html#l00045">Collider.cpp:45</a></div></div>
+<div class="ttc" id="aclass_sphere_collider_html"><div class="ttname"><a href="class_sphere_collider.html">SphereCollider</a></div><div class="ttdef"><b>Definition</b> <a href="_sphere_collider_8h_source.html#l00008">SphereCollider.h:9</a></div></div>
+<div class="ttc" id="anamespace_model_html_a69443687c12bb12394ae8bf6a5c22e44"><div class="ttname"><a href="namespace_model.html#a69443687c12bb12394ae8bf6a5c22e44">Model::Load</a></div><div class="ttdeci">int Load(std::string fileName)</div><div class="ttdef"><b>Definition</b> <a href="_model_8cpp_source.html#l00017">Model.cpp:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_sphere_collider_8cpp.html">SphereCollider.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<map id="Sprite::Load" name="Sprite::Load">
+<area shape="rect" id="Node000001" title=" " alt="" coords="578,157,670,184"/>
+<area shape="rect" id="Node000002" href="$namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="438,157,530,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="563,173,531,173,531,168,563,168"/>
+<area shape="rect" id="Node000003" href="$class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
+<area shape="rect" id="Node000004" href="$class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
+<area shape="rect" id="Node000005" href="$namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
+<area shape="rect" id="Node000007" href="$class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
+<area shape="rect" id="Node000008" href="$class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="463,197,431,225,391,249,335,267,276,278,219,282,168,283,168,278,219,277,275,272,333,262,389,244,428,221,459,193"/>
+<area shape="rect" id="Node000009" href="$class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
+<area shape="rect" id="Node000011" href="$class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="470,199,438,246,416,271,392,293,357,311,354,306,388,288,412,267,434,243,466,196"/>
+<area shape="rect" id="Node000006" href="$class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
+<area shape="rect" id="Node000010" href="$class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
+</map>

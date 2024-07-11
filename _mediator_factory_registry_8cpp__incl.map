@@ -1,0 +1,18 @@
+<map id="SoR/sources/MediatorFactoryRegistry.cpp" name="SoR/sources/MediatorFactoryRegistry.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="199,5,394,48"/>
+<area shape="rect" id="Node000002" href="$_mediator_factory_registry_8h.html" title=" " alt="" coords="5,96,180,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,51,139,92,138,87,243,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="204,96,269,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="283,50,257,85,253,82,279,47"/>
+<area shape="rect" id="Node000007" href="$_mediator_factory_8h.html" title=" " alt="" coords="293,96,420,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="314,47,340,82,336,85,310,50"/>
+<area shape="rect" id="Node000008" href="$_enemy_type_8h.html" title=" " alt="" coords="443,96,545,123"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="348,46,450,87,448,92,346,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="14,171,67,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,125,60,160,56,157,81,122"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="91,171,201,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="104,122,130,157,125,160,100,125"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="273,171,341,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="131,121,259,164,257,169,129,126"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="350,125,326,159,322,156,346,122"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="VFX::Draw" name="VFX::Draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,88,83"/>
+<area shape="rect" id="Node000002" href="$namespace_camera.html#a4c275fe841c631f7a6cc61606befbf86" title=" " alt="" coords="136,5,317,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,55,135,41,161,34,162,39,136,47,89,60"/>
+<area shape="rect" id="Node000003" href="$namespace_direct3_d.html#ad0108ebd1b00c9884850eb9c51b72153" title=" " alt="" coords="144,56,309,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,67,129,67,129,72,88,72"/>
+<area shape="rect" id="Node000004" href="$namespace_direct3_d.html#a2e24a5701dc5e0728ffccc721c690bd4" title=" " alt="" coords="156,107,297,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="89,78,136,92,162,99,161,105,135,97,87,84"/>
+</map>

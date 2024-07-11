@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): GameOverScene クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_game_over_scene.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_game_over_scene-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">GameOverScene クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_game_over_scene_8h_source.html">GameOverScene.h</a>&gt;</code></p>
+<div class="dynheader">
+GameOverScene の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_over_scene__inherit__graph.png" border="0" usemap="#a_game_over_scene_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_game_over_scene_inherit__map" id="a_game_over_scene_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,125,107"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="18,5,112,32"/>
+<area shape="poly" title=" " alt="" coords="68,48,68,80,62,80,62,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+GameOverScene 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_over_scene__coll__graph.png" border="0" usemap="#a_game_over_scene_coll__map" alt="Collaboration graph"/></div>
+<map name="a_game_over_scene_coll__map" id="a_game_over_scene_coll__map">
+<area shape="rect" title=" " alt="" coords="70,171,190,197"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="83,96,177,123"/>
+<area shape="poly" title=" " alt="" coords="133,138,133,170,127,170,127,138"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="68,42,95,70,119,94,115,97,91,74,64,46"/>
+<area shape="poly" title=" " alt="" coords="101,10,110,19,102,27,84,30,84,25,100,23,105,19,97,14"/>
+<area shape="rect" title=" " alt="" coords="187,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="193,46,144,97,140,94,189,42"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:afd991a51c8504e16fa37f9cbf5f51d72" id="r_afd991a51c8504e16fa37f9cbf5f51d72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd991a51c8504e16fa37f9cbf5f51d72">GameOverScene</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent)</td></tr>
+<tr class="separator:afd991a51c8504e16fa37f9cbf5f51d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ddda529c5321c02566d6b17886c74f" id="r_a82ddda529c5321c02566d6b17886c74f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82ddda529c5321c02566d6b17886c74f">~GameOverScene</a> ()</td></tr>
+<tr class="separator:a82ddda529c5321c02566d6b17886c74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b407577bebec61d47f881f1e73873b8" id="r_a4b407577bebec61d47f881f1e73873b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b407577bebec61d47f881f1e73873b8">Initialize</a> () override</td></tr>
+<tr class="separator:a4b407577bebec61d47f881f1e73873b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121ff42f211a172fc4eb15f704d4088a" id="r_a121ff42f211a172fc4eb15f704d4088a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a121ff42f211a172fc4eb15f704d4088a">Update</a> (const float &amp;dt) override</td></tr>
+<tr class="separator:a121ff42f211a172fc4eb15f704d4088a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca4f157ce8f5f8e2ccbef58ce93aa46" id="r_a0ca4f157ce8f5f8e2ccbef58ce93aa46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ca4f157ce8f5f8e2ccbef58ce93aa46">Draw</a> () override</td></tr>
+<tr class="separator:a0ca4f157ce8f5f8e2ccbef58ce93aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a14d35137747f0e7ff24e129eddffe" id="r_a15a14d35137747f0e7ff24e129eddffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15a14d35137747f0e7ff24e129eddffe">Release</a> () override</td></tr>
+<tr class="separator:a15a14d35137747f0e7ff24e129eddffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_object')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_object.html">GameObject</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a0348e3ee2e83d56eafca7a3547f432c4 inherit pub_methods_class_game_object" id="r_a0348e3ee2e83d56eafca7a3547f432c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a0348e3ee2e83d56eafca7a3547f432c4">GameObject</a> ()</td></tr>
+<tr class="separator:a0348e3ee2e83d56eafca7a3547f432c4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59ffa2d8d3e171395a14e53c0d3b085 inherit pub_methods_class_game_object" id="r_ac59ffa2d8d3e171395a14e53c0d3b085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac59ffa2d8d3e171395a14e53c0d3b085">GameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent)</td></tr>
+<tr class="separator:ac59ffa2d8d3e171395a14e53c0d3b085 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4e4440999725de273506a8f4362d5f inherit pub_methods_class_game_object" id="r_a3b4e4440999725de273506a8f4362d5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3b4e4440999725de273506a8f4362d5f">GameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent, const std::string &amp;name)</td></tr>
+<tr class="separator:a3b4e4440999725de273506a8f4362d5f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82dfdb656f9051c0587e6593b2dda97 inherit pub_methods_class_game_object" id="r_ab82dfdb656f9051c0587e6593b2dda97"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ab82dfdb656f9051c0587e6593b2dda97">~GameObject</a> ()</td></tr>
+<tr class="separator:ab82dfdb656f9051c0587e6593b2dda97 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eec20eae59484f8a629a4ead1db1404 inherit pub_methods_class_game_object" id="r_a3eec20eae59484f8a629a4ead1db1404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3eec20eae59484f8a629a4ead1db1404">UpdateSub</a> (const float &amp;dt)</td></tr>
+<tr class="separator:a3eec20eae59484f8a629a4ead1db1404 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb0da0dfe75fe7100a5ce44d5fc7b80 inherit pub_methods_class_game_object" id="r_a7bb0da0dfe75fe7100a5ce44d5fc7b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a7bb0da0dfe75fe7100a5ce44d5fc7b80">DrawSub</a> ()</td></tr>
+<tr class="separator:a7bb0da0dfe75fe7100a5ce44d5fc7b80 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6616c815e02395884c0bd7125f881b7b inherit pub_methods_class_game_object" id="r_a6616c815e02395884c0bd7125f881b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a6616c815e02395884c0bd7125f881b7b">ReleaseSub</a> ()</td></tr>
+<tr class="separator:a6616c815e02395884c0bd7125f881b7b inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0d4e8eaf47f457927850b2cd8be670 inherit pub_methods_class_game_object" id="r_a6c0d4e8eaf47f457927850b2cd8be670"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a6c0d4e8eaf47f457927850b2cd8be670">GetWorldMatrix</a> ()</td></tr>
+<tr class="separator:a6c0d4e8eaf47f457927850b2cd8be670 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc85e842da02559714d368439233b266 inherit pub_methods_class_game_object" id="r_acc85e842da02559714d368439233b266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#acc85e842da02559714d368439233b266">IsDead</a> ()</td></tr>
+<tr class="separator:acc85e842da02559714d368439233b266 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33271803c705a20371cb17923bcb08d2 inherit pub_methods_class_game_object" id="r_a33271803c705a20371cb17923bcb08d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a33271803c705a20371cb17923bcb08d2">KillMe</a> ()</td></tr>
+<tr class="separator:a33271803c705a20371cb17923bcb08d2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f66dbb5e290656281de8af92ea3bcd inherit pub_methods_class_game_object" id="r_a33f66dbb5e290656281de8af92ea3bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a33f66dbb5e290656281de8af92ea3bcd">Enter</a> ()</td></tr>
+<tr class="separator:a33f66dbb5e290656281de8af92ea3bcd inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa450a4f850dc857146899b8b5f5115cc inherit pub_methods_class_game_object" id="r_aa450a4f850dc857146899b8b5f5115cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa450a4f850dc857146899b8b5f5115cc">Leave</a> ()</td></tr>
+<tr class="separator:aa450a4f850dc857146899b8b5f5115cc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c87636671d2052999d54cfafa949b9f inherit pub_methods_class_game_object" id="r_a5c87636671d2052999d54cfafa949b9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a5c87636671d2052999d54cfafa949b9f">Visible</a> ()</td></tr>
+<tr class="separator:a5c87636671d2052999d54cfafa949b9f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ec21a1964e208684ddadad27f52de6 inherit pub_methods_class_game_object" id="r_a96ec21a1964e208684ddadad27f52de6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a96ec21a1964e208684ddadad27f52de6">Invisible</a> ()</td></tr>
+<tr class="separator:a96ec21a1964e208684ddadad27f52de6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07dcaa78fa0dfc5d897cba7563058b1 inherit pub_methods_class_game_object" id="r_ad07dcaa78fa0dfc5d897cba7563058b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ad07dcaa78fa0dfc5d897cba7563058b1">IsInitialized</a> ()</td></tr>
+<tr class="separator:ad07dcaa78fa0dfc5d897cba7563058b1 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d59329d169518f859ed9592a558a492 inherit pub_methods_class_game_object" id="r_a9d59329d169518f859ed9592a558a492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a9d59329d169518f859ed9592a558a492">SetInitialized</a> ()</td></tr>
+<tr class="separator:a9d59329d169518f859ed9592a558a492 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94319c3e9ddee4d5ee08fec5c09e9655 inherit pub_methods_class_game_object" id="r_a94319c3e9ddee4d5ee08fec5c09e9655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a94319c3e9ddee4d5ee08fec5c09e9655">IsEntered</a> ()</td></tr>
+<tr class="separator:a94319c3e9ddee4d5ee08fec5c09e9655 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05d364e5acbfdf52368092e963887c0 inherit pub_methods_class_game_object" id="r_ac05d364e5acbfdf52368092e963887c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac05d364e5acbfdf52368092e963887c0">IsVisibled</a> ()</td></tr>
+<tr class="separator:ac05d364e5acbfdf52368092e963887c0 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed83be77ba65e8574656cf51463cc632 inherit pub_methods_class_game_object" id="r_aed83be77ba65e8574656cf51463cc632"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_object.html">GameObject</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aed83be77ba65e8574656cf51463cc632">GetChildList</a> ()</td></tr>
+<tr class="separator:aed83be77ba65e8574656cf51463cc632 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cd34f35a40f8c303d38a61a1c4cbed inherit pub_methods_class_game_object" id="r_ab8cd34f35a40f8c303d38a61a1c4cbed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed">GetParent</a> ()</td></tr>
+<tr class="separator:ab8cd34f35a40f8c303d38a61a1c4cbed inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8f28a08b13d6e2d234c7fc3488b2b7 inherit pub_methods_class_game_object" id="r_afb8f28a08b13d6e2d234c7fc3488b2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afb8f28a08b13d6e2d234c7fc3488b2b7">FindChildObject</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:afb8f28a08b13d6e2d234c7fc3488b2b7 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d90e0f590d24cdf0755e273dca3b27 inherit pub_methods_class_game_object" id="r_a02d90e0f590d24cdf0755e273dca3b27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27">FindObject</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a02d90e0f590d24cdf0755e273dca3b27 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48265f25e24f0cfd7ae2a5f601a6ad64 inherit pub_methods_class_game_object" id="r_a48265f25e24f0cfd7ae2a5f601a6ad64"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a48265f25e24f0cfd7ae2a5f601a6ad64">GetObjectName</a> (void) const</td></tr>
+<tr class="separator:a48265f25e24f0cfd7ae2a5f601a6ad64 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e5a5fda14cb7bda24cffdc06c4830d inherit pub_methods_class_game_object" id="r_a72e5a5fda14cb7bda24cffdc06c4830d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a72e5a5fda14cb7bda24cffdc06c4830d">PushBackChild</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="separator:a72e5a5fda14cb7bda24cffdc06c4830d inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a6ba604bb06358cf733d1782f1b0e4 inherit pub_methods_class_game_object" id="r_ac2a6ba604bb06358cf733d1782f1b0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac2a6ba604bb06358cf733d1782f1b0e4">PushFrontChild</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="separator:ac2a6ba604bb06358cf733d1782f1b0e4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d71dae3d2410c901974ad46fcef0bf inherit pub_methods_class_game_object" id="r_ae8d71dae3d2410c901974ad46fcef0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ae8d71dae3d2410c901974ad46fcef0bf">KillAllChildren</a> ()</td></tr>
+<tr class="separator:ae8d71dae3d2410c901974ad46fcef0bf inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb855b45044a3c362be78583f66c2a2 inherit pub_methods_class_game_object" id="r_a3fb855b45044a3c362be78583f66c2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3fb855b45044a3c362be78583f66c2a2">AddCollider</a> (<a class="el" href="class_collider.html">Collider</a> *collider)</td></tr>
+<tr class="separator:a3fb855b45044a3c362be78583f66c2a2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f0aed6b1a3b607702b8135be73e9f2 inherit pub_methods_class_game_object" id="r_a30f0aed6b1a3b607702b8135be73e9f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a30f0aed6b1a3b607702b8135be73e9f2">OnCollision</a> (<a class="el" href="class_game_object.html">GameObject</a> *pTarget)</td></tr>
+<tr class="separator:a30f0aed6b1a3b607702b8135be73e9f2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe0d2eb92532ca832027815d8313516 inherit pub_methods_class_game_object" id="r_aafe0d2eb92532ca832027815d8313516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aafe0d2eb92532ca832027815d8313516">ClearCollider</a> ()</td></tr>
+<tr class="separator:aafe0d2eb92532ca832027815d8313516 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7444b0ebe8d38c70ef03f5544ede2c5 inherit pub_methods_class_game_object" id="r_aa7444b0ebe8d38c70ef03f5544ede2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa7444b0ebe8d38c70ef03f5544ede2c5">Collision</a> (<a class="el" href="class_game_object.html">GameObject</a> *pTarget)</td></tr>
+<tr class="separator:aa7444b0ebe8d38c70ef03f5544ede2c5 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379a898a16acaf481406c14b3c35680a inherit pub_methods_class_game_object" id="r_a379a898a16acaf481406c14b3c35680a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a379a898a16acaf481406c14b3c35680a">CollisionDraw</a> ()</td></tr>
+<tr class="separator:a379a898a16acaf481406c14b3c35680a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582a09eb9f4fbfe8b12a1f4bf054498a inherit pub_methods_class_game_object" id="r_a582a09eb9f4fbfe8b12a1f4bf054498a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a582a09eb9f4fbfe8b12a1f4bf054498a">GetRootJob</a> ()</td></tr>
+<tr class="separator:a582a09eb9f4fbfe8b12a1f4bf054498a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff8538cd2c3890a31dc3052b64baa8a inherit pub_methods_class_game_object" id="r_a0ff8538cd2c3890a31dc3052b64baa8a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a0ff8538cd2c3890a31dc3052b64baa8a">GetMyTimeScale</a> () const</td></tr>
+<tr class="separator:a0ff8538cd2c3890a31dc3052b64baa8a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fce977044f8d5cd9a40a952ed2d1998 inherit pub_methods_class_game_object" id="r_a9fce977044f8d5cd9a40a952ed2d1998"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a9fce977044f8d5cd9a40a952ed2d1998">GetTotalTimeScale</a> () const</td></tr>
+<tr class="separator:a9fce977044f8d5cd9a40a952ed2d1998 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cfcdc2fc6c10ee5f1386855f951849 inherit pub_methods_class_game_object" id="r_aa5cfcdc2fc6c10ee5f1386855f951849"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa5cfcdc2fc6c10ee5f1386855f951849">GetPosition</a> ()</td></tr>
+<tr class="separator:aa5cfcdc2fc6c10ee5f1386855f951849 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecbadbb1da960249e08263a81e828bc inherit pub_methods_class_game_object" id="r_afecbadbb1da960249e08263a81e828bc"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afecbadbb1da960249e08263a81e828bc">GetRotate</a> ()</td></tr>
+<tr class="separator:afecbadbb1da960249e08263a81e828bc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d465322d9a9ef2240dcf4e5fb1c03c inherit pub_methods_class_game_object" id="r_a98d465322d9a9ef2240dcf4e5fb1c03c"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a98d465322d9a9ef2240dcf4e5fb1c03c">GetScale</a> ()</td></tr>
+<tr class="separator:a98d465322d9a9ef2240dcf4e5fb1c03c inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced96b154f432431101c7f6270484ca0 inherit pub_methods_class_game_object" id="r_aced96b154f432431101c7f6270484ca0"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aced96b154f432431101c7f6270484ca0">GetWorldPosition</a> ()</td></tr>
+<tr class="separator:aced96b154f432431101c7f6270484ca0 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb354ded407cdd8e617ddb3a3848aa6 inherit pub_methods_class_game_object" id="r_a1fb354ded407cdd8e617ddb3a3848aa6"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a1fb354ded407cdd8e617ddb3a3848aa6">GetWorldRotate</a> ()</td></tr>
+<tr class="separator:a1fb354ded407cdd8e617ddb3a3848aa6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d088d6332b63c91288edc7b774a243f inherit pub_methods_class_game_object" id="r_a3d088d6332b63c91288edc7b774a243f"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3d088d6332b63c91288edc7b774a243f">GetWorldScale</a> ()</td></tr>
+<tr class="separator:a3d088d6332b63c91288edc7b774a243f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a17beee606ce1a49e6b121281f870e4 inherit pub_methods_class_game_object" id="r_a3a17beee606ce1a49e6b121281f870e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3a17beee606ce1a49e6b121281f870e4">SetTimeScale</a> (float v)</td></tr>
+<tr class="separator:a3a17beee606ce1a49e6b121281f870e4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc5a9686ab26e62f47dc8906a9f5773 inherit pub_methods_class_game_object" id="r_a3fc5a9686ab26e62f47dc8906a9f5773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3fc5a9686ab26e62f47dc8906a9f5773">SetPosition</a> (XMFLOAT3 position)</td></tr>
+<tr class="separator:a3fc5a9686ab26e62f47dc8906a9f5773 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c75654f6d49ce65bf2f3a7bbacd8381 inherit pub_methods_class_game_object" id="r_a7c75654f6d49ce65bf2f3a7bbacd8381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a7c75654f6d49ce65bf2f3a7bbacd8381">SetPosition</a> (XMVECTOR position)</td></tr>
+<tr class="separator:a7c75654f6d49ce65bf2f3a7bbacd8381 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb69dab3e8f30a0be83c1d4b554ed275 inherit pub_methods_class_game_object" id="r_afb69dab3e8f30a0be83c1d4b554ed275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afb69dab3e8f30a0be83c1d4b554ed275">SetPosition</a> (float x, float y, float z)</td></tr>
+<tr class="separator:afb69dab3e8f30a0be83c1d4b554ed275 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64712d13af42f2821fad54a7363579dc inherit pub_methods_class_game_object" id="r_a64712d13af42f2821fad54a7363579dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a64712d13af42f2821fad54a7363579dc">SetRotate</a> (XMFLOAT3 rotate)</td></tr>
+<tr class="separator:a64712d13af42f2821fad54a7363579dc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b9a5e1c64013245a5976bba765ece7 inherit pub_methods_class_game_object" id="r_a57b9a5e1c64013245a5976bba765ece7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a57b9a5e1c64013245a5976bba765ece7">SetRotate</a> (float x, float y, float z)</td></tr>
+<tr class="separator:a57b9a5e1c64013245a5976bba765ece7 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c37cc6fe4f976f6bf153c3d28d8d15 inherit pub_methods_class_game_object" id="r_ac6c37cc6fe4f976f6bf153c3d28d8d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac6c37cc6fe4f976f6bf153c3d28d8d15">SetRotateX</a> (float x)</td></tr>
+<tr class="separator:ac6c37cc6fe4f976f6bf153c3d28d8d15 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f7c370d904c3aee8870ad7dfba74b6 inherit pub_methods_class_game_object" id="r_a77f7c370d904c3aee8870ad7dfba74b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a77f7c370d904c3aee8870ad7dfba74b6">SetRotateY</a> (float y)</td></tr>
+<tr class="separator:a77f7c370d904c3aee8870ad7dfba74b6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ae2485d68f873cbc1da908a92a744b inherit pub_methods_class_game_object" id="r_a79ae2485d68f873cbc1da908a92a744b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a79ae2485d68f873cbc1da908a92a744b">SetRotateZ</a> (float z)</td></tr>
+<tr class="separator:a79ae2485d68f873cbc1da908a92a744b inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add837dfa58c6dc740322b1ee75bc3797 inherit pub_methods_class_game_object" id="r_add837dfa58c6dc740322b1ee75bc3797"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#add837dfa58c6dc740322b1ee75bc3797">SetScale</a> (XMFLOAT3 scale)</td></tr>
+<tr class="separator:add837dfa58c6dc740322b1ee75bc3797 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28891c1985f80927b4b0633de8c67eac inherit pub_methods_class_game_object" id="r_a28891c1985f80927b4b0633de8c67eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a28891c1985f80927b4b0633de8c67eac">SetScale</a> (float x, float y, float z)</td></tr>
+<tr class="separator:a28891c1985f80927b4b0633de8c67eac inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_game_object')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_object.html">GameObject</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:aac1b36ed81c3e3ff28ca5994b4993be3 inherit pro_attribs_class_game_object" id="r_aac1b36ed81c3e3ff28ca5994b4993be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a></td></tr>
+<tr class="separator:aac1b36ed81c3e3ff28ca5994b4993be3 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41deeb9b8f041808286661cc8c9502b2 inherit pro_attribs_class_game_object" id="r_a41deeb9b8f041808286661cc8c9502b2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a41deeb9b8f041808286661cc8c9502b2">objectName_</a></td></tr>
+<tr class="separator:a41deeb9b8f041808286661cc8c9502b2 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c5050154b6bcb6856814c6d7b52154 inherit pro_attribs_class_game_object" id="r_a00c5050154b6bcb6856814c6d7b52154"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_collider.html">Collider</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a00c5050154b6bcb6856814c6d7b52154">colliderList_</a></td></tr>
+<tr class="separator:a00c5050154b6bcb6856814c6d7b52154 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b305b7bea032772ed836b154b577da6 inherit pro_attribs_class_game_object" id="r_a5b305b7bea032772ed836b154b577da6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a5b305b7bea032772ed836b154b577da6">timeScale</a></td></tr>
+<tr class="separator:a5b305b7bea032772ed836b154b577da6 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae150d5e0bccbf80b49f0c4f3b4df7441 inherit pro_attribs_class_game_object" id="r_ae150d5e0bccbf80b49f0c4f3b4df7441"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ae150d5e0bccbf80b49f0c4f3b4df7441">parentalTimeScale</a></td></tr>
+<tr class="separator:ae150d5e0bccbf80b49f0c4f3b4df7441 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_game_over_scene_8h_source.html">GameOverScene.h</a> の <a class="el" href="_game_over_scene_8h_source.html#l00005">5</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="afd991a51c8504e16fa37f9cbf5f51d72" name="afd991a51c8504e16fa37f9cbf5f51d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd991a51c8504e16fa37f9cbf5f51d72">&#9670;&#160;</a></span>GameOverScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameOverScene::GameOverScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_object.html">GameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_game_over_scene_8cpp_source.html">GameOverScene.cpp</a> の <a class="el" href="_game_over_scene_8cpp_source.html#l00007">7</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a82ddda529c5321c02566d6b17886c74f" name="a82ddda529c5321c02566d6b17886c74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ddda529c5321c02566d6b17886c74f">&#9670;&#160;</a></span>~GameOverScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameOverScene::~GameOverScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_game_over_scene_8cpp_source.html">GameOverScene.cpp</a> の <a class="el" href="_game_over_scene_8cpp_source.html#l00013">13</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a0ca4f157ce8f5f8e2ccbef58ce93aa46" name="a0ca4f157ce8f5f8e2ccbef58ce93aa46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca4f157ce8f5f8e2ccbef58ce93aa46">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameOverScene::Draw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#a29a665f46fda87982825bc5c0ca6a888">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_game_over_scene_8cpp_source.html">GameOverScene.cpp</a> の <a class="el" href="_game_over_scene_8cpp_source.html#l00035">35</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_over_scene_a0ca4f157ce8f5f8e2ccbef58ce93aa46_cgraph.png" border="0" usemap="#aclass_game_over_scene_a0ca4f157ce8f5f8e2ccbef58ce93aa46_cgraph" alt=""/></div>
+<map name="aclass_game_over_scene_a0ca4f157ce8f5f8e2ccbef58ce93aa46_cgraph" id="aclass_game_over_scene_a0ca4f157ce8f5f8e2ccbef58ce93aa46_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,162,57"/>
+<area shape="rect" href="namespace_image.html#a5a729b7937615099872420357877a354" title=" " alt="" coords="234,5,327,32"/>
+<area shape="poly" title=" " alt="" coords="162,31,218,24,219,29,162,37"/>
+<area shape="rect" href="namespace_image.html#a88e2782eb2ba81a77618072490e44d2b" title=" " alt="" coords="210,56,351,83"/>
+<area shape="poly" title=" " alt="" coords="162,51,195,56,194,61,162,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4b407577bebec61d47f881f1e73873b8" name="a4b407577bebec61d47f881f1e73873b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b407577bebec61d47f881f1e73873b8">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameOverScene::Initialize </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#af9ef8d54869391515480e3aef81f876d">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_game_over_scene_8cpp_source.html">GameOverScene.cpp</a> の <a class="el" href="_game_over_scene_8cpp_source.html#l00018">18</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_over_scene_a4b407577bebec61d47f881f1e73873b8_cgraph.png" border="0" usemap="#aclass_game_over_scene_a4b407577bebec61d47f881f1e73873b8_cgraph" alt=""/></div>
+<map name="aclass_game_over_scene_a4b407577bebec61d47f881f1e73873b8_cgraph" id="aclass_game_over_scene_a4b407577bebec61d47f881f1e73873b8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,180,133"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="228,107,320,133"/>
+<area shape="poly" title=" " alt="" coords="180,117,212,117,212,123,180,123"/>
+<area shape="rect" href="class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="385,81,476,108"/>
+<area shape="poly" title=" " alt="" coords="320,110,370,102,371,107,321,115"/>
+<area shape="rect" href="namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="368,132,493,159"/>
+<area shape="poly" title=" " alt="" coords="321,125,353,130,352,135,320,130"/>
+<area shape="rect" href="class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="541,5,707,32"/>
+<area shape="poly" title=" " alt="" coords="458,78,540,42,559,35,561,40,542,46,461,83"/>
+<area shape="rect" href="class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="568,56,680,83"/>
+<area shape="poly" title=" " alt="" coords="476,86,552,76,553,81,477,91"/>
+<area shape="rect" href="class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="565,107,683,133"/>
+<area shape="poly" title=" " alt="" coords="477,98,550,108,549,113,476,103"/>
+<area shape="rect" href="class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="574,157,674,184"/>
+<area shape="poly" title=" " alt="" coords="468,106,494,118,542,143,560,150,558,155,540,148,492,122,466,111"/>
+<area shape="rect" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="755,157,875,184"/>
+<area shape="poly" title=" " alt="" coords="675,168,739,168,739,173,675,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15a14d35137747f0e7ff24e129eddffe" name="a15a14d35137747f0e7ff24e129eddffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a14d35137747f0e7ff24e129eddffe">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameOverScene::Release </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#aa80f2aaebee30f53dc468ebf9e2418fb">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_game_over_scene_8cpp_source.html">GameOverScene.cpp</a> の <a class="el" href="_game_over_scene_8cpp_source.html#l00042">42</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a121ff42f211a172fc4eb15f704d4088a" name="a121ff42f211a172fc4eb15f704d4088a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a121ff42f211a172fc4eb15f704d4088a">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameOverScene::Update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#ae8bdcc3855d8a143685051b541872d8e">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_game_over_scene_8cpp_source.html">GameOverScene.cpp</a> の <a class="el" href="_game_over_scene_8cpp_source.html#l00025">25</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_over_scene_a121ff42f211a172fc4eb15f704d4088a_cgraph.png" border="0" usemap="#aclass_game_over_scene_a121ff42f211a172fc4eb15f704d4088a_cgraph" alt=""/></div>
+<map name="aclass_game_over_scene_a121ff42f211a172fc4eb15f704d4088a_cgraph" id="aclass_game_over_scene_a121ff42f211a172fc4eb15f704d4088a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,174,131"/>
+<area shape="rect" href="class_scene_manager.html#a378c3f59afe265ec3be42a319dea927d" title=" " alt="" coords="222,53,419,80"/>
+<area shape="poly" title=" " alt="" coords="153,101,241,81,242,86,154,106"/>
+<area shape="rect" href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27" title=" " alt="" coords="238,104,403,131"/>
+<area shape="poly" title=" " alt="" coords="174,115,222,115,222,120,174,120"/>
+<area shape="rect" href="namespace_input.html#ae116436a4dac338a8050710e32ce8261" title=" " alt="" coords="259,155,382,181"/>
+<area shape="poly" title=" " alt="" coords="154,129,244,149,243,154,153,134"/>
+<area shape="rect" href="class_game_object.html#afb8f28a08b13d6e2d234c7fc3488b2b7" title=" " alt="" coords="467,29,661,56"/>
+<area shape="poly" title=" " alt="" coords="382,101,418,90,466,66,487,58,489,63,468,70,420,94,384,106"/>
+<area shape="rect" href="class_game_object.html#a582a09eb9f4fbfe8b12a1f4bf054498a" title=" " alt="" coords="479,104,649,131"/>
+<area shape="poly" title=" " alt="" coords="404,115,464,115,464,120,404,120"/>
+<area shape="poly" title=" " alt="" coords="526,30,519,21,524,11,539,5,564,3,591,5,605,12,603,17,590,10,564,8,540,10,528,15,525,20,530,27"/>
+<area shape="poly" title=" " alt="" coords="526,105,519,95,524,85,539,79,564,77,591,80,605,86,603,91,590,85,564,83,540,85,528,89,525,95,530,102"/>
+<area shape="rect" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="709,104,871,131"/>
+<area shape="poly" title=" " alt="" coords="650,115,694,115,694,120,650,120"/>
+<area shape="rect" href="namespace_input.html#ab9f5815c042daa91a5e96395003514a0" title=" " alt="" coords="519,155,609,181"/>
+<area shape="poly" title=" " alt="" coords="382,165,503,165,503,171,382,171"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/sources/<a class="el" href="_game_over_scene_8h_source.html">GameOverScene.h</a></li>
+<li>SoR/sources/<a class="el" href="_game_over_scene_8cpp_source.html">GameOverScene.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_game_over_scene.html">GameOverScene</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

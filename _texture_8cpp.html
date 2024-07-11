@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/Engine/Texture.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_texture_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">Texture.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="_texture_8h_source.html">Texture.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_direct3_d_8h_source.html">Direct3D.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">Global.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Texture.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_texture_8cpp__incl.png" border="0" usemap="#a_so_r_2_engine_2_texture_8cpp" alt=""/></div>
+<map name="a_so_r_2_engine_2_texture_8cpp" id="a_so_r_2_engine_2_texture_8cpp">
+<area shape="rect" title=" " alt="" coords="148,5,311,32"/>
+<area shape="rect" title=" " alt="" coords="100,80,156,107"/>
+<area shape="poly" title=" " alt="" coords="213,35,160,73,157,68,210,30"/>
+<area shape="rect" href="_texture_8h.html" title=" " alt="" coords="334,155,410,181"/>
+<area shape="poly" title=" " alt="" coords="252,30,283,51,314,78,340,109,360,140,355,143,335,112,310,82,279,55,249,35"/>
+<area shape="rect" href="_direct3_d_8h.html" title=" " alt="" coords="152,155,235,181"/>
+<area shape="poly" title=" " alt="" coords="229,33,203,140,197,139,224,32"/>
+<area shape="rect" href="global_8h.html" title=" " alt="" coords="231,80,300,107"/>
+<area shape="poly" title=" " alt="" coords="238,31,255,65,250,67,233,34"/>
+<area shape="rect" title=" " alt="" coords="114,229,182,256"/>
+<area shape="poly" title=" " alt="" coords="335,184,197,228,196,223,333,179"/>
+<area shape="rect" title=" " alt="" coords="206,229,309,256"/>
+<area shape="poly" title=" " alt="" coords="353,184,292,223,289,218,351,180"/>
+<area shape="rect" title=" " alt="" coords="333,229,435,256"/>
+<area shape="poly" title=" " alt="" coords="377,181,382,214,377,215,371,182"/>
+<area shape="rect" title=" " alt="" coords="460,229,546,256"/>
+<area shape="poly" title=" " alt="" coords="396,180,468,219,465,224,393,184"/>
+<area shape="rect" title=" " alt="" coords="569,229,623,256"/>
+<area shape="poly" title=" " alt="" coords="411,179,556,226,554,231,409,184"/>
+<area shape="poly" title=" " alt="" coords="188,183,166,217,162,215,183,180"/>
+<area shape="poly" title=" " alt="" coords="206,180,238,216,234,219,202,184"/>
+<area shape="rect" title=" " alt="" coords="5,229,91,256"/>
+<area shape="poly" title=" " alt="" coords="169,184,88,224,86,220,167,179"/>
+<area shape="poly" title=" " alt="" coords="255,109,218,145,215,142,251,105"/>
+</map>
+</div>
+</div>
+<p><a href="_texture_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a1441b49c9047401a68977677dfb4d5da" id="r_a1441b49c9047401a68977677dfb4d5da"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1441b49c9047401a68977677dfb4d5da">NextPowerOfTwo</a> (UINT n)</td></tr>
+<tr class="separator:a1441b49c9047401a68977677dfb4d5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a1441b49c9047401a68977677dfb4d5da" name="a1441b49c9047401a68977677dfb4d5da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1441b49c9047401a68977677dfb4d5da">&#9670;&#160;</a></span>NextPowerOfTwo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT NextPowerOfTwo </td>
+          <td>(</td>
+          <td class="paramtype">UINT</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_texture_8cpp_source.html">Texture.cpp</a> の <a class="el" href="_texture_8cpp_source.html#l00006">6</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_texture_8cpp_a1441b49c9047401a68977677dfb4d5da_icgraph.png" border="0" usemap="#a_texture_8cpp_a1441b49c9047401a68977677dfb4d5da_icgraph" alt=""/></div>
+<map name="a_texture_8cpp_a1441b49c9047401a68977677dfb4d5da_icgraph" id="a_texture_8cpp_a1441b49c9047401a68977677dfb4d5da_icgraph">
+<area shape="rect" title=" " alt="" coords="958,132,1078,159"/>
+<area shape="rect" href="class_texture.html#a19b4f36a15d7598df898336a43f05601" title=" " alt="" coords="736,107,910,133"/>
+<area shape="poly" title=" " alt="" coords="942,138,910,134,911,129,943,133"/>
+<area shape="rect" href="class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="773,157,873,184"/>
+<area shape="poly" title=" " alt="" coords="943,158,874,167,873,162,942,152"/>
+<area shape="rect" href="class_sprite.html#a22f701e43e5562dd1eabd32416109709" title=" " alt="" coords="587,107,679,133"/>
+<area shape="poly" title=" " alt="" coords="720,123,680,123,680,117,720,117"/>
+<area shape="rect" href="class_bill_board.html#a96563ff0941a5bd52b6b16444041b586" title=" " alt="" coords="578,208,688,235"/>
+<area shape="poly" title=" " alt="" coords="758,190,686,210,685,205,757,185"/>
+<area shape="rect" href="class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="587,157,679,184"/>
+<area shape="poly" title=" " alt="" coords="757,173,679,173,679,168,757,168"/>
+<area shape="rect" href="namespace_v_f_x.html#a0164289b1d8d10be8e1c03ce68c6fa13" title=" " alt="" coords="444,208,525,235"/>
+<area shape="poly" title=" " alt="" coords="563,224,525,224,525,219,563,219"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="438,157,530,184"/>
+<area shape="poly" title=" " alt="" coords="572,173,531,173,531,168,572,168"/>
+<area shape="rect" href="class_clear_scene.html#a42449a56cad87e46b78ad42fafea1712" title=" " alt="" coords="231,5,375,32"/>
+<area shape="poly" title=" " alt="" coords="467,145,436,94,414,68,388,46,367,35,370,30,392,42,418,64,440,91,472,142"/>
+<area shape="rect" href="class_game_over_scene.html#a4b407577bebec61d47f881f1e73873b8" title=" " alt="" coords="216,56,390,83"/>
+<area shape="poly" title=" " alt="" coords="457,148,426,121,389,97,362,86,364,81,391,92,429,117,460,144"/>
+<area shape="rect" href="namespace_h_p_bar.html#a781fc11bbcc5fdda79f988c4340be48d" title=" " alt="" coords="246,107,360,133"/>
+<area shape="poly" title=" " alt="" coords="423,156,352,136,354,131,424,151"/>
+<area shape="rect" href="class_moderator_sequence.html#a3e3ba78ad8c9de21d07a156384be9941" title=" " alt="" coords="14,145,159,188"/>
+<area shape="poly" title=" " alt="" coords="422,173,160,170,160,165,422,167"/>
+<area shape="rect" href="class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,263,168,289"/>
+<area shape="poly" title=" " alt="" coords="444,195,440,198,426,212,417,225,408,238,391,249,336,270,277,281,220,286,168,286,168,280,220,280,277,276,334,264,389,244,404,234,413,222,422,208,436,194,441,190"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="252,208,354,235"/>
+<area shape="poly" title=" " alt="" coords="424,190,354,210,352,205,423,185"/>
+<area shape="rect" href="class_title_scene.html#adf5fb009db0ebe44f3cfef8548207d11" title=" " alt="" coords="234,309,372,336"/>
+<area shape="poly" title=" " alt="" coords="442,195,440,198,424,222,418,245,410,269,392,293,361,311,358,307,388,289,405,266,412,244,419,220,436,194,439,192"/>
+<area shape="rect" href="class_play_scene.html#a926bb9a88d354caa7df17afe06fde03b" title=" " alt="" coords="17,95,156,121"/>
+<area shape="poly" title=" " alt="" coords="230,119,156,115,157,109,230,113"/>
+<area shape="poly" title=" " alt="" coords="237,207,159,188,160,182,238,202"/>
+<area shape="poly" title=" " alt="" coords="238,240,143,265,142,259,236,235"/>
+<area shape="rect" href="class_text.html#ab8916c9efd5a6598d8fda286223628e8" title=" " alt="" coords="36,212,137,239"/>
+<area shape="poly" title=" " alt="" coords="237,225,138,227,137,222,237,220"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_61de522c743cecc055efe3e200492e1b.html">Engine</a></li><li class="navelem"><a class="el" href="_texture_8cpp.html">Texture.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

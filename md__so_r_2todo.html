@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): 実装すること</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('md__so_r_2todo.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">実装すること</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md118"></a></p>
+<h2><a class="anchor" id="autotoc_md119"></a>
+コマンド等備忘録</h2>
+<p><code>#include[\t\s]*"hogehoge"</code></p><ul>
+<li>既存ファイルのインクルードを検索</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md120"></a>
+基本的なの</h3>
+<ul>
+<li>コリジョンマネージャーのhittest各オーバーロード実装、TakeAttacked呼ぶまで</li>
+<li>攻撃当たったら無名空間の関数UnderAttackを呼ぶ。関数の中に同じ攻撃当たらないようにとか書く?</li>
+<li>１度の攻撃で多段ヒットしないような仕組みを考える必要がある</li>
+<li>現状だと複数の攻撃範囲が生まれるタイプの攻撃には対応できていない</li>
+<li>通常攻撃は連続発動でコンボできるといいのか？</li>
+<li>回避(ブリンクとかフラッシュって言われるタイプ）はspace発動で無敵時間あったほうがいい？</li>
+<li>スキルは回転、突進、遠距離とか？</li>
+<li>敵キャラクターの動作を何とかして作りたい<ul>
+<li>プレイヤーの座標はとれるようにしてある 　- 動作パターンをどう作るか？ステートパターン？ビヘイビアツリー？</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md121"></a>
+ゲーム進行のやりかた</h3>
+<ul class="check">
+<li class="unchecked">攻撃クラスに付随する攻撃情報クラス（ダメージ、ノックバック、付属効果種類、効果強度、効果時間とか？)</li>
+</ul>
+<ul class="check">
+<li class="unchecked">スキルクラスベースおよび発展スキル<ul>
+<li>攻撃範囲を時間で分割？hittestは分割毎に呼ぶ?総時間と重み付けみたいな…？もしくは全部当たったの見てからディレイするの？ std::functionかラムダ式使って攻撃範囲変えられるように出来ればいいが... <code>quad.func=&amp;quad{ quad.length=duration*???}</code></li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md122"></a>
+エンジン側</h3>
+<p><strike>モデル透過部分きれいにしたい。あまりにも駄目そうなら移植を考える</strike> <strike>移植ブランチ作成したが、Engine部分を入れ替えただけだからか表示されない</strike> 一時的に移植中。ただし画像の透過はしているが、モデルのほうはできていない</p>
+<h3><a class="anchor" id="autotoc_md123"></a>
+演出</h3>
+<ul>
+<li>カメラエフェクト</li>
+<li>se</li>
+<li>テキスト表示</li>
+<li>移動先を示すエフェクト</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md124"></a>
+入力部分をストレスフリーにする</h3>
+<ul>
+<li>先行入力</li>
+<li>キャンセル連携</li>
+<li>攻撃追尾</li>
+</ul>
+<h5><a class="anchor" id="autotoc_md125"></a>
+順番関係ないもの</h5>
+<ul>
+<li>名前空間のものクラスにするべきか検討</li>
+<li>アクタのupdate元のほうに追加することあれば</li>
+</ul>
+<h5><a class="anchor" id="autotoc_md126"></a>
+余裕あれば</h5>
+<ul>
+<li>動的確保はスマートポインターで これを参考に→ <a href="https://programdoria.com/programming/cpp/composite-shared_ptr/　">https://programdoria.com/programming/cpp/composite-shared_ptr/　</a> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

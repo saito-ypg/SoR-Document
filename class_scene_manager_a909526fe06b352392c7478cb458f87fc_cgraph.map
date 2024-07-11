@@ -1,0 +1,7 @@
+<map id="SceneManager::Initialize" name="SceneManager::Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="Node000002" href="$_game_object_8h.html#aa3f4a0aa4d6e19369accf4c411487d02" title=" " alt="" coords="217,5,298,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,16,201,16,201,21,169,21"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#a72e5a5fda14cb7bda24cffdc06c4830d" title=" " alt="" coords="346,5,537,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,16,330,16,330,21,299,21"/>
+</map>

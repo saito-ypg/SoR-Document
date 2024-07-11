@@ -1,0 +1,9 @@
+<map id="GameObject::SetRotate" name="GameObject::SetRotate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="223,56,383,83"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#ac6c37cc6fe4f976f6bf153c3d28d8d15" title=" " alt="" coords="6,5,174,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,54,149,35,150,30,229,49"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#a77f7c370d904c3aee8870ad7dfba74b6" title=" " alt="" coords="5,56,175,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,72,175,72,175,67,207,67"/>
+<area shape="rect" id="Node000004" href="$class_game_object.html#a79ae2485d68f873cbc1da908a92a744b" title=" " alt="" coords="6,107,174,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,90,150,109,149,103,228,84"/>
+</map>

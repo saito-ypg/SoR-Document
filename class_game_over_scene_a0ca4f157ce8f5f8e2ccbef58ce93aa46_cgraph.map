@@ -1,0 +1,7 @@
+<map id="GameOverScene::Draw" name="GameOverScene::Draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,162,57"/>
+<area shape="rect" id="Node000002" href="$namespace_image.html#a5a729b7937615099872420357877a354" title=" " alt="" coords="234,5,327,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,31,218,24,219,29,162,37"/>
+<area shape="rect" id="Node000003" href="$namespace_image.html#a88e2782eb2ba81a77618072490e44d2b" title=" " alt="" coords="210,56,351,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,51,195,56,194,61,162,57"/>
+</map>

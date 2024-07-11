@@ -1,0 +1,10 @@
+<map id="Image::toPixel" name="Image::toPixel">
+<area shape="rect" id="Node000001" title="~~~~~~~~~~~ここから拡張~~~~~~~~~~~///" alt="" coords="384,31,488,57"/>
+<area shape="rect" id="Node000002" href="$class_player_interface.html#a75b02f75f559ac9184301f68a52652ff" title=" " alt="" coords="5,5,150,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,42,150,26,150,21,369,37"/>
+<area shape="rect" id="Node000003" href="$namespace_image.html#a81a8c354cae6aa090535a90a4e07a149" title="引数に渡した画像とそのTransformを用いて、第三引数のポジションが画像範囲内かを調べる" alt="" coords="198,56,336,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="369,57,337,62,336,56,368,51"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="199,54,129,35,131,30,200,49"/>
+<area shape="rect" id="Node000004" href="$namespace_image.html#a822c87c875d3d5bacc4504990884098d" title="引数に渡した画像とそのTransformを用いて、マウス座標が画像内にあるかを判断する ベースのロジックはisPointInside" alt="" coords="8,56,147,83"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="182,72,147,72,147,67,182,67"/>
+</map>

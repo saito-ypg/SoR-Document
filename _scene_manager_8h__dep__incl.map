@@ -1,0 +1,17 @@
+<map id="SoR/Engine/SceneManager.h" name="SoR/Engine/SceneManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="677,5,870,32"/>
+<area shape="rect" id="Node000002" href="$_root_object_8cpp.html" title=" " alt="" coords="5,80,190,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="662,34,203,83,190,84,190,79,203,77,662,29"/>
+<area shape="rect" id="Node000003" href="$_scene_manager_8cpp.html" title=" " alt="" coords="214,80,421,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="679,38,398,82,397,77,678,32"/>
+<area shape="rect" id="Node000004" href="$_clear_scene_8cpp.html" title=" " alt="" coords="445,80,638,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="720,39,583,82,581,77,718,34"/>
+<area shape="rect" id="Node000005" href="$_game_over_scene_8cpp.html" title=" " alt="" coords="662,80,885,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="776,48,776,80,771,80,771,48"/>
+<area shape="rect" id="Node000006" href="$_moderator_sequence_8cpp.html" title=" " alt="" coords="909,80,1150,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="833,34,985,77,984,82,832,39"/>
+<area shape="rect" id="Node000007" href="$_play_scene_8cpp.html" title=" " alt="" coords="1174,80,1362,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="875,32,1182,77,1181,82,875,37"/>
+<area shape="rect" id="Node000008" href="$_title_scene_8cpp.html" title=" " alt="" coords="1387,80,1573,107"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="885,28,1375,77,1387,79,1386,84,1375,83,885,33"/>
+</map>

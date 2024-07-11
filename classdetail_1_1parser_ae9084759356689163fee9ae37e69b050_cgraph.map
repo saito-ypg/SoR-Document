@@ -1,0 +1,20 @@
+<map id="detail::parser::sax_parse" name="detail::parser::sax_parse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,92,131,135"/>
+<area shape="rect" id="Node000002" href="$classdetail_1_1parse__error.html#a07046ea9f33d28f120af188ed674d6df" title="create a parse error exception" alt="" coords="179,26,304,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,89,169,72,171,77,126,94"/>
+<area shape="rect" id="Node000008" href="$classdetail_1_1lexer.html#a569266654a88a2dc6f0e9a587067fc9d" title="return position of last read token" alt="" coords="184,92,299,135"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="131,111,169,111,169,116,131,116"/>
+<area shape="rect" id="Node000009" href="$classdetail_1_1lexer.html#a41481d87dc1bcaaf532f529fbc0e690b" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="184,159,299,202"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="126,133,171,150,169,155,124,138"/>
+<area shape="rect" id="Node000003" href="$namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="556,34,656,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,22,352,11,430,3,509,11,560,25,558,30,508,16,430,8,352,16,304,28"/>
+<area shape="rect" id="Node000006" href="$classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="368,26,492,68"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="305,44,353,44,353,50,305,50"/>
+<area shape="rect" id="Node000007" href="$classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="352,92,508,119"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="305,64,371,85,369,90,304,69"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="711,8,838,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="656,37,695,31,696,36,657,42"/>
+<area shape="rect" id="Node000005" href="$namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="704,59,845,86"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="657,52,689,57,688,62,656,57"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="473,89,507,78,550,63,551,68,509,83,475,94"/>
+</map>

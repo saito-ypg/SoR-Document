@@ -1,0 +1,25 @@
+<map id="basic_json::operator+=" name="basic_json::operator+=">
+<area shape="rect" id="Node000001" title="add an object to an array" alt="" coords="5,123,160,149"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a3d13acce4e49e0d5ee768643a7b89010" title="add an object to an array" alt="" coords="208,123,362,149"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,133,192,133,192,139,160,139"/>
+<area shape="rect" id="Node000003" href="$namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="818,31,917,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,120,343,79,375,57,409,41,461,27,515,18,622,13,722,18,803,29,802,34,722,23,622,18,515,24,462,32,411,47,377,62,346,83,301,124"/>
+<area shape="rect" id="Node000006" href="$classdetail_1_1type__error.html#a2d25372628cf1e09ec67718f4bc42762" title=" " alt="" coords="429,56,547,99"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="333,120,413,96,414,101,334,125"/>
+<area shape="rect" id="Node000009" href="$classbasic__json.html#a184ba4a6b47e6da3703af19349bd776f" title="return whether value is an array" alt="" coords="419,123,556,149"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="362,133,404,133,404,139,362,139"/>
+<area shape="rect" id="Node000010" href="$classbasic__json.html#ad8789d0a365d5afaab61e7492908d8b2" title="return whether value is null" alt="" coords="424,173,552,200"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="342,147,417,166,416,172,341,153"/>
+<area shape="rect" id="Node000011" href="$classbasic__json.html#a15b177614647598e238e15ab1cc889c7" title="return the type as string" alt="" coords="410,224,565,251"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="307,148,353,178,411,210,426,216,424,221,409,214,351,183,304,152"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="972,5,1099,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="917,34,956,28,957,33,918,39"/>
+<area shape="rect" id="Node000005" href="$namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="965,56,1106,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="918,49,950,54,949,59,917,54"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="547,70,802,47,803,52,548,75"/>
+<area shape="rect" id="Node000007" href="$classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="629,81,754,124"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="548,82,614,90,614,96,547,87"/>
+<area shape="rect" id="Node000008" href="$classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="613,148,770,175"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="542,97,567,108,614,134,630,140,628,145,612,138,564,113,539,102"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="744,145,768,134,810,102,843,68,847,71,813,106,771,138,747,150"/>
+</map>

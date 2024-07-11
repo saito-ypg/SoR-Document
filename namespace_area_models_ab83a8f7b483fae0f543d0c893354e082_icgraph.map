@@ -1,0 +1,11 @@
+<map id="AreaModels::area" name="AreaModels::area">
+<area shape="rect" id="Node000001" title=" " alt="" coords="430,56,553,83"/>
+<area shape="rect" id="Node000002" href="$class_game_actor.html#a498ed1fd302e01a069747b8c43598eee" title=" " alt="" coords="193,5,367,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="417,54,338,35,339,30,418,49"/>
+<area shape="rect" id="Node000004" href="$class_charge_skill.html#ad656af05ae6e13aa50a4357b63af5769" title=" " alt="" coords="178,56,382,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="415,72,383,72,383,67,415,67"/>
+<area shape="rect" id="Node000005" href="$classtest_skill.html#a6d96e0ac7838bd97205840d053863885" title=" " alt="" coords="187,107,373,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="418,90,339,109,338,103,417,84"/>
+<area shape="rect" id="Node000003" href="$class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7" title=" " alt="" coords="5,5,130,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,21,130,21,130,16,178,16"/>
+</map>

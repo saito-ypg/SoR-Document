@@ -1,0 +1,7 @@
+<map id="RootObject::Initialize" name="RootObject::Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,32"/>
+<area shape="rect" id="Node000002" href="$_game_object_8h.html#aa3f4a0aa4d6e19369accf4c411487d02" title=" " alt="" coords="195,5,276,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,179,16,179,21,147,21"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#a72e5a5fda14cb7bda24cffdc06c4830d" title=" " alt="" coords="324,5,515,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="277,16,308,16,308,21,277,21"/>
+</map>

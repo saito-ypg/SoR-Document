@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): BoxCollider クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_box_collider.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#friends">フレンド</a> &#124;
+<a href="class_box_collider-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">BoxCollider クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_box_collider_8h_source.html">BoxCollider.h</a>&gt;</code></p>
+<div class="dynheader">
+BoxCollider の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_box_collider__inherit__graph.png" border="0" usemap="#a_box_collider_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_box_collider_inherit__map" id="a_box_collider_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,93,107"/>
+<area shape="rect" href="class_collider.html" title=" " alt="" coords="17,5,81,32"/>
+<area shape="poly" title=" " alt="" coords="52,48,52,80,46,80,46,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+BoxCollider 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_box_collider__coll__graph.png" border="0" usemap="#a_box_collider_coll__map" alt="Collaboration graph"/></div>
+<map name="a_box_collider_coll__map" id="a_box_collider_coll__map">
+<area shape="rect" title=" " alt="" coords="86,261,174,288"/>
+<area shape="rect" href="class_collider.html" title=" " alt="" coords="98,187,162,213"/>
+<area shape="poly" title=" " alt="" coords="133,229,133,261,127,261,127,229"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="83,96,177,123"/>
+<area shape="poly" title=" " alt="" coords="133,138,133,186,127,186,127,138"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="68,42,95,70,119,94,115,97,91,74,64,46"/>
+<area shape="poly" title=" " alt="" coords="101,10,110,19,102,27,84,30,84,25,100,23,105,19,97,14"/>
+<area shape="rect" title=" " alt="" coords="187,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="193,46,144,97,140,94,189,42"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6ca7c9ac71fe881480d10a23d1b744a8" id="r_a6ca7c9ac71fe881480d10a23d1b744a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ca7c9ac71fe881480d10a23d1b744a8">BoxCollider</a> (XMFLOAT3 basePos, XMFLOAT3 size)</td></tr>
+<tr class="separator:a6ca7c9ac71fe881480d10a23d1b744a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_collider"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_collider')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collider.html">Collider</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aa7186870221f868bbc74c3ae8609fa66 inherit pub_methods_class_collider" id="r_aa7186870221f868bbc74c3ae8609fa66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#aa7186870221f868bbc74c3ae8609fa66">Collider</a> ()</td></tr>
+<tr class="separator:aa7186870221f868bbc74c3ae8609fa66 inherit pub_methods_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564acde9860f875a32a6638c573d87be inherit pub_methods_class_collider" id="r_a564acde9860f875a32a6638c573d87be"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#a564acde9860f875a32a6638c573d87be">~Collider</a> ()</td></tr>
+<tr class="separator:a564acde9860f875a32a6638c573d87be inherit pub_methods_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cacea54f9085db5e578b415ab8a93dc inherit pub_methods_class_collider" id="r_a5cacea54f9085db5e578b415ab8a93dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#a5cacea54f9085db5e578b415ab8a93dc">IsHitBoxVsBox</a> (<a class="el" href="class_box_collider.html">BoxCollider</a> *boxA, <a class="el" href="class_box_collider.html">BoxCollider</a> *boxB)</td></tr>
+<tr class="separator:a5cacea54f9085db5e578b415ab8a93dc inherit pub_methods_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4ef44a6068825202e070cc59eb447c inherit pub_methods_class_collider" id="r_acc4ef44a6068825202e070cc59eb447c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#acc4ef44a6068825202e070cc59eb447c">IsHitBoxVsCircle</a> (<a class="el" href="class_box_collider.html">BoxCollider</a> *box, <a class="el" href="class_sphere_collider.html">SphereCollider</a> *sphere)</td></tr>
+<tr class="separator:acc4ef44a6068825202e070cc59eb447c inherit pub_methods_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca890d5658306f7c18fefc7c539091be inherit pub_methods_class_collider" id="r_aca890d5658306f7c18fefc7c539091be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#aca890d5658306f7c18fefc7c539091be">IsHitCircleVsCircle</a> (<a class="el" href="class_sphere_collider.html">SphereCollider</a> *circleA, <a class="el" href="class_sphere_collider.html">SphereCollider</a> *circleB)</td></tr>
+<tr class="separator:aca890d5658306f7c18fefc7c539091be inherit pub_methods_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae706014c07e6aa05440fe64baa160bcb inherit pub_methods_class_collider" id="r_ae706014c07e6aa05440fe64baa160bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#ae706014c07e6aa05440fe64baa160bcb">Draw</a> (XMFLOAT3 position)</td></tr>
+<tr class="separator:ae706014c07e6aa05440fe64baa160bcb inherit pub_methods_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6ec9fa7a431a7bb98e715c06d67ce5 inherit pub_methods_class_collider" id="r_a3f6ec9fa7a431a7bb98e715c06d67ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#a3f6ec9fa7a431a7bb98e715c06d67ce5">SetGameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *gameObject)</td></tr>
+<tr class="separator:a3f6ec9fa7a431a7bb98e715c06d67ce5 inherit pub_methods_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+フレンド</h2></td></tr>
+<tr class="memitem:a95f9c6cfd56f684a85ac83dd3f5a4e51" id="r_a95f9c6cfd56f684a85ac83dd3f5a4e51"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95f9c6cfd56f684a85ac83dd3f5a4e51">Collider</a></td></tr>
+<tr class="separator:a95f9c6cfd56f684a85ac83dd3f5a4e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_collider"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_collider')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collider.html">Collider</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a1336d100ed104d4727ed89cdb5dd257c inherit pro_attribs_class_collider" id="r_a1336d100ed104d4727ed89cdb5dd257c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#a1336d100ed104d4727ed89cdb5dd257c">pGameObject_</a></td></tr>
+<tr class="separator:a1336d100ed104d4727ed89cdb5dd257c inherit pro_attribs_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa626547bf74d3b1bdeaf22eef07f82f3 inherit pro_attribs_class_collider" id="r_aa626547bf74d3b1bdeaf22eef07f82f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_8h.html#a7f138e75fc3cc79e825c39e040690395">ColliderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#aa626547bf74d3b1bdeaf22eef07f82f3">type_</a></td></tr>
+<tr class="separator:aa626547bf74d3b1bdeaf22eef07f82f3 inherit pro_attribs_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb9bbe1d075c073eaa3dca93c56295c inherit pro_attribs_class_collider" id="r_a9fb9bbe1d075c073eaa3dca93c56295c"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#a9fb9bbe1d075c073eaa3dca93c56295c">center_</a></td></tr>
+<tr class="separator:a9fb9bbe1d075c073eaa3dca93c56295c inherit pro_attribs_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aaa5a793cc1937457e36a66a89e7ebf inherit pro_attribs_class_collider" id="r_a8aaa5a793cc1937457e36a66a89e7ebf"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#a8aaa5a793cc1937457e36a66a89e7ebf">size_</a></td></tr>
+<tr class="separator:a8aaa5a793cc1937457e36a66a89e7ebf inherit pro_attribs_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9483829a733fc43dd2094c6e61b6e7b2 inherit pro_attribs_class_collider" id="r_a9483829a733fc43dd2094c6e61b6e7b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider.html#a9483829a733fc43dd2094c6e61b6e7b2">hDebugModel_</a></td></tr>
+<tr class="separator:a9483829a733fc43dd2094c6e61b6e7b2 inherit pro_attribs_class_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_box_collider_8h_source.html">BoxCollider.h</a> の <a class="el" href="_box_collider_8h_source.html#l00008">8</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a6ca7c9ac71fe881480d10a23d1b744a8" name="a6ca7c9ac71fe881480d10a23d1b744a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca7c9ac71fe881480d10a23d1b744a8">&#9670;&#160;</a></span>BoxCollider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoxCollider::BoxCollider </td>
+          <td>(</td>
+          <td class="paramtype">XMFLOAT3</td>          <td class="paramname"><span class="paramname"><em>basePos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XMFLOAT3</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_box_collider_8cpp_source.html">BoxCollider.cpp</a> の <a class="el" href="_box_collider_8cpp_source.html#l00009">9</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_box_collider_a6ca7c9ac71fe881480d10a23d1b744a8_cgraph.png" border="0" usemap="#aclass_box_collider_a6ca7c9ac71fe881480d10a23d1b744a8_cgraph" alt=""/></div>
+<map name="aclass_box_collider_a6ca7c9ac71fe881480d10a23d1b744a8_cgraph" id="aclass_box_collider_a6ca7c9ac71fe881480d10a23d1b744a8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect" href="namespace_model.html#a69443687c12bb12394ae8bf6a5c22e44" title=" " alt="" coords="215,5,307,32"/>
+<area shape="poly" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+<area shape="rect" href="class_fbx.html#a7dc06d948358a90b6caee02e6cb2f486" title=" " alt="" coords="355,5,434,32"/>
+<area shape="poly" title=" " alt="" coords="307,16,339,16,339,21,307,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">フレンドと関連関数の詳解</h2>
+<a id="a95f9c6cfd56f684a85ac83dd3f5a4e51" name="a95f9c6cfd56f684a85ac83dd3f5a4e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f9c6cfd56f684a85ac83dd3f5a4e51">&#9670;&#160;</a></span>Collider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_collider.html">Collider</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_box_collider_8h_source.html">BoxCollider.h</a> の <a class="el" href="_box_collider_8h_source.html#l00011">11</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/Engine/<a class="el" href="_box_collider_8h_source.html">BoxCollider.h</a></li>
+<li>SoR/Engine/<a class="el" href="_box_collider_8cpp_source.html">BoxCollider.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_box_collider.html">BoxCollider</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

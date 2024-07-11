@@ -1,0 +1,6 @@
+<map id="GameObject::OnCollision" name="GameObject::OnCollision">
+<area shape="rect" id="Node000001" title=" " alt="" coords="205,29,373,56"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html#aa7444b0ebe8d38c70ef03f5544ede2c5" title=" " alt="" coords="5,29,157,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,45,157,45,157,40,189,40"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="117,16,104,10,81,8,59,10,47,15,45,20,50,27,46,30,39,21,44,11,58,5,81,3,106,5,119,12"/>
+</map>

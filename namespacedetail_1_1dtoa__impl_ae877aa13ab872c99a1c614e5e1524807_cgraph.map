@@ -1,0 +1,9 @@
+<map id="detail::dtoa_impl::grisu2_digit_gen" name="detail::dtoa_impl::grisu2_digit_gen">
+<area shape="rect" id="Node000001" title="Generates V = buffer * 10^decimal_exponent, such that M&#45; &lt;= V &lt;= M+." alt="" coords="5,72,130,115"/>
+<area shape="rect" id="Node000002" href="$namespacedetail_1_1dtoa__impl.html#a04eb234a28617519974fc962cd4da666" title="For n != 0, returns k, such that pow10 := 10^(k&#45;1) &lt;= n &lt; 10^k." alt="" coords="178,5,309,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,69,170,52,172,57,126,74"/>
+<area shape="rect" id="Node000003" href="$namespacedetail_1_1dtoa__impl.html#a73a15efcb5c2157ea0e1375b98ef0e83" title=" " alt="" coords="181,72,306,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,91,166,91,166,96,130,96"/>
+<area shape="rect" id="Node000004" href="$structdetail_1_1dtoa__impl_1_1diyfp.html#a75142bace0b78b1e1433b1d35a7ff252" title="returns x &#45; y" alt="" coords="181,139,306,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,113,172,130,170,135,125,118"/>
+</map>

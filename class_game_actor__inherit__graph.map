@@ -1,0 +1,13 @@
+<map id="GameActor" name="GameActor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="92,80,180,107"/>
+<area shape="rect" id="Node000003" href="$class_enemy_base.html" title=" " alt="" coords="40,155,133,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,121,97,156,93,153,116,118"/>
+<area shape="rect" id="Node000006" href="$class_player.html" title=" " alt="" coords="157,155,216,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="155,118,180,153,176,156,151,121"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html" title=" " alt="" coords="89,5,183,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,48,139,80,133,80,133,48"/>
+<area shape="rect" id="Node000004" href="$class_decoy.html" title=" " alt="" coords="5,229,64,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="71,196,46,230,41,227,66,193"/>
+<area shape="rect" id="Node000005" href="$class_soldier_enemy.html" title=" " alt="" coords="87,229,190,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="107,193,132,227,127,230,102,196"/>
+</map>

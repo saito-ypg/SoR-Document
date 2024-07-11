@@ -1,0 +1,7 @@
+<map id="Camera::convertWorldToNDC" name="Camera::convertWorldToNDC">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,196,57"/>
+<area shape="rect" id="Node000002" href="$namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac" title=" " alt="" coords="244,5,433,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,31,228,28,228,33,196,36"/>
+<area shape="rect" id="Node000003" href="$namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b" title=" " alt="" coords="259,56,418,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,52,243,57,243,62,196,57"/>
+</map>

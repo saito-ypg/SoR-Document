@@ -1,0 +1,9 @@
+<map id="SoR/sources/AttackRange.h" name="SoR/sources/AttackRange.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="77,5,263,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,108,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,35,91,74,88,69,149,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="132,80,208,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,33,173,64,167,64,167,33"/>
+<area shape="rect" id="Node000004" href="$areamodels_8h.html" title=" " alt="" coords="232,80,332,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,30,251,69,248,74,188,35"/>
+</map>

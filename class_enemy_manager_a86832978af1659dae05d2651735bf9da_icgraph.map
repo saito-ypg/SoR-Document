@@ -1,0 +1,5 @@
+<map id="EnemyManager::Release" name="EnemyManager::Release">
+<area shape="rect" id="Node000001" title=" " alt="" coords="273,5,440,32"/>
+<area shape="rect" id="Node000002" href="$class_enemy_manager.html#afe3583e45273d5509e59467d06a3feb6" title=" " alt="" coords="5,5,225,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,21,225,21,225,16,257,16"/>
+</map>

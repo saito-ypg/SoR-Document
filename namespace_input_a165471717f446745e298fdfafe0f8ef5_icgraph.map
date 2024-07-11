@@ -1,0 +1,5 @@
+<map id="Input::GetMousePosition" name="Input::GetMousePosition">
+<area shape="rect" id="Node000001" title=" " alt="" coords="193,5,357,32"/>
+<area shape="rect" id="Node000002" href="$namespace_image.html#a822c87c875d3d5bacc4504990884098d" title="引数に渡した画像とそのTransformを用いて、マウス座標が画像内にあるかを判断する ベースのロジックはisPointInside" alt="" coords="5,5,145,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,21,145,21,145,16,177,16"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="VFX::Particle" name="VFX::Particle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="53,293,150,320"/>
+<area shape="rect" id="Node000002" href="$struct_v_f_x_1_1_dynamic_data.html" title=" " alt="" coords="5,187,137,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,227,101,292,95,294,76,229"/>
+<area shape="rect" id="Node000003" href="$struct_v_f_x_1_1_emitter.html" title=" " alt="" coords="161,187,256,213"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,226,116,295,112,291,183,222"/>
+<area shape="rect" id="Node000004" href="$struct_emitter_data.html" title=" " alt="" coords="99,96,190,123"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="164,134,201,185,197,188,160,137"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="118,5,171,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="147,48,147,95,142,95,142,48"/>
+<area shape="rect" id="Node000006" href="$class_bill_board.html" title=" " alt="" coords="213,96,286,123"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="240,138,217,187,212,185,235,136"/>
+</map>

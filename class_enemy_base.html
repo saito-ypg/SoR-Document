@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): EnemyBase クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_enemy_base.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_enemy_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">EnemyBase クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a>&gt;</code></p>
+<div class="dynheader">
+EnemyBase の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_base__inherit__graph.png" border="0" usemap="#a_enemy_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_enemy_base_inherit__map" id="a_enemy_base_inherit__map">
+<area shape="rect" title=" " alt="" coords="40,155,133,181"/>
+<area shape="rect" href="class_decoy.html" title=" " alt="" coords="5,229,64,256"/>
+<area shape="poly" title=" " alt="" coords="71,196,46,230,41,227,66,193"/>
+<area shape="rect" href="class_soldier_enemy.html" title=" " alt="" coords="87,229,190,256"/>
+<area shape="poly" title=" " alt="" coords="107,193,132,227,127,230,102,196"/>
+<area shape="rect" href="class_game_actor.html" title=" " alt="" coords="43,80,130,107"/>
+<area shape="poly" title=" " alt="" coords="89,122,89,154,84,154,84,122"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="39,5,134,32"/>
+<area shape="poly" title=" " alt="" coords="89,48,89,80,84,80,84,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+EnemyBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_base__coll__graph.png" border="0" usemap="#a_enemy_base_coll__map" alt="Collaboration graph"/></div>
+<map name="a_enemy_base_coll__map" id="a_enemy_base_coll__map">
+<area shape="rect" title=" " alt="" coords="137,277,229,304"/>
+<area shape="rect" href="class_game_actor.html" title=" " alt="" coords="140,187,227,213"/>
+<area shape="poly" title=" " alt="" coords="185,229,184,237,185,277,180,277,179,237,179,229"/>
+<area shape="poly" title=" " alt="" coords="186,229,186,277,181,277,181,229"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="83,96,177,123"/>
+<area shape="poly" title=" " alt="" coords="148,135,178,185,173,187,143,138"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="68,41,96,70,119,94,115,97,92,74,64,45"/>
+<area shape="poly" title=" " alt="" coords="101,10,110,19,102,27,84,30,84,25,100,23,105,19,97,14"/>
+<area shape="rect" title=" " alt="" coords="187,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="193,46,144,97,140,94,189,42"/>
+<area shape="rect" href="class_actor_info.html" title=" " alt="" coords="202,96,274,123"/>
+<area shape="poly" title=" " alt="" coords="224,138,193,187,189,185,220,135"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:aaefbb20eb5be8f97e8d81dfe1c97b252" id="r_aaefbb20eb5be8f97e8d81dfe1c97b252"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252">SPAWINIG_STATE</a> { <a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252a284838634a475669b21803a3df14fda8">WAIT</a>
+, <a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252ae62f197281fd85131b3d47637f4e2d78">IN_SPAWN</a>
+, <a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252a7c83fdc7ad77cac2e2ca268bc0cb4c44">DEAD</a>
+ }</td></tr>
+<tr class="separator:aaefbb20eb5be8f97e8d81dfe1c97b252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac55920f059c6eb4f456062e0fb355ecf" id="r_ac55920f059c6eb4f456062e0fb355ecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac55920f059c6eb4f456062e0fb355ecf">EnemyBase</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent, bool isboss=false)</td></tr>
+<tr class="separator:ac55920f059c6eb4f456062e0fb355ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d1ffb3230a2e8b2c0b7cd86cbd7a6c" id="r_a73d1ffb3230a2e8b2c0b7cd86cbd7a6c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73d1ffb3230a2e8b2c0b7cd86cbd7a6c">~EnemyBase</a> ()</td></tr>
+<tr class="separator:a73d1ffb3230a2e8b2c0b7cd86cbd7a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ac7c52b2f84b547d1c1b658f30c8cd" id="r_a54ac7c52b2f84b547d1c1b658f30c8cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54ac7c52b2f84b547d1c1b658f30c8cd">SetPlayer</a> (<a class="el" href="class_game_actor.html">GameActor</a> *p)</td></tr>
+<tr class="separator:a54ac7c52b2f84b547d1c1b658f30c8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17795d76b76c6eba16e17513155c8845" id="r_a17795d76b76c6eba16e17513155c8845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17795d76b76c6eba16e17513155c8845">SetMediator</a> (std::unique_ptr&lt; <a class="el" href="class_mediator_base.html">MediatorBase</a> &gt;mediator)</td></tr>
+<tr class="separator:a17795d76b76c6eba16e17513155c8845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd2db980694dcfc43d75ceba89970f0" id="r_a2cd2db980694dcfc43d75ceba89970f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cd2db980694dcfc43d75ceba89970f0">setConfig</a> (const <a class="el" href="struct_enemy_status.html">EnemyStatus</a> &amp;status)</td></tr>
+<tr class="separator:a2cd2db980694dcfc43d75ceba89970f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6c4022482b4ce261e1f8befddc0682" id="r_a6b6c4022482b4ce261e1f8befddc0682"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252">SPAWINIG_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b6c4022482b4ce261e1f8befddc0682">getStat</a> () const</td></tr>
+<tr class="separator:a6b6c4022482b4ce261e1f8befddc0682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_game_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_actor')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_actor.html">GameActor</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ae4526450bb4ef315f531a9237de11528 inherit pub_methods_class_game_actor" id="r_ae4526450bb4ef315f531a9237de11528"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#ae4526450bb4ef315f531a9237de11528">GetRadius</a> () const</td></tr>
+<tr class="separator:ae4526450bb4ef315f531a9237de11528 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb4261acec41285a2ceaa5fd295af08 inherit pub_methods_class_game_actor" id="r_aebb4261acec41285a2ceaa5fd295af08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#aebb4261acec41285a2ceaa5fd295af08">GameActor</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent, const std::string &amp;name)</td></tr>
+<tr class="separator:aebb4261acec41285a2ceaa5fd295af08 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7becf6889c14e7df17e31ba0a3329d32 inherit pub_methods_class_game_actor" id="r_a7becf6889c14e7df17e31ba0a3329d32"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a7becf6889c14e7df17e31ba0a3329d32">~GameActor</a> ()</td></tr>
+<tr class="separator:a7becf6889c14e7df17e31ba0a3329d32 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db71402a6b50b290625cdd2f9e758c2 inherit pub_methods_class_game_actor" id="r_a1db71402a6b50b290625cdd2f9e758c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a1db71402a6b50b290625cdd2f9e758c2">Update</a> (const float &amp;dt) override final</td></tr>
+<tr class="separator:a1db71402a6b50b290625cdd2f9e758c2 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c4998daa8606696f2a9ddecd679862 inherit pub_methods_class_game_actor" id="r_ad6c4998daa8606696f2a9ddecd679862"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#ad6c4998daa8606696f2a9ddecd679862">ActorUpdate</a> (const float &amp;dt)=0</td></tr>
+<tr class="separator:ad6c4998daa8606696f2a9ddecd679862 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7 inherit pub_methods_class_game_actor" id="r_a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7">Draw</a> () override final</td></tr>
+<tr class="separator:a5ed0bef2fdc3a41c1d0b8eda8a2dcdf7 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8eb792530c36af9da8be95bc371482 inherit pub_methods_class_game_actor" id="r_a3b8eb792530c36af9da8be95bc371482"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a3b8eb792530c36af9da8be95bc371482">ActorDraw</a> ()=0</td></tr>
+<tr class="separator:a3b8eb792530c36af9da8be95bc371482 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a324573278ae34de1df8548437173c8 inherit pub_methods_class_game_actor" id="r_a7a324573278ae34de1df8548437173c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a7a324573278ae34de1df8548437173c8">Release</a> () override final</td></tr>
+<tr class="separator:a7a324573278ae34de1df8548437173c8 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef06609c6aae84018489e5d1bbf21d61 inherit pub_methods_class_game_actor" id="r_aef06609c6aae84018489e5d1bbf21d61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#aef06609c6aae84018489e5d1bbf21d61">ActorRelease</a> ()=0</td></tr>
+<tr class="separator:aef06609c6aae84018489e5d1bbf21d61 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e63eb09474d5c6acf655d7d4d53a9b5 inherit pub_methods_class_game_actor" id="r_a4e63eb09474d5c6acf655d7d4d53a9b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a4e63eb09474d5c6acf655d7d4d53a9b5">TakeAttacked</a> (<a class="el" href="struct_damage_data.html">DamageData</a> &amp;dmg, XMVECTOR &amp;dir)</td></tr>
+<tr class="separator:a4e63eb09474d5c6acf655d7d4d53a9b5 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0b55e1673ad978a4ef4b7f8ed99401 inherit pub_methods_class_game_actor" id="r_a6e0b55e1673ad978a4ef4b7f8ed99401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401">GetTransformRef</a> ()</td></tr>
+<tr class="separator:a6e0b55e1673ad978a4ef4b7f8ed99401 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6183007228b75125d1a6da008937e6f5 inherit pub_methods_class_game_actor" id="r_a6183007228b75125d1a6da008937e6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a6183007228b75125d1a6da008937e6f5">ForceMove</a> (XMVECTOR translateBy)</td></tr>
+<tr class="separator:a6183007228b75125d1a6da008937e6f5 inherit pub_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_object')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_object.html">GameObject</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a0348e3ee2e83d56eafca7a3547f432c4 inherit pub_methods_class_game_object" id="r_a0348e3ee2e83d56eafca7a3547f432c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a0348e3ee2e83d56eafca7a3547f432c4">GameObject</a> ()</td></tr>
+<tr class="separator:a0348e3ee2e83d56eafca7a3547f432c4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59ffa2d8d3e171395a14e53c0d3b085 inherit pub_methods_class_game_object" id="r_ac59ffa2d8d3e171395a14e53c0d3b085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac59ffa2d8d3e171395a14e53c0d3b085">GameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent)</td></tr>
+<tr class="separator:ac59ffa2d8d3e171395a14e53c0d3b085 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4e4440999725de273506a8f4362d5f inherit pub_methods_class_game_object" id="r_a3b4e4440999725de273506a8f4362d5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3b4e4440999725de273506a8f4362d5f">GameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent, const std::string &amp;name)</td></tr>
+<tr class="separator:a3b4e4440999725de273506a8f4362d5f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82dfdb656f9051c0587e6593b2dda97 inherit pub_methods_class_game_object" id="r_ab82dfdb656f9051c0587e6593b2dda97"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ab82dfdb656f9051c0587e6593b2dda97">~GameObject</a> ()</td></tr>
+<tr class="separator:ab82dfdb656f9051c0587e6593b2dda97 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ef8d54869391515480e3aef81f876d inherit pub_methods_class_game_object" id="r_af9ef8d54869391515480e3aef81f876d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#af9ef8d54869391515480e3aef81f876d">Initialize</a> (void)=0</td></tr>
+<tr class="separator:af9ef8d54869391515480e3aef81f876d inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eec20eae59484f8a629a4ead1db1404 inherit pub_methods_class_game_object" id="r_a3eec20eae59484f8a629a4ead1db1404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3eec20eae59484f8a629a4ead1db1404">UpdateSub</a> (const float &amp;dt)</td></tr>
+<tr class="separator:a3eec20eae59484f8a629a4ead1db1404 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb0da0dfe75fe7100a5ce44d5fc7b80 inherit pub_methods_class_game_object" id="r_a7bb0da0dfe75fe7100a5ce44d5fc7b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a7bb0da0dfe75fe7100a5ce44d5fc7b80">DrawSub</a> ()</td></tr>
+<tr class="separator:a7bb0da0dfe75fe7100a5ce44d5fc7b80 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6616c815e02395884c0bd7125f881b7b inherit pub_methods_class_game_object" id="r_a6616c815e02395884c0bd7125f881b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a6616c815e02395884c0bd7125f881b7b">ReleaseSub</a> ()</td></tr>
+<tr class="separator:a6616c815e02395884c0bd7125f881b7b inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0d4e8eaf47f457927850b2cd8be670 inherit pub_methods_class_game_object" id="r_a6c0d4e8eaf47f457927850b2cd8be670"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a6c0d4e8eaf47f457927850b2cd8be670">GetWorldMatrix</a> ()</td></tr>
+<tr class="separator:a6c0d4e8eaf47f457927850b2cd8be670 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc85e842da02559714d368439233b266 inherit pub_methods_class_game_object" id="r_acc85e842da02559714d368439233b266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#acc85e842da02559714d368439233b266">IsDead</a> ()</td></tr>
+<tr class="separator:acc85e842da02559714d368439233b266 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33271803c705a20371cb17923bcb08d2 inherit pub_methods_class_game_object" id="r_a33271803c705a20371cb17923bcb08d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a33271803c705a20371cb17923bcb08d2">KillMe</a> ()</td></tr>
+<tr class="separator:a33271803c705a20371cb17923bcb08d2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f66dbb5e290656281de8af92ea3bcd inherit pub_methods_class_game_object" id="r_a33f66dbb5e290656281de8af92ea3bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a33f66dbb5e290656281de8af92ea3bcd">Enter</a> ()</td></tr>
+<tr class="separator:a33f66dbb5e290656281de8af92ea3bcd inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa450a4f850dc857146899b8b5f5115cc inherit pub_methods_class_game_object" id="r_aa450a4f850dc857146899b8b5f5115cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa450a4f850dc857146899b8b5f5115cc">Leave</a> ()</td></tr>
+<tr class="separator:aa450a4f850dc857146899b8b5f5115cc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c87636671d2052999d54cfafa949b9f inherit pub_methods_class_game_object" id="r_a5c87636671d2052999d54cfafa949b9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a5c87636671d2052999d54cfafa949b9f">Visible</a> ()</td></tr>
+<tr class="separator:a5c87636671d2052999d54cfafa949b9f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ec21a1964e208684ddadad27f52de6 inherit pub_methods_class_game_object" id="r_a96ec21a1964e208684ddadad27f52de6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a96ec21a1964e208684ddadad27f52de6">Invisible</a> ()</td></tr>
+<tr class="separator:a96ec21a1964e208684ddadad27f52de6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07dcaa78fa0dfc5d897cba7563058b1 inherit pub_methods_class_game_object" id="r_ad07dcaa78fa0dfc5d897cba7563058b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ad07dcaa78fa0dfc5d897cba7563058b1">IsInitialized</a> ()</td></tr>
+<tr class="separator:ad07dcaa78fa0dfc5d897cba7563058b1 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d59329d169518f859ed9592a558a492 inherit pub_methods_class_game_object" id="r_a9d59329d169518f859ed9592a558a492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a9d59329d169518f859ed9592a558a492">SetInitialized</a> ()</td></tr>
+<tr class="separator:a9d59329d169518f859ed9592a558a492 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94319c3e9ddee4d5ee08fec5c09e9655 inherit pub_methods_class_game_object" id="r_a94319c3e9ddee4d5ee08fec5c09e9655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a94319c3e9ddee4d5ee08fec5c09e9655">IsEntered</a> ()</td></tr>
+<tr class="separator:a94319c3e9ddee4d5ee08fec5c09e9655 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05d364e5acbfdf52368092e963887c0 inherit pub_methods_class_game_object" id="r_ac05d364e5acbfdf52368092e963887c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac05d364e5acbfdf52368092e963887c0">IsVisibled</a> ()</td></tr>
+<tr class="separator:ac05d364e5acbfdf52368092e963887c0 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed83be77ba65e8574656cf51463cc632 inherit pub_methods_class_game_object" id="r_aed83be77ba65e8574656cf51463cc632"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_object.html">GameObject</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aed83be77ba65e8574656cf51463cc632">GetChildList</a> ()</td></tr>
+<tr class="separator:aed83be77ba65e8574656cf51463cc632 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cd34f35a40f8c303d38a61a1c4cbed inherit pub_methods_class_game_object" id="r_ab8cd34f35a40f8c303d38a61a1c4cbed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed">GetParent</a> ()</td></tr>
+<tr class="separator:ab8cd34f35a40f8c303d38a61a1c4cbed inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8f28a08b13d6e2d234c7fc3488b2b7 inherit pub_methods_class_game_object" id="r_afb8f28a08b13d6e2d234c7fc3488b2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afb8f28a08b13d6e2d234c7fc3488b2b7">FindChildObject</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:afb8f28a08b13d6e2d234c7fc3488b2b7 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d90e0f590d24cdf0755e273dca3b27 inherit pub_methods_class_game_object" id="r_a02d90e0f590d24cdf0755e273dca3b27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27">FindObject</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a02d90e0f590d24cdf0755e273dca3b27 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48265f25e24f0cfd7ae2a5f601a6ad64 inherit pub_methods_class_game_object" id="r_a48265f25e24f0cfd7ae2a5f601a6ad64"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a48265f25e24f0cfd7ae2a5f601a6ad64">GetObjectName</a> (void) const</td></tr>
+<tr class="separator:a48265f25e24f0cfd7ae2a5f601a6ad64 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e5a5fda14cb7bda24cffdc06c4830d inherit pub_methods_class_game_object" id="r_a72e5a5fda14cb7bda24cffdc06c4830d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a72e5a5fda14cb7bda24cffdc06c4830d">PushBackChild</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="separator:a72e5a5fda14cb7bda24cffdc06c4830d inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a6ba604bb06358cf733d1782f1b0e4 inherit pub_methods_class_game_object" id="r_ac2a6ba604bb06358cf733d1782f1b0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac2a6ba604bb06358cf733d1782f1b0e4">PushFrontChild</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="separator:ac2a6ba604bb06358cf733d1782f1b0e4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d71dae3d2410c901974ad46fcef0bf inherit pub_methods_class_game_object" id="r_ae8d71dae3d2410c901974ad46fcef0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ae8d71dae3d2410c901974ad46fcef0bf">KillAllChildren</a> ()</td></tr>
+<tr class="separator:ae8d71dae3d2410c901974ad46fcef0bf inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb855b45044a3c362be78583f66c2a2 inherit pub_methods_class_game_object" id="r_a3fb855b45044a3c362be78583f66c2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3fb855b45044a3c362be78583f66c2a2">AddCollider</a> (<a class="el" href="class_collider.html">Collider</a> *collider)</td></tr>
+<tr class="separator:a3fb855b45044a3c362be78583f66c2a2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f0aed6b1a3b607702b8135be73e9f2 inherit pub_methods_class_game_object" id="r_a30f0aed6b1a3b607702b8135be73e9f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a30f0aed6b1a3b607702b8135be73e9f2">OnCollision</a> (<a class="el" href="class_game_object.html">GameObject</a> *pTarget)</td></tr>
+<tr class="separator:a30f0aed6b1a3b607702b8135be73e9f2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe0d2eb92532ca832027815d8313516 inherit pub_methods_class_game_object" id="r_aafe0d2eb92532ca832027815d8313516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aafe0d2eb92532ca832027815d8313516">ClearCollider</a> ()</td></tr>
+<tr class="separator:aafe0d2eb92532ca832027815d8313516 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7444b0ebe8d38c70ef03f5544ede2c5 inherit pub_methods_class_game_object" id="r_aa7444b0ebe8d38c70ef03f5544ede2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa7444b0ebe8d38c70ef03f5544ede2c5">Collision</a> (<a class="el" href="class_game_object.html">GameObject</a> *pTarget)</td></tr>
+<tr class="separator:aa7444b0ebe8d38c70ef03f5544ede2c5 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379a898a16acaf481406c14b3c35680a inherit pub_methods_class_game_object" id="r_a379a898a16acaf481406c14b3c35680a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a379a898a16acaf481406c14b3c35680a">CollisionDraw</a> ()</td></tr>
+<tr class="separator:a379a898a16acaf481406c14b3c35680a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582a09eb9f4fbfe8b12a1f4bf054498a inherit pub_methods_class_game_object" id="r_a582a09eb9f4fbfe8b12a1f4bf054498a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a582a09eb9f4fbfe8b12a1f4bf054498a">GetRootJob</a> ()</td></tr>
+<tr class="separator:a582a09eb9f4fbfe8b12a1f4bf054498a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff8538cd2c3890a31dc3052b64baa8a inherit pub_methods_class_game_object" id="r_a0ff8538cd2c3890a31dc3052b64baa8a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a0ff8538cd2c3890a31dc3052b64baa8a">GetMyTimeScale</a> () const</td></tr>
+<tr class="separator:a0ff8538cd2c3890a31dc3052b64baa8a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fce977044f8d5cd9a40a952ed2d1998 inherit pub_methods_class_game_object" id="r_a9fce977044f8d5cd9a40a952ed2d1998"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a9fce977044f8d5cd9a40a952ed2d1998">GetTotalTimeScale</a> () const</td></tr>
+<tr class="separator:a9fce977044f8d5cd9a40a952ed2d1998 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cfcdc2fc6c10ee5f1386855f951849 inherit pub_methods_class_game_object" id="r_aa5cfcdc2fc6c10ee5f1386855f951849"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa5cfcdc2fc6c10ee5f1386855f951849">GetPosition</a> ()</td></tr>
+<tr class="separator:aa5cfcdc2fc6c10ee5f1386855f951849 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecbadbb1da960249e08263a81e828bc inherit pub_methods_class_game_object" id="r_afecbadbb1da960249e08263a81e828bc"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afecbadbb1da960249e08263a81e828bc">GetRotate</a> ()</td></tr>
+<tr class="separator:afecbadbb1da960249e08263a81e828bc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d465322d9a9ef2240dcf4e5fb1c03c inherit pub_methods_class_game_object" id="r_a98d465322d9a9ef2240dcf4e5fb1c03c"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a98d465322d9a9ef2240dcf4e5fb1c03c">GetScale</a> ()</td></tr>
+<tr class="separator:a98d465322d9a9ef2240dcf4e5fb1c03c inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced96b154f432431101c7f6270484ca0 inherit pub_methods_class_game_object" id="r_aced96b154f432431101c7f6270484ca0"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aced96b154f432431101c7f6270484ca0">GetWorldPosition</a> ()</td></tr>
+<tr class="separator:aced96b154f432431101c7f6270484ca0 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb354ded407cdd8e617ddb3a3848aa6 inherit pub_methods_class_game_object" id="r_a1fb354ded407cdd8e617ddb3a3848aa6"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a1fb354ded407cdd8e617ddb3a3848aa6">GetWorldRotate</a> ()</td></tr>
+<tr class="separator:a1fb354ded407cdd8e617ddb3a3848aa6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d088d6332b63c91288edc7b774a243f inherit pub_methods_class_game_object" id="r_a3d088d6332b63c91288edc7b774a243f"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3d088d6332b63c91288edc7b774a243f">GetWorldScale</a> ()</td></tr>
+<tr class="separator:a3d088d6332b63c91288edc7b774a243f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a17beee606ce1a49e6b121281f870e4 inherit pub_methods_class_game_object" id="r_a3a17beee606ce1a49e6b121281f870e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3a17beee606ce1a49e6b121281f870e4">SetTimeScale</a> (float v)</td></tr>
+<tr class="separator:a3a17beee606ce1a49e6b121281f870e4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc5a9686ab26e62f47dc8906a9f5773 inherit pub_methods_class_game_object" id="r_a3fc5a9686ab26e62f47dc8906a9f5773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3fc5a9686ab26e62f47dc8906a9f5773">SetPosition</a> (XMFLOAT3 position)</td></tr>
+<tr class="separator:a3fc5a9686ab26e62f47dc8906a9f5773 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c75654f6d49ce65bf2f3a7bbacd8381 inherit pub_methods_class_game_object" id="r_a7c75654f6d49ce65bf2f3a7bbacd8381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a7c75654f6d49ce65bf2f3a7bbacd8381">SetPosition</a> (XMVECTOR position)</td></tr>
+<tr class="separator:a7c75654f6d49ce65bf2f3a7bbacd8381 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb69dab3e8f30a0be83c1d4b554ed275 inherit pub_methods_class_game_object" id="r_afb69dab3e8f30a0be83c1d4b554ed275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afb69dab3e8f30a0be83c1d4b554ed275">SetPosition</a> (float x, float y, float z)</td></tr>
+<tr class="separator:afb69dab3e8f30a0be83c1d4b554ed275 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64712d13af42f2821fad54a7363579dc inherit pub_methods_class_game_object" id="r_a64712d13af42f2821fad54a7363579dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a64712d13af42f2821fad54a7363579dc">SetRotate</a> (XMFLOAT3 rotate)</td></tr>
+<tr class="separator:a64712d13af42f2821fad54a7363579dc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b9a5e1c64013245a5976bba765ece7 inherit pub_methods_class_game_object" id="r_a57b9a5e1c64013245a5976bba765ece7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a57b9a5e1c64013245a5976bba765ece7">SetRotate</a> (float x, float y, float z)</td></tr>
+<tr class="separator:a57b9a5e1c64013245a5976bba765ece7 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c37cc6fe4f976f6bf153c3d28d8d15 inherit pub_methods_class_game_object" id="r_ac6c37cc6fe4f976f6bf153c3d28d8d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac6c37cc6fe4f976f6bf153c3d28d8d15">SetRotateX</a> (float x)</td></tr>
+<tr class="separator:ac6c37cc6fe4f976f6bf153c3d28d8d15 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f7c370d904c3aee8870ad7dfba74b6 inherit pub_methods_class_game_object" id="r_a77f7c370d904c3aee8870ad7dfba74b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a77f7c370d904c3aee8870ad7dfba74b6">SetRotateY</a> (float y)</td></tr>
+<tr class="separator:a77f7c370d904c3aee8870ad7dfba74b6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ae2485d68f873cbc1da908a92a744b inherit pub_methods_class_game_object" id="r_a79ae2485d68f873cbc1da908a92a744b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a79ae2485d68f873cbc1da908a92a744b">SetRotateZ</a> (float z)</td></tr>
+<tr class="separator:a79ae2485d68f873cbc1da908a92a744b inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add837dfa58c6dc740322b1ee75bc3797 inherit pub_methods_class_game_object" id="r_add837dfa58c6dc740322b1ee75bc3797"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#add837dfa58c6dc740322b1ee75bc3797">SetScale</a> (XMFLOAT3 scale)</td></tr>
+<tr class="separator:add837dfa58c6dc740322b1ee75bc3797 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28891c1985f80927b4b0633de8c67eac inherit pub_methods_class_game_object" id="r_a28891c1985f80927b4b0633de8c67eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a28891c1985f80927b4b0633de8c67eac">SetScale</a> (float x, float y, float z)</td></tr>
+<tr class="separator:a28891c1985f80927b4b0633de8c67eac inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa71baae08a9211a0f444ac68a612abf4" id="r_aa71baae08a9211a0f444ac68a612abf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa71baae08a9211a0f444ac68a612abf4">mediatorUpdate</a> (const float &amp;dt)</td></tr>
+<tr class="memdesc:aa71baae08a9211a0f444ac68a612abf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートと情報をやり取りし敵に行動させる もしmediatorがnullなら行動しないキャラとなる  <br /></td></tr>
+<tr class="separator:aa71baae08a9211a0f444ac68a612abf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae728953e6963df855da909caeb849798" id="r_ae728953e6963df855da909caeb849798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae728953e6963df855da909caeb849798">AddCamp</a> () override</td></tr>
+<tr class="separator:ae728953e6963df855da909caeb849798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7ebe08e35775fa1ff7157e7b8f066b" id="r_a0e7ebe08e35775fa1ff7157e7b8f066b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e7ebe08e35775fa1ff7157e7b8f066b">RemoveCamp</a> () override</td></tr>
+<tr class="separator:a0e7ebe08e35775fa1ff7157e7b8f066b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28de4eb50f183feb9e019f92b7cce75" id="r_ab28de4eb50f183feb9e019f92b7cce75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab28de4eb50f183feb9e019f92b7cce75">dyingProcess</a> () override</td></tr>
+<tr class="separator:ab28de4eb50f183feb9e019f92b7cce75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_game_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_game_actor')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_actor.html">GameActor</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:aa2a78b7e8cedf1a6e195b6c2cb949104 inherit pro_methods_class_game_actor" id="r_aa2a78b7e8cedf1a6e195b6c2cb949104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#aa2a78b7e8cedf1a6e195b6c2cb949104">IsDying</a> () const</td></tr>
+<tr class="separator:aa2a78b7e8cedf1a6e195b6c2cb949104 inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfeff0c8477472a5c26812b74cddcf52 inherit pro_methods_class_game_actor" id="r_acfeff0c8477472a5c26812b74cddcf52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#acfeff0c8477472a5c26812b74cddcf52">AddColliderCamp</a> (<a class="el" href="class_game_actor.html">GameActor</a> *act, <a class="el" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp)</td></tr>
+<tr class="separator:acfeff0c8477472a5c26812b74cddcf52 inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f38a9c2daa7f0b6c452f04a0a4379d inherit pro_methods_class_game_actor" id="r_a97f38a9c2daa7f0b6c452f04a0a4379d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a97f38a9c2daa7f0b6c452f04a0a4379d">RemoveColliderCamp</a> (<a class="el" href="class_game_actor.html">GameActor</a> *act, <a class="el" href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89d">CAMPS</a> camp)</td></tr>
+<tr class="separator:a97f38a9c2daa7f0b6c452f04a0a4379d inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4ad85081854790b6436bb67f04a21e inherit pro_methods_class_game_actor" id="r_afd4ad85081854790b6436bb67f04a21e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#afd4ad85081854790b6436bb67f04a21e">CanMoveWithEffects</a> ()</td></tr>
+<tr class="separator:afd4ad85081854790b6436bb67f04a21e inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d41aaa7abbe39ab6170a83eb170137 inherit pro_methods_class_game_actor" id="r_a21d41aaa7abbe39ab6170a83eb170137"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137">DrawBody</a> ()</td></tr>
+<tr class="separator:a21d41aaa7abbe39ab6170a83eb170137 inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498ed1fd302e01a069747b8c43598eee inherit pro_methods_class_game_actor" id="r_a498ed1fd302e01a069747b8c43598eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a498ed1fd302e01a069747b8c43598eee">DrawCollision</a> () const</td></tr>
+<tr class="separator:a498ed1fd302e01a069747b8c43598eee inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e0717de9eb78aafe1891fae94a3f96 inherit pro_methods_class_game_actor" id="r_aa8e0717de9eb78aafe1891fae94a3f96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#aa8e0717de9eb78aafe1891fae94a3f96">DrawHP</a> () const</td></tr>
+<tr class="separator:aa8e0717de9eb78aafe1891fae94a3f96 inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bf19323146d2f58b999ffab10b0f98 inherit pro_methods_class_game_actor" id="r_a22bf19323146d2f58b999ffab10b0f98"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a22bf19323146d2f58b999ffab10b0f98">dyingDraw</a> ()</td></tr>
+<tr class="separator:a22bf19323146d2f58b999ffab10b0f98 inherit pro_methods_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a841c95beef5f936598da76b8b766a666" id="r_a841c95beef5f936598da76b8b766a666"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a841c95beef5f936598da76b8b766a666">isBoss_</a></td></tr>
+<tr class="separator:a841c95beef5f936598da76b8b766a666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bceac7098f30ddfcbef91805762cca" id="r_af9bceac7098f30ddfcbef91805762cca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_actor.html">GameActor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9bceac7098f30ddfcbef91805762cca">pPlayer_</a></td></tr>
+<tr class="separator:af9bceac7098f30ddfcbef91805762cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bd32a3d5494d1f88f9857780e8d3e5" id="r_a93bd32a3d5494d1f88f9857780e8d3e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252">SPAWINIG_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93bd32a3d5494d1f88f9857780e8d3e5">eStat_</a></td></tr>
+<tr class="separator:a93bd32a3d5494d1f88f9857780e8d3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee3bf8f51f8960ffc91b55bd3562958" id="r_a1ee3bf8f51f8960ffc91b55bd3562958"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_mediator_base.html">MediatorBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee3bf8f51f8960ffc91b55bd3562958">pMediator_</a></td></tr>
+<tr class="separator:a1ee3bf8f51f8960ffc91b55bd3562958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_game_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_game_actor')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_actor.html">GameActor</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:aa3e5ba56e0d11bf66cb0ed38654e5a64 inherit pro_attribs_class_game_actor" id="r_aa3e5ba56e0d11bf66cb0ed38654e5a64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_actor_info.html">ActorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a></td></tr>
+<tr class="separator:aa3e5ba56e0d11bf66cb0ed38654e5a64 inherit pro_attribs_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f17af4412e5ecc67f0dcf58aa2d560 inherit pro_attribs_class_game_actor" id="r_a10f17af4412e5ecc67f0dcf58aa2d560"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a10f17af4412e5ecc67f0dcf58aa2d560">isInvincible_</a></td></tr>
+<tr class="separator:a10f17af4412e5ecc67f0dcf58aa2d560 inherit pro_attribs_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440bedde933a7d89f34c8507c5f780de inherit pro_attribs_class_game_actor" id="r_a440bedde933a7d89f34c8507c5f780de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a440bedde933a7d89f34c8507c5f780de">isDying_</a></td></tr>
+<tr class="separator:a440bedde933a7d89f34c8507c5f780de inherit pro_attribs_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19cff1a27e391ade9edc88166629d281 inherit pro_attribs_class_game_actor" id="r_a19cff1a27e391ade9edc88166629d281"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a19cff1a27e391ade9edc88166629d281">hBody_</a></td></tr>
+<tr class="separator:a19cff1a27e391ade9edc88166629d281 inherit pro_attribs_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e78f191d5538c3f50bc3fbe6d72fe3 inherit pro_attribs_class_game_actor" id="r_a11e78f191d5538c3f50bc3fbe6d72fe3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_actor.html#a11e78f191d5538c3f50bc3fbe6d72fe3">hModels_</a></td></tr>
+<tr class="separator:a11e78f191d5538c3f50bc3fbe6d72fe3 inherit pro_attribs_class_game_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_game_object')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_object.html">GameObject</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:aac1b36ed81c3e3ff28ca5994b4993be3 inherit pro_attribs_class_game_object" id="r_aac1b36ed81c3e3ff28ca5994b4993be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a></td></tr>
+<tr class="separator:aac1b36ed81c3e3ff28ca5994b4993be3 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41deeb9b8f041808286661cc8c9502b2 inherit pro_attribs_class_game_object" id="r_a41deeb9b8f041808286661cc8c9502b2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a41deeb9b8f041808286661cc8c9502b2">objectName_</a></td></tr>
+<tr class="separator:a41deeb9b8f041808286661cc8c9502b2 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c5050154b6bcb6856814c6d7b52154 inherit pro_attribs_class_game_object" id="r_a00c5050154b6bcb6856814c6d7b52154"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_collider.html">Collider</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a00c5050154b6bcb6856814c6d7b52154">colliderList_</a></td></tr>
+<tr class="separator:a00c5050154b6bcb6856814c6d7b52154 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b305b7bea032772ed836b154b577da6 inherit pro_attribs_class_game_object" id="r_a5b305b7bea032772ed836b154b577da6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a5b305b7bea032772ed836b154b577da6">timeScale</a></td></tr>
+<tr class="separator:a5b305b7bea032772ed836b154b577da6 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae150d5e0bccbf80b49f0c4f3b4df7441 inherit pro_attribs_class_game_object" id="r_ae150d5e0bccbf80b49f0c4f3b4df7441"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ae150d5e0bccbf80b49f0c4f3b4df7441">parentalTimeScale</a></td></tr>
+<tr class="separator:ae150d5e0bccbf80b49f0c4f3b4df7441 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00011">11</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="aaefbb20eb5be8f97e8d81dfe1c97b252" name="aaefbb20eb5be8f97e8d81dfe1c97b252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefbb20eb5be8f97e8d81dfe1c97b252">&#9670;&#160;</a></span>SPAWINIG_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252">EnemyBase::SPAWINIG_STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aaefbb20eb5be8f97e8d81dfe1c97b252a284838634a475669b21803a3df14fda8" name="aaefbb20eb5be8f97e8d81dfe1c97b252a284838634a475669b21803a3df14fda8"></a>WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaefbb20eb5be8f97e8d81dfe1c97b252ae62f197281fd85131b3d47637f4e2d78" name="aaefbb20eb5be8f97e8d81dfe1c97b252ae62f197281fd85131b3d47637f4e2d78"></a>IN_SPAWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaefbb20eb5be8f97e8d81dfe1c97b252a7c83fdc7ad77cac2e2ca268bc0cb4c44" name="aaefbb20eb5be8f97e8d81dfe1c97b252a7c83fdc7ad77cac2e2ca268bc0cb4c44"></a>DEAD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ac55920f059c6eb4f456062e0fb355ecf" name="ac55920f059c6eb4f456062e0fb355ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55920f059c6eb4f456062e0fb355ecf">&#9670;&#160;</a></span>EnemyBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnemyBase::EnemyBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_object.html">GameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isboss</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00003">3</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a73d1ffb3230a2e8b2c0b7cd86cbd7a6c" name="a73d1ffb3230a2e8b2c0b7cd86cbd7a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d1ffb3230a2e8b2c0b7cd86cbd7a6c">&#9670;&#160;</a></span>~EnemyBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnemyBase::~EnemyBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae728953e6963df855da909caeb849798" name="ae728953e6963df855da909caeb849798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae728953e6963df855da909caeb849798">&#9670;&#160;</a></span>AddCamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyBase::AddCamp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_actor.html#af4f2c70dc1ef4b2caad4b37b6e6c5c12">GameActor</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00048">48</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_base_ae728953e6963df855da909caeb849798_cgraph.png" border="0" usemap="#aclass_enemy_base_ae728953e6963df855da909caeb849798_cgraph" alt=""/></div>
+<map name="aclass_enemy_base_ae728953e6963df855da909caeb849798_cgraph" id="aclass_enemy_base_ae728953e6963df855da909caeb849798_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" href="class_game_actor.html#acfeff0c8477472a5c26812b74cddcf52" title=" " alt="" coords="211,5,406,32"/>
+<area shape="poly" title=" " alt="" coords="163,16,195,16,195,21,163,21"/>
+<area shape="rect" href="namespace_collision_manager.html#a4dd6af0ce1423ded67f8fcb5591b1b6b" title="当たり判定リストに追加" alt="" coords="454,5,639,32"/>
+<area shape="poly" title=" " alt="" coords="407,16,438,16,438,21,407,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab28de4eb50f183feb9e019f92b7cce75" name="ab28de4eb50f183feb9e019f92b7cce75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28de4eb50f183feb9e019f92b7cce75">&#9670;&#160;</a></span>dyingProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyBase::dyingProcess </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_actor.html#aac02341b22c13822ee77ee4b99d9e8b4">GameActor</a>を再実装しています。</p>
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00058">58</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_base_ab28de4eb50f183feb9e019f92b7cce75_cgraph.png" border="0" usemap="#aclass_enemy_base_ab28de4eb50f183feb9e019f92b7cce75_cgraph" alt=""/></div>
+<map name="aclass_enemy_base_ab28de4eb50f183feb9e019f92b7cce75_cgraph" id="aclass_enemy_base_ab28de4eb50f183feb9e019f92b7cce75_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" href="class_enemy_base.html#a0e7ebe08e35775fa1ff7157e7b8f066b" title=" " alt="" coords="233,5,413,32"/>
+<area shape="poly" title=" " alt="" coords="185,16,217,16,217,21,185,21"/>
+<area shape="rect" href="class_game_actor.html#a97f38a9c2daa7f0b6c452f04a0a4379d" title=" " alt="" coords="461,5,679,32"/>
+<area shape="poly" title=" " alt="" coords="414,16,445,16,445,21,414,21"/>
+<area shape="rect" href="namespace_collision_manager.html#af7d80cc1b17304c493fd70c97c44856f" title="陣営リストから削除する。倒された際に呼ぶ" alt="" coords="727,5,936,32"/>
+<area shape="poly" title=" " alt="" coords="680,16,712,16,712,21,680,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6b6c4022482b4ce261e1f8befddc0682" name="a6b6c4022482b4ce261e1f8befddc0682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6c4022482b4ce261e1f8befddc0682">&#9670;&#160;</a></span>getStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252">SPAWINIG_STATE</a> EnemyBase::getStat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00044">44</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa71baae08a9211a0f444ac68a612abf4" name="aa71baae08a9211a0f444ac68a612abf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71baae08a9211a0f444ac68a612abf4">&#9670;&#160;</a></span>mediatorUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyBase::mediatorUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステートと情報をやり取りし敵に行動させる もしmediatorがnullなら行動しないキャラとなる </p>
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00040">40</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_base_aa71baae08a9211a0f444ac68a612abf4_icgraph.png" border="0" usemap="#aclass_enemy_base_aa71baae08a9211a0f444ac68a612abf4_icgraph" alt=""/></div>
+<map name="aclass_enemy_base_aa71baae08a9211a0f444ac68a612abf4_icgraph" id="aclass_enemy_base_aa71baae08a9211a0f444ac68a612abf4_icgraph">
+<area shape="rect" title="ステートと情報をやり取りし敵に行動させる もしmediatorがnullなら行動しないキャラとなる" alt="" coords="236,31,427,57"/>
+<area shape="rect" href="class_decoy.html#a170fb5ead99d60299ac9f680ef2dc6cd" title=" " alt="" coords="27,5,166,32"/>
+<area shape="poly" title=" " alt="" coords="220,35,166,29,166,23,221,29"/>
+<area shape="rect" href="class_soldier_enemy.html#a80733b029e85fcec992c4063131275bb" title=" " alt="" coords="5,56,188,83"/>
+<area shape="poly" title=" " alt="" coords="220,59,188,62,188,57,220,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e7ebe08e35775fa1ff7157e7b8f066b" name="a0e7ebe08e35775fa1ff7157e7b8f066b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7ebe08e35775fa1ff7157e7b8f066b">&#9670;&#160;</a></span>RemoveCamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyBase::RemoveCamp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_actor.html#a0ec7fcda24f3762e403400bf70b05b70">GameActor</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00053">53</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_cgraph.png" border="0" usemap="#aclass_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_cgraph" alt=""/></div>
+<map name="aclass_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_cgraph" id="aclass_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,186,32"/>
+<area shape="rect" href="class_game_actor.html#a97f38a9c2daa7f0b6c452f04a0a4379d" title=" " alt="" coords="234,5,452,32"/>
+<area shape="poly" title=" " alt="" coords="186,16,218,16,218,21,186,21"/>
+<area shape="rect" href="namespace_collision_manager.html#af7d80cc1b17304c493fd70c97c44856f" title="陣営リストから削除する。倒された際に呼ぶ" alt="" coords="500,5,708,32"/>
+<area shape="poly" title=" " alt="" coords="452,16,485,16,485,21,452,21"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_icgraph.png" border="0" usemap="#aclass_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_icgraph" alt=""/></div>
+<map name="aclass_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_icgraph" id="aclass_enemy_base_a0e7ebe08e35775fa1ff7157e7b8f066b_icgraph">
+<area shape="rect" title=" " alt="" coords="233,31,413,57"/>
+<area shape="rect" href="class_decoy.html#a61f2a4eddbc336957f84339eeaa2d887" title=" " alt="" coords="23,5,167,32"/>
+<area shape="poly" title=" " alt="" coords="217,35,167,29,168,24,218,30"/>
+<area shape="rect" href="class_enemy_base.html#ab28de4eb50f183feb9e019f92b7cce75" title=" " alt="" coords="5,56,185,83"/>
+<area shape="poly" title=" " alt="" coords="218,58,185,62,185,57,217,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2cd2db980694dcfc43d75ceba89970f0" name="a2cd2db980694dcfc43d75ceba89970f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd2db980694dcfc43d75ceba89970f0">&#9670;&#160;</a></span>setConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyBase::setConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_enemy_status.html">EnemyStatus</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00025">25</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a17795d76b76c6eba16e17513155c8845" name="a17795d76b76c6eba16e17513155c8845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17795d76b76c6eba16e17513155c8845">&#9670;&#160;</a></span>SetMediator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyBase::SetMediator </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_mediator_base.html">MediatorBase</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>mediator</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a> の <a class="el" href="_enemy_base_8cpp_source.html#l00020">20</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a54ac7c52b2f84b547d1c1b658f30c8cd" name="a54ac7c52b2f84b547d1c1b658f30c8cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ac7c52b2f84b547d1c1b658f30c8cd">&#9670;&#160;</a></span>SetPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EnemyBase::SetPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_actor.html">GameActor</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00040">40</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a93bd32a3d5494d1f88f9857780e8d3e5" name="a93bd32a3d5494d1f88f9857780e8d3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93bd32a3d5494d1f88f9857780e8d3e5">&#9670;&#160;</a></span>eStat_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aaefbb20eb5be8f97e8d81dfe1c97b252">SPAWINIG_STATE</a> EnemyBase::eStat_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00021">21</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a841c95beef5f936598da76b8b766a666" name="a841c95beef5f936598da76b8b766a666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841c95beef5f936598da76b8b766a666">&#9670;&#160;</a></span>isBoss_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EnemyBase::isBoss_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00019">19</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a1ee3bf8f51f8960ffc91b55bd3562958" name="a1ee3bf8f51f8960ffc91b55bd3562958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee3bf8f51f8960ffc91b55bd3562958">&#9670;&#160;</a></span>pMediator_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_mediator_base.html">MediatorBase</a>&gt; EnemyBase::pMediator_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00024">24</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af9bceac7098f30ddfcbef91805762cca" name="af9bceac7098f30ddfcbef91805762cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9bceac7098f30ddfcbef91805762cca">&#9670;&#160;</a></span>pPlayer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_actor.html">GameActor</a>* EnemyBase::pPlayer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a> の <a class="el" href="_enemy_base_8h_source.html#l00020">20</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/sources/<a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a></li>
+<li>SoR/sources/<a class="el" href="_enemy_base_8cpp_source.html">EnemyBase.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_enemy_base.html">EnemyBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

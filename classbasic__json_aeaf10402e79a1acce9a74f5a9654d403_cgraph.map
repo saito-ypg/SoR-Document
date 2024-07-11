@@ -1,0 +1,7 @@
+<map id="basic_json::basic_json" name="basic_json::basic_json">
+<area shape="rect" id="Node000001" title="create a JSON value from an existing one" alt="" coords="5,31,159,57"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a0ab31c7fdbab38898070bca01637f886" title="get a (pointer) value (explicit)" alt="" coords="217,5,327,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,31,202,25,203,31,159,36"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#a3697078e748abc4a99c23e36e321b439" title="get a reference value (implicit)" alt="" coords="207,56,337,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,52,192,56,191,61,159,57"/>
+</map>

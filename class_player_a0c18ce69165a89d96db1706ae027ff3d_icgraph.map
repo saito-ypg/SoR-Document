@@ -1,0 +1,5 @@
+<map id="Player::getSkills" name="Player::getSkills">
+<area shape="rect" id="Node000001" title=" " alt="" coords="216,5,332,32"/>
+<area shape="rect" id="Node000002" href="$class_player_interface.html#aae66beaa5a210808a8e0c323ac13bd76" title=" " alt="" coords="5,5,168,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,21,168,21,168,16,200,16"/>
+</map>

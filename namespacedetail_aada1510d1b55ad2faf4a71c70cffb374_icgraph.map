@@ -1,0 +1,41 @@
+<map id="detail::input_adapter" name="detail::input_adapter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="496,472,634,499"/>
+<area shape="rect" id="Node000002" href="$structdetail_1_1container__input__adapter__factory__impl_1_1container__input__adapter__factory_3c644ae35b641285039c4edb8bb512793.html#a6b9ccb1f4f7503123e553956abde9b85" title=" " alt="" coords="230,5,448,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="557,457,545,398,524,321,491,236,470,196,446,158,437,146,441,143,450,154,475,193,496,234,529,319,550,397,562,456"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#a59327f708c0555e2928487bcddf71293" title="create a JSON value from an input in BJData format" alt="" coords="260,168,418,195"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="558,457,548,404,528,336,513,301,495,267,473,236,446,209,417,193,420,188,450,205,477,232,500,264,518,299,533,334,553,403,563,456"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#accf7ae6f9b2fee171484c5ef54f08d1e" title="create a JSON value from an input in BJData format" alt="" coords="260,219,418,245"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="555,458,542,413,521,360,489,305,469,281,446,260,417,244,419,239,450,255,473,277,493,302,525,357,547,412,560,456"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#a4b0dfca88b11ea59a2568707767622d8" title="create a JSON value from an input in BSON format" alt="" coords="263,269,415,296"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="551,459,536,424,513,384,483,344,447,310,414,295,416,290,449,306,487,340,517,381,540,422,556,457"/>
+<area shape="rect" id="Node000007" href="$classbasic__json.html#a2513159e8df9a81bf03ed34e1147b42e" title="create a JSON value from an input in BSON format" alt="" coords="263,320,415,347"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="545,461,504,409,477,383,447,361,414,347,416,342,449,356,480,379,508,406,549,457"/>
+<area shape="rect" id="Node000008" href="$classbasic__json.html#a5bc3c67eaf6e9b22c8b446f9695249e9" title="create a JSON value from an input in CBOR format" alt="" coords="265,371,413,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="533,464,494,437,447,412,412,400,414,395,449,407,496,432,536,460"/>
+<area shape="rect" id="Node000010" href="$classbasic__json.html#a08ab03513b96f5a864bf623aeb70f122" title="create a JSON value from an input in CBOR format" alt="" coords="265,421,413,448"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="487,471,401,451,402,446,488,465"/>
+<area shape="rect" id="Node000011" href="$classbasic__json.html#ab0c025488572f913ca5529a2ef62d066" title="create a JSON value from an input in MessagePack format" alt="" coords="251,472,427,499"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="481,488,427,488,427,483,481,483"/>
+<area shape="rect" id="Node000013" href="$classbasic__json.html#af7d84b161b2d93f9b2b3ac8d68afeb96" title="create a JSON value from an input in MessagePack format" alt="" coords="251,523,427,549"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="488,505,402,525,401,519,487,500"/>
+<area shape="rect" id="Node000014" href="$classbasic__json.html#a4588941095d03624ada4f0023d93944a" title="create a JSON value from an input in UBJSON format" alt="" coords="258,573,420,600"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="536,511,496,538,449,564,416,575,414,570,447,559,494,534,533,506"/>
+<area shape="rect" id="Node000016" href="$classbasic__json.html#a5dd7470a3be83b27cf162c0261e6b63d" title="create a JSON value from an input in UBJSON format" alt="" coords="258,624,420,651"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="549,513,508,565,480,592,449,614,421,627,419,622,447,610,477,588,504,562,545,510"/>
+<area shape="rect" id="Node000017" href="$namespacedetail.html#a53fa6fb154a643a2202e31cb18f47c97" title=" " alt="" coords="270,675,408,701"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="556,514,540,549,517,590,487,631,450,665,430,676,409,683,408,678,428,671,446,660,483,627,513,587,536,546,551,512"/>
+<area shape="rect" id="Node000018" href="$namespacedetail.html#a15bd0aaa9bdb9a169ef1601f9f9613e3" title=" " alt="" coords="270,725,408,752"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="560,514,547,559,525,613,493,669,473,694,450,715,430,727,410,734,408,729,428,722,446,711,469,690,489,666,521,611,542,557,555,513"/>
+<area shape="rect" id="Node000019" href="$classbasic__json.html#addedd5e53fa6eff6cd621f1615741c3d" title=" " alt="" coords="263,776,415,803"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="563,514,553,568,533,636,518,672,500,706,477,738,450,766,434,777,416,784,414,779,431,772,446,762,473,735,495,704,513,670,528,634,548,567,558,513"/>
+<area shape="rect" id="Node000020" href="$classbasic__json.html#a94cbf1844fef86e9301282ad8ca0f822" title="generate SAX events" alt="" coords="263,827,415,853"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="565,515,558,578,540,659,525,702,506,744,481,783,450,817,434,828,416,835,414,830,431,823,446,813,476,780,501,741,520,700,535,658,553,577,560,514"/>
+<area shape="rect" id="Node000006" href="$classbasic__json.html#a7e33baaab9ab497f0fe6b797134c9524" title=" " alt="" coords="18,269,169,296"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="248,285,170,285,170,280,248,280"/>
+<area shape="rect" id="Node000009" href="$classbasic__json.html#a89a8b31922ebb7a637e723ac7873fa4a" title=" " alt="" coords="19,371,168,397"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="249,387,168,387,168,381,249,381"/>
+<area shape="rect" id="Node000012" href="$classbasic__json.html#a2a721efc291300b45ac410ab75b8478b" title=" " alt="" coords="5,472,182,499"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="235,488,182,488,182,483,235,483"/>
+<area shape="rect" id="Node000015" href="$classbasic__json.html#aa375318d8ef6052fd4d606d596d9c424" title=" " alt="" coords="13,573,174,600"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="242,589,175,589,175,584,242,584"/>
+</map>

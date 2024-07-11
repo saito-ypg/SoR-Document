@@ -1,0 +1,10 @@
+<map id="basic_json::erase" name="basic_json::erase">
+<area shape="rect" id="Node000001" title="remove element given an iterator" alt="" coords="396,55,519,81"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a8676ac2433fe299b8d420f00a0741395" title="applies a JSON Merge Patch" alt="" coords="179,29,346,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="380,61,346,56,346,51,381,55"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#a693812b31e106dec9166e93d8f6dd7d7" title="applies a JSON patch in&#45;place without copying the object" alt="" coords="177,80,348,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="381,81,349,85,348,80,380,75"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="296,16,284,10,262,8,242,10,231,15,228,20,234,27,229,30,223,21,227,11,241,5,262,3,286,5,298,12"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#a145a004c0a2fa5be84b260ecc98ab5d9" title="applies a JSON patch to a copy of the current object" alt="" coords="5,80,129,107"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="161,96,129,96,129,91,161,91"/>
+</map>

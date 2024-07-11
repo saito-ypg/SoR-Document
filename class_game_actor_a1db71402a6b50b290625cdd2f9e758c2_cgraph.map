@@ -1,0 +1,9 @@
+<map id="GameActor::Update" name="GameActor::Update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,142,83"/>
+<area shape="rect" id="Node000002" href="$class_game_actor.html#ad6c4998daa8606696f2a9ddecd679862" title=" " alt="" coords="193,5,361,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,53,205,34,206,39,131,58"/>
+<area shape="rect" id="Node000003" href="$class_game_actor.html#aac02341b22c13822ee77ee4b99d9e8b4" title=" " alt="" coords="190,56,364,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,67,174,67,174,72,142,72"/>
+<area shape="rect" id="Node000004" href="$class_game_actor.html#a6183007228b75125d1a6da008937e6f5" title=" " alt="" coords="198,107,356,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,81,206,100,205,105,130,86"/>
+</map>

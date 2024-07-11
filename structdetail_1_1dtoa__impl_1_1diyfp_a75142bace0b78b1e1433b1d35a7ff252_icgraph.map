@@ -1,0 +1,11 @@
+<map id="detail::dtoa_impl::diyfp::sub" name="detail::dtoa_impl::diyfp::sub">
+<area shape="rect" id="Node000001" title="returns x &#45; y" alt="" coords="522,35,647,77"/>
+<area shape="rect" id="Node000002" href="$namespacedetail_1_1dtoa__impl.html#ae877aa13ab872c99a1c614e5e1524807" title="Generates V = buffer * 10^decimal_exponent, such that M&#45; &lt;= V &lt;= M+." alt="" coords="350,35,474,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="507,59,475,59,475,53,507,53"/>
+<area shape="rect" id="Node000003" href="$namespacedetail_1_1dtoa__impl.html#ad549352ed1a9676a092d143a2daa3dee" title="v = buf * 10^decimal_exponent len is the length of the buffer (number of decimal digits) The buffer m..." alt="" coords="178,35,302,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,59,302,59,302,53,335,53"/>
+<area shape="rect" id="Node000004" href="$namespacedetail_1_1dtoa__impl.html#abdf6bc05c54068a5930f66c2e803e8b8" title="v = buf * 10^decimal_exponent len is the length of the buffer (number of decimal digits) The buffer m..." alt="" coords="5,5,130,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,45,130,40,130,35,163,40"/>
+<area shape="rect" id="Node000005" href="$namespacedetail.html#a3f0588f1a546b169113e6e1e293168f4" title="generates a decimal representation of the floating&#45;point number value in [first, last)." alt="" coords="12,72,123,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="163,72,124,79,123,73,162,67"/>
+</map>

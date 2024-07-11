@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): SoR/sources/MediatorFactory.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_mediator_factory_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MediatorFactory.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_mediator_factory_8h_source.html">MediatorFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enemy_base_8h_source.html">EnemyBase.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+MediatorFactory.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_mediator_factory_8cpp__incl.png" border="0" usemap="#a_so_r_2sources_2_mediator_factory_8cpp" alt=""/></div>
+<map name="a_so_r_2sources_2_mediator_factory_8cpp" id="a_so_r_2sources_2_mediator_factory_8cpp">
+<area shape="rect" title=" " alt="" coords="218,5,437,32"/>
+<area shape="rect" href="_mediator_factory_8h.html" title=" " alt="" coords="164,80,291,107"/>
+<area shape="poly" title=" " alt="" coords="312,35,259,73,256,68,309,30"/>
+<area shape="rect" href="_mediator_base_8h.html" title=" " alt="" coords="270,155,382,181"/>
+<area shape="poly" title=" " alt="" coords="330,33,329,139,324,139,325,32"/>
+<area shape="rect" href="_enemy_base_8h.html" title=" " alt="" coords="368,80,471,107"/>
+<area shape="poly" title=" " alt="" coords="345,30,394,68,390,73,342,35"/>
+<area shape="rect" title=" " alt="" coords="193,229,262,256"/>
+<area shape="poly" title=" " alt="" coords="230,107,230,214,225,214,225,107"/>
+<area shape="poly" title=" " alt="" coords="311,184,258,222,255,218,307,180"/>
+<area shape="rect" href="_movement_state_base_8h.html" title=" " alt="" coords="471,229,624,256"/>
+<area shape="poly" title=" " alt="" coords="366,179,495,221,493,226,364,184"/>
+<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="552,304,698,331"/>
+<area shape="poly" title=" " alt="" coords="563,255,602,291,599,295,559,258"/>
+<area shape="rect" title=" " alt="" coords="544,453,647,480"/>
+<area shape="poly" title=" " alt="" coords="625,332,604,439,598,438,620,331"/>
+<area shape="poly" title=" " alt="" coords="422,107,416,144,409,165,396,183,350,204,277,229,276,224,348,199,392,179,404,162,411,143,417,107"/>
+<area shape="poly" title=" " alt="" coords="405,109,356,147,353,143,402,105"/>
+<area shape="rect" href="_game_actor_8h.html" title=" " alt="" coords="700,155,798,181"/>
+<area shape="poly" title=" " alt="" coords="472,103,685,150,684,155,471,109"/>
+<area shape="rect" href="_enemy_type_8h.html" title=" " alt="" coords="457,155,558,181"/>
+<area shape="poly" title=" " alt="" coords="437,105,482,143,479,147,433,109"/>
+<area shape="rect" title=" " alt="" coords="937,229,993,256"/>
+<area shape="poly" title=" " alt="" coords="787,179,923,225,922,230,786,184"/>
+<area shape="rect" href="_game_object_8h.html" title=" " alt="" coords="286,229,447,256"/>
+<area shape="poly" title=" " alt="" coords="700,181,449,229,448,223,699,176"/>
+<area shape="rect" href="_actor_info_8h.html" title=" " alt="" coords="647,229,731,256"/>
+<area shape="poly" title=" " alt="" coords="740,184,711,219,707,216,736,180"/>
+<area shape="rect" href="_collision_manager_8h.html" title=" " alt="" coords="751,304,883,331"/>
+<area shape="poly" title=" " alt="" coords="800,177,842,195,861,210,877,228,881,246,876,265,864,282,849,296,845,292,860,278,871,262,876,246,872,231,857,214,839,200,797,182"/>
+<area shape="rect" href="_damage_data_8h.html" title=" " alt="" coords="755,229,863,256"/>
+<area shape="poly" title=" " alt="" coords="761,180,791,216,787,219,757,184"/>
+<area shape="poly" title=" " alt="" coords="412,254,566,297,564,302,411,259"/>
+<area shape="poly" title=" " alt="" coords="405,254,448,273,491,302,522,335,549,372,586,438,581,441,544,375,518,338,487,306,446,278,403,259"/>
+<area shape="rect" title=" " alt="" coords="439,304,477,331"/>
+<area shape="poly" title=" " alt="" coords="384,254,432,292,429,297,381,259"/>
+<area shape="rect" title=" " alt="" coords="146,304,200,331"/>
+<area shape="poly" title=" " alt="" coords="333,259,215,303,213,298,332,254"/>
+<area shape="rect" title=" " alt="" coords="224,304,292,331"/>
+<area shape="poly" title=" " alt="" coords="349,259,291,297,288,293,346,254"/>
+<area shape="rect" href="_sphere_collider_8h.html" title=" " alt="" coords="5,304,122,331"/>
+<area shape="poly" title=" " alt="" coords="314,259,132,302,131,297,312,254"/>
+<area shape="rect" href="_box_collider_8h.html" title=" " alt="" coords="317,304,415,331"/>
+<area shape="poly" title=" " alt="" coords="369,257,369,288,364,288,364,257"/>
+<area shape="rect" href="_collider_8h.html" title=" " alt="" coords="329,379,404,405"/>
+<area shape="poly" title=" " alt="" coords="117,329,314,376,313,381,116,334"/>
+<area shape="poly" title=" " alt="" coords="405,403,542,446,540,451,403,408"/>
+<area shape="rect" title=" " alt="" coords="333,453,400,480"/>
+<area shape="poly" title=" " alt="" coords="369,406,369,438,364,438,364,406"/>
+<area shape="poly" title=" " alt="" coords="369,331,369,363,364,363,364,331"/>
+<area shape="rect" href="_actor_collider_8h.html" title=" " alt="" coords="633,379,739,405"/>
+<area shape="poly" title=" " alt="" coords="795,334,724,373,721,368,793,329"/>
+<area shape="rect" href="_attack_range_8h.html" title=" " alt="" coords="763,379,871,405"/>
+<area shape="poly" title=" " alt="" coords="820,331,820,363,814,363,814,331"/>
+<area shape="poly" title=" " alt="" coords="672,408,624,446,621,442,669,404"/>
+<area shape="poly" title=" " alt="" coords="779,408,650,450,648,445,777,403"/>
+<area shape="rect" title=" " alt="" coords="724,453,800,480"/>
+<area shape="poly" title=" " alt="" coords="809,407,783,442,779,439,805,404"/>
+<area shape="rect" href="areamodels_8h.html" title=" " alt="" coords="825,453,924,480"/>
+<area shape="poly" title=" " alt="" coords="829,404,857,439,853,443,825,408"/>
+</map>
+</div>
+</div>
+<p><a href="_mediator_factory_8cpp_source.html">[ソースコード]</a></p>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ae98737db4076a31f37d127b9b66c53.html">SoR</a></li><li class="navelem"><a class="el" href="dir_2238df16a099c97d3567131b913ed685.html">sources</a></li><li class="navelem"><a class="el" href="_mediator_factory_8cpp.html">MediatorFactory.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

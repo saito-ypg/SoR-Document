@@ -1,0 +1,12 @@
+<map id="basic_json::insert" name="basic_json::insert">
+<area shape="rect" id="Node000001" title="inserts element into array" alt="" coords="396,80,519,107"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#a699ef418df577e75f28dfce6b04d6c2f" title="creates a diff as a JSON patch" alt="" coords="209,29,316,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="388,78,316,59,317,54,389,73"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#ae5da62116a40a0f86e87f11fdd54e9f0" title="inserts element into array" alt="" coords="201,80,324,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="380,96,324,96,324,91,380,91"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#a693812b31e106dec9166e93d8f6dd7d7" title="applies a JSON patch in&#45;place without copying the object" alt="" coords="177,131,348,157"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="389,114,317,133,316,127,388,109"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="296,16,284,10,262,8,242,10,231,15,228,20,234,27,229,30,223,21,227,11,241,5,262,3,286,5,298,12"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#a145a004c0a2fa5be84b260ecc98ab5d9" title="applies a JSON patch to a copy of the current object" alt="" coords="5,131,129,157"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="161,147,129,147,129,141,161,141"/>
+</map>

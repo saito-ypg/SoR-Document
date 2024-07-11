@@ -1,0 +1,20 @@
+<map id="FbxParts::DrawMeshAnime" name="FbxParts::DrawMeshAnime">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,186,159"/>
+<area shape="rect" id="Node000002" href="$class_fbx_parts.html#a6f4a56d494ea33ba40d50c4ebfcb2469" title=" " alt="" coords="234,132,345,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,143,218,143,218,148,186,148"/>
+<area shape="rect" id="Node000003" href="$namespace_camera.html#ac7d5aa78b2dcee91198c07f525371aba" title=" " alt="" coords="417,5,559,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,130,336,86,362,62,392,42,403,36,405,41,394,46,366,66,340,90,303,133"/>
+<area shape="rect" id="Node000004" href="$namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac" title=" " alt="" coords="393,56,582,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="314,129,392,92,413,85,414,90,394,97,316,134"/>
+<area shape="rect" id="Node000005" href="$class_texture.html#aab2dfa21eb186f79b424c0c7e6759ac7" title=" " alt="" coords="417,107,558,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="345,136,401,128,402,134,346,141"/>
+<area shape="rect" id="Node000006" href="$class_texture.html#a2717e1589e2ff4148a3279a7319c6220" title=" " alt="" coords="428,157,548,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="346,150,412,158,412,164,345,155"/>
+<area shape="rect" id="Node000007" href="$namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b" title=" " alt="" coords="408,208,567,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="316,157,394,194,414,201,413,206,392,198,314,162"/>
+<area shape="rect" id="Node000008" href="$class_transform.html#a9304784014a9dab85ff55d80e8ab76eb" title=" " alt="" coords="399,283,576,309"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="304,157,342,199,395,245,443,273,440,278,391,249,339,202,300,161"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="454,284,448,274,452,264,466,258,488,256,511,259,524,265,521,270,510,264,488,261,467,263,456,268,453,273,458,281"/>
+<area shape="rect" id="Node000009" href="$class_transform.html#a50210aab26359b2fc6a3a343a3f8039b" title=" " alt="" coords="630,283,781,309"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="577,293,615,293,615,299,577,299"/>
+</map>

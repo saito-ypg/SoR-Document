@@ -1,0 +1,30 @@
+<map id="detail::out_of_range::create" name="detail::out_of_range::create">
+<area shape="rect" id="Node000001" title=" " alt="" coords="599,225,734,268"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#accafaaf23f60bb245ddb1fa0972b33a3" title="access specified object element with bounds checking" alt="" coords="423,5,525,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="652,212,637,173,615,129,586,84,550,46,524,32,527,27,553,42,590,81,619,126,641,171,657,210"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#aba9a21714e81e98fc5786a2339ea1665" title="access specified object element with bounds checking" alt="" coords="423,56,525,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="645,213,606,153,580,123,550,97,524,83,526,79,553,92,584,119,610,150,649,210"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#a4cd9ba2f2164d9cee83b07f76d40843f" title="access specified object element with bounds checking" alt="" coords="423,107,525,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="634,216,596,180,550,148,524,136,526,131,553,143,599,176,637,212"/>
+<area shape="rect" id="Node000005" href="$classbasic__json.html#a7ae6267ca4bd85e25f61dc5ba30204da" title="access specified object element with bounds checking" alt="" coords="423,157,525,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="605,221,550,198,518,187,520,182,552,194,607,216"/>
+<area shape="rect" id="Node000006" href="$classbasic__json.html#a899e4623fe377af5c9ad14c40c64280c" title="access specified array element with bounds checking" alt="" coords="423,208,525,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="584,239,525,231,526,225,584,233"/>
+<area shape="rect" id="Node000007" href="$classbasic__json.html#a693812b31e106dec9166e93d8f6dd7d7" title="applies a JSON patch in&#45;place without copying the object" alt="" coords="177,309,348,336"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="584,265,396,300,337,311,336,306,396,295,583,259"/>
+<area shape="rect" id="Node000009" href="$classbasic__json.html#af076d8a80f4263cf821da2033d5773b6" title="access specified array element with bounds checking" alt="" coords="423,309,525,336"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="597,277,511,311,509,306,595,272"/>
+<area shape="rect" id="Node000010" href="$classjson__pointer.html#aba71e63e4032cfc46dd90aeb09e5cb0f" title="return last reference token" alt="" coords="410,360,537,387"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="637,281,599,317,553,350,528,362,526,357,550,346,596,313,634,277"/>
+<area shape="rect" id="Node000011" href="$classbasic__json.html#ac2c58b5f34c2ff56e27630214f5a9df4" title="remove element from a JSON array given an index" alt="" coords="412,411,535,437"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="649,283,610,343,584,374,553,401,532,412,529,408,550,396,580,370,606,340,645,280"/>
+<area shape="rect" id="Node000012" href="$classjson__pointer.html#a662118b470c87a1b564946c2602c49ce" title="remove last reference token" alt="" coords="396,461,551,488"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="657,283,641,322,619,367,590,412,553,451,534,463,531,459,550,447,586,409,615,365,637,320,652,281"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="425,244,397,256,290,311,287,306,395,251,422,239"/>
+<area shape="rect" id="Node000008" href="$classbasic__json.html#a145a004c0a2fa5be84b260ecc98ab5d9" title="applies a JSON patch to a copy of the current object" alt="" coords="5,309,129,336"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="161,325,129,325,129,320,161,320"/>
+<area shape="poly" id="edge10_Node000010_Node000007" title=" " alt="" coords="399,358,320,339,322,334,401,353"/>
+<area shape="poly" id="edge15_Node000012_Node000007" title=" " alt="" coords="405,457,395,452,356,424,322,393,273,338,277,335,325,389,360,420,397,447,407,452"/>
+<area shape="rect" id="Node000013" href="$classjson__pointer.html#aa03c0c1206e171342d27a4583258858b" title="returns the parent of this JSON pointer" alt="" coords="195,453,330,496"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="381,477,331,477,331,472,381,472"/>
+</map>

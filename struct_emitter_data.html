@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): EmitterData 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_emitter_data.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="struct_emitter_data-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">EmitterData 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_v_f_x_8h_source.html">VFX.h</a>&gt;</code></p>
+<div class="dynheader">
+EmitterData 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_emitter_data__coll__graph.png" border="0" usemap="#a_emitter_data_coll__map" alt="Collaboration graph"/></div>
+<map name="a_emitter_data_coll__map" id="a_emitter_data_coll__map">
+<area shape="rect" title=" " alt="" coords="5,96,96,123"/>
+<area shape="rect" title=" " alt="" coords="24,5,77,32"/>
+<area shape="poly" title=" " alt="" coords="53,48,53,95,48,95,48,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a19507cd051c9b5498f501b5515254da8" id="r_a19507cd051c9b5498f501b5515254da8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19507cd051c9b5498f501b5515254da8">EmitterData</a> ()</td></tr>
+<tr class="separator:a19507cd051c9b5498f501b5515254da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:ae012958a0ef8e3dcb40cf8cbe6163cf1" id="r_ae012958a0ef8e3dcb40cf8cbe6163cf1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae012958a0ef8e3dcb40cf8cbe6163cf1">textureFileName</a></td></tr>
+<tr class="separator:ae012958a0ef8e3dcb40cf8cbe6163cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79381182d3bf746560e57753e580938f" id="r_a79381182d3bf746560e57753e580938f"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79381182d3bf746560e57753e580938f">position</a></td></tr>
+<tr class="separator:a79381182d3bf746560e57753e580938f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac049b5c37fb1795dd56d4edacdfba475" id="r_ac049b5c37fb1795dd56d4edacdfba475"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac049b5c37fb1795dd56d4edacdfba475">positionRnd</a></td></tr>
+<tr class="separator:ac049b5c37fb1795dd56d4edacdfba475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68938cd9df7c1e16ae24b3f0bafde38e" id="r_a68938cd9df7c1e16ae24b3f0bafde38e"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68938cd9df7c1e16ae24b3f0bafde38e">direction</a></td></tr>
+<tr class="separator:a68938cd9df7c1e16ae24b3f0bafde38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26349dfeb09fc5aebddab90a3484a115" id="r_a26349dfeb09fc5aebddab90a3484a115"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26349dfeb09fc5aebddab90a3484a115">directionRnd</a></td></tr>
+<tr class="separator:a26349dfeb09fc5aebddab90a3484a115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf2159ea6849bf5a3662c50b446199c" id="r_a7cf2159ea6849bf5a3662c50b446199c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cf2159ea6849bf5a3662c50b446199c">speed</a></td></tr>
+<tr class="separator:a7cf2159ea6849bf5a3662c50b446199c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6d4e23180a16c50cfbe9a92b41e0d2" id="r_a8b6d4e23180a16c50cfbe9a92b41e0d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b6d4e23180a16c50cfbe9a92b41e0d2">speedRnd</a></td></tr>
+<tr class="separator:a8b6d4e23180a16c50cfbe9a92b41e0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0621834fa760dd42c3a7f44b27b02045" id="r_a0621834fa760dd42c3a7f44b27b02045"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0621834fa760dd42c3a7f44b27b02045">accel</a></td></tr>
+<tr class="separator:a0621834fa760dd42c3a7f44b27b02045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169601055f701fb78b1f763422aba483" id="r_a169601055f701fb78b1f763422aba483"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a169601055f701fb78b1f763422aba483">gravity</a></td></tr>
+<tr class="separator:a169601055f701fb78b1f763422aba483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1e8a29391d2255fa793d7759e7b99d" id="r_a3a1e8a29391d2255fa793d7759e7b99d"><td class="memItemLeft" align="right" valign="top">XMFLOAT4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a1e8a29391d2255fa793d7759e7b99d">color</a></td></tr>
+<tr class="separator:a3a1e8a29391d2255fa793d7759e7b99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ac36933906a4b3c99d869afc381fac" id="r_a05ac36933906a4b3c99d869afc381fac"><td class="memItemLeft" align="right" valign="top">XMFLOAT4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05ac36933906a4b3c99d869afc381fac">deltaColor</a></td></tr>
+<tr class="separator:a05ac36933906a4b3c99d869afc381fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c30bdbea70e0203ec935862a2bc79d" id="r_a29c30bdbea70e0203ec935862a2bc79d"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29c30bdbea70e0203ec935862a2bc79d">rotate</a></td></tr>
+<tr class="separator:a29c30bdbea70e0203ec935862a2bc79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad297d80f8fe1d2896b1e82fcc92b9e8" id="r_aad297d80f8fe1d2896b1e82fcc92b9e8"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad297d80f8fe1d2896b1e82fcc92b9e8">rotateRnd</a></td></tr>
+<tr class="separator:aad297d80f8fe1d2896b1e82fcc92b9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e185dadde8087822cd93ebf0cb76bc" id="r_a91e185dadde8087822cd93ebf0cb76bc"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91e185dadde8087822cd93ebf0cb76bc">spin</a></td></tr>
+<tr class="separator:a91e185dadde8087822cd93ebf0cb76bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1645eb6f5771cfb3a60b04f72ef872" id="r_a3c1645eb6f5771cfb3a60b04f72ef872"><td class="memItemLeft" align="right" valign="top">XMFLOAT2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c1645eb6f5771cfb3a60b04f72ef872">size</a></td></tr>
+<tr class="separator:a3c1645eb6f5771cfb3a60b04f72ef872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e16f8f412569171dc9f018f9395d334" id="r_a6e16f8f412569171dc9f018f9395d334"><td class="memItemLeft" align="right" valign="top">XMFLOAT2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e16f8f412569171dc9f018f9395d334">sizeRnd</a></td></tr>
+<tr class="separator:a6e16f8f412569171dc9f018f9395d334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3d38b74e35e57dcf094faeb2e46907" id="r_abe3d38b74e35e57dcf094faeb2e46907"><td class="memItemLeft" align="right" valign="top">XMFLOAT2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe3d38b74e35e57dcf094faeb2e46907">scale</a></td></tr>
+<tr class="separator:abe3d38b74e35e57dcf094faeb2e46907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527cde453230277f9b9ca334b04336ca" id="r_a527cde453230277f9b9ca334b04336ca"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a527cde453230277f9b9ca334b04336ca">lifeTime</a></td></tr>
+<tr class="separator:a527cde453230277f9b9ca334b04336ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efe8378ec3215a5503b00db384458da" id="r_a5efe8378ec3215a5503b00db384458da"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5efe8378ec3215a5503b00db384458da">delay</a></td></tr>
+<tr class="separator:a5efe8378ec3215a5503b00db384458da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab520aab5a96101276604df5e5987ad55" id="r_ab520aab5a96101276604df5e5987ad55"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab520aab5a96101276604df5e5987ad55">number</a></td></tr>
+<tr class="separator:ab520aab5a96101276604df5e5987ad55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50b635a0e782ad4832aba2b556c6c0d" id="r_ab50b635a0e782ad4832aba2b556c6c0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab50b635a0e782ad4832aba2b556c6c0d">isBillBoard</a></td></tr>
+<tr class="separator:ab50b635a0e782ad4832aba2b556c6c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00009">9</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a19507cd051c9b5498f501b5515254da8" name="a19507cd051c9b5498f501b5515254da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19507cd051c9b5498f501b5515254da8">&#9670;&#160;</a></span>EmitterData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EmitterData::EmitterData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00034">34</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a0621834fa760dd42c3a7f44b27b02045" name="a0621834fa760dd42c3a7f44b27b02045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0621834fa760dd42c3a7f44b27b02045">&#9670;&#160;</a></span>accel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EmitterData::accel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00018">18</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3a1e8a29391d2255fa793d7759e7b99d" name="a3a1e8a29391d2255fa793d7759e7b99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1e8a29391d2255fa793d7759e7b99d">&#9670;&#160;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT4 EmitterData::color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00020">20</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5efe8378ec3215a5503b00db384458da" name="a5efe8378ec3215a5503b00db384458da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efe8378ec3215a5503b00db384458da">&#9670;&#160;</a></span>delay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD EmitterData::delay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00029">29</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a05ac36933906a4b3c99d869afc381fac" name="a05ac36933906a4b3c99d869afc381fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ac36933906a4b3c99d869afc381fac">&#9670;&#160;</a></span>deltaColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT4 EmitterData::deltaColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00021">21</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a68938cd9df7c1e16ae24b3f0bafde38e" name="a68938cd9df7c1e16ae24b3f0bafde38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68938cd9df7c1e16ae24b3f0bafde38e">&#9670;&#160;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 EmitterData::direction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a26349dfeb09fc5aebddab90a3484a115" name="a26349dfeb09fc5aebddab90a3484a115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26349dfeb09fc5aebddab90a3484a115">&#9670;&#160;</a></span>directionRnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 EmitterData::directionRnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00015">15</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a169601055f701fb78b1f763422aba483" name="a169601055f701fb78b1f763422aba483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169601055f701fb78b1f763422aba483">&#9670;&#160;</a></span>gravity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EmitterData::gravity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00019">19</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab50b635a0e782ad4832aba2b556c6c0d" name="ab50b635a0e782ad4832aba2b556c6c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50b635a0e782ad4832aba2b556c6c0d">&#9670;&#160;</a></span>isBillBoard</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EmitterData::isBillBoard</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00031">31</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a527cde453230277f9b9ca334b04336ca" name="a527cde453230277f9b9ca334b04336ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527cde453230277f9b9ca334b04336ca">&#9670;&#160;</a></span>lifeTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD EmitterData::lifeTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00028">28</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab520aab5a96101276604df5e5987ad55" name="ab520aab5a96101276604df5e5987ad55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab520aab5a96101276604df5e5987ad55">&#9670;&#160;</a></span>number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD EmitterData::number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00030">30</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a79381182d3bf746560e57753e580938f" name="a79381182d3bf746560e57753e580938f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79381182d3bf746560e57753e580938f">&#9670;&#160;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 EmitterData::position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00012">12</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac049b5c37fb1795dd56d4edacdfba475" name="ac049b5c37fb1795dd56d4edacdfba475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac049b5c37fb1795dd56d4edacdfba475">&#9670;&#160;</a></span>positionRnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 EmitterData::positionRnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00013">13</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a29c30bdbea70e0203ec935862a2bc79d" name="a29c30bdbea70e0203ec935862a2bc79d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c30bdbea70e0203ec935862a2bc79d">&#9670;&#160;</a></span>rotate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 EmitterData::rotate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00022">22</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aad297d80f8fe1d2896b1e82fcc92b9e8" name="aad297d80f8fe1d2896b1e82fcc92b9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad297d80f8fe1d2896b1e82fcc92b9e8">&#9670;&#160;</a></span>rotateRnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 EmitterData::rotateRnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00023">23</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abe3d38b74e35e57dcf094faeb2e46907" name="abe3d38b74e35e57dcf094faeb2e46907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3d38b74e35e57dcf094faeb2e46907">&#9670;&#160;</a></span>scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT2 EmitterData::scale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00027">27</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3c1645eb6f5771cfb3a60b04f72ef872" name="a3c1645eb6f5771cfb3a60b04f72ef872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1645eb6f5771cfb3a60b04f72ef872">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT2 EmitterData::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00025">25</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6e16f8f412569171dc9f018f9395d334" name="a6e16f8f412569171dc9f018f9395d334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e16f8f412569171dc9f018f9395d334">&#9670;&#160;</a></span>sizeRnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT2 EmitterData::sizeRnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00026">26</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a7cf2159ea6849bf5a3662c50b446199c" name="a7cf2159ea6849bf5a3662c50b446199c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf2159ea6849bf5a3662c50b446199c">&#9670;&#160;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EmitterData::speed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8b6d4e23180a16c50cfbe9a92b41e0d2" name="a8b6d4e23180a16c50cfbe9a92b41e0d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b6d4e23180a16c50cfbe9a92b41e0d2">&#9670;&#160;</a></span>speedRnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float EmitterData::speedRnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00017">17</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a91e185dadde8087822cd93ebf0cb76bc" name="a91e185dadde8087822cd93ebf0cb76bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e185dadde8087822cd93ebf0cb76bc">&#9670;&#160;</a></span>spin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 EmitterData::spin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00024">24</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ae012958a0ef8e3dcb40cf8cbe6163cf1" name="ae012958a0ef8e3dcb40cf8cbe6163cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae012958a0ef8e3dcb40cf8cbe6163cf1">&#9670;&#160;</a></span>textureFileName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string EmitterData::textureFileName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_v_f_x_8h_source.html">VFX.h</a> の <a class="el" href="_v_f_x_8h_source.html#l00011">11</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>SoR/Engine/<a class="el" href="_v_f_x_8h_source.html">VFX.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_emitter_data.html">EmitterData</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

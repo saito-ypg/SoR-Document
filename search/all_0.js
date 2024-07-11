@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['1_202013_0',['1 2013',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md74',1,'August 1, 2013'],['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md75',1,'July 1, 2013']]],
+  ['1_202016_1',['August 1, 2016',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md55',1,'']]],
+  ['1_202017_2',['November 1, 2017',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md44',1,'']]],
+  ['1_202020_3',['June 1, 2020',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md22',1,'']]],
+  ['1_202021_4',['August 1, 2021',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md13',1,'']]],
+  ['10_202020_5',['May 10, 2020',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md23',1,'']]],
+  ['11_202012_6',['11 2012',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md80',1,'December 11, 2012'],['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md91',1,'February 11, 2012']]],
+  ['11_202018_7',['May 11, 2018',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md39',1,'']]],
+  ['11_202020_8',['November 11, 2020',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md17',1,'']]],
+  ['13_202013_9',['August 13, 2013',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md73',1,'']]],
+  ['13_202017_10',['December 13, 2017',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md43',1,'']]],
+  ['14_202016_11',['September 14, 2016',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md52',1,'']]],
+  ['14_202020_12',['February 14, 2020',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md25',1,'']]],
+  ['15_202012_13',['15 2012',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md87',1,'March 15, 2012'],['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md81',1,'November 15, 2012']]],
+  ['15_202013_14',['June 15, 2013',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md76',1,'']]],
+  ['15_202014_15',['July 15, 2014',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md67',1,'']]],
+  ['15_202020_16',['15 2020',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md19',1,'August 15, 2020'],['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md21',1,'June 15, 2020']]],
+  ['15_202022_17',['December 15, 2022',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md5',1,'']]],
+  ['16_202011_18',['December 16, 2011',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md94',1,'']]],
+  ['16_202013_19',['April 16, 2013',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md77',1,'']]],
+  ['16_202018_20',['November 16, 2018',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md33',1,'']]],
+  ['17_202018_21',['August 17, 2018',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md35',1,'']]],
+  ['17_202019_22',['17 2019',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md26',1,'December 17, 2019'],['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md27',1,'October 17, 2019']]],
+  ['17_202022_23',['October 17, 2022',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md6',1,'']]],
+  ['18_202015_24',['18 2015',['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md61',1,'August 18, 2015'],['../md__so_r_2packages_2directxtex__desktop__win10_82023_84_828_81_2docs_2_h_i_s_t_o_r_y.html#autotoc_md63',1,'June 18, 2015']]]
+];

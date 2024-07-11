@@ -1,0 +1,9 @@
+<map id="SkillBase::SwitchActionByStep" name="SkillBase::SwitchActionByStep">
+<area shape="rect" id="Node000001" title="各ステップの処理を呼び分ける" alt="" coords="5,56,209,83"/>
+<area shape="rect" id="Node000002" href="$class_skill_base.html#aed8bd7e38e394a17c809e235780627fa" title="攻撃終了後ステップの実装" alt="" coords="268,5,400,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,53,256,33,257,39,171,58"/>
+<area shape="rect" id="Node000003" href="$class_skill_base.html#a4bb27b3b6ee985e9037ab33ee3276a65" title="攻撃前ステップの実装" alt="" coords="257,56,411,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,67,241,67,241,72,209,72"/>
+<area shape="rect" id="Node000004" href="$class_skill_base.html#aa99178679debab735c6d01d56bbad210" title="攻撃開始ステップの実装" alt="" coords="265,107,403,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,81,257,100,256,105,170,86"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="basic_json::from_msgpack" name="basic_json::from_msgpack">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,182,57"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#ab0c025488572f913ca5529a2ef62d066" title="create a JSON value from an input in MessagePack format" alt="" coords="230,31,406,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,41,214,41,214,47,182,47"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#ae2d5bc42270881ed3e219e8b1456fec5" title="create an empty value with a given type" alt="" coords="454,5,607,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="406,31,438,27,438,32,407,36"/>
+<area shape="rect" id="Node000004" href="$namespacedetail.html#aada1510d1b55ad2faf4a71c70cffb374" title=" " alt="" coords="462,56,600,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="407,52,446,57,446,62,406,57"/>
+</map>

@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): Transform クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_transform.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="class_transform-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">Transform クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_transform_8h_source.html">Transform.h</a>&gt;</code></p>
+<div class="dynheader">
+Transform 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_transform__coll__graph.png" border="0" usemap="#a_transform_coll__map" alt="Collaboration graph"/></div>
+<map name="a_transform_coll__map" id="a_transform_coll__map">
+<area shape="rect" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="100,12,110,19,102,25,84,26,84,21,100,20,105,19,98,17"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa08ca4266efabc768973cdeea51945ab" id="r_aa08ca4266efabc768973cdeea51945ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa08ca4266efabc768973cdeea51945ab">Transform</a> ()</td></tr>
+<tr class="separator:aa08ca4266efabc768973cdeea51945ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72e286c069850db80927b0e6554cd3e" id="r_aa72e286c069850db80927b0e6554cd3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa72e286c069850db80927b0e6554cd3e">~Transform</a> ()</td></tr>
+<tr class="separator:aa72e286c069850db80927b0e6554cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50210aab26359b2fc6a3a343a3f8039b" id="r_a50210aab26359b2fc6a3a343a3f8039b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50210aab26359b2fc6a3a343a3f8039b">Calculation</a> ()</td></tr>
+<tr class="separator:a50210aab26359b2fc6a3a343a3f8039b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9304784014a9dab85ff55d80e8ab76eb" id="r_a9304784014a9dab85ff55d80e8ab76eb"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9304784014a9dab85ff55d80e8ab76eb">GetWorldMatrix</a> ()</td></tr>
+<tr class="separator:a9304784014a9dab85ff55d80e8ab76eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:af089d0bfb52885607f0fe6138701a105" id="r_af089d0bfb52885607f0fe6138701a105"><td class="memItemLeft" align="right" valign="top">static XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af089d0bfb52885607f0fe6138701a105">Float3Add</a> (XMFLOAT3 a, XMFLOAT3 b)</td></tr>
+<tr class="separator:af089d0bfb52885607f0fe6138701a105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9bd7b56a6ac9f48c99da5eefcf7613e" id="r_ad9bd7b56a6ac9f48c99da5eefcf7613e"><td class="memItemLeft" align="right" valign="top">static XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9bd7b56a6ac9f48c99da5eefcf7613e">makeFloat3</a> (float value)</td></tr>
+<tr class="separator:ad9bd7b56a6ac9f48c99da5eefcf7613e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:af865d7a138deafd80e9cba38074b00ff" id="r_af865d7a138deafd80e9cba38074b00ff"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af865d7a138deafd80e9cba38074b00ff">matTranslate_</a></td></tr>
+<tr class="separator:af865d7a138deafd80e9cba38074b00ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88bfcabd1af43869ff3d46e40f312ad" id="r_ab88bfcabd1af43869ff3d46e40f312ad"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab88bfcabd1af43869ff3d46e40f312ad">matRotate_</a></td></tr>
+<tr class="separator:ab88bfcabd1af43869ff3d46e40f312ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947c27c883860f3d5e2601b06d2e4385" id="r_a947c27c883860f3d5e2601b06d2e4385"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a947c27c883860f3d5e2601b06d2e4385">matScale_</a></td></tr>
+<tr class="separator:a947c27c883860f3d5e2601b06d2e4385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777f64c4eb5da58be5a595976fd959ea" id="r_a777f64c4eb5da58be5a595976fd959ea"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a777f64c4eb5da58be5a595976fd959ea">position_</a></td></tr>
+<tr class="separator:a777f64c4eb5da58be5a595976fd959ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677983ce60221914ad621d41eeea114c" id="r_a677983ce60221914ad621d41eeea114c"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a677983ce60221914ad621d41eeea114c">rotate_</a></td></tr>
+<tr class="separator:a677983ce60221914ad621d41eeea114c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb59e5b42658dfc257a92c5f8af0806a" id="r_abb59e5b42658dfc257a92c5f8af0806a"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb59e5b42658dfc257a92c5f8af0806a">scale_</a></td></tr>
+<tr class="separator:abb59e5b42658dfc257a92c5f8af0806a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ce84dc5ca2717e2ad18872f611d71d" id="r_a03ce84dc5ca2717e2ad18872f611d71d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ce84dc5ca2717e2ad18872f611d71d">pParent_</a></td></tr>
+<tr class="separator:a03ce84dc5ca2717e2ad18872f611d71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00010">10</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aa08ca4266efabc768973cdeea51945ab" name="aa08ca4266efabc768973cdeea51945ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08ca4266efabc768973cdeea51945ab">&#9670;&#160;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform::Transform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00005">5</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa72e286c069850db80927b0e6554cd3e" name="aa72e286c069850db80927b0e6554cd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72e286c069850db80927b0e6554cd3e">&#9670;&#160;</a></span>~Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform::~Transform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a50210aab26359b2fc6a3a343a3f8039b" name="a50210aab26359b2fc6a3a343a3f8039b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50210aab26359b2fc6a3a343a3f8039b">&#9670;&#160;</a></span>Calculation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::Calculation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00020">20</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_transform_a50210aab26359b2fc6a3a343a3f8039b_icgraph.png" border="0" usemap="#aclass_transform_a50210aab26359b2fc6a3a343a3f8039b_icgraph" alt=""/></div>
+<map name="aclass_transform_a50210aab26359b2fc6a3a343a3f8039b_icgraph" id="aclass_transform_a50210aab26359b2fc6a3a343a3f8039b_icgraph">
+<area shape="rect" title=" " alt="" coords="700,44,851,71"/>
+<area shape="rect" href="class_collider.html#ae706014c07e6aa05440fe64baa160bcb" title=" " alt="" coords="513,7,614,33"/>
+<area shape="poly" title=" " alt="" coords="684,44,614,32,615,26,685,39"/>
+<area shape="rect" href="class_transform.html#a9304784014a9dab85ff55d80e8ab76eb" title=" " alt="" coords="475,81,652,108"/>
+<area shape="poly" title=" " alt="" coords="685,76,644,83,643,78,685,71"/>
+<area shape="poly" title=" " alt="" coords="600,68,587,62,564,60,541,62,529,67,527,72,532,79,528,82,521,73,526,63,540,57,564,55,589,57,602,64"/>
+<area shape="rect" href="class_fbx_parts.html#a6f4a56d494ea33ba40d50c4ebfcb2469" title=" " alt="" coords="275,31,386,57"/>
+<area shape="poly" title=" " alt="" coords="483,80,386,59,387,53,484,75"/>
+<area shape="rect" href="namespace_model.html#ab93a165aac3d0c852a38215ac3ac6258" title=" " alt="" coords="270,81,391,108"/>
+<area shape="poly" title=" " alt="" coords="459,97,391,97,391,92,459,92"/>
+<area shape="rect" href="class_game_object.html#a6c0d4e8eaf47f457927850b2cd8be670" title=" " alt="" coords="234,132,427,159"/>
+<area shape="poly" title=" " alt="" coords="484,114,396,134,395,129,483,109"/>
+<area shape="rect" href="class_fbx_parts.html#a72ccd90d28fcc8025b5a324490c18c43" title=" " alt="" coords="5,5,186,32"/>
+<area shape="poly" title=" " alt="" coords="260,39,186,31,186,26,260,34"/>
+<area shape="rect" href="class_fbx_parts.html#ab79c7b8ace640a5fedc46697b214e433" title=" " alt="" coords="8,56,183,83"/>
+<area shape="poly" title=" " alt="" coords="260,54,183,63,183,57,259,49"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af089d0bfb52885607f0fe6138701a105" name="af089d0bfb52885607f0fe6138701a105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af089d0bfb52885607f0fe6138701a105">&#9670;&#160;</a></span>Float3Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static XMFLOAT3 Transform::Float3Add </td>
+          <td>(</td>
+          <td class="paramtype">XMFLOAT3</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XMFLOAT3</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00038">38</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_transform_af089d0bfb52885607f0fe6138701a105_icgraph.png" border="0" usemap="#aclass_transform_af089d0bfb52885607f0fe6138701a105_icgraph" alt=""/></div>
+<map name="aclass_transform_af089d0bfb52885607f0fe6138701a105_icgraph" id="aclass_transform_af089d0bfb52885607f0fe6138701a105_icgraph">
+<area shape="rect" title=" " alt="" coords="809,169,954,196"/>
+<area shape="rect" href="class_game_object.html#aced96b154f432431101c7f6270484ca0" title=" " alt="" coords="556,93,761,120"/>
+<area shape="poly" title=" " alt="" coords="829,166,760,141,704,123,706,118,762,136,830,161"/>
+<area shape="rect" href="class_collider.html#a5cacea54f9085db5e578b415ab8a93dc" title=" " alt="" coords="338,5,498,32"/>
+<area shape="poly" title=" " alt="" coords="856,160,814,120,788,100,760,84,694,59,625,41,558,30,499,24,499,19,559,25,626,36,695,53,762,79,791,96,817,116,860,156"/>
+<area shape="rect" href="class_collider.html#acc4ef44a6068825202e070cc59eb447c" title=" " alt="" coords="333,157,503,184"/>
+<area shape="poly" title=" " alt="" coords="793,183,504,176,504,170,793,178"/>
+<area shape="rect" href="class_game_object.html#a1fb354ded407cdd8e617ddb3a3848aa6" title=" " alt="" coords="561,195,756,221"/>
+<area shape="poly" title=" " alt="" coords="794,195,757,200,756,194,793,190"/>
+<area shape="rect" href="class_game_object.html#a3d088d6332b63c91288edc7b774a243f" title=" " alt="" coords="563,245,754,272"/>
+<area shape="poly" title=" " alt="" coords="838,205,762,236,722,247,721,242,760,231,836,200"/>
+<area shape="rect" href="namespace_model.html#ac47d55232470e0b96feb538e000012e1" title=" " alt="" coords="601,296,716,323"/>
+<area shape="poly" title=" " alt="" coords="859,209,817,249,762,286,717,303,715,298,759,282,813,245,856,205"/>
+<area shape="rect" href="class_game_object.html#a379a898a16acaf481406c14b3c35680a" title=" " alt="" coords="328,56,508,83"/>
+<area shape="poly" title=" " alt="" coords="553,93,508,86,509,81,554,88"/>
+<area shape="poly" title=" " alt="" coords="611,89,507,47,472,35,473,30,509,41,613,84"/>
+<area shape="poly" title=" " alt="" coords="592,127,472,159,471,154,590,122"/>
+<area shape="rect" href="class_collider.html#aca890d5658306f7c18fefc7c539091be" title=" " alt="" coords="328,107,508,133"/>
+<area shape="poly" title=" " alt="" coords="541,116,509,118,508,112,540,111"/>
+<area shape="rect" href="class_game_object.html#a7bb0da0dfe75fe7100a5ce44d5fc7b80" title=" " alt="" coords="126,56,280,83"/>
+<area shape="poly" title=" " alt="" coords="313,72,281,72,281,67,313,67"/>
+<area shape="rect" href="_main_8cpp.html#a649028f00e62144f15f268d14bc6dae0" title=" " alt="" coords="5,56,78,83"/>
+<area shape="poly" title=" " alt="" coords="110,72,78,72,78,67,110,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9304784014a9dab85ff55d80e8ab76eb" name="a9304784014a9dab85ff55d80e8ab76eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9304784014a9dab85ff55d80e8ab76eb">&#9670;&#160;</a></span>GetWorldMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX Transform::GetWorldMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00036">36</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_transform_a9304784014a9dab85ff55d80e8ab76eb_cgraph.png" border="0" usemap="#aclass_transform_a9304784014a9dab85ff55d80e8ab76eb_cgraph" alt=""/></div>
+<map name="aclass_transform_a9304784014a9dab85ff55d80e8ab76eb_cgraph" id="aclass_transform_a9304784014a9dab85ff55d80e8ab76eb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,183,56"/>
+<area shape="poly" title=" " alt="" coords="58,30,52,21,56,11,71,5,94,3,119,5,133,12,130,16,118,10,94,8,72,10,60,15,57,20,63,27"/>
+<area shape="rect" href="class_transform.html#a50210aab26359b2fc6a3a343a3f8039b" title=" " alt="" coords="231,29,381,56"/>
+<area shape="poly" title=" " alt="" coords="183,40,216,40,216,45,183,45"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_transform_a9304784014a9dab85ff55d80e8ab76eb_icgraph.png" border="0" usemap="#aclass_transform_a9304784014a9dab85ff55d80e8ab76eb_icgraph" alt=""/></div>
+<map name="aclass_transform_a9304784014a9dab85ff55d80e8ab76eb_icgraph" id="aclass_transform_a9304784014a9dab85ff55d80e8ab76eb_icgraph">
+<area shape="rect" title=" " alt="" coords="475,81,652,108"/>
+<area shape="poly" title=" " alt="" coords="604,69,590,62,564,60,539,62,526,67,523,72,529,79,524,83,517,73,522,63,538,57,564,55,592,57,606,64"/>
+<area shape="rect" href="class_fbx_parts.html#a6f4a56d494ea33ba40d50c4ebfcb2469" title=" " alt="" coords="275,31,386,57"/>
+<area shape="poly" title=" " alt="" coords="483,80,386,59,387,53,484,75"/>
+<area shape="rect" href="namespace_model.html#ab93a165aac3d0c852a38215ac3ac6258" title=" " alt="" coords="270,81,391,108"/>
+<area shape="poly" title=" " alt="" coords="459,97,391,97,391,92,459,92"/>
+<area shape="rect" href="class_game_object.html#a6c0d4e8eaf47f457927850b2cd8be670" title=" " alt="" coords="234,132,427,159"/>
+<area shape="poly" title=" " alt="" coords="484,114,396,134,395,129,483,109"/>
+<area shape="rect" href="class_fbx_parts.html#a72ccd90d28fcc8025b5a324490c18c43" title=" " alt="" coords="5,5,186,32"/>
+<area shape="poly" title=" " alt="" coords="260,39,186,31,186,26,260,34"/>
+<area shape="rect" href="class_fbx_parts.html#ab79c7b8ace640a5fedc46697b214e433" title=" " alt="" coords="8,56,183,83"/>
+<area shape="poly" title=" " alt="" coords="260,54,183,63,183,57,259,49"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad9bd7b56a6ac9f48c99da5eefcf7613e" name="ad9bd7b56a6ac9f48c99da5eefcf7613e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9bd7b56a6ac9f48c99da5eefcf7613e">&#9670;&#160;</a></span>makeFloat3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static XMFLOAT3 Transform::makeFloat3 </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00042">42</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab88bfcabd1af43869ff3d46e40f312ad" name="ab88bfcabd1af43869ff3d46e40f312ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88bfcabd1af43869ff3d46e40f312ad">&#9670;&#160;</a></span>matRotate_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX Transform::matRotate_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a947c27c883860f3d5e2601b06d2e4385" name="a947c27c883860f3d5e2601b06d2e4385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947c27c883860f3d5e2601b06d2e4385">&#9670;&#160;</a></span>matScale_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX Transform::matScale_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00015">15</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af865d7a138deafd80e9cba38074b00ff" name="af865d7a138deafd80e9cba38074b00ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af865d7a138deafd80e9cba38074b00ff">&#9670;&#160;</a></span>matTranslate_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX Transform::matTranslate_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00013">13</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a777f64c4eb5da58be5a595976fd959ea" name="a777f64c4eb5da58be5a595976fd959ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a777f64c4eb5da58be5a595976fd959ea">&#9670;&#160;</a></span>position_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 Transform::position_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a03ce84dc5ca2717e2ad18872f611d71d" name="a03ce84dc5ca2717e2ad18872f611d71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ce84dc5ca2717e2ad18872f611d71d">&#9670;&#160;</a></span>pParent_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a>* Transform::pParent_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00019">19</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a677983ce60221914ad621d41eeea114c" name="a677983ce60221914ad621d41eeea114c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677983ce60221914ad621d41eeea114c">&#9670;&#160;</a></span>rotate_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 Transform::rotate_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00017">17</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abb59e5b42658dfc257a92c5f8af0806a" name="abb59e5b42658dfc257a92c5f8af0806a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb59e5b42658dfc257a92c5f8af0806a">&#9670;&#160;</a></span>scale_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMFLOAT3 Transform::scale_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00018">18</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/Engine/<a class="el" href="_transform_8h_source.html">Transform.h</a></li>
+<li>SoR/Engine/<a class="el" href="_transform_8cpp_source.html">Transform.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_transform.html">Transform</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

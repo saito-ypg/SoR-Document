@@ -1,0 +1,14 @@
+<map id="SoR/sources/CollisionManager.h" name="SoR/sources/CollisionManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,229,32"/>
+<area shape="rect" id="Node000002" href="$_actor_collider_8h.html" title=" " alt="" coords="5,80,112,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,34,82,70,78,67,110,31"/>
+<area shape="rect" id="Node000004" href="$_attack_range_8h.html" title=" " alt="" coords="136,80,243,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,31,170,67,166,70,133,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="15,155,118,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,107,66,139,61,139,57,108"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="169,110,103,149,100,144,166,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="146,155,222,181"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="191,107,189,139,183,139,186,107"/>
+<area shape="rect" id="Node000006" href="$areamodels_8h.html" title=" " alt="" coords="246,155,346,181"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="209,105,266,143,263,148,206,109"/>
+</map>

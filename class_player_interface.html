@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): PlayerInterface クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_player_interface.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_player_interface-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">PlayerInterface クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>プレイヤーの情報を画面に表示する。 シーン直下に置く  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_player_interface_8h_source.html">PlayerInterface.h</a>&gt;</code></p>
+<div class="dynheader">
+PlayerInterface の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_interface__inherit__graph.png" border="0" usemap="#a_player_interface_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_player_interface_inherit__map" id="a_player_interface_inherit__map">
+<area shape="rect" title="プレイヤーの情報を画面に表示する。 シーン直下に置く" alt="" coords="5,80,113,107"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="12,5,106,32"/>
+<area shape="poly" title=" " alt="" coords="62,48,62,80,56,80,56,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+PlayerInterface 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_interface__coll__graph.png" border="0" usemap="#a_player_interface_coll__map" alt="Collaboration graph"/></div>
+<map name="a_player_interface_coll__map" id="a_player_interface_coll__map">
+<area shape="rect" title="プレイヤーの情報を画面に表示する。 シーン直下に置く" alt="" coords="76,171,184,197"/>
+<area shape="rect" href="class_game_object.html" title=" " alt="" coords="83,96,177,123"/>
+<area shape="poly" title=" " alt="" coords="133,138,133,170,127,170,127,138"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="5,5,84,32"/>
+<area shape="poly" title=" " alt="" coords="68,42,95,70,119,94,115,97,91,74,64,46"/>
+<area shape="poly" title=" " alt="" coords="101,10,110,19,102,27,84,30,84,25,100,23,105,19,97,14"/>
+<area shape="rect" title=" " alt="" coords="187,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="193,46,144,97,140,94,189,42"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6a66d8493088032f341eef43a0f67c69" id="r_a6a66d8493088032f341eef43a0f67c69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a66d8493088032f341eef43a0f67c69">PlayerInterface</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent)</td></tr>
+<tr class="separator:a6a66d8493088032f341eef43a0f67c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e59dcc03d7dbf9f0ae8f418654e418" id="r_a70e59dcc03d7dbf9f0ae8f418654e418"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70e59dcc03d7dbf9f0ae8f418654e418">~PlayerInterface</a> ()</td></tr>
+<tr class="separator:a70e59dcc03d7dbf9f0ae8f418654e418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c542ba58f45b739fcc964b55f7b7fd" id="r_ac9c542ba58f45b739fcc964b55f7b7fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9c542ba58f45b739fcc964b55f7b7fd">SetPlayer</a> (<a class="el" href="class_player.html">Player</a> *const p)</td></tr>
+<tr class="separator:ac9c542ba58f45b739fcc964b55f7b7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae66beaa5a210808a8e0c323ac13bd76" id="r_aae66beaa5a210808a8e0c323ac13bd76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae66beaa5a210808a8e0c323ac13bd76">Initialize</a> () override</td></tr>
+<tr class="separator:aae66beaa5a210808a8e0c323ac13bd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af493b8ee340b66599c60a41a9aba02ef" id="r_af493b8ee340b66599c60a41a9aba02ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af493b8ee340b66599c60a41a9aba02ef">Update</a> (const float &amp;dt) override</td></tr>
+<tr class="separator:af493b8ee340b66599c60a41a9aba02ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b02f75f559ac9184301f68a52652ff" id="r_a75b02f75f559ac9184301f68a52652ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75b02f75f559ac9184301f68a52652ff">Draw</a> () override</td></tr>
+<tr class="separator:a75b02f75f559ac9184301f68a52652ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89b4eeb0d5818dd68cda41670b65f49" id="r_ae89b4eeb0d5818dd68cda41670b65f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89b4eeb0d5818dd68cda41670b65f49">Release</a> () override</td></tr>
+<tr class="separator:ae89b4eeb0d5818dd68cda41670b65f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_object')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_object.html">GameObject</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a0348e3ee2e83d56eafca7a3547f432c4 inherit pub_methods_class_game_object" id="r_a0348e3ee2e83d56eafca7a3547f432c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a0348e3ee2e83d56eafca7a3547f432c4">GameObject</a> ()</td></tr>
+<tr class="separator:a0348e3ee2e83d56eafca7a3547f432c4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59ffa2d8d3e171395a14e53c0d3b085 inherit pub_methods_class_game_object" id="r_ac59ffa2d8d3e171395a14e53c0d3b085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac59ffa2d8d3e171395a14e53c0d3b085">GameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent)</td></tr>
+<tr class="separator:ac59ffa2d8d3e171395a14e53c0d3b085 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4e4440999725de273506a8f4362d5f inherit pub_methods_class_game_object" id="r_a3b4e4440999725de273506a8f4362d5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3b4e4440999725de273506a8f4362d5f">GameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *parent, const std::string &amp;name)</td></tr>
+<tr class="separator:a3b4e4440999725de273506a8f4362d5f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82dfdb656f9051c0587e6593b2dda97 inherit pub_methods_class_game_object" id="r_ab82dfdb656f9051c0587e6593b2dda97"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ab82dfdb656f9051c0587e6593b2dda97">~GameObject</a> ()</td></tr>
+<tr class="separator:ab82dfdb656f9051c0587e6593b2dda97 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eec20eae59484f8a629a4ead1db1404 inherit pub_methods_class_game_object" id="r_a3eec20eae59484f8a629a4ead1db1404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3eec20eae59484f8a629a4ead1db1404">UpdateSub</a> (const float &amp;dt)</td></tr>
+<tr class="separator:a3eec20eae59484f8a629a4ead1db1404 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb0da0dfe75fe7100a5ce44d5fc7b80 inherit pub_methods_class_game_object" id="r_a7bb0da0dfe75fe7100a5ce44d5fc7b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a7bb0da0dfe75fe7100a5ce44d5fc7b80">DrawSub</a> ()</td></tr>
+<tr class="separator:a7bb0da0dfe75fe7100a5ce44d5fc7b80 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6616c815e02395884c0bd7125f881b7b inherit pub_methods_class_game_object" id="r_a6616c815e02395884c0bd7125f881b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a6616c815e02395884c0bd7125f881b7b">ReleaseSub</a> ()</td></tr>
+<tr class="separator:a6616c815e02395884c0bd7125f881b7b inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0d4e8eaf47f457927850b2cd8be670 inherit pub_methods_class_game_object" id="r_a6c0d4e8eaf47f457927850b2cd8be670"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a6c0d4e8eaf47f457927850b2cd8be670">GetWorldMatrix</a> ()</td></tr>
+<tr class="separator:a6c0d4e8eaf47f457927850b2cd8be670 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc85e842da02559714d368439233b266 inherit pub_methods_class_game_object" id="r_acc85e842da02559714d368439233b266"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#acc85e842da02559714d368439233b266">IsDead</a> ()</td></tr>
+<tr class="separator:acc85e842da02559714d368439233b266 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33271803c705a20371cb17923bcb08d2 inherit pub_methods_class_game_object" id="r_a33271803c705a20371cb17923bcb08d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a33271803c705a20371cb17923bcb08d2">KillMe</a> ()</td></tr>
+<tr class="separator:a33271803c705a20371cb17923bcb08d2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f66dbb5e290656281de8af92ea3bcd inherit pub_methods_class_game_object" id="r_a33f66dbb5e290656281de8af92ea3bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a33f66dbb5e290656281de8af92ea3bcd">Enter</a> ()</td></tr>
+<tr class="separator:a33f66dbb5e290656281de8af92ea3bcd inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa450a4f850dc857146899b8b5f5115cc inherit pub_methods_class_game_object" id="r_aa450a4f850dc857146899b8b5f5115cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa450a4f850dc857146899b8b5f5115cc">Leave</a> ()</td></tr>
+<tr class="separator:aa450a4f850dc857146899b8b5f5115cc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c87636671d2052999d54cfafa949b9f inherit pub_methods_class_game_object" id="r_a5c87636671d2052999d54cfafa949b9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a5c87636671d2052999d54cfafa949b9f">Visible</a> ()</td></tr>
+<tr class="separator:a5c87636671d2052999d54cfafa949b9f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ec21a1964e208684ddadad27f52de6 inherit pub_methods_class_game_object" id="r_a96ec21a1964e208684ddadad27f52de6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a96ec21a1964e208684ddadad27f52de6">Invisible</a> ()</td></tr>
+<tr class="separator:a96ec21a1964e208684ddadad27f52de6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07dcaa78fa0dfc5d897cba7563058b1 inherit pub_methods_class_game_object" id="r_ad07dcaa78fa0dfc5d897cba7563058b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ad07dcaa78fa0dfc5d897cba7563058b1">IsInitialized</a> ()</td></tr>
+<tr class="separator:ad07dcaa78fa0dfc5d897cba7563058b1 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d59329d169518f859ed9592a558a492 inherit pub_methods_class_game_object" id="r_a9d59329d169518f859ed9592a558a492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a9d59329d169518f859ed9592a558a492">SetInitialized</a> ()</td></tr>
+<tr class="separator:a9d59329d169518f859ed9592a558a492 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94319c3e9ddee4d5ee08fec5c09e9655 inherit pub_methods_class_game_object" id="r_a94319c3e9ddee4d5ee08fec5c09e9655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a94319c3e9ddee4d5ee08fec5c09e9655">IsEntered</a> ()</td></tr>
+<tr class="separator:a94319c3e9ddee4d5ee08fec5c09e9655 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05d364e5acbfdf52368092e963887c0 inherit pub_methods_class_game_object" id="r_ac05d364e5acbfdf52368092e963887c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac05d364e5acbfdf52368092e963887c0">IsVisibled</a> ()</td></tr>
+<tr class="separator:ac05d364e5acbfdf52368092e963887c0 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed83be77ba65e8574656cf51463cc632 inherit pub_methods_class_game_object" id="r_aed83be77ba65e8574656cf51463cc632"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_object.html">GameObject</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aed83be77ba65e8574656cf51463cc632">GetChildList</a> ()</td></tr>
+<tr class="separator:aed83be77ba65e8574656cf51463cc632 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cd34f35a40f8c303d38a61a1c4cbed inherit pub_methods_class_game_object" id="r_ab8cd34f35a40f8c303d38a61a1c4cbed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed">GetParent</a> ()</td></tr>
+<tr class="separator:ab8cd34f35a40f8c303d38a61a1c4cbed inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8f28a08b13d6e2d234c7fc3488b2b7 inherit pub_methods_class_game_object" id="r_afb8f28a08b13d6e2d234c7fc3488b2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afb8f28a08b13d6e2d234c7fc3488b2b7">FindChildObject</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:afb8f28a08b13d6e2d234c7fc3488b2b7 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d90e0f590d24cdf0755e273dca3b27 inherit pub_methods_class_game_object" id="r_a02d90e0f590d24cdf0755e273dca3b27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27">FindObject</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a02d90e0f590d24cdf0755e273dca3b27 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48265f25e24f0cfd7ae2a5f601a6ad64 inherit pub_methods_class_game_object" id="r_a48265f25e24f0cfd7ae2a5f601a6ad64"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a48265f25e24f0cfd7ae2a5f601a6ad64">GetObjectName</a> (void) const</td></tr>
+<tr class="separator:a48265f25e24f0cfd7ae2a5f601a6ad64 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e5a5fda14cb7bda24cffdc06c4830d inherit pub_methods_class_game_object" id="r_a72e5a5fda14cb7bda24cffdc06c4830d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a72e5a5fda14cb7bda24cffdc06c4830d">PushBackChild</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="separator:a72e5a5fda14cb7bda24cffdc06c4830d inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a6ba604bb06358cf733d1782f1b0e4 inherit pub_methods_class_game_object" id="r_ac2a6ba604bb06358cf733d1782f1b0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac2a6ba604bb06358cf733d1782f1b0e4">PushFrontChild</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="separator:ac2a6ba604bb06358cf733d1782f1b0e4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d71dae3d2410c901974ad46fcef0bf inherit pub_methods_class_game_object" id="r_ae8d71dae3d2410c901974ad46fcef0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ae8d71dae3d2410c901974ad46fcef0bf">KillAllChildren</a> ()</td></tr>
+<tr class="separator:ae8d71dae3d2410c901974ad46fcef0bf inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb855b45044a3c362be78583f66c2a2 inherit pub_methods_class_game_object" id="r_a3fb855b45044a3c362be78583f66c2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3fb855b45044a3c362be78583f66c2a2">AddCollider</a> (<a class="el" href="class_collider.html">Collider</a> *collider)</td></tr>
+<tr class="separator:a3fb855b45044a3c362be78583f66c2a2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f0aed6b1a3b607702b8135be73e9f2 inherit pub_methods_class_game_object" id="r_a30f0aed6b1a3b607702b8135be73e9f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a30f0aed6b1a3b607702b8135be73e9f2">OnCollision</a> (<a class="el" href="class_game_object.html">GameObject</a> *pTarget)</td></tr>
+<tr class="separator:a30f0aed6b1a3b607702b8135be73e9f2 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe0d2eb92532ca832027815d8313516 inherit pub_methods_class_game_object" id="r_aafe0d2eb92532ca832027815d8313516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aafe0d2eb92532ca832027815d8313516">ClearCollider</a> ()</td></tr>
+<tr class="separator:aafe0d2eb92532ca832027815d8313516 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7444b0ebe8d38c70ef03f5544ede2c5 inherit pub_methods_class_game_object" id="r_aa7444b0ebe8d38c70ef03f5544ede2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa7444b0ebe8d38c70ef03f5544ede2c5">Collision</a> (<a class="el" href="class_game_object.html">GameObject</a> *pTarget)</td></tr>
+<tr class="separator:aa7444b0ebe8d38c70ef03f5544ede2c5 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379a898a16acaf481406c14b3c35680a inherit pub_methods_class_game_object" id="r_a379a898a16acaf481406c14b3c35680a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a379a898a16acaf481406c14b3c35680a">CollisionDraw</a> ()</td></tr>
+<tr class="separator:a379a898a16acaf481406c14b3c35680a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582a09eb9f4fbfe8b12a1f4bf054498a inherit pub_methods_class_game_object" id="r_a582a09eb9f4fbfe8b12a1f4bf054498a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a582a09eb9f4fbfe8b12a1f4bf054498a">GetRootJob</a> ()</td></tr>
+<tr class="separator:a582a09eb9f4fbfe8b12a1f4bf054498a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff8538cd2c3890a31dc3052b64baa8a inherit pub_methods_class_game_object" id="r_a0ff8538cd2c3890a31dc3052b64baa8a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a0ff8538cd2c3890a31dc3052b64baa8a">GetMyTimeScale</a> () const</td></tr>
+<tr class="separator:a0ff8538cd2c3890a31dc3052b64baa8a inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fce977044f8d5cd9a40a952ed2d1998 inherit pub_methods_class_game_object" id="r_a9fce977044f8d5cd9a40a952ed2d1998"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a9fce977044f8d5cd9a40a952ed2d1998">GetTotalTimeScale</a> () const</td></tr>
+<tr class="separator:a9fce977044f8d5cd9a40a952ed2d1998 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cfcdc2fc6c10ee5f1386855f951849 inherit pub_methods_class_game_object" id="r_aa5cfcdc2fc6c10ee5f1386855f951849"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aa5cfcdc2fc6c10ee5f1386855f951849">GetPosition</a> ()</td></tr>
+<tr class="separator:aa5cfcdc2fc6c10ee5f1386855f951849 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecbadbb1da960249e08263a81e828bc inherit pub_methods_class_game_object" id="r_afecbadbb1da960249e08263a81e828bc"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afecbadbb1da960249e08263a81e828bc">GetRotate</a> ()</td></tr>
+<tr class="separator:afecbadbb1da960249e08263a81e828bc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d465322d9a9ef2240dcf4e5fb1c03c inherit pub_methods_class_game_object" id="r_a98d465322d9a9ef2240dcf4e5fb1c03c"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a98d465322d9a9ef2240dcf4e5fb1c03c">GetScale</a> ()</td></tr>
+<tr class="separator:a98d465322d9a9ef2240dcf4e5fb1c03c inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced96b154f432431101c7f6270484ca0 inherit pub_methods_class_game_object" id="r_aced96b154f432431101c7f6270484ca0"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aced96b154f432431101c7f6270484ca0">GetWorldPosition</a> ()</td></tr>
+<tr class="separator:aced96b154f432431101c7f6270484ca0 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb354ded407cdd8e617ddb3a3848aa6 inherit pub_methods_class_game_object" id="r_a1fb354ded407cdd8e617ddb3a3848aa6"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a1fb354ded407cdd8e617ddb3a3848aa6">GetWorldRotate</a> ()</td></tr>
+<tr class="separator:a1fb354ded407cdd8e617ddb3a3848aa6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d088d6332b63c91288edc7b774a243f inherit pub_methods_class_game_object" id="r_a3d088d6332b63c91288edc7b774a243f"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3d088d6332b63c91288edc7b774a243f">GetWorldScale</a> ()</td></tr>
+<tr class="separator:a3d088d6332b63c91288edc7b774a243f inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a17beee606ce1a49e6b121281f870e4 inherit pub_methods_class_game_object" id="r_a3a17beee606ce1a49e6b121281f870e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3a17beee606ce1a49e6b121281f870e4">SetTimeScale</a> (float v)</td></tr>
+<tr class="separator:a3a17beee606ce1a49e6b121281f870e4 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc5a9686ab26e62f47dc8906a9f5773 inherit pub_methods_class_game_object" id="r_a3fc5a9686ab26e62f47dc8906a9f5773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3fc5a9686ab26e62f47dc8906a9f5773">SetPosition</a> (XMFLOAT3 position)</td></tr>
+<tr class="separator:a3fc5a9686ab26e62f47dc8906a9f5773 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c75654f6d49ce65bf2f3a7bbacd8381 inherit pub_methods_class_game_object" id="r_a7c75654f6d49ce65bf2f3a7bbacd8381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a7c75654f6d49ce65bf2f3a7bbacd8381">SetPosition</a> (XMVECTOR position)</td></tr>
+<tr class="separator:a7c75654f6d49ce65bf2f3a7bbacd8381 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb69dab3e8f30a0be83c1d4b554ed275 inherit pub_methods_class_game_object" id="r_afb69dab3e8f30a0be83c1d4b554ed275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#afb69dab3e8f30a0be83c1d4b554ed275">SetPosition</a> (float x, float y, float z)</td></tr>
+<tr class="separator:afb69dab3e8f30a0be83c1d4b554ed275 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64712d13af42f2821fad54a7363579dc inherit pub_methods_class_game_object" id="r_a64712d13af42f2821fad54a7363579dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a64712d13af42f2821fad54a7363579dc">SetRotate</a> (XMFLOAT3 rotate)</td></tr>
+<tr class="separator:a64712d13af42f2821fad54a7363579dc inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b9a5e1c64013245a5976bba765ece7 inherit pub_methods_class_game_object" id="r_a57b9a5e1c64013245a5976bba765ece7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a57b9a5e1c64013245a5976bba765ece7">SetRotate</a> (float x, float y, float z)</td></tr>
+<tr class="separator:a57b9a5e1c64013245a5976bba765ece7 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c37cc6fe4f976f6bf153c3d28d8d15 inherit pub_methods_class_game_object" id="r_ac6c37cc6fe4f976f6bf153c3d28d8d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ac6c37cc6fe4f976f6bf153c3d28d8d15">SetRotateX</a> (float x)</td></tr>
+<tr class="separator:ac6c37cc6fe4f976f6bf153c3d28d8d15 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f7c370d904c3aee8870ad7dfba74b6 inherit pub_methods_class_game_object" id="r_a77f7c370d904c3aee8870ad7dfba74b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a77f7c370d904c3aee8870ad7dfba74b6">SetRotateY</a> (float y)</td></tr>
+<tr class="separator:a77f7c370d904c3aee8870ad7dfba74b6 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ae2485d68f873cbc1da908a92a744b inherit pub_methods_class_game_object" id="r_a79ae2485d68f873cbc1da908a92a744b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a79ae2485d68f873cbc1da908a92a744b">SetRotateZ</a> (float z)</td></tr>
+<tr class="separator:a79ae2485d68f873cbc1da908a92a744b inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add837dfa58c6dc740322b1ee75bc3797 inherit pub_methods_class_game_object" id="r_add837dfa58c6dc740322b1ee75bc3797"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#add837dfa58c6dc740322b1ee75bc3797">SetScale</a> (XMFLOAT3 scale)</td></tr>
+<tr class="separator:add837dfa58c6dc740322b1ee75bc3797 inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28891c1985f80927b4b0633de8c67eac inherit pub_methods_class_game_object" id="r_a28891c1985f80927b4b0633de8c67eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a28891c1985f80927b4b0633de8c67eac">SetScale</a> (float x, float y, float z)</td></tr>
+<tr class="separator:a28891c1985f80927b4b0633de8c67eac inherit pub_methods_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_game_object')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_object.html">GameObject</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:aac1b36ed81c3e3ff28ca5994b4993be3 inherit pro_attribs_class_game_object" id="r_aac1b36ed81c3e3ff28ca5994b4993be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a></td></tr>
+<tr class="separator:aac1b36ed81c3e3ff28ca5994b4993be3 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41deeb9b8f041808286661cc8c9502b2 inherit pro_attribs_class_game_object" id="r_a41deeb9b8f041808286661cc8c9502b2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a41deeb9b8f041808286661cc8c9502b2">objectName_</a></td></tr>
+<tr class="separator:a41deeb9b8f041808286661cc8c9502b2 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c5050154b6bcb6856814c6d7b52154 inherit pro_attribs_class_game_object" id="r_a00c5050154b6bcb6856814c6d7b52154"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_collider.html">Collider</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a00c5050154b6bcb6856814c6d7b52154">colliderList_</a></td></tr>
+<tr class="separator:a00c5050154b6bcb6856814c6d7b52154 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b305b7bea032772ed836b154b577da6 inherit pro_attribs_class_game_object" id="r_a5b305b7bea032772ed836b154b577da6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a5b305b7bea032772ed836b154b577da6">timeScale</a></td></tr>
+<tr class="separator:a5b305b7bea032772ed836b154b577da6 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae150d5e0bccbf80b49f0c4f3b4df7441 inherit pro_attribs_class_game_object" id="r_ae150d5e0bccbf80b49f0c4f3b4df7441"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ae150d5e0bccbf80b49f0c4f3b4df7441">parentalTimeScale</a></td></tr>
+<tr class="separator:ae150d5e0bccbf80b49f0c4f3b4df7441 inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>プレイヤーの情報を画面に表示する。 シーン直下に置く </p>
+
+<p class="definition"> <a class="el" href="_player_interface_8h_source.html">PlayerInterface.h</a> の <a class="el" href="_player_interface_8h_source.html#l00011">11</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a6a66d8493088032f341eef43a0f67c69" name="a6a66d8493088032f341eef43a0f67c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a66d8493088032f341eef43a0f67c69">&#9670;&#160;</a></span>PlayerInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerInterface::PlayerInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_object.html">GameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a> の <a class="el" href="_player_interface_8cpp_source.html#l00045">45</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a70e59dcc03d7dbf9f0ae8f418654e418" name="a70e59dcc03d7dbf9f0ae8f418654e418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e59dcc03d7dbf9f0ae8f418654e418">&#9670;&#160;</a></span>~PlayerInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerInterface::~PlayerInterface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a> の <a class="el" href="_player_interface_8cpp_source.html#l00056">56</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a75b02f75f559ac9184301f68a52652ff" name="a75b02f75f559ac9184301f68a52652ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b02f75f559ac9184301f68a52652ff">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerInterface::Draw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#a29a665f46fda87982825bc5c0ca6a888">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a> の <a class="el" href="_player_interface_8cpp_source.html#l00105">105</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_interface_a75b02f75f559ac9184301f68a52652ff_cgraph.png" border="0" usemap="#aclass_player_interface_a75b02f75f559ac9184301f68a52652ff_cgraph" alt=""/></div>
+<map name="aclass_player_interface_a75b02f75f559ac9184301f68a52652ff_cgraph" id="aclass_player_interface_a75b02f75f559ac9184301f68a52652ff_cgraph">
+<area shape="rect" title=" " alt="" coords="5,132,150,159"/>
+<area shape="rect" href="namespace_camera.html#a582a9aa86a773ca0e9c6435eabd882c4" title=" " alt="" coords="199,31,389,57"/>
+<area shape="poly" title=" " alt="" coords="95,129,140,98,197,67,214,60,216,65,199,72,143,103,98,134"/>
+<area shape="rect" href="namespace_image.html#a5a729b7937615099872420357877a354" title=" " alt="" coords="247,81,341,108"/>
+<area shape="poly" title=" " alt="" coords="137,129,231,106,232,112,138,134"/>
+<area shape="rect" href="class_game_actor.html#a6e0b55e1673ad978a4ef4b7f8ed99401" title=" " alt="" coords="198,132,390,159"/>
+<area shape="poly" title=" " alt="" coords="150,143,182,143,182,148,150,148"/>
+<area shape="rect" href="namespace_image.html#a81a8c354cae6aa090535a90a4e07a149" title="引数に渡した画像とそのTransformを用いて、第三引数のポジションが画像範囲内かを調べる" alt="" coords="225,183,363,209"/>
+<area shape="poly" title=" " alt="" coords="138,157,220,176,218,181,137,162"/>
+<area shape="rect" href="namespace_image.html#a547b7c2db03ce5f601986ac6c67b7882" title="~~~~~~~~~~~ここから拡張~~~~~~~~~~~///" alt="" coords="481,208,585,235"/>
+<area shape="poly" title=" " alt="" coords="96,157,140,190,168,207,198,219,268,233,340,237,407,235,465,229,466,235,408,240,340,242,267,238,197,224,166,211,137,195,92,161"/>
+<area shape="rect" href="namespace_camera.html#a49a4bbe4aa1cf6c368dc1741bff821ac" title=" " alt="" coords="438,5,627,32"/>
+<area shape="poly" title=" " alt="" coords="389,31,422,28,423,33,390,37"/>
+<area shape="rect" href="namespace_camera.html#a2e6a80af72c230fafd8f5ec9f32db15b" title=" " alt="" coords="453,56,612,83"/>
+<area shape="poly" title=" " alt="" coords="390,51,438,57,437,62,389,57"/>
+<area shape="poly" title=" " alt="" coords="364,201,465,212,465,217,363,206"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aae66beaa5a210808a8e0c323ac13bd76" name="aae66beaa5a210808a8e0c323ac13bd76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae66beaa5a210808a8e0c323ac13bd76">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerInterface::Initialize </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#af9ef8d54869391515480e3aef81f876d">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a> の <a class="el" href="_player_interface_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_interface_aae66beaa5a210808a8e0c323ac13bd76_cgraph.png" border="0" usemap="#aclass_player_interface_aae66beaa5a210808a8e0c323ac13bd76_cgraph" alt=""/></div>
+<map name="aclass_player_interface_aae66beaa5a210808a8e0c323ac13bd76_cgraph" id="aclass_player_interface_aae66beaa5a210808a8e0c323ac13bd76_cgraph">
+<area shape="rect" title=" " alt="" coords="5,157,168,184"/>
+<area shape="rect" href="namespace_image.html#ab08a6927818143e3e0020a5669a32f9d" title="画像を任意位置に合わせた位置を返す 画像サイズは現在のRectおよび引数のscaleを参照する" alt="" coords="234,5,363,32"/>
+<area shape="poly" title=" " alt="" coords="96,155,143,100,177,69,214,42,225,36,227,41,217,46,180,73,147,104,100,158"/>
+<area shape="rect" href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27" title=" " alt="" coords="216,56,381,83"/>
+<area shape="poly" title=" " alt="" coords="106,154,155,124,215,92,231,86,233,91,217,97,157,129,109,159"/>
+<area shape="rect" href="class_player.html#a0c18ce69165a89d96db1706ae027ff3d" title=" " alt="" coords="240,107,357,133"/>
+<area shape="poly" title=" " alt="" coords="145,154,224,135,226,140,146,159"/>
+<area shape="rect" href="class_text.html#a1f117ce41d42a5a65c7dc6a124a21921" title=" " alt="" coords="248,157,349,184"/>
+<area shape="poly" title=" " alt="" coords="168,168,232,168,232,173,168,173"/>
+<area shape="rect" href="namespace_image.html#ab374976a45fdfc0ffa188ee9b9dac6e9" title=" " alt="" coords="480,195,572,221"/>
+<area shape="poly" title=" " alt="" coords="148,182,216,193,349,203,465,206,465,211,349,209,215,199,148,187"/>
+<area shape="rect" href="namespace_image.html#a88e2782eb2ba81a77618072490e44d2b" title=" " alt="" coords="228,259,369,285"/>
+<area shape="poly" title=" " alt="" coords="113,182,217,238,246,250,244,255,215,242,110,187"/>
+<area shape="rect" href="namespace_image.html#af563910c608e9d72aa0acef8fd626728" title="スクリーン座標系の値から正規化デバイス座標系の値に変換" alt="" coords="249,309,348,336"/>
+<area shape="poly" title=" " alt="" coords="100,183,147,237,180,268,217,295,236,304,234,309,214,300,177,272,143,241,96,186"/>
+<area shape="rect" href="class_game_object.html#afb8f28a08b13d6e2d234c7fc3488b2b7" title=" " alt="" coords="429,35,623,61"/>
+<area shape="poly" title=" " alt="" coords="381,59,413,56,414,61,382,64"/>
+<area shape="rect" href="class_game_object.html#a582a09eb9f4fbfe8b12a1f4bf054498a" title=" " alt="" coords="441,109,611,136"/>
+<area shape="poly" title=" " alt="" coords="359,81,452,103,450,108,358,86"/>
+<area shape="poly" title=" " alt="" coords="488,36,481,26,486,16,501,10,526,8,553,11,567,17,565,22,552,16,526,13,502,15,490,20,487,25,492,33"/>
+<area shape="poly" title=" " alt="" coords="488,110,481,101,486,91,501,85,526,83,553,85,567,92,565,97,552,90,526,88,502,90,490,95,487,100,492,107"/>
+<area shape="rect" href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed" title=" " alt="" coords="671,109,833,136"/>
+<area shape="poly" title=" " alt="" coords="612,120,656,120,656,125,612,125"/>
+<area shape="poly" title=" " alt="" coords="350,176,465,195,464,201,349,182"/>
+<area shape="rect" href="class_sprite.html#a34e61adf3227b1ea9cb72910298a2a01" title=" " alt="" coords="706,167,798,193"/>
+<area shape="poly" title=" " alt="" coords="572,200,691,185,692,190,573,205"/>
+<area shape="rect" href="namespace_image.html#a2db810109fab34435bb45cd14304cb48" title=" " alt="" coords="689,217,815,244"/>
+<area shape="poly" title=" " alt="" coords="573,210,674,220,674,226,572,215"/>
+<area shape="rect" href="class_sprite.html#ae6ab3d8a8c57c5d500e30c099106ccf2" title=" " alt="" coords="881,91,1046,117"/>
+<area shape="poly" title=" " alt="" coords="787,164,880,127,900,120,901,125,882,132,789,169"/>
+<area shape="rect" href="class_sprite.html#a7cabe1576ff95a77a2ae51af1b02d111" title=" " alt="" coords="908,141,1019,168"/>
+<area shape="poly" title=" " alt="" coords="798,172,892,160,893,166,798,177"/>
+<area shape="rect" href="class_sprite.html#ab78f1f87a8c3a8916641e42b70160907" title=" " alt="" coords="904,192,1023,219"/>
+<area shape="poly" title=" " alt="" coords="798,183,889,194,889,199,798,188"/>
+<area shape="rect" href="class_texture.html#a914cd7561ce4242d03690962d0cb1476" title=" " alt="" coords="913,243,1014,269"/>
+<area shape="poly" title=" " alt="" coords="799,190,834,203,882,228,900,235,898,240,880,233,832,208,797,195"/>
+<area shape="rect" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da" title=" " alt="" coords="1094,243,1214,269"/>
+<area shape="poly" title=" " alt="" coords="1014,253,1078,253,1078,259,1014,259"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae89b4eeb0d5818dd68cda41670b65f49" name="ae89b4eeb0d5818dd68cda41670b65f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89b4eeb0d5818dd68cda41670b65f49">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerInterface::Release </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#aa80f2aaebee30f53dc468ebf9e2418fb">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a> の <a class="el" href="_player_interface_8cpp_source.html#l00201">201</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_interface_ae89b4eeb0d5818dd68cda41670b65f49_cgraph.png" border="0" usemap="#aclass_player_interface_ae89b4eeb0d5818dd68cda41670b65f49_cgraph" alt=""/></div>
+<map name="aclass_player_interface_ae89b4eeb0d5818dd68cda41670b65f49_cgraph" id="aclass_player_interface_ae89b4eeb0d5818dd68cda41670b65f49_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" href="namespace_image.html#acf7303142b129a3b064c782462e97802" title=" " alt="" coords="216,5,327,32"/>
+<area shape="poly" title=" " alt="" coords="168,16,200,16,200,21,168,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9c542ba58f45b739fcc964b55f7b7fd" name="ac9c542ba58f45b739fcc964b55f7b7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c542ba58f45b739fcc964b55f7b7fd">&#9670;&#160;</a></span>SetPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerInterface::SetPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a> *const</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a> の <a class="el" href="_player_interface_8cpp_source.html#l00060">60</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af493b8ee340b66599c60a41a9aba02ef" name="af493b8ee340b66599c60a41a9aba02ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af493b8ee340b66599c60a41a9aba02ef">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerInterface::Update </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_game_object.html#ae8bdcc3855d8a143685051b541872d8e">GameObject</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a> の <a class="el" href="_player_interface_8cpp_source.html#l00100">100</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/sources/<a class="el" href="_player_interface_8h_source.html">PlayerInterface.h</a></li>
+<li>SoR/sources/<a class="el" href="_player_interface_8cpp_source.html">PlayerInterface.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_player_interface.html">PlayerInterface</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): detail::parser&lt; BasicJsonType, InputAdapterType &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classdetail_1_1parser.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classdetail_1_1parser-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">detail::parser&lt; BasicJsonType, InputAdapterType &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>syntax analysis  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="json_8hpp_source.html">json.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4bb9ea1b0fddb8f46ff987bbf9e54045" id="r_a4bb9ea1b0fddb8f46ff987bbf9e54045"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bb9ea1b0fddb8f46ff987bbf9e54045">parser</a> (InputAdapterType &amp;&amp;adapter, const <a class="el" href="namespacedetail.html#affc9951a9c138c79d63e6f4702e37a1a">parser_callback_t</a>&lt; BasicJsonType &gt; cb=nullptr, const bool allow_exceptions_=true, const bool skip_comments=false)</td></tr>
+<tr class="memdesc:a4bb9ea1b0fddb8f46ff987bbf9e54045"><td class="mdescLeft">&#160;</td><td class="mdescRight">a parser reading from an input adapter  <br /></td></tr>
+<tr class="separator:a4bb9ea1b0fddb8f46ff987bbf9e54045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f4b745d4aa146bf7a60a30060f592f" id="r_a59f4b745d4aa146bf7a60a30060f592f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59f4b745d4aa146bf7a60a30060f592f">parse</a> (const bool <a class="el" href="namespacedetail.html#abe7cfa1fd8fa706ff4392bff9d1a8298a2133fd717402a7966ee88d06f9e0b792">strict</a>, BasicJsonType &amp;result)</td></tr>
+<tr class="memdesc:a59f4b745d4aa146bf7a60a30060f592f"><td class="mdescLeft">&#160;</td><td class="mdescRight">public parser interface  <br /></td></tr>
+<tr class="separator:a59f4b745d4aa146bf7a60a30060f592f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46da3262cbe66ade670c5b4782451e6" id="r_ac46da3262cbe66ade670c5b4782451e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac46da3262cbe66ade670c5b4782451e6">accept</a> (const bool <a class="el" href="namespacedetail.html#abe7cfa1fd8fa706ff4392bff9d1a8298a2133fd717402a7966ee88d06f9e0b792">strict</a>=true)</td></tr>
+<tr class="memdesc:ac46da3262cbe66ade670c5b4782451e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">public accept interface  <br /></td></tr>
+<tr class="separator:ac46da3262cbe66ade670c5b4782451e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9084759356689163fee9ae37e69b050" id="r_ae9084759356689163fee9ae37e69b050"><td class="memTemplParams" colspan="2">template&lt;typename SAX &gt; </td></tr>
+<tr class="memitem:ae9084759356689163fee9ae37e69b050"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae9084759356689163fee9ae37e69b050">sax_parse</a> (SAX *sax, const bool <a class="el" href="namespacedetail.html#abe7cfa1fd8fa706ff4392bff9d1a8298a2133fd717402a7966ee88d06f9e0b792">strict</a>=true)</td></tr>
+<tr class="separator:ae9084759356689163fee9ae37e69b050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename BasicJsonType, typename InputAdapterType&gt;<br />
+class detail::parser&lt; BasicJsonType, InputAdapterType &gt;</div><p>syntax analysis </p>
+<p>This class implements a recursive descent parser. </p>
+
+<p class="definition"> <a class="el" href="json_8hpp_source.html">json.hpp</a> の <a class="el" href="json_8hpp_source.html#l12229">12229</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a4bb9ea1b0fddb8f46ff987bbf9e54045" name="a4bb9ea1b0fddb8f46ff987bbf9e54045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb9ea1b0fddb8f46ff987bbf9e54045">&#9670;&#160;</a></span>parser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename InputAdapterType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdetail_1_1parser.html">detail::parser</a>&lt; BasicJsonType, InputAdapterType &gt;::parser </td>
+          <td>(</td>
+          <td class="paramtype">InputAdapterType &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>adapter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacedetail.html#affc9951a9c138c79d63e6f4702e37a1a">parser_callback_t</a>&lt; BasicJsonType &gt;</td>          <td class="paramname"><span class="paramname"><em>cb</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>allow_exceptions_</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>skip_comments</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>a parser reading from an input adapter </p>
+
+<p class="definition"> <a class="el" href="json_8hpp_source.html">json.hpp</a> の <a class="el" href="json_8hpp_source.html#l12240">12240</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ac46da3262cbe66ade670c5b4782451e6" name="ac46da3262cbe66ade670c5b4782451e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46da3262cbe66ade670c5b4782451e6">&#9670;&#160;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename InputAdapterType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdetail_1_1parser.html">detail::parser</a>&lt; BasicJsonType, InputAdapterType &gt;::accept </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>strict</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>public accept interface </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the last token to be EOF </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>whether the input is a proper JSON text </dd></dl>
+
+<p class="definition"> <a class="el" href="json_8hpp_source.html">json.hpp</a> の <a class="el" href="json_8hpp_source.html#l12322">12322</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdetail_1_1parser_ac46da3262cbe66ade670c5b4782451e6_cgraph.png" border="0" usemap="#aclassdetail_1_1parser_ac46da3262cbe66ade670c5b4782451e6_cgraph" alt=""/></div>
+<map name="aclassdetail_1_1parser_ac46da3262cbe66ade670c5b4782451e6_cgraph" id="aclassdetail_1_1parser_ac46da3262cbe66ade670c5b4782451e6_cgraph">
+<area shape="rect" title="public accept interface" alt="" coords="5,100,149,127"/>
+<area shape="rect" href="classdetail_1_1parser.html#ae9084759356689163fee9ae37e69b050" title=" " alt="" coords="197,92,322,135"/>
+<area shape="poly" title=" " alt="" coords="149,111,181,111,181,116,149,116"/>
+<area shape="rect" href="classdetail_1_1parse__error.html#a07046ea9f33d28f120af188ed674d6df" title="create a parse error exception" alt="" coords="370,26,495,68"/>
+<area shape="poly" title=" " alt="" coords="316,89,360,72,362,77,318,94"/>
+<area shape="rect" href="classdetail_1_1lexer.html#a569266654a88a2dc6f0e9a587067fc9d" title="return position of last read token" alt="" coords="376,92,490,135"/>
+<area shape="poly" title=" " alt="" coords="322,111,360,111,360,116,322,116"/>
+<area shape="rect" href="classdetail_1_1lexer.html#a41481d87dc1bcaaf532f529fbc0e690b" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="376,159,490,202"/>
+<area shape="poly" title=" " alt="" coords="318,133,362,150,360,155,316,138"/>
+<area shape="rect" href="namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="748,34,847,60"/>
+<area shape="poly" title=" " alt="" coords="494,22,543,11,622,3,700,11,751,25,750,30,699,16,622,8,544,16,495,28"/>
+<area shape="rect" href="classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="559,26,684,68"/>
+<area shape="poly" title=" " alt="" coords="496,44,544,44,544,50,496,50"/>
+<area shape="rect" href="classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="543,92,700,119"/>
+<area shape="poly" title=" " alt="" coords="497,64,562,85,561,90,495,69"/>
+<area shape="rect" href="namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="902,8,1029,35"/>
+<area shape="poly" title=" " alt="" coords="847,37,886,31,887,36,848,42"/>
+<area shape="rect" href="namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="895,59,1036,86"/>
+<area shape="poly" title=" " alt="" coords="848,52,880,57,879,62,847,57"/>
+<area shape="poly" title=" " alt="" coords="665,89,699,78,741,63,743,68,701,83,666,94"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a59f4b745d4aa146bf7a60a30060f592f" name="a59f4b745d4aa146bf7a60a30060f592f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f4b745d4aa146bf7a60a30060f592f">&#9670;&#160;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename InputAdapterType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdetail_1_1parser.html">detail::parser</a>&lt; BasicJsonType, InputAdapterType &gt;::parse </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>strict</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BasicJsonType &amp;</td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>public parser interface </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the last token to be EOF </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">result</td><td>parsed JSON value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">parse_error.101</td><td>in case of an unexpected token </td></tr>
+    <tr><td class="paramname">parse_error.102</td><td>if to_unicode fails or surrogate error </td></tr>
+    <tr><td class="paramname">parse_error.103</td><td>if to_unicode fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="json_8hpp_source.html">json.hpp</a> の <a class="el" href="json_8hpp_source.html#l12262">12262</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdetail_1_1parser_a59f4b745d4aa146bf7a60a30060f592f_cgraph.png" border="0" usemap="#aclassdetail_1_1parser_a59f4b745d4aa146bf7a60a30060f592f_cgraph" alt=""/></div>
+<map name="aclassdetail_1_1parser_a59f4b745d4aa146bf7a60a30060f592f_cgraph" id="aclassdetail_1_1parser_a59f4b745d4aa146bf7a60a30060f592f_cgraph">
+<area shape="rect" title="public parser interface" alt="" coords="5,241,142,268"/>
+<area shape="rect" href="classdetail_1_1parse__error.html#a07046ea9f33d28f120af188ed674d6df" title="create a parse error exception" alt="" coords="223,25,349,68"/>
+<area shape="poly" title=" " alt="" coords="78,240,92,207,116,164,148,118,188,78,208,65,211,70,191,82,152,121,120,167,97,210,83,242"/>
+<area shape="rect" href="classdetail_1_1lexer.html#a569266654a88a2dc6f0e9a587067fc9d" title="return position of last read token" alt="" coords="229,92,343,134"/>
+<area shape="poly" title=" " alt="" coords="84,239,127,193,156,167,188,144,213,132,215,137,191,149,159,171,131,197,88,242"/>
+<area shape="rect" href="classdetail_1_1lexer.html#a41481d87dc1bcaaf532f529fbc0e690b" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="229,158,343,201"/>
+<area shape="poly" title=" " alt="" coords="112,238,189,211,214,202,215,207,191,216,114,243"/>
+<area shape="rect" href="classdetail_1_1json__sax__dom__callback__parser.html#a2751d9c6f137a594ced3fccb06f10a34" title=" " alt="" coords="214,225,358,284"/>
+<area shape="poly" title=" " alt="" coords="142,252,198,252,198,257,142,257"/>
+<area shape="rect" href="classdetail_1_1json__sax__dom__parser.html#ad6cfc4a7cc36b9d5b73fb7ddff6409cf" title=" " alt="" coords="214,308,358,350"/>
+<area shape="poly" title=" " alt="" coords="114,266,191,293,208,300,207,305,189,298,112,271"/>
+<area shape="rect" href="classdetail_1_1json__sax__dom__callback__parser.html#a0b517399e4b41d27449baea9fcfddbac" title=" " alt="" coords="190,374,382,417"/>
+<area shape="poly" title=" " alt="" coords="88,266,131,312,159,338,191,360,200,365,197,370,188,365,156,342,127,316,84,270"/>
+<area shape="rect" href="classdetail_1_1json__sax__dom__parser.html#a3f26893075e90608c97b39d1e809cb60" title=" " alt="" coords="214,441,358,484"/>
+<area shape="poly" title=" " alt="" coords="83,267,97,299,120,342,152,388,191,427,201,434,198,438,188,431,148,391,116,345,92,302,78,269"/>
+<area shape="rect" href="namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="634,33,734,60"/>
+<area shape="poly" title=" " alt="" coords="348,26,430,10,508,3,587,10,638,25,636,30,586,16,508,8,430,16,349,31"/>
+<area shape="rect" href="classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="446,25,570,68"/>
+<area shape="poly" title=" " alt="" coords="349,44,430,44,430,49,349,49"/>
+<area shape="rect" href="classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="430,92,586,118"/>
+<area shape="poly" title=" " alt="" coords="350,60,440,85,439,90,348,65"/>
+<area shape="rect" href="namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="789,8,916,34"/>
+<area shape="poly" title=" " alt="" coords="734,36,773,30,774,36,735,42"/>
+<area shape="rect" href="namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="782,58,923,85"/>
+<area shape="poly" title=" " alt="" coords="735,51,767,56,766,61,734,57"/>
+<area shape="poly" title=" " alt="" coords="551,89,585,77,628,63,629,68,587,82,553,94"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9084759356689163fee9ae37e69b050" name="ae9084759356689163fee9ae37e69b050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9084759356689163fee9ae37e69b050">&#9670;&#160;</a></span>sax_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename InputAdapterType &gt; </div>
+<div class="memtemplate">
+template&lt;typename SAX &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdetail_1_1parser.html">detail::parser</a>&lt; BasicJsonType, InputAdapterType &gt;::sax_parse </td>
+          <td>(</td>
+          <td class="paramtype">SAX *</td>          <td class="paramname"><span class="paramname"><em>sax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>strict</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="json_8hpp_source.html">json.hpp</a> の <a class="el" href="json_8hpp_source.html#l12330">12330</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdetail_1_1parser_ae9084759356689163fee9ae37e69b050_cgraph.png" border="0" usemap="#aclassdetail_1_1parser_ae9084759356689163fee9ae37e69b050_cgraph" alt=""/></div>
+<map name="aclassdetail_1_1parser_ae9084759356689163fee9ae37e69b050_cgraph" id="aclassdetail_1_1parser_ae9084759356689163fee9ae37e69b050_cgraph">
+<area shape="rect" title=" " alt="" coords="5,92,131,135"/>
+<area shape="rect" href="classdetail_1_1parse__error.html#a07046ea9f33d28f120af188ed674d6df" title="create a parse error exception" alt="" coords="179,26,304,68"/>
+<area shape="poly" title=" " alt="" coords="124,89,169,72,171,77,126,94"/>
+<area shape="rect" href="classdetail_1_1lexer.html#a569266654a88a2dc6f0e9a587067fc9d" title="return position of last read token" alt="" coords="184,92,299,135"/>
+<area shape="poly" title=" " alt="" coords="131,111,169,111,169,116,131,116"/>
+<area shape="rect" href="classdetail_1_1lexer.html#a41481d87dc1bcaaf532f529fbc0e690b" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="184,159,299,202"/>
+<area shape="poly" title=" " alt="" coords="126,133,171,150,169,155,124,138"/>
+<area shape="rect" href="namespacedetail.html#a266fb3d4bf633ad6c506434cc91164da" title=" " alt="" coords="556,34,656,60"/>
+<area shape="poly" title=" " alt="" coords="303,22,352,11,430,3,509,11,560,25,558,30,508,16,430,8,352,16,304,28"/>
+<area shape="rect" href="classdetail_1_1exception.html#a6b4a786b5c1c25dd3edaceb1bf2d5120" title=" " alt="" coords="368,26,492,68"/>
+<area shape="poly" title=" " alt="" coords="305,44,353,44,353,50,305,50"/>
+<area shape="rect" href="classdetail_1_1exception.html#a8f1eb56b9964c8dd84d89d0da98d883b" title=" " alt="" coords="352,92,508,119"/>
+<area shape="poly" title=" " alt="" coords="305,64,371,85,369,90,304,69"/>
+<area shape="rect" href="namespacedetail.html#a89f967b745cf8df11ba9d59f93d97753" title=" " alt="" coords="711,8,838,35"/>
+<area shape="poly" title=" " alt="" coords="656,37,695,31,696,36,657,42"/>
+<area shape="rect" href="namespacedetail.html#ac185140ed8c8fcc07a302a890b714b0d" title=" " alt="" coords="704,59,845,86"/>
+<area shape="poly" title=" " alt="" coords="657,52,689,57,688,62,656,57"/>
+<area shape="poly" title=" " alt="" coords="473,89,507,78,550,63,551,68,509,83,475,94"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdetail_1_1parser_ae9084759356689163fee9ae37e69b050_icgraph.png" border="0" usemap="#aclassdetail_1_1parser_ae9084759356689163fee9ae37e69b050_icgraph" alt=""/></div>
+<map name="aclassdetail_1_1parser_ae9084759356689163fee9ae37e69b050_icgraph" id="aclassdetail_1_1parser_ae9084759356689163fee9ae37e69b050_icgraph">
+<area shape="rect" title=" " alt="" coords="197,5,322,48"/>
+<area shape="rect" href="classdetail_1_1parser.html#ac46da3262cbe66ade670c5b4782451e6" title="public accept interface" alt="" coords="5,13,149,40"/>
+<area shape="poly" title=" " alt="" coords="181,29,149,29,149,24,181,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SoR/libraries/<a class="el" href="json_8hpp_source.html">json.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedetail.html">detail</a></li><li class="navelem"><a class="el" href="classdetail_1_1parser.html">parser</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

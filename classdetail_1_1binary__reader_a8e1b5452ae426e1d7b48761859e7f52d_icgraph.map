@@ -1,0 +1,9 @@
+<map id="detail::binary_reader::sax_parse" name="detail::binary_reader::sax_parse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="205,48,343,91"/>
+<area shape="rect" id="Node000002" href="$classbasic__json.html#ad018e709338c810c56eaad606186a77e" title="generate SAX events" alt="" coords="5,5,157,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,50,134,35,135,30,190,45"/>
+<area shape="rect" id="Node000003" href="$classbasic__json.html#addedd5e53fa6eff6cd621f1615741c3d" title=" " alt="" coords="5,56,157,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,72,157,72,157,67,189,67"/>
+<area shape="rect" id="Node000004" href="$classbasic__json.html#a94cbf1844fef86e9301282ad8ca0f822" title="generate SAX events" alt="" coords="5,107,157,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,94,135,109,134,104,189,89"/>
+</map>

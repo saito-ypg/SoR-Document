@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivor of Rampage(SoR): Image::ImageData 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivor of Rampage(SoR)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_image_1_1_image_data.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="struct_image_1_1_image_data-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">Image::ImageData 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_image_8h_source.html">Image.h</a>&gt;</code></p>
+<div class="dynheader">
+Image::ImageData 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_image_1_1_image_data__coll__graph.png" border="0" usemap="#a_image_1_1_image_data_coll__map" alt="Collaboration graph"/></div>
+<map name="a_image_1_1_image_data_coll__map" id="a_image_1_1_image_data_coll__map">
+<area shape="rect" title=" " alt="" coords="54,187,181,213"/>
+<area shape="rect" title=" " alt="" coords="5,96,59,123"/>
+<area shape="poly" title=" " alt="" coords="42,136,57,161,72,174,89,184,86,188,69,178,53,164,38,138"/>
+<area shape="rect" href="class_sprite.html" title=" " alt="" coords="86,96,141,123"/>
+<area shape="poly" title=" " alt="" coords="117,138,119,186,114,186,112,138"/>
+<area shape="rect" href="class_texture.html" title=" " alt="" coords="81,5,146,32"/>
+<area shape="poly" title=" " alt="" coords="116,48,116,95,111,95,111,48"/>
+<area shape="rect" href="class_transform.html" title=" " alt="" coords="165,96,243,123"/>
+<area shape="poly" title=" " alt="" coords="190,137,167,165,138,188,135,184,163,161,186,134"/>
+<area shape="poly" title=" " alt="" coords="260,100,270,109,261,118,244,120,243,115,259,113,265,109,257,105"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0b23a22484ed384b9f44c1ecc876df57" id="r_a0b23a22484ed384b9f44c1ecc876df57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b23a22484ed384b9f44c1ecc876df57">ImageData</a> ()</td></tr>
+<tr class="separator:a0b23a22484ed384b9f44c1ecc876df57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a68bb8fdd02c28c9a7bb0ef5da0aea331" id="r_a68bb8fdd02c28c9a7bb0ef5da0aea331"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68bb8fdd02c28c9a7bb0ef5da0aea331">fileName</a></td></tr>
+<tr class="separator:a68bb8fdd02c28c9a7bb0ef5da0aea331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a52621c1cf7fe2440b33e31a98eb15" id="r_a15a52621c1cf7fe2440b33e31a98eb15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15a52621c1cf7fe2440b33e31a98eb15">pSprite</a></td></tr>
+<tr class="separator:a15a52621c1cf7fe2440b33e31a98eb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5089bf00823bd84039be483a05c89236" id="r_a5089bf00823bd84039be483a05c89236"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5089bf00823bd84039be483a05c89236">rect</a></td></tr>
+<tr class="separator:a5089bf00823bd84039be483a05c89236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d07d70b86778eee25ce5cb7063892cf" id="r_a3d07d70b86778eee25ce5cb7063892cf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d07d70b86778eee25ce5cb7063892cf">alpha</a></td></tr>
+<tr class="separator:a3d07d70b86778eee25ce5cb7063892cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c9259b0ed8e1e931ab3ee0681b9194" id="r_af3c9259b0ed8e1e931ab3ee0681b9194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3c9259b0ed8e1e931ab3ee0681b9194">transform</a></td></tr>
+<tr class="separator:af3c9259b0ed8e1e931ab3ee0681b9194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00017">17</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a0b23a22484ed384b9f44c1ecc876df57" name="a0b23a22484ed384b9f44c1ecc876df57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b23a22484ed384b9f44c1ecc876df57">&#9670;&#160;</a></span>ImageData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image::ImageData::ImageData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00035">35</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a3d07d70b86778eee25ce5cb7063892cf" name="a3d07d70b86778eee25ce5cb7063892cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d07d70b86778eee25ce5cb7063892cf">&#9670;&#160;</a></span>alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Image::ImageData::alpha</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00029">29</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a68bb8fdd02c28c9a7bb0ef5da0aea331" name="a68bb8fdd02c28c9a7bb0ef5da0aea331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bb8fdd02c28c9a7bb0ef5da0aea331">&#9670;&#160;</a></span>fileName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Image::ImageData::fileName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00020">20</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a15a52621c1cf7fe2440b33e31a98eb15" name="a15a52621c1cf7fe2440b33e31a98eb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a52621c1cf7fe2440b33e31a98eb15">&#9670;&#160;</a></span>pSprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_sprite.html">Sprite</a>* Image::ImageData::pSprite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00023">23</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5089bf00823bd84039be483a05c89236" name="a5089bf00823bd84039be483a05c89236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5089bf00823bd84039be483a05c89236">&#9670;&#160;</a></span>rect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT Image::ImageData::rect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00026">26</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af3c9259b0ed8e1e931ab3ee0681b9194" name="af3c9259b0ed8e1e931ab3ee0681b9194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c9259b0ed8e1e931ab3ee0681b9194">&#9670;&#160;</a></span>transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a> Image::ImageData::transform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_image_8h_source.html">Image.h</a> の <a class="el" href="_image_8h_source.html#l00032">32</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>SoR/Engine/<a class="el" href="_image_8h_source.html">Image.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_image.html">Image</a></li><li class="navelem"><a class="el" href="struct_image_1_1_image_data.html">ImageData</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>
