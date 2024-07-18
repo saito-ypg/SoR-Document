@@ -118,8 +118,8 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {3,DIK_R},</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    };</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">bool</span> nearlyZero(<span class="keywordtype">float</span> f) {<span class="comment">//ほぼ0であるといえるならtrue。</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> XMScalarNearEqual(f, 0.0f, 0.0001f);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> XMScalarNearEqual(f, 0.0f, 0.0001f);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -144,7 +144,7 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_player.html#a749d2c00e1fe0f5c2746f7505a58c062">   41</a></span><a class="code hl_function" href="class_player.html#a749d2c00e1fe0f5c2746f7505a58c062">Player::~Player</a>()</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}       </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//初期化</span></div>
@@ -179,26 +179,26 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_input.html#ab9f5815c042daa91a5e96395003514a0">Input::IsKey</a>(DIK_A))</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_variable" href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">status_</a>.<a class="code hl_variable" href="class_actor_info.html#a1a97b8b701f5a9fb5df91a47cb2221e6">hp_</a>--;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    MoveInput();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">//各入力</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="namespace_input.html#a3140371f1a8cd913577e59589078b86d">Input::IsMouseButton</a>(0))<span class="comment">//通常攻撃</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_input.html#a3140371f1a8cd913577e59589078b86d">Input::IsMouseButton</a>(0))<span class="comment">//通常攻撃</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">else</span> {<span class="comment">//各種スキル</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_player.html#a307899b596cdcacf3b025a2914a9f1d0">skillsNum</a>; i++) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">if</span>(!skills.at(i))<span class="comment">//スキルアタッチできてなかったら</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">if</span> (!skills.at(i))<span class="comment">//スキルアタッチできてなかったら</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            {</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (usingSkillIndex==<a class="code hl_variable" href="class_player.html#a0420bea707c0b96fcec18746acbde7c8">UNUSED</a> &amp;&amp; <a class="code hl_function" href="namespace_input.html#ae116436a4dac338a8050710e32ce8261">Input::IsKeyDown</a>(skillkeysmap.at(i)))</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (usingSkillIndex == <a class="code hl_variable" href="class_player.html#a0420bea707c0b96fcec18746acbde7c8">UNUSED</a> &amp;&amp; <a class="code hl_function" href="namespace_input.html#ae116436a4dac338a8050710e32ce8261">Input::IsKeyDown</a>(skillkeysmap.at(i)))</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            {<span class="comment">//スキル範囲表示のためのindex指定</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <span class="keywordflow">if</span> (canUseSkill(i)) {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    usingSkillIndex = i;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (usingSkillIndex==i &amp;&amp; <a class="code hl_function" href="namespace_input.html#a9795ac97f7e38774509cbb3db0861679">Input::IsKeyUp</a>(skillkeysmap.at(i)))</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (usingSkillIndex == i &amp;&amp; <a class="code hl_function" href="namespace_input.html#a9795ac97f7e38774509cbb3db0861679">Input::IsKeyUp</a>(skillkeysmap.at(i)))</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            {<span class="comment">//発動前キャンセルされてなければここで発動</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                ActivateSkill(i);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                usingSkillIndex = <a class="code hl_variable" href="class_player.html#a0420bea707c0b96fcec18746acbde7c8">UNUSED</a>;</div>
@@ -210,11 +210,11 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        move();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> itr : skills)<span class="comment">//skillアップデート</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span>(itr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span> (itr != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            itr-&gt;Update();</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
@@ -253,7 +253,7 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keywordtype">void</span> Player::move()</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    vMove_ = moveDirection_ * MOVE_VELOCITY * <a class="code hl_function" href="class_game_object.html#a9fce977044f8d5cd9a40a952ed2d1998">GetTotalTimeScale</a>();</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordflow">if</span> (moveTime_ &gt;1)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordflow">if</span> (moveTime_ &gt; 1)</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    {</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        XMVECTOR vpos = XMLoadFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>);</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        vpos += vMove_;</div>
@@ -276,7 +276,7 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">//描画</span></div>
 <div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_player.html#a92bbb796a78f0bc3a2db1aa479423743">  166</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a92bbb796a78f0bc3a2db1aa479423743">Player::ActorDraw</a>()</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>{   </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>{</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <a class="code hl_function" href="class_game_actor.html#a21d41aaa7abbe39ab6170a83eb170137">DrawBody</a>();</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">if</span> (usingSkillIndex != <a class="code hl_variable" href="class_player.html#a0420bea707c0b96fcec18746acbde7c8">UNUSED</a>) {</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        skills.at(usingSkillIndex)-&gt;DrawRangeDisplay(GetTargetDirection(getMouseTargetPos()));</div>
@@ -286,7 +286,7 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">if</span> (itr != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        {</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            itr-&gt;Draw();</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
@@ -311,88 +311,95 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>}</div>
 </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keywordtype">bool</span> Player::canUseSkill(<span class="keywordtype">int</span> number)</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>{</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">if</span> (this-&gt;isDuringSkill())<span class="comment">//すでにスキル動作中ならｘ</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">if</span> (number &lt; 0 || number &gt;= skills.size())<span class="comment">//存在しないスキル番号ｘ</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordflow">return</span> skills.at(number)-&gt;CanUse();<span class="comment">//対象のスキルは使用可能かを返す</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keywordtype">void</span> Player::ActivateSkill(<span class="keyword">const</span> <span class="keywordtype">int</span> number)</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>{</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">if</span> (!canUseSkill(number))</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    FaceMouseDirection();<span class="comment">//マウス方向を向く</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    moveTime_ = 0;<span class="comment">//移動してたら止める</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    skills.at(number)-&gt;Activate();</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>XMVECTOR Player::getMouseTargetPos()</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>{</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    XMFLOAT3 mouse = <a class="code hl_function" href="namespace_input.html#a165471717f446745e298fdfafe0f8ef5">Input::GetMousePosition</a>();</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    XMMATRIX matInv = <a class="code hl_function" href="namespace_camera.html#a42194afb175fe59556c4eacf33cd8868">Camera::GetInverseMatrix</a>();</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    XMFLOAT3 front = mouse, back = mouse;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    back.z = 1.0f;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    XMVECTOR vFront = XMVector3TransformCoord(XMLoadFloat3(&amp;front), matInv);</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    XMVECTOR vBack = XMVector3TransformCoord(XMLoadFloat3(&amp;back), matInv);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    XMVECTOR dir = XMVector3Normalize(vBack - vFront);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    XMVECTOR a = dir / XMVectorGetY(dir);<span class="comment">//yが1になるように</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keyword">auto</span> temp = <a class="code hl_function" href="namespace_camera.html#ac7d5aa78b2dcee91198c07f525371aba">Camera::GetPosition</a>();</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    XMVECTOR campos = XMLoadFloat3(&amp;temp);</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">return</span> campos- (a * XMVectorGetY(campos));<span class="comment">//カメラ座標からdir方向に進んでyが0の時の座標を返す</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keywordtype">void</span> Player::calculateForMove(<span class="keyword">const</span> XMVECTOR target_)</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>{</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="comment">//移動情報の計算</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    XMVECTOR vPos = XMLoadFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>);<span class="comment">//Face〜にも同じ記述あるがこっちでも書くほうが楽</span></div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="class_player.html#a722969c7bc9e9498980674690922e9f0">  197</a></span>XMVECTOR <a class="code hl_function" href="class_player.html#a722969c7bc9e9498980674690922e9f0">Player::GetVelocity</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">return</span> vMove_;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="keywordtype">bool</span> Player::canUseSkill(<span class="keywordtype">int</span> number)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>{</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">if</span> (this-&gt;isDuringSkill())<span class="comment">//すでにスキル動作中ならｘ</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">if</span> (number &lt; 0 || number &gt;= skills.size())<span class="comment">//存在しないスキル番号ｘ</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">return</span> skills.at(number)-&gt;CanUse();<span class="comment">//対象のスキルは使用可能かを返す</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="keywordtype">void</span> Player::ActivateSkill(<span class="keyword">const</span> <span class="keywordtype">int</span> number)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>{</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">if</span> (!canUseSkill(number))</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    FaceMouseDirection();<span class="comment">//マウス方向を向く</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    moveTime_ = 0;<span class="comment">//移動してたら止める</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    skills.at(number)-&gt;Activate();</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>XMVECTOR Player::getMouseTargetPos()</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    XMFLOAT3 mouse = <a class="code hl_function" href="namespace_input.html#a165471717f446745e298fdfafe0f8ef5">Input::GetMousePosition</a>();</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    XMMATRIX matInv = <a class="code hl_function" href="namespace_camera.html#a42194afb175fe59556c4eacf33cd8868">Camera::GetInverseMatrix</a>();</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    XMFLOAT3 front = mouse, back = mouse;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    back.z = 1.0f;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    XMVECTOR vFront = XMVector3TransformCoord(XMLoadFloat3(&amp;front), matInv);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    XMVECTOR vBack = XMVector3TransformCoord(XMLoadFloat3(&amp;back), matInv);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    XMVECTOR dir = XMVector3Normalize(vBack - vFront);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    XMVECTOR a = dir / XMVectorGetY(dir);<span class="comment">//yが1になるように</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keyword">auto</span> temp = <a class="code hl_function" href="namespace_camera.html#ac7d5aa78b2dcee91198c07f525371aba">Camera::GetPosition</a>();</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    XMVECTOR campos = XMLoadFloat3(&amp;temp);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">return</span> campos - (a * XMVectorGetY(campos));<span class="comment">//カメラ座標からdir方向に進んでyが0の時の座標を返す</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordtype">float</span> length =XMVectorGetX(XMVector3Length(target_ - vPos));</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    moveTime_ = length / MOVE_VELOCITY -1;<span class="comment">//-1と次の行で小刻みに荒ぶるの対策</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>     <span class="keywordflow">if</span> (length &lt; PLAYER_ROT_TH)<span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordtype">float</span> deg= GetTargetDirection(target_);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a677983ce60221914ad621d41eeea114c">rotate_</a>.y = deg;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    XMVECTOR forward = XMVectorSet(0.0f, 0.0f, 1.0f, 0.0f);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    moveDirection_= XMVector3TransformCoord(forward, XMMatrixRotationY(XMConvertToRadians(deg)));</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keywordtype">void</span> Player::calculateForMove(<span class="keyword">const</span> XMVECTOR target_)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>{</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="comment">//移動情報の計算</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    XMVECTOR vPos = XMLoadFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>);<span class="comment">//Face〜にも同じ記述あるがこっちでも書くほうが楽</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">float</span> length = XMVectorGetX(XMVector3Length(target_ - vPos));</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    moveTime_ = length / MOVE_VELOCITY - 1;<span class="comment">//-1と次の行で小刻みに荒ぶるの対策</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">if</span> (length &lt; PLAYER_ROT_TH)<span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="keywordtype">float</span> Player::GetTargetDirection(<span class="keyword">const</span> XMVECTOR&amp; target_)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    XMVECTOR vPos = XMLoadFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>);</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="comment">//移動方向を向く </span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    XMVECTOR direction = XMVector3Normalize(target_ - vPos);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    XMFLOAT3 fdir;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    XMStoreFloat3(&amp;fdir, direction);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">return</span> XMConvertToDegrees((<span class="keywordtype">float</span>)atan2(fdir.x, fdir.z));</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>}</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keywordtype">bool</span> Player::isDuringSkill()</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>{</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> itr : skills)</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keywordflow">if</span> (itr != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">if</span> (!itr-&gt;CanMove())</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;<span class="comment">//動ける→スキルモーション中でない</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    }</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="class_player.html#a9863ff656a1c7b26aa66addd5988e654">  273</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a9863ff656a1c7b26aa66addd5988e654">Player::dyingProcess</a>()</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>{</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <a class="code hl_class" href="class_moderator_sequence.html">ModeratorSequence</a>* ms = (<a class="code hl_class" href="class_moderator_sequence.html">ModeratorSequence</a>*)<a class="code hl_function" href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27">FindObject</a>(<span class="stringliteral">&quot;ModeratorSequence&quot;</span>);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    ms-&gt;<a class="code hl_function" href="class_moderator_sequence.html#ac5d51f337862356b8c42fb97b25e2360">SetGameOver</a>();</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">float</span> deg = GetTargetDirection(target_);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a677983ce60221914ad621d41eeea114c">rotate_</a>.y = deg;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    XMVECTOR forward = XMVectorSet(0.0f, 0.0f, 1.0f, 0.0f);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    moveDirection_ = XMVector3TransformCoord(forward, XMMatrixRotationY(XMConvertToRadians(deg)));</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>}</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="keywordtype">float</span> Player::GetTargetDirection(<span class="keyword">const</span> XMVECTOR&amp; target_)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    XMVECTOR vPos = XMLoadFloat3(&amp;<a class="code hl_variable" href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">transform_</a>.<a class="code hl_variable" href="class_transform.html#a777f64c4eb5da58be5a595976fd959ea">position_</a>);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">//移動方向を向く </span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    XMVECTOR direction = XMVector3Normalize(target_ - vPos);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    XMFLOAT3 fdir;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    XMStoreFloat3(&amp;fdir, direction);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">return</span> XMConvertToDegrees((<span class="keywordtype">float</span>)atan2(fdir.x, fdir.z));</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>}</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="keywordtype">bool</span> Player::isDuringSkill()</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>{</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> itr : skills)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">if</span> (itr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">if</span> (!itr-&gt;CanMove())</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;<span class="comment">//動ける→スキルモーション中でない</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="foldopen" id="foldopen00278" data-start="{" data-end="}">
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="class_player.html#a9863ff656a1c7b26aa66addd5988e654">  278</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a9863ff656a1c7b26aa66addd5988e654">Player::dyingProcess</a>()</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>{</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_class" href="class_moderator_sequence.html">ModeratorSequence</a>* ms = (<a class="code hl_class" href="class_moderator_sequence.html">ModeratorSequence</a>*)<a class="code hl_function" href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27">FindObject</a>(<span class="stringliteral">&quot;ModeratorSequence&quot;</span>);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    ms-&gt;<a class="code hl_function" href="class_moderator_sequence.html#ac5d51f337862356b8c42fb97b25e2360">SetGameOver</a>();</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
 </div>
 <div class="ttc" id="a_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
 <div class="ttc" id="a_collision_manager_8h_html_a83e6e9c914bc93bc7eb7d4392519a89dade5dc3e0dbd007d995ed3e37bde5ce7e"><div class="ttname"><a href="_collision_manager_8h.html#a83e6e9c914bc93bc7eb7d4392519a89dade5dc3e0dbd007d995ed3e37bde5ce7e">PLAYER</a></div><div class="ttdeci">@ PLAYER</div><div class="ttdef"><b>Definition</b> <a href="_collision_manager_8h_source.html#l00006">CollisionManager.h:6</a></div></div>
@@ -409,12 +416,12 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="ttc" id="aclass_game_actor_html_a97f38a9c2daa7f0b6c452f04a0a4379d"><div class="ttname"><a href="class_game_actor.html#a97f38a9c2daa7f0b6c452f04a0a4379d">GameActor::RemoveColliderCamp</a></div><div class="ttdeci">void RemoveColliderCamp(GameActor *act, CAMPS camp)</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8cpp_source.html#l00139">GameActor.cpp:139</a></div></div>
 <div class="ttc" id="aclass_game_actor_html_aa3e5ba56e0d11bf66cb0ed38654e5a64"><div class="ttname"><a href="class_game_actor.html#aa3e5ba56e0d11bf66cb0ed38654e5a64">GameActor::status_</a></div><div class="ttdeci">ActorInfo status_</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8h_source.html#l00020">GameActor.h:20</a></div></div>
 <div class="ttc" id="aclass_game_actor_html_acfeff0c8477472a5c26812b74cddcf52"><div class="ttname"><a href="class_game_actor.html#acfeff0c8477472a5c26812b74cddcf52">GameActor::AddColliderCamp</a></div><div class="ttdeci">void AddColliderCamp(GameActor *act, CAMPS camp)</div><div class="ttdef"><b>Definition</b> <a href="_game_actor_8cpp_source.html#l00135">GameActor.cpp:135</a></div></div>
-<div class="ttc" id="aclass_game_object_html"><div class="ttname"><a href="class_game_object.html">GameObject</a></div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00020">GameObject.h:21</a></div></div>
-<div class="ttc" id="aclass_game_object_html_a02d90e0f590d24cdf0755e273dca3b27"><div class="ttname"><a href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27">GameObject::FindObject</a></div><div class="ttdeci">GameObject * FindObject(const std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00096">GameObject.h:96</a></div></div>
-<div class="ttc" id="aclass_game_object_html_a0ff8538cd2c3890a31dc3052b64baa8a"><div class="ttname"><a href="class_game_object.html#a0ff8538cd2c3890a31dc3052b64baa8a">GameObject::GetMyTimeScale</a></div><div class="ttdeci">float GetMyTimeScale() const</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00137">GameObject.h:137</a></div></div>
-<div class="ttc" id="aclass_game_object_html_a3a17beee606ce1a49e6b121281f870e4"><div class="ttname"><a href="class_game_object.html#a3a17beee606ce1a49e6b121281f870e4">GameObject::SetTimeScale</a></div><div class="ttdeci">void SetTimeScale(float v)</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00146">GameObject.h:146</a></div></div>
-<div class="ttc" id="aclass_game_object_html_a9fce977044f8d5cd9a40a952ed2d1998"><div class="ttname"><a href="class_game_object.html#a9fce977044f8d5cd9a40a952ed2d1998">GameObject::GetTotalTimeScale</a></div><div class="ttdeci">float GetTotalTimeScale() const</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00138">GameObject.h:138</a></div></div>
-<div class="ttc" id="aclass_game_object_html_aac1b36ed81c3e3ff28ca5994b4993be3"><div class="ttname"><a href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">GameObject::transform_</a></div><div class="ttdeci">Transform transform_</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00025">GameObject.h:25</a></div></div>
+<div class="ttc" id="aclass_game_object_html"><div class="ttname"><a href="class_game_object.html">GameObject</a></div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00021">GameObject.h:22</a></div></div>
+<div class="ttc" id="aclass_game_object_html_a02d90e0f590d24cdf0755e273dca3b27"><div class="ttname"><a href="class_game_object.html#a02d90e0f590d24cdf0755e273dca3b27">GameObject::FindObject</a></div><div class="ttdeci">GameObject * FindObject(const std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00097">GameObject.h:97</a></div></div>
+<div class="ttc" id="aclass_game_object_html_a0ff8538cd2c3890a31dc3052b64baa8a"><div class="ttname"><a href="class_game_object.html#a0ff8538cd2c3890a31dc3052b64baa8a">GameObject::GetMyTimeScale</a></div><div class="ttdeci">float GetMyTimeScale() const</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00138">GameObject.h:138</a></div></div>
+<div class="ttc" id="aclass_game_object_html_a3a17beee606ce1a49e6b121281f870e4"><div class="ttname"><a href="class_game_object.html#a3a17beee606ce1a49e6b121281f870e4">GameObject::SetTimeScale</a></div><div class="ttdeci">void SetTimeScale(float v)</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00147">GameObject.h:147</a></div></div>
+<div class="ttc" id="aclass_game_object_html_a9fce977044f8d5cd9a40a952ed2d1998"><div class="ttname"><a href="class_game_object.html#a9fce977044f8d5cd9a40a952ed2d1998">GameObject::GetTotalTimeScale</a></div><div class="ttdeci">float GetTotalTimeScale() const</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00139">GameObject.h:139</a></div></div>
+<div class="ttc" id="aclass_game_object_html_aac1b36ed81c3e3ff28ca5994b4993be3"><div class="ttname"><a href="class_game_object.html#aac1b36ed81c3e3ff28ca5994b4993be3">GameObject::transform_</a></div><div class="ttdeci">Transform transform_</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8h_source.html#l00026">GameObject.h:26</a></div></div>
 <div class="ttc" id="aclass_game_object_html_ab8cd34f35a40f8c303d38a61a1c4cbed"><div class="ttname"><a href="class_game_object.html#ab8cd34f35a40f8c303d38a61a1c4cbed">GameObject::GetParent</a></div><div class="ttdeci">GameObject * GetParent()</div><div class="ttdef"><b>Definition</b> <a href="_game_object_8cpp_source.html#l00113">GameObject.cpp:113</a></div></div>
 <div class="ttc" id="aclass_moderator_sequence_html"><div class="ttname"><a href="class_moderator_sequence.html">ModeratorSequence</a></div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8h_source.html#l00026">ModeratorSequence.h:28</a></div></div>
 <div class="ttc" id="aclass_moderator_sequence_html_ac5d51f337862356b8c42fb97b25e2360"><div class="ttname"><a href="class_moderator_sequence.html#ac5d51f337862356b8c42fb97b25e2360">ModeratorSequence::SetGameOver</a></div><div class="ttdeci">void SetGameOver()</div><div class="ttdef"><b>Definition</b> <a href="_moderator_sequence_8h_source.html#l00068">ModeratorSequence.h:68</a></div></div>
@@ -423,9 +430,10 @@ $(function(){initNavTree('_player_8cpp_source.html',''); initResizable(true); })
 <div class="ttc" id="aclass_player_html_a307899b596cdcacf3b025a2914a9f1d0"><div class="ttname"><a href="class_player.html#a307899b596cdcacf3b025a2914a9f1d0">Player::skillsNum</a></div><div class="ttdeci">static constexpr int skillsNum</div><div class="ttdef"><b>Definition</b> <a href="_player_8h_source.html#l00009">Player.h:9</a></div></div>
 <div class="ttc" id="aclass_player_html_a44e8add5619df47f09df3fa64cbde025"><div class="ttname"><a href="class_player.html#a44e8add5619df47f09df3fa64cbde025">Player::ActorUpdate</a></div><div class="ttdeci">void ActorUpdate(const float &amp;dt) override</div><div class="ttdef"><b>Definition</b> <a href="#l00058">Player.cpp:58</a></div></div>
 <div class="ttc" id="aclass_player_html_a4a73d8ccfc5950725fab6034359e1b38"><div class="ttname"><a href="class_player.html#a4a73d8ccfc5950725fab6034359e1b38">Player::isIntersectGround</a></div><div class="ttdeci">bool isIntersectGround(const DirectX::XMVECTOR &amp;target)</div><div class="ttdef"><b>Definition</b> <a href="#l00137">Player.cpp:137</a></div></div>
+<div class="ttc" id="aclass_player_html_a722969c7bc9e9498980674690922e9f0"><div class="ttname"><a href="class_player.html#a722969c7bc9e9498980674690922e9f0">Player::GetVelocity</a></div><div class="ttdeci">XMVECTOR GetVelocity() const override</div><div class="ttdef"><b>Definition</b> <a href="#l00197">Player.cpp:197</a></div></div>
 <div class="ttc" id="aclass_player_html_a749d2c00e1fe0f5c2746f7505a58c062"><div class="ttname"><a href="class_player.html#a749d2c00e1fe0f5c2746f7505a58c062">Player::~Player</a></div><div class="ttdeci">virtual ~Player()</div><div class="ttdef"><b>Definition</b> <a href="#l00041">Player.cpp:41</a></div></div>
 <div class="ttc" id="aclass_player_html_a92bbb796a78f0bc3a2db1aa479423743"><div class="ttname"><a href="class_player.html#a92bbb796a78f0bc3a2db1aa479423743">Player::ActorDraw</a></div><div class="ttdeci">void ActorDraw() override</div><div class="ttdef"><b>Definition</b> <a href="#l00166">Player.cpp:166</a></div></div>
-<div class="ttc" id="aclass_player_html_a9863ff656a1c7b26aa66addd5988e654"><div class="ttname"><a href="class_player.html#a9863ff656a1c7b26aa66addd5988e654">Player::dyingProcess</a></div><div class="ttdeci">void dyingProcess() override</div><div class="ttdef"><b>Definition</b> <a href="#l00273">Player.cpp:273</a></div></div>
+<div class="ttc" id="aclass_player_html_a9863ff656a1c7b26aa66addd5988e654"><div class="ttname"><a href="class_player.html#a9863ff656a1c7b26aa66addd5988e654">Player::dyingProcess</a></div><div class="ttdeci">void dyingProcess() override</div><div class="ttdef"><b>Definition</b> <a href="#l00278">Player.cpp:278</a></div></div>
 <div class="ttc" id="aclass_player_html_a9ad9424777a382dadf22214a0c426d86"><div class="ttname"><a href="class_player.html#a9ad9424777a382dadf22214a0c426d86">Player::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdef"><b>Definition</b> <a href="#l00046">Player.cpp:46</a></div></div>
 <div class="ttc" id="aclass_player_html_adca94c598b01c07ce1a215ab04d10443"><div class="ttname"><a href="class_player.html#adca94c598b01c07ce1a215ab04d10443">Player::Player</a></div><div class="ttdeci">Player(GameObject *parent)</div><div class="ttdef"><b>Definition</b> <a href="#l00026">Player.cpp:26</a></div></div>
 <div class="ttc" id="aclass_player_html_aea7fb2d3e6421d9d4180bb8a0c75e6cd"><div class="ttname"><a href="class_player.html#aea7fb2d3e6421d9d4180bb8a0c75e6cd">Player::ActorRelease</a></div><div class="ttdeci">void ActorRelease() override</div><div class="ttdef"><b>Definition</b> <a href="#l00183">Player.cpp:183</a></div></div>

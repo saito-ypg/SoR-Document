@@ -1,7 +1,7 @@
 <map id="Player" name="Player">
-<area shape="rect" id="Node000001" title=" " alt="" coords="154,261,212,288"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="206,261,264,288"/>
 <area shape="rect" id="Node000002" href="$class_game_actor.html" title=" " alt="" coords="140,187,227,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,229,186,261,181,261,181,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,225,228,259,224,262,199,228"/>
 <area shape="rect" id="Node000003" href="$class_game_object.html" title=" " alt="" coords="83,96,177,123"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="148,135,178,185,173,187,143,138"/>
 <area shape="rect" id="Node000004" href="$class_transform.html" title=" " alt="" coords="5,5,84,32"/>
@@ -11,4 +11,6 @@
 <area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="193,46,144,97,140,94,189,42"/>
 <area shape="rect" id="Node000006" href="$class_actor_info.html" title=" " alt="" coords="202,96,274,123"/>
 <area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="224,138,193,187,189,185,220,135"/>
+<area shape="rect" id="Node000007" href="$class_i_movable.html" title=" " alt="" coords="252,187,323,213"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="271,228,246,262,242,259,267,225"/>
 </map>

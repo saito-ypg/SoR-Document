@@ -97,6 +97,7 @@ $(function(){initNavTree('class_decoy_mediator_factory.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="class_decoy_mediator_factory-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">DecoyMediatorFactory クラス</div></div>
 </div><!--header-->
@@ -124,16 +125,52 @@ DecoyMediatorFactory 連携図</div>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-その他の継承メンバ</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8f9f195a270388657245426a1592d3d4" id="r_a8f9f195a270388657245426a1592d3d4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_mediator_base.html">MediatorBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f9f195a270388657245426a1592d3d4">createMediator</a> (<a class="el" href="class_enemy_base.html">EnemyBase</a> &amp;enemy) override</td></tr>
+<tr class="memdesc:a8f9f195a270388657245426a1592d3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">各Mediatorごとに対応できる関数を定義する。 以下をマネする形になる…テンプレートでうまくできればいいんだけど std::unique_ptr&lt;MediatorBase&gt; <a class="el" href="#a8f9f195a270388657245426a1592d3d4" title="各Mediatorごとに対応できる関数を定義する。 以下をマネする形になる…テンプレートでうまくできればいいんだけど std::unique_ptr&lt;MediatorBase&gt; createMediat...">createMediator()</a> override { return std::make_unique&lt;○○Mediator&gt;(); }  <br /></td></tr>
+<tr class="separator:a8f9f195a270388657245426a1592d3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_mediator_factory"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_mediator_factory')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_mediator_factory.html">MediatorFactory</a> に属する継承公開メンバ関数</td></tr>
 <tr class="memitem:a21b2abf13f188a37723faa4ac692113d inherit pub_methods_class_mediator_factory" id="r_a21b2abf13f188a37723faa4ac692113d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mediator_factory.html#a21b2abf13f188a37723faa4ac692113d">~MediatorFactory</a> ()=default</td></tr>
 <tr class="separator:a21b2abf13f188a37723faa4ac692113d inherit pub_methods_class_mediator_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="_decoy_mediator_8h_source.html">DecoyMediator.h</a> の <a class="el" href="_decoy_mediator_8h_source.html#l00014">14</a> 行目に定義があります。</p>
-</div><hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<p class="definition"> <a class="el" href="_decoy_mediator_8h_source.html">DecoyMediator.h</a> の <a class="el" href="_decoy_mediator_8h_source.html#l00013">13</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a8f9f195a270388657245426a1592d3d4" name="a8f9f195a270388657245426a1592d3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9f195a270388657245426a1592d3d4">&#9670;&#160;</a></span>createMediator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_mediator_base.html">MediatorBase</a> &gt; DecoyMediatorFactory::createMediator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_enemy_base.html">EnemyBase</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>enemy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>各Mediatorごとに対応できる関数を定義する。 以下をマネする形になる…テンプレートでうまくできればいいんだけど std::unique_ptr&lt;MediatorBase&gt; <a class="el" href="#a8f9f195a270388657245426a1592d3d4" title="各Mediatorごとに対応できる関数を定義する。 以下をマネする形になる…テンプレートでうまくできればいいんだけど std::unique_ptr&lt;MediatorBase&gt; createMediat...">createMediator()</a> override { return std::make_unique&lt;○○Mediator&gt;(); } </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="class_mediator_factory.html#ada49180d9faab83c711d138e28e08a21">MediatorFactory</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_decoy_mediator_8h_source.html">DecoyMediator.h</a> の <a class="el" href="_decoy_mediator_8h_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>SoR/sources/<a class="el" href="_decoy_mediator_8h_source.html">DecoyMediator.h</a></li>
 </ul>
 </div><!-- contents -->

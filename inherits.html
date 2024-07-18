@@ -232,14 +232,16 @@ $(function(){initNavTree('hierarchy.html',''); initResizable(true); });
 <area shape="poly" title=" " alt="" coords="64,299,76,333,94,373,119,413,149,447,176,462,173,467,146,451,114,416,90,375,71,335,59,301"/>
 <area shape="rect" href="class_title_scene.html" title=" " alt="" coords="175,512,258,539"/>
 <area shape="poly" title=" " alt="" coords="61,300,70,343,87,396,113,451,130,476,149,498,176,514,173,518,146,502,126,479,108,453,82,398,65,345,55,301"/>
-<area shape="rect" href="class_enemy_base.html" title=" " alt="" coords="333,31,425,57"/>
-<area shape="poly" title=" " alt="" coords="275,58,332,49,333,54,276,63"/>
-<area shape="rect" href="class_player.html" title=" " alt="" coords="350,81,408,108"/>
-<area shape="poly" title=" " alt="" coords="276,76,350,88,349,93,275,81"/>
-<area shape="rect" href="class_decoy.html" title=" " alt="" coords="495,5,554,32"/>
-<area shape="poly" title=" " alt="" coords="440,31,494,21,495,26,441,36"/>
-<area shape="rect" href="class_soldier_enemy.html" title=" " alt="" coords="473,56,576,83"/>
-<area shape="poly" title=" " alt="" coords="441,52,473,58,472,63,440,57"/>
+<area shape="rect" href="class_enemy_base.html" title=" " alt="" coords="333,56,425,83"/>
+<area shape="poly" title=" " alt="" coords="276,67,333,67,333,72,276,72"/>
+<area shape="rect" href="class_player.html" title=" " alt="" coords="350,335,408,361"/>
+<area shape="poly" title=" " alt="" coords="276,84,287,93,311,122,331,155,358,225,373,289,379,334,374,335,368,290,353,226,326,157,307,125,283,97,272,88"/>
+<area shape="rect" href="class_decoy.html" title=" " alt="" coords="495,31,554,57"/>
+<area shape="poly" title=" " alt="" coords="440,56,494,46,495,52,441,61"/>
+<area shape="rect" href="class_soldier_enemy.html" title=" " alt="" coords="473,81,576,108"/>
+<area shape="poly" title=" " alt="" coords="441,77,473,83,472,88,440,83"/>
+<area shape="rect" href="class_i_movable.html" title=" " alt="" coords="181,563,252,589"/>
+<area shape="poly" title=" " alt="" coords="265,561,283,549,303,527,320,502,347,448,364,398,373,361,378,363,369,400,352,451,325,505,307,530,287,553,268,565"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_20.png" border="0" usemap="#a_image_1_1_image_data" alt=""/>
@@ -249,16 +251,20 @@ $(function(){initNavTree('hierarchy.html',''); initResizable(true); });
 </td></tr>
 <tr><td><img src="inherit_graph_21.png" border="0" usemap="#a_mediator_base" alt=""/>
 <map name="a_mediator_base" id="a_mediator_base">
-<area shape="rect" href="class_mediator_base.html" title="敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する" alt="" coords="5,5,107,32"/>
-<area shape="rect" href="class_decoy_mediator.html" title=" " alt="" coords="155,5,263,32"/>
-<area shape="poly" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
+<area shape="rect" href="class_mediator_base.html" title="敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する" alt="" coords="5,31,107,57"/>
+<area shape="rect" href="class_decoy_mediator.html" title=" " alt="" coords="156,5,265,32"/>
+<area shape="poly" title=" " alt="" coords="122,31,155,25,156,30,122,36"/>
+<area shape="rect" href="class_soldier_mediator.html" title=" " alt="" coords="155,56,266,83"/>
+<area shape="poly" title=" " alt="" coords="122,52,155,58,154,63,122,57"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_22.png" border="0" usemap="#a_mediator_factory" alt=""/>
 <map name="a_mediator_factory" id="a_mediator_factory">
-<area shape="rect" href="class_mediator_factory.html" title="Mediator生成をSpawner側で簡単にできるように、各キャラごとの生成メソッドを分離する形に…" alt="" coords="5,5,121,32"/>
-<area shape="rect" href="class_decoy_mediator_factory.html" title=" " alt="" coords="169,5,321,32"/>
-<area shape="poly" title=" " alt="" coords="136,16,168,16,168,21,136,21"/>
+<area shape="rect" href="class_mediator_factory.html" title="Mediator生成をSpawner側で簡単にできるように、各キャラごとの生成メソッドを分離する形に…" alt="" coords="5,31,121,57"/>
+<area shape="rect" href="class_decoy_mediator_factory.html" title=" " alt="" coords="170,5,323,32"/>
+<area shape="poly" title=" " alt="" coords="136,31,170,27,170,32,136,37"/>
+<area shape="rect" href="class_soldier_mediator_factory.html" title=" " alt="" coords="169,56,324,83"/>
+<area shape="poly" title=" " alt="" coords="136,51,168,56,168,61,136,57"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_23.png" border="0" usemap="#a_mediator_factory_registry" alt=""/>
@@ -273,9 +279,11 @@ $(function(){initNavTree('hierarchy.html',''); initResizable(true); });
 </td></tr>
 <tr><td><img src="inherit_graph_25.png" border="0" usemap="#a_movement_state_base" alt=""/>
 <map name="a_movement_state_base" id="a_movement_state_base">
-<area shape="rect" href="class_movement_state_base.html" title=" " alt="" coords="5,5,147,32"/>
-<area shape="rect" href="class_idle_state.html" title=" " alt="" coords="195,5,267,32"/>
-<area shape="poly" title=" " alt="" coords="162,16,194,16,194,21,162,21"/>
+<area shape="rect" href="class_movement_state_base.html" title=" " alt="" coords="5,31,147,57"/>
+<area shape="rect" href="class_idle_state.html" title=" " alt="" coords="220,5,292,32"/>
+<area shape="poly" title=" " alt="" coords="161,29,219,21,220,26,162,35"/>
+<area shape="rect" href="class_soldier_state_move.html" title=" " alt="" coords="195,56,317,83"/>
+<area shape="poly" title=" " alt="" coords="162,53,195,58,194,63,161,59"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_26.png" border="0" usemap="#a_ray_cast_data" alt=""/>

@@ -48,16 +48,22 @@ var hierarchy =
       [ "TitleScene", "class_title_scene.html", null ]
     ] ],
     [ "Image::ImageData", "struct_image_1_1_image_data.html", null ],
+    [ "IMovable", "class_i_movable.html", [
+      [ "Player", "class_player.html", null ]
+    ] ],
     [ "MediatorBase", "class_mediator_base.html", [
-      [ "DecoyMediator", "class_decoy_mediator.html", null ]
+      [ "DecoyMediator", "class_decoy_mediator.html", null ],
+      [ "SoldierMediator", "class_soldier_mediator.html", null ]
     ] ],
     [ "MediatorFactory", "class_mediator_factory.html", [
-      [ "DecoyMediatorFactory", "class_decoy_mediator_factory.html", null ]
+      [ "DecoyMediatorFactory", "class_decoy_mediator_factory.html", null ],
+      [ "SoldierMediatorFactory", "class_soldier_mediator_factory.html", null ]
     ] ],
     [ "MediatorFactoryRegistry", "class_mediator_factory_registry.html", null ],
     [ "Model::ModelData", "struct_model_1_1_model_data.html", null ],
     [ "MovementStateBase", "class_movement_state_base.html", [
-      [ "IdleState", "class_idle_state.html", null ]
+      [ "IdleState", "class_idle_state.html", null ],
+      [ "SoldierStateMove", "class_soldier_state_move.html", null ]
     ] ],
     [ "VFX::Particle", "struct_v_f_x_1_1_particle.html", null ],
     [ "RayCastData", "struct_ray_cast_data.html", null ],

@@ -8,6 +8,7 @@ var class_player =
     [ "dyingProcess", "class_player.html#a9863ff656a1c7b26aa66addd5988e654", null ],
     [ "getSkills", "class_player.html#a0c18ce69165a89d96db1706ae027ff3d", null ],
     [ "getUsingSkill", "class_player.html#a612de8c77dc7a0eda2b8bb806c90aff9", null ],
+    [ "GetVelocity", "class_player.html#a722969c7bc9e9498980674690922e9f0", null ],
     [ "Initialize", "class_player.html#a9ad9424777a382dadf22214a0c426d86", null ],
     [ "isIntersectGround", "class_player.html#a4a73d8ccfc5950725fab6034359e1b38", null ]
 ];

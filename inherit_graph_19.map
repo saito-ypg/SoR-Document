@@ -4,30 +4,32 @@
 <area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="55,243,65,199,82,146,108,91,126,65,146,42,170,27,173,31,149,46,130,68,113,93,87,148,70,201,61,244"/>
 <area shape="rect" id="Node000002" href="$class_game_actor.html" title=" " alt="" coords="173,56,260,83"/>
 <area shape="poly" id="edge7_Node000000_Node000002" title=" " alt="" coords="59,243,71,209,90,169,114,128,146,93,171,78,174,82,149,97,119,131,94,171,76,211,64,245"/>
-<area shape="rect" id="Node000007" href="$class_game_over_scene.html" title=" " alt="" coords="157,107,276,133"/>
-<area shape="poly" id="edge12_Node000000_Node000007" title=" " alt="" coords="66,243,98,193,120,166,146,143,166,132,169,136,149,147,124,170,102,196,70,246"/>
-<area shape="rect" id="Node000008" href="$class_ground.html" title=" " alt="" coords="185,157,248,184"/>
-<area shape="poly" id="edge13_Node000000_Node000008" title=" " alt="" coords="77,246,109,219,146,194,183,177,185,182,149,198,112,223,81,250"/>
-<area shape="rect" id="Node000009" href="$class_moderator_sequence.html" title=" " alt="" coords="148,208,285,235"/>
-<area shape="poly" id="edge14_Node000000_Node000009" title=" " alt="" coords="112,251,170,233,171,238,113,256"/>
-<area shape="rect" id="Node000010" href="$class_play_scene.html" title=" " alt="" coords="174,259,259,285"/>
-<area shape="poly" id="edge15_Node000000_Node000010" title=" " alt="" coords="115,269,174,269,174,275,115,275"/>
-<area shape="rect" id="Node000011" href="$class_player_interface.html" title="プレイヤーの情報を画面に表示する。 シーン直下に置く" alt="" coords="163,309,270,336"/>
-<area shape="poly" id="edge16_Node000000_Node000011" title=" " alt="" coords="113,288,171,306,170,311,112,293"/>
-<area shape="rect" id="Node000012" href="$class_root_object.html" title=" " alt="" coords="173,360,260,387"/>
-<area shape="poly" id="edge17_Node000000_Node000012" title=" " alt="" coords="81,294,112,321,149,346,174,357,172,362,146,350,109,325,77,298"/>
-<area shape="rect" id="Node000013" href="$class_scene_manager.html" title=" " alt="" coords="162,411,271,437"/>
-<area shape="poly" id="edge18_Node000000_Node000013" title=" " alt="" coords="70,298,102,348,124,374,149,397,169,408,166,412,146,401,120,378,98,351,66,301"/>
-<area shape="rect" id="Node000014" href="$class_test_scene.html" title=" " alt="" coords="175,461,258,488"/>
-<area shape="poly" id="edge19_Node000000_Node000014" title=" " alt="" coords="64,299,76,333,94,373,119,413,149,447,176,462,173,467,146,451,114,416,90,375,71,335,59,301"/>
-<area shape="rect" id="Node000015" href="$class_title_scene.html" title=" " alt="" coords="175,512,258,539"/>
-<area shape="poly" id="edge20_Node000000_Node000015" title=" " alt="" coords="61,300,70,343,87,396,113,451,130,476,149,498,176,514,173,518,146,502,126,479,108,453,82,398,65,345,55,301"/>
-<area shape="rect" id="Node000003" href="$class_enemy_base.html" title=" " alt="" coords="333,31,425,57"/>
-<area shape="poly" id="edge8_Node000002_Node000003" title=" " alt="" coords="275,58,332,49,333,54,276,63"/>
-<area shape="rect" id="Node000006" href="$class_player.html" title=" " alt="" coords="350,81,408,108"/>
-<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="276,76,350,88,349,93,275,81"/>
-<area shape="rect" id="Node000004" href="$class_decoy.html" title=" " alt="" coords="495,5,554,32"/>
-<area shape="poly" id="edge9_Node000003_Node000004" title=" " alt="" coords="440,31,494,21,495,26,441,36"/>
-<area shape="rect" id="Node000005" href="$class_soldier_enemy.html" title=" " alt="" coords="473,56,576,83"/>
-<area shape="poly" id="edge10_Node000003_Node000005" title=" " alt="" coords="441,52,473,58,472,63,440,57"/>
+<area shape="rect" id="Node000008" href="$class_game_over_scene.html" title=" " alt="" coords="157,107,276,133"/>
+<area shape="poly" id="edge12_Node000000_Node000008" title=" " alt="" coords="66,243,98,193,120,166,146,143,166,132,169,136,149,147,124,170,102,196,70,246"/>
+<area shape="rect" id="Node000009" href="$class_ground.html" title=" " alt="" coords="185,157,248,184"/>
+<area shape="poly" id="edge13_Node000000_Node000009" title=" " alt="" coords="77,246,109,219,146,194,183,177,185,182,149,198,112,223,81,250"/>
+<area shape="rect" id="Node000010" href="$class_moderator_sequence.html" title=" " alt="" coords="148,208,285,235"/>
+<area shape="poly" id="edge14_Node000000_Node000010" title=" " alt="" coords="112,251,170,233,171,238,113,256"/>
+<area shape="rect" id="Node000011" href="$class_play_scene.html" title=" " alt="" coords="174,259,259,285"/>
+<area shape="poly" id="edge15_Node000000_Node000011" title=" " alt="" coords="115,269,174,269,174,275,115,275"/>
+<area shape="rect" id="Node000012" href="$class_player_interface.html" title="プレイヤーの情報を画面に表示する。 シーン直下に置く" alt="" coords="163,309,270,336"/>
+<area shape="poly" id="edge16_Node000000_Node000012" title=" " alt="" coords="113,288,171,306,170,311,112,293"/>
+<area shape="rect" id="Node000013" href="$class_root_object.html" title=" " alt="" coords="173,360,260,387"/>
+<area shape="poly" id="edge17_Node000000_Node000013" title=" " alt="" coords="81,294,112,321,149,346,174,357,172,362,146,350,109,325,77,298"/>
+<area shape="rect" id="Node000014" href="$class_scene_manager.html" title=" " alt="" coords="162,411,271,437"/>
+<area shape="poly" id="edge18_Node000000_Node000014" title=" " alt="" coords="70,298,102,348,124,374,149,397,169,408,166,412,146,401,120,378,98,351,66,301"/>
+<area shape="rect" id="Node000015" href="$class_test_scene.html" title=" " alt="" coords="175,461,258,488"/>
+<area shape="poly" id="edge19_Node000000_Node000015" title=" " alt="" coords="64,299,76,333,94,373,119,413,149,447,176,462,173,467,146,451,114,416,90,375,71,335,59,301"/>
+<area shape="rect" id="Node000016" href="$class_title_scene.html" title=" " alt="" coords="175,512,258,539"/>
+<area shape="poly" id="edge20_Node000000_Node000016" title=" " alt="" coords="61,300,70,343,87,396,113,451,130,476,149,498,176,514,173,518,146,502,126,479,108,453,82,398,65,345,55,301"/>
+<area shape="rect" id="Node000003" href="$class_enemy_base.html" title=" " alt="" coords="333,56,425,83"/>
+<area shape="poly" id="edge8_Node000002_Node000003" title=" " alt="" coords="276,67,333,67,333,72,276,72"/>
+<area shape="rect" id="Node000006" href="$class_player.html" title=" " alt="" coords="350,335,408,361"/>
+<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="276,84,287,93,311,122,331,155,358,225,373,289,379,334,374,335,368,290,353,226,326,157,307,125,283,97,272,88"/>
+<area shape="rect" id="Node000004" href="$class_decoy.html" title=" " alt="" coords="495,31,554,57"/>
+<area shape="poly" id="edge9_Node000003_Node000004" title=" " alt="" coords="440,56,494,46,495,52,441,61"/>
+<area shape="rect" id="Node000005" href="$class_soldier_enemy.html" title=" " alt="" coords="473,81,576,108"/>
+<area shape="poly" id="edge10_Node000003_Node000005" title=" " alt="" coords="441,77,473,83,472,88,440,83"/>
+<area shape="rect" id="Node000007" href="$class_i_movable.html" title=" " alt="" coords="181,563,252,589"/>
+<area shape="poly" id="edge21_Node000007_Node000006" title=" " alt="" coords="265,561,283,549,303,527,320,502,347,448,364,398,373,361,378,363,369,400,352,451,325,505,307,530,287,553,268,565"/>
 </map>

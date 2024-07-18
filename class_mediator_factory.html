@@ -112,9 +112,11 @@ MediatorFactory の継承関係図</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mediator_factory__inherit__graph.png" border="0" usemap="#a_mediator_factory_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_mediator_factory_inherit__map" id="a_mediator_factory_inherit__map">
-<area shape="rect" title="Mediator生成をSpawner側で簡単にできるように、各キャラごとの生成メソッドを分離する形に…" alt="" coords="24,5,139,32"/>
+<area shape="rect" title="Mediator生成をSpawner側で簡単にできるように、各キャラごとの生成メソッドを分離する形に…" alt="" coords="112,5,227,32"/>
 <area shape="rect" href="class_decoy_mediator_factory.html" title=" " alt="" coords="5,80,158,107"/>
-<area shape="poly" title=" " alt="" coords="84,48,84,80,79,80,79,48"/>
+<area shape="poly" title=" " alt="" coords="144,44,98,82,95,78,141,40"/>
+<area shape="rect" href="class_soldier_mediator_factory.html" title=" " alt="" coords="181,80,337,107"/>
+<area shape="poly" title=" " alt="" coords="199,40,245,78,242,82,195,44"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
@@ -182,6 +184,8 @@ MediatorFactory の継承関係図</div>
 
 <p>各Mediatorごとに対応できる関数を定義する。 以下をマネする形になる…テンプレートでうまくできればいいんだけど std::unique_ptr&lt;MediatorBase&gt; <a class="el" href="#ada49180d9faab83c711d138e28e08a21" title="各Mediatorごとに対応できる関数を定義する。 以下をマネする形になる…テンプレートでうまくできればいいんだけど std::unique_ptr&lt;MediatorBase&gt; createMediat...">createMediator()</a> override { return std::make_unique&lt;○○Mediator&gt;(); } </p>
 <dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="class_decoy_mediator_factory.html#a8f9f195a270388657245426a1592d3d4">DecoyMediatorFactory</a>で実装されています。</p>
 
 </div>
 </div>

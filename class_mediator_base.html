@@ -114,9 +114,11 @@ MediatorBase の継承関係図</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mediator_base__inherit__graph.png" border="0" usemap="#a_mediator_base_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_mediator_base_inherit__map" id="a_mediator_base_inherit__map">
-<area shape="rect" title="敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する" alt="" coords="9,5,110,32"/>
+<area shape="rect" title="敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する" alt="" coords="76,5,177,32"/>
 <area shape="rect" href="class_decoy_mediator.html" title=" " alt="" coords="5,80,114,107"/>
-<area shape="poly" title=" " alt="" coords="62,48,62,80,57,80,57,48"/>
+<area shape="poly" title=" " alt="" coords="106,45,73,81,69,78,102,42"/>
+<area shape="rect" href="class_soldier_mediator.html" title=" " alt="" coords="137,80,249,107"/>
+<area shape="poly" title=" " alt="" coords="150,42,183,78,179,81,146,45"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <div class="dynheader">
@@ -150,13 +152,18 @@ MediatorBase 連携図</div>
 <tr class="separator:a08c08408500357d338b32821322dbe43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c6d5302c5e8b4ccd2b4f7152d7d8ee" id="r_af3c6d5302c5e8b4ccd2b4f7152d7d8ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3c6d5302c5e8b4ccd2b4f7152d7d8ee">Update</a> (const float &amp;dt)</td></tr>
 <tr class="separator:af3c6d5302c5e8b4ccd2b4f7152d7d8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48e007bf78cd2a5db097bfb944ebcf6" id="r_ad48e007bf78cd2a5db097bfb944ebcf6"><td class="memItemLeft" align="right" valign="top">const std::type_info &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad48e007bf78cd2a5db097bfb944ebcf6">getCurStateType</a> () const</td></tr>
+<tr class="separator:ad48e007bf78cd2a5db097bfb944ebcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 限定公開メンバ関数</h2></td></tr>
 <tr class="memitem:abac306da6152bd5ab39f2925e5e380eb" id="r_abac306da6152bd5ab39f2925e5e380eb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abac306da6152bd5ab39f2925e5e380eb">DetermineNextState</a> ()=0</td></tr>
+<tr class="memdesc:abac306da6152bd5ab39f2925e5e380eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">次のステートの遷移先を判断する。 もし同じステートならそのまま、変わっているならChangeStateを呼ぶ  <br /></td></tr>
 <tr class="separator:abac306da6152bd5ab39f2925e5e380eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51efbf25ac7cddfc0047f324de69225f" id="r_a51efbf25ac7cddfc0047f324de69225f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51efbf25ac7cddfc0047f324de69225f">changeState</a> ()=0</td></tr>
-<tr class="separator:a51efbf25ac7cddfc0047f324de69225f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6945973d9972aaab2cf18fdb3f6000f2" id="r_a6945973d9972aaab2cf18fdb3f6000f2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a6945973d9972aaab2cf18fdb3f6000f2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6945973d9972aaab2cf18fdb3f6000f2">ChangeState</a> ()</td></tr>
+<tr class="memdesc:a6945973d9972aaab2cf18fdb3f6000f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">次のステートをインスタンス化する  <br /></td></tr>
+<tr class="separator:a6945973d9972aaab2cf18fdb3f6000f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 限定公開変数類</h2></td></tr>
@@ -164,8 +171,8 @@ MediatorBase 連携図</div>
 <tr class="separator:a97e0b3ff907e5654111fce81588784bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6bf8fbc17308de93b95c0967553c38" id="r_a4a6bf8fbc17308de93b95c0967553c38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_enemy_base.html">EnemyBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6bf8fbc17308de93b95c0967553c38">base_</a></td></tr>
 <tr class="separator:a4a6bf8fbc17308de93b95c0967553c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c9089ae9c9965d47b515f7ddcdbfb9" id="r_a37c9089ae9c9965d47b515f7ddcdbfb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37c9089ae9c9965d47b515f7ddcdbfb9">isTransition_</a></td></tr>
-<tr class="separator:a37c9089ae9c9965d47b515f7ddcdbfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f6e4a8e47e60832cdff1615bec09df" id="r_a24f6e4a8e47e60832cdff1615bec09df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f6e4a8e47e60832cdff1615bec09df">SkipDeterminingMs</a></td></tr>
+<tr class="separator:a24f6e4a8e47e60832cdff1615bec09df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>敵の行動パターン(state)の切り替えや管理を行うクラス 敵各種ごとに定義する </p>
@@ -214,22 +221,24 @@ MediatorBase 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00009">9</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00010">10</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a51efbf25ac7cddfc0047f324de69225f" name="a51efbf25ac7cddfc0047f324de69225f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51efbf25ac7cddfc0047f324de69225f">&#9670;&#160;</a></span>changeState()</h2>
+<a id="a6945973d9972aaab2cf18fdb3f6000f2" name="a6945973d9972aaab2cf18fdb3f6000f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6945973d9972aaab2cf18fdb3f6000f2">&#9670;&#160;</a></span>ChangeState()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MediatorBase::changeState </td>
+          <td class="memname">void MediatorBase::ChangeState </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -237,10 +246,14 @@ MediatorBase 連携図</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>次のステートをインスタンス化する </p>
+
+<p class="definition"> <a class="el" href="_mediator_base_8h_source.html">MediatorBase.h</a> の <a class="el" href="_mediator_base_8h_source.html#l00026">26</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -266,16 +279,37 @@ MediatorBase 連携図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>次のステートの遷移先を判断する。 もし同じステートならそのまま、変わっているならChangeStateを呼ぶ </p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph.png" border="0" usemap="#aclass_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph" alt=""/></div>
 <map name="aclass_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph" id="aclass_mediator_base_abac306da6152bd5ab39f2925e5e380eb_icgraph">
-<area shape="rect" title=" " alt="" coords="204,5,399,48"/>
+<area shape="rect" title="次のステートの遷移先を判断する。 もし同じステートならそのまま、変わっているならChangeStateを呼ぶ" alt="" coords="204,5,399,48"/>
 <area shape="rect" href="class_mediator_base.html#af3c6d5302c5e8b4ccd2b4f7152d7d8ee" title=" " alt="" coords="5,13,156,40"/>
 <area shape="poly" title=" " alt="" coords="188,29,156,29,156,24,188,24"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ad48e007bf78cd2a5db097bfb944ebcf6" name="ad48e007bf78cd2a5db097bfb944ebcf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48e007bf78cd2a5db097bfb944ebcf6">&#9670;&#160;</a></span>getCurStateType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::type_info &amp; MediatorBase::getCurStateType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00026">26</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -294,14 +328,14 @@ MediatorBase 連携図</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00013">13</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_mediator_base_8cpp_source.html">MediatorBase.cpp</a> の <a class="el" href="_mediator_base_8cpp_source.html#l00014">14</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph.png" border="0" usemap="#aclass_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph" alt=""/></div>
 <map name="aclass_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph" id="aclass_mediator_base_af3c6d5302c5e8b4ccd2b4f7152d7d8ee_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,156,40"/>
-<area shape="rect" href="class_mediator_base.html#abac306da6152bd5ab39f2925e5e380eb" title=" " alt="" coords="204,5,399,48"/>
+<area shape="rect" href="class_mediator_base.html#abac306da6152bd5ab39f2925e5e380eb" title="次のステートの遷移先を判断する。 もし同じステートならそのまま、変わっているならChangeStateを呼ぶ" alt="" coords="204,5,399,48"/>
 <area shape="poly" title=" " alt="" coords="156,24,188,24,188,29,156,29"/>
 </map>
 </div>
@@ -357,8 +391,8 @@ MediatorBase 連携図</div>
 
 </div>
 </div>
-<a id="a37c9089ae9c9965d47b515f7ddcdbfb9" name="a37c9089ae9c9965d47b515f7ddcdbfb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37c9089ae9c9965d47b515f7ddcdbfb9">&#9670;&#160;</a></span>isTransition_</h2>
+<a id="a24f6e4a8e47e60832cdff1615bec09df" name="a24f6e4a8e47e60832cdff1615bec09df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f6e4a8e47e60832cdff1615bec09df">&#9670;&#160;</a></span>SkipDeterminingMs</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,7 +401,7 @@ MediatorBase 連携図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool MediatorBase::isTransition_</td>
+          <td class="memname">int MediatorBase::SkipDeterminingMs</td>
         </tr>
       </table>
   </td>

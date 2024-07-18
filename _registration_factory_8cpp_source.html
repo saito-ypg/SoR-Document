@@ -103,28 +103,31 @@ $(function(){initNavTree('_registration_factory_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include&quot;<a class="code" href="_mediator_factory_registry_8h.html">MediatorFactoryRegistry.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include&quot;<a class="code" href="_enemy_type_8h.html">EnemyType.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include&quot;<a class="code" href="_decoy_mediator_8h.html">DecoyMediator.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>std::make_unique;</div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_registration_factory.html#addad8e988f2dca8ec7973478a7ab8f14">    6</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_registration_factory.html#addad8e988f2dca8ec7973478a7ab8f14">RegistrationFactory::RegisterAllFactory</a>()</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_mediator_factory_registry.html#a30a576013ab36c73f8d77b6001d0d372">MediatorFactoryRegistry::IsInitialized</a>()) {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="comment">//以下に敵ごとのmediatorを増やしていく</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_function" href="class_mediator_factory_registry.html#aff2eb75a14d30051688f2e3b299c654c">MediatorFactoryRegistry::RegisterFactory</a>(<a class="code hl_enumvalue" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea0a8bcb7592ec781af7dc44033dfe7377">EnemyType::DECOY</a>, make_unique&lt;DecoyMediatorFactory&gt;());</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include&quot;<a class="code" href="_soldier_mediator_8h.html">SoldierMediator.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>std::make_unique;</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_registration_factory.html#addad8e988f2dca8ec7973478a7ab8f14">    7</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_registration_factory.html#addad8e988f2dca8ec7973478a7ab8f14">RegistrationFactory::RegisterAllFactory</a>()</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_mediator_factory_registry.html#a30a576013ab36c73f8d77b6001d0d372">MediatorFactoryRegistry::IsInitialized</a>()) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">//以下に敵ごとのmediatorを増やしていく</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <a class="code hl_function" href="class_mediator_factory_registry.html#aff2eb75a14d30051688f2e3b299c654c">MediatorFactoryRegistry::RegisterFactory</a>(<a class="code hl_enumvalue" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea0a8bcb7592ec781af7dc44033dfe7377">EnemyType::DECOY</a>, make_unique&lt;DecoyMediatorFactory&gt;());</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_function" href="class_mediator_factory_registry.html#aff2eb75a14d30051688f2e3b299c654c">MediatorFactoryRegistry::RegisterFactory</a>(<a class="code hl_enumvalue" href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea36101183b0be7bffbbe6d24ef81987a1">EnemyType::SOLDIER</a>, make_unique&lt;SoldierMediatorFactory&gt;());</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
 </div>
 <div class="ttc" id="a_decoy_mediator_8h_html"><div class="ttname"><a href="_decoy_mediator_8h.html">DecoyMediator.h</a></div></div>
 <div class="ttc" id="a_enemy_type_8h_html"><div class="ttname"><a href="_enemy_type_8h.html">EnemyType.h</a></div></div>
 <div class="ttc" id="a_enemy_type_8h_html_ac3e413a86119db4b031458c7259e268ea0a8bcb7592ec781af7dc44033dfe7377"><div class="ttname"><a href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea0a8bcb7592ec781af7dc44033dfe7377">EnemyType::DECOY</a></div><div class="ttdeci">@ DECOY</div></div>
+<div class="ttc" id="a_enemy_type_8h_html_ac3e413a86119db4b031458c7259e268ea36101183b0be7bffbbe6d24ef81987a1"><div class="ttname"><a href="_enemy_type_8h.html#ac3e413a86119db4b031458c7259e268ea36101183b0be7bffbbe6d24ef81987a1">EnemyType::SOLDIER</a></div><div class="ttdeci">@ SOLDIER</div></div>
 <div class="ttc" id="a_mediator_factory_registry_8h_html"><div class="ttname"><a href="_mediator_factory_registry_8h.html">MediatorFactoryRegistry.h</a></div></div>
 <div class="ttc" id="a_registration_factory_8h_html"><div class="ttname"><a href="_registration_factory_8h.html">RegistrationFactory.h</a></div></div>
+<div class="ttc" id="a_soldier_mediator_8h_html"><div class="ttname"><a href="_soldier_mediator_8h.html">SoldierMediator.h</a></div></div>
 <div class="ttc" id="aclass_mediator_factory_registry_html_a30a576013ab36c73f8d77b6001d0d372"><div class="ttname"><a href="class_mediator_factory_registry.html#a30a576013ab36c73f8d77b6001d0d372">MediatorFactoryRegistry::IsInitialized</a></div><div class="ttdeci">static bool IsInitialized()</div><div class="ttdef"><b>Definition</b> <a href="_mediator_factory_registry_8cpp_source.html#l00021">MediatorFactoryRegistry.cpp:21</a></div></div>
 <div class="ttc" id="aclass_mediator_factory_registry_html_aff2eb75a14d30051688f2e3b299c654c"><div class="ttname"><a href="class_mediator_factory_registry.html#aff2eb75a14d30051688f2e3b299c654c">MediatorFactoryRegistry::RegisterFactory</a></div><div class="ttdeci">static void RegisterFactory(const EnemyType type, std::unique_ptr&lt; MediatorFactory &gt; &amp;&amp;factory)</div><div class="ttdef"><b>Definition</b> <a href="_mediator_factory_registry_8cpp_source.html#l00007">MediatorFactoryRegistry.cpp:7</a></div></div>
-<div class="ttc" id="aclass_registration_factory_html_addad8e988f2dca8ec7973478a7ab8f14"><div class="ttname"><a href="class_registration_factory.html#addad8e988f2dca8ec7973478a7ab8f14">RegistrationFactory::RegisterAllFactory</a></div><div class="ttdeci">static void RegisterAllFactory()</div><div class="ttdef"><b>Definition</b> <a href="#l00006">RegistrationFactory.cpp:6</a></div></div>
+<div class="ttc" id="aclass_registration_factory_html_addad8e988f2dca8ec7973478a7ab8f14"><div class="ttname"><a href="class_registration_factory.html#addad8e988f2dca8ec7973478a7ab8f14">RegistrationFactory::RegisterAllFactory</a></div><div class="ttdeci">static void RegisterAllFactory()</div><div class="ttdef"><b>Definition</b> <a href="#l00007">RegistrationFactory.cpp:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

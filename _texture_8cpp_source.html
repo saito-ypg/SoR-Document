@@ -104,8 +104,7 @@ $(function(){initNavTree('_texture_8cpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_direct3_d_8h.html">Direct3D.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="global_8h.html">Global.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da">    6</a></span>UINT <a class="code hl_function" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da">NextPowerOfTwo</a>(UINT n) {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">static</span> UINT NextPowerOfTwo(UINT n) {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    n--;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    n |= n &gt;&gt; 1;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    n |= n &gt;&gt; 2;</div>
@@ -115,7 +114,6 @@ $(function(){initNavTree('_texture_8cpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    n++;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> n;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
-</div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_texture.html#a6c275e3f186675ff6ed73ccf970e552f">   16</a></span><a class="code hl_function" href="class_texture.html#a6c275e3f186675ff6ed73ccf970e552f">Texture::Texture</a>():</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    pSampleLinear_(nullptr), pTextureSRV_(nullptr), size_(XMFLOAT3(0,0,0))</div>
@@ -165,8 +163,8 @@ $(function(){initNavTree('_texture_8cpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    IWICBitmapScaler* pScaler = NULL;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    pFactory-&gt;CreateBitmapScaler(&amp;pScaler);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">float</span> aspectRatio = (float)imgWidth / (<span class="keywordtype">float</span>)imgHeight;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    UINT newWidth = <a class="code hl_function" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da">NextPowerOfTwo</a>(imgWidth);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    UINT newHeight = <a class="code hl_function" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da">NextPowerOfTwo</a>(imgHeight);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    UINT newWidth = NextPowerOfTwo(imgWidth);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    UINT newHeight = NextPowerOfTwo(imgHeight);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    size_ = XMFLOAT3((<span class="keywordtype">float</span>)imgWidth, (<span class="keywordtype">float</span>)imgHeight, 0);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    pScaler-&gt;Initialize(pFormatConverter, newWidth, newHeight, WICBitmapInterpolationModeFant);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    pScaler-&gt;GetSize(&amp;imgWidth, &amp;imgHeight);</div>
@@ -235,12 +233,11 @@ $(function(){initNavTree('_texture_8cpp_source.html',''); initResizable(true); }
 <div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_texture.html#a19b4f36a15d7598df898336a43f05601">  126</a></span>XMFLOAT3 <a class="code hl_function" href="class_texture.html#a19b4f36a15d7598df898336a43f05601">Texture::GetExtendedSize</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">return</span> XMFLOAT3(<a class="code hl_function" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da">NextPowerOfTwo</a>(size_.x), <a class="code hl_function" href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da">NextPowerOfTwo</a>(size_.y),0);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">return</span> XMFLOAT3((<span class="keywordtype">float</span>)(NextPowerOfTwo((UINT)(size_.x))), (<span class="keywordtype">float</span>)(NextPowerOfTwo((UINT)(size_.y))),0);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
 </div>
 <div class="ttc" id="a_bill_board_8cpp_html_a6038f7bdb274c2e159988a57dedbf93d"><div class="ttname"><a href="_bill_board_8cpp.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a></div><div class="ttdeci">#define SAFE_RELEASE(p)</div></div>
 <div class="ttc" id="a_direct3_d_8h_html"><div class="ttname"><a href="_direct3_d_8h.html">Direct3D.h</a></div></div>
-<div class="ttc" id="a_texture_8cpp_html_a1441b49c9047401a68977677dfb4d5da"><div class="ttname"><a href="_texture_8cpp.html#a1441b49c9047401a68977677dfb4d5da">NextPowerOfTwo</a></div><div class="ttdeci">UINT NextPowerOfTwo(UINT n)</div><div class="ttdef"><b>Definition</b> <a href="#l00006">Texture.cpp:6</a></div></div>
 <div class="ttc" id="a_texture_8h_html"><div class="ttname"><a href="_texture_8h.html">Texture.h</a></div></div>
 <div class="ttc" id="aclass_texture_html_a09c4bcb7462f64c1d20fa69dba3cee8a"><div class="ttname"><a href="class_texture.html#a09c4bcb7462f64c1d20fa69dba3cee8a">Texture::~Texture</a></div><div class="ttdeci">~Texture()</div><div class="ttdef"><b>Definition</b> <a href="#l00022">Texture.cpp:22</a></div></div>
 <div class="ttc" id="aclass_texture_html_a19b4f36a15d7598df898336a43f05601"><div class="ttname"><a href="class_texture.html#a19b4f36a15d7598df898336a43f05601">Texture::GetExtendedSize</a></div><div class="ttdeci">XMFLOAT3 GetExtendedSize() const</div><div class="ttdef"><b>Definition</b> <a href="#l00126">Texture.cpp:126</a></div></div>

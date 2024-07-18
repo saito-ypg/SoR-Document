@@ -9,6 +9,5 @@ var searchData=
   ['isdying_5f_6',['isDying_',['../class_game_actor.html#a440bedde933a7d89f34c8507c5f780de',1,'GameActor']]],
   ['isinoperation_5f_7',['isInOperation_',['../class_skill_base.html#a3a7a0df95a70acbd21f25b6d015fdcf5',1,'SkillBase']]],
   ['isinvincible_5f_8',['isInvincible_',['../class_game_actor.html#a10f17af4412e5ecc67f0dcf58aa2d560',1,'GameActor']]],
-  ['isstepchanged_9',['isStepChanged',['../class_skill_base.html#aecac031a7652f3d865707d582825cfea',1,'SkillBase']]],
-  ['istransition_5f_10',['isTransition_',['../class_mediator_base.html#a37c9089ae9c9965d47b515f7ddcdbfb9',1,'MediatorBase']]]
+  ['isstepchanged_9',['isStepChanged',['../class_skill_base.html#aecac031a7652f3d865707d582825cfea',1,'SkillBase']]]
 ];

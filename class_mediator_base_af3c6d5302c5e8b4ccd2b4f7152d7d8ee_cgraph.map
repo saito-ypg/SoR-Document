@@ -1,5 +1,5 @@
 <map id="MediatorBase::Update" name="MediatorBase::Update">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,13,156,40"/>
-<area shape="rect" id="Node000002" href="$class_mediator_base.html#abac306da6152bd5ab39f2925e5e380eb" title=" " alt="" coords="204,5,399,48"/>
+<area shape="rect" id="Node000002" href="$class_mediator_base.html#abac306da6152bd5ab39f2925e5e380eb" title="次のステートの遷移先を判断する。 もし同じステートならそのまま、変わっているならChangeStateを呼ぶ" alt="" coords="204,5,399,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,24,188,24,188,29,156,29"/>
 </map>

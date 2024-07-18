@@ -110,9 +110,11 @@ MovementStateBase の継承関係図</div>
 <div class="dyncontent">
 <div class="center"><img src="class_movement_state_base__inherit__graph.png" border="0" usemap="#a_movement_state_base_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_movement_state_base_inherit__map" id="a_movement_state_base_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,5,147,32"/>
-<area shape="rect" href="class_idle_state.html" title=" " alt="" coords="40,80,112,107"/>
-<area shape="poly" title=" " alt="" coords="79,48,79,80,73,80,73,48"/>
+<area shape="rect" title=" " alt="" coords="31,5,172,32"/>
+<area shape="rect" href="class_idle_state.html" title=" " alt="" coords="5,80,78,107"/>
+<area shape="poly" title=" " alt="" coords="84,46,54,81,50,78,79,42"/>
+<area shape="rect" href="class_soldier_state_move.html" title=" " alt="" coords="102,80,224,107"/>
+<area shape="poly" title=" " alt="" coords="124,42,154,78,150,81,120,46"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <div class="dynheader">
@@ -148,9 +150,13 @@ MovementStateBase 連携図</div>
 <tr class="separator:a04b290a2c571530714b249ff3a851f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a791de6229dd47f59b87d821b147378" id="r_a2a791de6229dd47f59b87d821b147378"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a791de6229dd47f59b87d821b147378">Release</a> ()</td></tr>
 <tr class="separator:a2a791de6229dd47f59b87d821b147378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e69fe717e5fd687f2400d731cefda4d" id="r_a2e69fe717e5fd687f2400d731cefda4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e69fe717e5fd687f2400d731cefda4d">CanTransitionOut</a> () const</td></tr>
+<tr class="separator:a2e69fe717e5fd687f2400d731cefda4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 限定公開変数類</h2></td></tr>
+<tr class="memitem:a60416d3da7d5b8caa3c80ac2f7e0492e" id="r_a60416d3da7d5b8caa3c80ac2f7e0492e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60416d3da7d5b8caa3c80ac2f7e0492e">canTransition_</a></td></tr>
+<tr class="separator:a60416d3da7d5b8caa3c80ac2f7e0492e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08715b47d665b059773e3ca23f214c02" id="r_a08715b47d665b059773e3ca23f214c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_enemy_base.html">EnemyBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08715b47d665b059773e3ca23f214c02">enemy_</a></td></tr>
 <tr class="separator:a08715b47d665b059773e3ca23f214c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -215,6 +221,25 @@ MovementStateBase 連携図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="a2e69fe717e5fd687f2400d731cefda4d" name="a2e69fe717e5fd687f2400d731cefda4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e69fe717e5fd687f2400d731cefda4d">&#9670;&#160;</a></span>CanTransitionOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MovementStateBase::CanTransitionOut </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_movement_state_base_8cpp_source.html">MovementStateBase.cpp</a> の <a class="el" href="_movement_state_base_8cpp_source.html#l00021">21</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="a2a791de6229dd47f59b87d821b147378" name="a2a791de6229dd47f59b87d821b147378"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a791de6229dd47f59b87d821b147378">&#9670;&#160;</a></span>Release()</h2>
 
@@ -237,6 +262,8 @@ MovementStateBase 連携図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="class_soldier_state_move.html#a9c40c7d6e20339f8cd0b1dd3d87b81b1">SoldierStateMove</a>で再実装されています。</p>
 
 <p class="definition"> <a class="el" href="_movement_state_base_8cpp_source.html">MovementStateBase.cpp</a> の <a class="el" href="_movement_state_base_8cpp_source.html#l00017">17</a> 行目に定義があります。</p>
 <div class="dynheader">
@@ -275,11 +302,37 @@ MovementStateBase 連携図</div>
 </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="class_idle_state.html#a16fa3510b82782d788cebba385c77c29">IdleState</a>, <a class="el" href="class_soldier_state_move.html#ad1bc9015ba39e0df43329b1a94efd255">SoldierStateMove</a>で再実装されています。</p>
+
 <p class="definition"> <a class="el" href="_movement_state_base_8cpp_source.html">MovementStateBase.cpp</a> の <a class="el" href="_movement_state_base_8cpp_source.html#l00013">13</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <h2 class="groupheader">メンバ詳解</h2>
+<a id="a60416d3da7d5b8caa3c80ac2f7e0492e" name="a60416d3da7d5b8caa3c80ac2f7e0492e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60416d3da7d5b8caa3c80ac2f7e0492e">&#9670;&#160;</a></span>canTransition_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MovementStateBase::canTransition_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_movement_state_base_8h_source.html">MovementStateBase.h</a> の <a class="el" href="_movement_state_base_8h_source.html#l00008">8</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="a08715b47d665b059773e3ca23f214c02" name="a08715b47d665b059773e3ca23f214c02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08715b47d665b059773e3ca23f214c02">&#9670;&#160;</a></span>enemy_</h2>
 
@@ -300,7 +353,7 @@ MovementStateBase 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_movement_state_base_8h_source.html">MovementStateBase.h</a> の <a class="el" href="_movement_state_base_8h_source.html#l00008">8</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_movement_state_base_8h_source.html">MovementStateBase.h</a> の <a class="el" href="_movement_state_base_8h_source.html#l00009">9</a> 行目に定義があります。</p>
 
 </div>
 </div>

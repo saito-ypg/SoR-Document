@@ -103,70 +103,76 @@ $(function(){initNavTree('_player_8h.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_game_actor_8h_source.html">GameActor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_player_skills_include_8h_source.html">PlayerSkillsInclude.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_movable_8h_source.html">IMovable.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Player.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="_player_8h__incl.png" border="0" usemap="#a_so_r_2sources_2_player_8h" alt=""/></div>
 <map name="a_so_r_2sources_2_player_8h" id="a_so_r_2sources_2_player_8h">
-<area shape="rect" title=" " alt="" coords="272,5,421,32"/>
-<area shape="rect" href="_game_actor_8h.html" title=" " alt="" coords="241,155,340,181"/>
-<area shape="poly" title=" " alt="" coords="344,33,324,81,302,141,297,139,319,79,339,31"/>
-<area shape="rect" href="_player_skills_include_8h.html" title=" " alt="" coords="333,80,475,107"/>
-<area shape="poly" title=" " alt="" coords="359,31,387,66,382,69,354,34"/>
-<area shape="rect" title=" " alt="" coords="227,304,282,331"/>
-<area shape="poly" title=" " alt="" coords="276,184,256,204,240,230,236,245,237,260,245,290,239,291,232,261,231,244,235,228,252,201,273,180"/>
-<area shape="rect" href="_game_object_8h.html" title=" " alt="" coords="641,229,802,256"/>
-<area shape="poly" title=" " alt="" coords="340,177,352,179,625,224,625,229,351,184,340,182"/>
-<area shape="rect" href="_actor_info_8h.html" title=" " alt="" coords="249,229,332,256"/>
-<area shape="poly" title=" " alt="" coords="293,182,293,214,288,214,288,182"/>
-<area shape="rect" href="_collision_manager_8h.html" title=" " alt="" coords="43,229,175,256"/>
-<area shape="poly" title=" " alt="" coords="260,184,156,226,154,221,258,179"/>
-<area shape="rect" href="_damage_data_8h.html" title=" " alt="" coords="306,304,414,331"/>
-<area shape="poly" title=" " alt="" coords="307,180,328,201,346,228,357,259,361,288,356,289,351,260,341,231,324,204,303,183"/>
-<area shape="rect" title=" " alt="" coords="559,453,662,480"/>
-<area shape="poly" title=" " alt="" coords="717,258,626,441,621,438,713,255"/>
-<area shape="rect" title=" " alt="" coords="730,304,768,331"/>
-<area shape="poly" title=" " alt="" coords="729,256,741,289,736,290,724,258"/>
-<area shape="rect" title=" " alt="" coords="488,304,541,331"/>
-<area shape="poly" title=" " alt="" coords="686,259,556,304,555,299,684,254"/>
-<area shape="rect" title=" " alt="" coords="792,304,861,331"/>
-<area shape="poly" title=" " alt="" coords="741,254,797,293,794,297,738,259"/>
-<area shape="rect" href="_sphere_collider_8h.html" title=" " alt="" coords="1008,304,1125,331"/>
-<area shape="poly" title=" " alt="" coords="782,254,993,298,992,303,781,259"/>
-<area shape="rect" href="_box_collider_8h.html" title=" " alt="" coords="885,304,984,331"/>
-<area shape="poly" title=" " alt="" coords="759,254,884,296,882,301,757,259"/>
-<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="566,304,655,331"/>
-<area shape="poly" title=" " alt="" coords="703,259,644,298,641,293,700,254"/>
-<area shape="rect" href="_collider_8h.html" title=" " alt="" coords="897,379,972,405"/>
-<area shape="poly" title=" " alt="" coords="1045,334,972,373,969,369,1042,329"/>
-<area shape="poly" title=" " alt="" coords="897,404,677,453,676,448,896,399"/>
-<area shape="rect" title=" " alt="" coords="901,453,968,480"/>
-<area shape="poly" title=" " alt="" coords="937,406,937,438,932,438,932,406"/>
-<area shape="poly" title=" " alt="" coords="937,331,937,363,932,363,932,331"/>
-<area shape="poly" title=" " alt="" coords="613,331,613,438,608,438,608,331"/>
-<area shape="rect" href="_actor_collider_8h.html" title=" " alt="" coords="5,379,112,405"/>
-<area shape="poly" title=" " alt="" coords="106,257,86,305,68,364,63,363,81,303,101,255"/>
-<area shape="rect" href="_attack_range_8h.html" title=" " alt="" coords="96,304,203,331"/>
-<area shape="poly" title=" " alt="" coords="118,255,137,289,133,292,114,258"/>
-<area shape="poly" title=" " alt="" coords="113,400,131,403,358,433,545,455,544,461,358,438,130,408,112,405"/>
-<area shape="poly" title=" " alt="" coords="152,331,156,368,164,387,176,403,203,419,240,431,339,449,448,458,544,462,544,467,448,464,338,454,239,437,200,424,173,407,159,390,151,369,146,331"/>
-<area shape="rect" title=" " alt="" coords="187,379,263,405"/>
-<area shape="poly" title=" " alt="" coords="164,329,203,366,199,370,161,333"/>
-<area shape="rect" href="areamodels_8h.html" title=" " alt="" coords="344,379,443,405"/>
-<area shape="poly" title=" " alt="" coords="192,329,337,371,335,376,191,334"/>
-<area shape="rect" href="test_skill_8h.html" title=" " alt="" coords="364,155,444,181"/>
-<area shape="poly" title=" " alt="" coords="407,107,407,139,401,139,401,107"/>
-<area shape="rect" href="_charge_skill_8h.html" title=" " alt="" coords="468,155,566,181"/>
-<area shape="poly" title=" " alt="" coords="425,105,486,144,483,148,422,109"/>
-<area shape="rect" href="_skill_base_8h.html" title=" " alt="" coords="407,229,494,256"/>
-<area shape="poly" title=" " alt="" coords="414,180,437,215,432,218,410,183"/>
-<area shape="poly" title=" " alt="" coords="417,259,298,303,296,298,415,254"/>
-<area shape="poly" title=" " alt="" coords="464,255,495,290,491,294,460,258"/>
-<area shape="poly" title=" " alt="" coords="479,254,570,295,568,300,477,259"/>
-<area shape="poly" title=" " alt="" coords="407,257,217,302,216,297,406,252"/>
-<area shape="poly" title=" " alt="" coords="450,257,428,332,411,366,406,364,423,330,445,256"/>
-<area shape="poly" title=" " alt="" coords="436,259,389,296,385,292,433,254"/>
-<area shape="poly" title=" " alt="" coords="508,184,474,220,470,216,504,180"/>
+<area shape="rect" title=" " alt="" coords="307,5,455,32"/>
+<area shape="rect" href="_game_actor_8h.html" title=" " alt="" coords="163,155,261,181"/>
+<area shape="poly" title=" " alt="" coords="364,35,300,82,235,145,231,141,297,78,360,30"/>
+<area shape="rect" href="_player_skills_include_8h.html" title=" " alt="" coords="310,80,452,107"/>
+<area shape="poly" title=" " alt="" coords="384,33,384,64,378,64,378,33"/>
+<area shape="rect" href="_i_movable_8h.html" title=" " alt="" coords="852,80,934,107"/>
+<area shape="poly" title=" " alt="" coords="456,28,837,81,836,87,455,33"/>
+<area shape="rect" title=" " alt="" coords="5,304,61,331"/>
+<area shape="poly" title=" " alt="" coords="198,184,62,296,58,292,195,180"/>
+<area shape="rect" href="_game_object_8h.html" title=" " alt="" coords="644,229,806,256"/>
+<area shape="poly" title=" " alt="" coords="262,177,273,179,463,207,629,228,629,233,462,212,273,184,261,182"/>
+<area shape="rect" href="_actor_info_8h.html" title=" " alt="" coords="173,229,256,256"/>
+<area shape="poly" title=" " alt="" coords="215,182,216,214,211,214,209,182"/>
+<area shape="rect" href="_collision_manager_8h.html" title=" " alt="" coords="391,229,523,256"/>
+<area shape="poly" title=" " alt="" coords="255,179,400,222,399,227,254,184"/>
+<area shape="rect" href="_damage_data_8h.html" title=" " alt="" coords="85,304,192,331"/>
+<area shape="poly" title=" " alt="" coords="200,184,181,205,163,231,152,260,145,289,140,288,147,259,159,228,177,201,196,180"/>
+<area shape="rect" title=" " alt="" coords="557,453,659,480"/>
+<area shape="poly" title=" " alt="" coords="716,258,681,305,645,377,619,440,615,438,640,375,676,303,712,255"/>
+<area shape="rect" title=" " alt="" coords="875,304,914,331"/>
+<area shape="poly" title=" " alt="" coords="756,254,862,299,860,304,753,259"/>
+<area shape="rect" title=" " alt="" coords="562,304,616,331"/>
+<area shape="poly" title=" " alt="" coords="703,259,627,299,625,294,700,254"/>
+<area shape="rect" title=" " alt="" coords="691,304,759,331"/>
+<area shape="poly" title=" " alt="" coords="728,257,728,288,722,288,722,257"/>
+<area shape="rect" title=" " alt="" coords="783,304,851,331"/>
+<area shape="poly" title=" " alt="" coords="743,254,791,292,788,297,739,259"/>
+<area shape="rect" href="_sphere_collider_8h.html" title=" " alt="" coords="1060,304,1177,331"/>
+<area shape="poly" title=" " alt="" coords="794,254,1045,300,1044,305,793,259"/>
+<area shape="rect" href="_box_collider_8h.html" title=" " alt="" coords="937,304,1036,331"/>
+<area shape="poly" title=" " alt="" coords="771,254,926,297,925,302,770,259"/>
+<area shape="rect" href="_transform_8h.html" title=" " alt="" coords="398,304,487,331"/>
+<area shape="poly" title=" " alt="" coords="676,259,503,303,501,298,675,254"/>
+<area shape="rect" href="_collider_8h.html" title=" " alt="" coords="949,379,1024,405"/>
+<area shape="poly" title=" " alt="" coords="1097,334,1024,373,1021,369,1094,329"/>
+<area shape="poly" title=" " alt="" coords="949,403,675,455,674,450,948,398"/>
+<area shape="rect" title=" " alt="" coords="953,453,1020,480"/>
+<area shape="poly" title=" " alt="" coords="989,406,989,438,984,438,984,406"/>
+<area shape="poly" title=" " alt="" coords="989,331,989,363,984,363,984,331"/>
+<area shape="poly" title=" " alt="" coords="450,330,469,365,499,403,530,427,563,444,560,449,527,431,495,407,465,368,445,333"/>
+<area shape="rect" href="_actor_collider_8h.html" title=" " alt="" coords="509,379,616,405"/>
+<area shape="poly" title=" " alt="" coords="468,255,547,364,542,367,464,258"/>
+<area shape="rect" href="_attack_range_8h.html" title=" " alt="" coords="266,304,373,331"/>
+<area shape="poly" title=" " alt="" coords="434,259,358,299,356,294,432,254"/>
+<area shape="poly" title=" " alt="" coords="572,404,594,439,589,441,568,407"/>
+<area shape="poly" title=" " alt="" coords="341,329,398,364,470,403,563,445,561,450,468,408,396,368,338,333"/>
+<area shape="rect" title=" " alt="" coords="303,379,379,405"/>
+<area shape="poly" title=" " alt="" coords="326,330,336,363,330,365,321,332"/>
+<area shape="rect" href="areamodels_8h.html" title=" " alt="" coords="179,379,279,405"/>
+<area shape="poly" title=" " alt="" coords="306,333,258,371,255,367,302,329"/>
+<area shape="rect" href="test_skill_8h.html" title=" " alt="" coords="285,155,365,181"/>
+<area shape="poly" title=" " alt="" coords="373,109,346,144,342,141,369,106"/>
+<area shape="rect" href="_charge_skill_8h.html" title=" " alt="" coords="389,155,488,181"/>
+<area shape="poly" title=" " alt="" coords="393,106,421,141,417,144,389,109"/>
+<area shape="rect" href="_skill_base_8h.html" title=" " alt="" coords="280,229,367,256"/>
+<area shape="poly" title=" " alt="" coords="327,182,327,214,322,214,322,182"/>
+<area shape="poly" title=" " alt="" coords="280,256,76,306,75,301,279,251"/>
+<area shape="poly" title=" " alt="" coords="368,253,548,302,546,307,367,258"/>
+<area shape="poly" title=" " alt="" coords="346,254,410,293,407,298,343,259"/>
+<area shape="poly" title=" " alt="" coords="326,257,324,289,319,288,320,256"/>
+<area shape="poly" title=" " alt="" coords="306,259,280,279,257,305,243,335,235,365,230,363,238,333,252,303,276,275,302,254"/>
+<area shape="poly" title=" " alt="" coords="292,259,186,300,184,295,290,254"/>
+<area shape="poly" title=" " alt="" coords="420,184,358,223,355,218,417,180"/>
+<area shape="poly" title=" " alt="" coords="935,92,1015,100,1062,108,1108,121,1150,140,1185,166,1208,199,1215,219,1217,241,1217,319,1212,339,1200,358,1180,375,1153,389,1086,414,1004,432,915,446,825,456,675,466,674,461,825,451,914,441,1003,427,1084,408,1151,384,1177,370,1196,354,1208,337,1212,318,1212,241,1210,220,1203,201,1181,169,1147,145,1106,126,1060,113,1014,105,934,98"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
